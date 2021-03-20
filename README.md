@@ -1,4 +1,4 @@
-# SImCopterRandomizer
+# SimCopterRandomizer
 Program to automatically generate random .twk files for SimCopter
 
 This program will create a career.twk and/or heli.twk file for use with Maxis's SimCopter at the location where this executable is ran.
