@@ -529,17 +529,20 @@ namespace SimCopter_Randomizer
                     }
                 }
             }
+            return nums;
 
         }
 
         private int[,] fairHeliNums()
         {
-
+            int[,] nums = new int[12, 14];
+            return nums;
         }
 
         private int[,] chaosHeliNums()
         {
-
+            int[,] nums = new int[12, 14];
+            return nums;
         }
     }
 }
