@@ -240,7 +240,7 @@
             this.carrButt.Name = "carrButt";
             this.carrButt.Size = new System.Drawing.Size(340, 69);
             this.carrButt.TabIndex = 2;
-            this.carrButt.Text = "Make career.twk";
+            this.carrButt.Text = "Randomize!";
             this.carrButt.UseVisualStyleBackColor = true;
             this.carrButt.Click += new System.EventHandler(this.carrButt_Click);
             // 
@@ -291,7 +291,7 @@
             this.mssnButt.Name = "mssnButt";
             this.mssnButt.Size = new System.Drawing.Size(340, 69);
             this.mssnButt.TabIndex = 3;
-            this.mssnButt.Text = "Make mssn.twk";
+            this.mssnButt.Text = "Randomize!";
             this.mssnButt.UseVisualStyleBackColor = true;
             this.mssnButt.Click += new System.EventHandler(this.mssnButt_Click);
             // 
@@ -388,7 +388,7 @@
             this.heliButt.Name = "heliButt";
             this.heliButt.Size = new System.Drawing.Size(340, 69);
             this.heliButt.TabIndex = 3;
-            this.heliButt.Text = "Make heli.twk";
+            this.heliButt.Text = "Randomize!";
             this.heliButt.UseVisualStyleBackColor = true;
             this.heliButt.Click += new System.EventHandler(this.heliButt_Click);
             // 
@@ -411,7 +411,7 @@
             this.fireButt.Name = "fireButt";
             this.fireButt.Size = new System.Drawing.Size(340, 69);
             this.fireButt.TabIndex = 4;
-            this.fireButt.Text = "Make fire.twk";
+            this.fireButt.Text = "Randomize!";
             this.fireButt.UseVisualStyleBackColor = true;
             this.fireButt.Click += new System.EventHandler(this.fireButt_Click);
             // 
@@ -555,7 +555,7 @@
             this.amssnButt.Name = "amssnButt";
             this.amssnButt.Size = new System.Drawing.Size(340, 69);
             this.amssnButt.TabIndex = 4;
-            this.amssnButt.Text = "Make automssn.twk";
+            this.amssnButt.Text = "Randomize!";
             this.amssnButt.UseVisualStyleBackColor = true;
             this.amssnButt.Click += new System.EventHandler(this.amssnButt_Click);
             // 
