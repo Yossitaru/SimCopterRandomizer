@@ -18,104 +18,98 @@ namespace SimCopter_Randomizer
             InitializeComponent();
         }
 
-        private void generateButt_Click(object sender, EventArgs e)
+        private void carrButt_Click(object sender, EventArgs e)
         {
             string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
             int[,] cNums = new int[30, 11];
             int[,] hNums = new int[12, 14];
-         
+
             //Campaign File
-            if (cOff.Checked == false)
+            if (cFair.Checked)
             {
-                if (cFair.Checked)
-                {
-                    cNums = fairCareerNums();
-                }
-                else if (cChaos.Checked)
-                {
-                    cNums = chaosCareerNums();
-                }
+                cNums = fairCareerNums();
+            }
+            else if (cChaos.Checked)
+            {
+                cNums = chaosCareerNums();
+            }
 
-                using (StreamWriter sw = File.CreateText(exeFolder + "\\career.twk"))
+            using (StreamWriter sw = File.CreateText(exeFolder + "\\career.twk"))
+            {
+                for (int x = 0; x < 30; x++)
                 {
-                    for (int x = 0; x < 30; x++)
-                    {
-                        //Header
-                        sw.WriteLine("%%%%%%%%%%%%%%% City" + x.ToString());
-                        sw.WriteLine("[City" + x.ToString() + "]");
-                        sw.WriteLine("NumCtrl = 11");
-                        sw.WriteLine(" ");//Difficulty
-                        sw.WriteLine("Ctrl0_Label=Difficulty (0-3)");
-                        sw.WriteLine("Ctrl0_Type=Slider,0,3");
-                        sw.WriteLine("Ctrl0_Value = " + cNums[x, 0].ToString());
-                        sw.WriteLine("Ctrl0_DataType=int");
-                        sw.WriteLine(" ");//Fire
-                        sw.WriteLine("Ctrl1_Label = Fire(weight)");
-                        sw.WriteLine("Ctrl1_Type = Slider,0,99");
-                        sw.WriteLine("Ctrl1_Value = " + cNums[x, 1].ToString());
-                        sw.WriteLine("Ctrl1_DataType = int");
-                        sw.WriteLine(" ");//Crime
-                        sw.WriteLine("Ctrl2_Label = Crime(weight)");
-                        sw.WriteLine("Ctrl2_Type = Slider,0,99");
-                        sw.WriteLine("Ctrl2_Value = " + cNums[x, 2].ToString());
-                        sw.WriteLine("Ctrl2_DataType = int");
-                        sw.WriteLine(" ");//Rescue
-                        sw.WriteLine("Ctrl3_Label = Rescue(weight)");
-                        sw.WriteLine("Ctrl3_Type = Slider,0,99");
-                        sw.WriteLine("Ctrl3_Value = " + cNums[x, 3].ToString());
-                        sw.WriteLine("Ctrl3_DataType = int");
-                        sw.WriteLine(" ");//Riot
-                        sw.WriteLine("Ctrl4_Label = Riot(weight)");
-                        sw.WriteLine("Ctrl4_Type = Slider,0,99");
-                        sw.WriteLine("Ctrl4_Value = " + cNums[x, 4].ToString());
-                        sw.WriteLine("Ctrl4_DataType = int");
-                        sw.WriteLine(" ");//Traffic
-                        sw.WriteLine("Ctrl5_Label = Traffic(weight)");
-                        sw.WriteLine("Ctrl5_Type = Slider,0,99");
-                        sw.WriteLine("Ctrl5_Value = " + cNums[x, 5].ToString());
-                        sw.WriteLine("Ctrl5_DataType = int");
-                        sw.WriteLine(" ");//MedEvac
-                        sw.WriteLine("Ctrl6_Label = MedEvac(weight)");
-                        sw.WriteLine("Ctrl6_Type = Slider,0,99");
-                        sw.WriteLine("Ctrl6_Value = " + cNums[x, 6].ToString());
-                        sw.WriteLine("Ctrl6_DataType = int");
-                        sw.WriteLine(" ");//Transport
-                        sw.WriteLine("Ctrl7_Label = Transport(weight)");
-                        sw.WriteLine("Ctrl7_Type = Slider,0,99");
-                        sw.WriteLine("Ctrl7_Value = " + cNums[x, 7].ToString());
-                        sw.WriteLine("Ctrl7_DataType = int");
-                        sw.WriteLine(" ");//Day and Night
-                        sw.WriteLine("Ctrl8_Label = Day or Night");
-                        sw.WriteLine("Ctrl8_Type = Slider,0,1");
-                        sw.WriteLine("Ctrl8_Value = " + cNums[x, 8].ToString());
-                        sw.WriteLine("Ctrl8_DataType = int");
-                        sw.WriteLine(" ");//Points
-                        sw.WriteLine("Ctrl9_Label = Points Needed");
-                        sw.WriteLine("Ctrl9_Type = Slider,1,5000");
-                        sw.WriteLine("Ctrl9_Value = " + cNums[x, 9].ToString());
-                        sw.WriteLine("Ctrl9_DataType = int");
-                        sw.WriteLine(" ");//Cash
-                        sw.WriteLine("Ctrl10_Label =$ Earned");
-                        sw.WriteLine("Ctrl10_Type = Slider,1,2000");
-                        sw.WriteLine("Ctrl10_Value = " + cNums[x, 10]);
-                        sw.WriteLine("Ctrl10_DataType = int");
-                        sw.WriteLine(" ");//Next, End
-                    }
-                    sw.Close();
+                    //Header
+                    sw.WriteLine("%%%%%%%%%%%%%%% City" + x.ToString());
+                    sw.WriteLine("[City" + x.ToString() + "]");
+                    sw.WriteLine("NumCtrl = 11");
+                    sw.WriteLine(" ");//Difficulty
+                    sw.WriteLine("Ctrl0_Label=Difficulty (0-3)");
+                    sw.WriteLine("Ctrl0_Type=Slider,0,3");
+                    sw.WriteLine("Ctrl0_Value = " + cNums[x, 0].ToString());
+                    sw.WriteLine("Ctrl0_DataType=int");
+                    sw.WriteLine(" ");//Fire
+                    sw.WriteLine("Ctrl1_Label = Fire(weight)");
+                    sw.WriteLine("Ctrl1_Type = Slider,0,99");
+                    sw.WriteLine("Ctrl1_Value = " + cNums[x, 1].ToString());
+                    sw.WriteLine("Ctrl1_DataType = int");
+                    sw.WriteLine(" ");//Crime
+                    sw.WriteLine("Ctrl2_Label = Crime(weight)");
+                    sw.WriteLine("Ctrl2_Type = Slider,0,99");
+                    sw.WriteLine("Ctrl2_Value = " + cNums[x, 2].ToString());
+                    sw.WriteLine("Ctrl2_DataType = int");
+                    sw.WriteLine(" ");//Rescue
+                    sw.WriteLine("Ctrl3_Label = Rescue(weight)");
+                    sw.WriteLine("Ctrl3_Type = Slider,0,99");
+                    sw.WriteLine("Ctrl3_Value = " + cNums[x, 3].ToString());
+                    sw.WriteLine("Ctrl3_DataType = int");
+                    sw.WriteLine(" ");//Riot
+                    sw.WriteLine("Ctrl4_Label = Riot(weight)");
+                    sw.WriteLine("Ctrl4_Type = Slider,0,99");
+                    sw.WriteLine("Ctrl4_Value = " + cNums[x, 4].ToString());
+                    sw.WriteLine("Ctrl4_DataType = int");
+                    sw.WriteLine(" ");//Traffic
+                    sw.WriteLine("Ctrl5_Label = Traffic(weight)");
+                    sw.WriteLine("Ctrl5_Type = Slider,0,99");
+                    sw.WriteLine("Ctrl5_Value = " + cNums[x, 5].ToString());
+                    sw.WriteLine("Ctrl5_DataType = int");
+                    sw.WriteLine(" ");//MedEvac
+                    sw.WriteLine("Ctrl6_Label = MedEvac(weight)");
+                    sw.WriteLine("Ctrl6_Type = Slider,0,99");
+                    sw.WriteLine("Ctrl6_Value = " + cNums[x, 6].ToString());
+                    sw.WriteLine("Ctrl6_DataType = int");
+                    sw.WriteLine(" ");//Transport
+                    sw.WriteLine("Ctrl7_Label = Transport(weight)");
+                    sw.WriteLine("Ctrl7_Type = Slider,0,99");
+                    sw.WriteLine("Ctrl7_Value = " + cNums[x, 7].ToString());
+                    sw.WriteLine("Ctrl7_DataType = int");
+                    sw.WriteLine(" ");//Day and Night
+                    sw.WriteLine("Ctrl8_Label = Day or Night");
+                    sw.WriteLine("Ctrl8_Type = Slider,0,1");
+                    sw.WriteLine("Ctrl8_Value = " + cNums[x, 8].ToString());
+                    sw.WriteLine("Ctrl8_DataType = int");
+                    sw.WriteLine(" ");//Points
+                    sw.WriteLine("Ctrl9_Label = Points Needed");
+                    sw.WriteLine("Ctrl9_Type = Slider,1,5000");
+                    sw.WriteLine("Ctrl9_Value = " + cNums[x, 9].ToString());
+                    sw.WriteLine("Ctrl9_DataType = int");
+                    sw.WriteLine(" ");//Cash
+                    sw.WriteLine("Ctrl10_Label =$ Earned");
+                    sw.WriteLine("Ctrl10_Type = Slider,1,2000");
+                    sw.WriteLine("Ctrl10_Value = " + cNums[x, 10]);
+                    sw.WriteLine("Ctrl10_DataType = int");
+                    sw.WriteLine(" ");//Next, End
                 }
+                sw.Close();
+            }
 
-                //Heli File
-                if (hOff.Checked == false)
-                {
-                    if (hFair.Checked)
-                    {
-                        hNums = fairHeliNums();
-                    }
-                    else if (hChaos.Checked)
-                    {
-                        hNums = chaosHeliNums();
-                    }
-                }
+            //Heli File
+            if (hFair.Checked)
+            {
+                hNums = fairHeliNums();
+            }
+            else if (hChaos.Checked)
+            {
+                hNums = chaosHeliNums();
             }
         }
 
@@ -533,6 +527,16 @@ namespace SimCopter_Randomizer
 
         }
 
+        private void mssnButt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void heliButt_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private int[,] fairHeliNums()
         {
             int[,] nums = new int[12, 14];
@@ -544,6 +548,16 @@ namespace SimCopter_Randomizer
             int[,] nums = new int[12, 14];
 
             return nums;
+        }
+
+        private void fireButt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void amssnButt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
