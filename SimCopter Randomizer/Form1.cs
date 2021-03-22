@@ -1191,40 +1191,328 @@ namespace SimCopter_Randomizer
 
         private void heliButt_Click(object sender, EventArgs e)
         {
-            int[,] hNums = new int[12, 14];
+            double[,] hNums = new double[12, 16];
+            string line = null;
+            int x = -1;
+            int y = 0;
 
             //Heli File
-            if (mBalance.Checked)
-            {
-                hNums = fairHeliNums();
-            }
-            else if (mChaos.Checked)
+            if (hChaos.Checked)
             {
                 hNums = chaosHeliNums();
             }
+
+            if (File.Exists(Globals.exeFolder + "\\heli.twk"))
+            {
+                using (StreamReader sr = new StreamReader(Globals.exeFolder + "\\heli.twk"))
+                {
+                    using (StreamWriter sw = new StreamWriter(Globals.exeFolder + "\\tempFile.twk"))
+                    {
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            if (line.Contains("Ctrl0_Label"))
+                            {
+                                x++;
+                                y = 0;
+                            }
+                            if (line.Contains("Value"))
+                            {
+                                if ((x < 9 && (y == 8 || y == 11 || y == 12)) || (x == 10 && (y == 0 || y == 1 || y == 2 || y == 4) || (x == 11 && y == 3)))
+                                {
+                                    line = "Ctrl" + y.ToString() + "_Value=" + hNums[x, y].ToString("0");
+                                }
+                                else
+                                {
+                                    line = "Ctrl" + y.ToString() + "_Value=" + hNums[x, y].ToString("0.0");
+                                }
+                                y++;
+                            }
+                            sw.WriteLine(line);
+                        }
+                        sw.Close();
+                    }
+                    sr.Close();
+                }
+                File.Delete(Globals.exeFolder + "\\heli.twk");
+                File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\heli.twk");
+                File.Delete(Globals.exeFolder + "\\tempFile.twk");
+                System.Windows.Forms.MessageBox.Show("Helicopter Settings Randomized.");
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("This must run in SimCopter's tweak folder.");
+            }
         }
 
-        private int[,] fairHeliNums()
+        private double[,] fairHeliNums()
         {
-            int[,] nums = new int[12, 14];
+            double[,] nums = new double[12, 16];
+
             return nums;
         }
 
-        private int[,] chaosHeliNums()
+        private double[,] chaosHeliNums()
         {
-            int[,] nums = new int[12, 14];
+            double[,] nums = new double[12, 16];
+            Random randMod = new Random();
 
+            //Helicopters
+            for (int x = 0; x < 9; x++)
+            {
+                for (int y = 0; y < 16; y++)
+                {
+                    if (y < 7)
+                    {
+                        nums[x, y] = randMod.Next(10, 800);
+                        nums[x, y] = nums[x, y] + randMod.NextDouble();
+                    }
+                    else if (y == 7)
+                    {
+                        nums[x, y] = randMod.Next(50);
+                        nums[x, y] = nums[x, y] + randMod.NextDouble();
+                    }
+                    else if (y == 8)
+                    {
+                        nums[x, y] = randMod.Next(10, 20001);
+                    }
+                    else if (y == 9)
+                    {
+                        nums[x, y] = randMod.Next(10, 900);
+                        nums[x, y] = nums[x, y] + randMod.NextDouble();
+                    }
+                    else if (y == 10)
+                    {
+                        nums[x, y] = randMod.Next(3000);
+                        nums[x, y] = nums[x, y] + randMod.NextDouble();
+                    }
+                    else if (y == 11)
+                    {
+                        nums[x, y] = randMod.Next(100001);
+                    }
+                    else if (y == 12)
+                    {
+                        nums[x, y] = randMod.Next(1, 5001);
+                    }
+                    else if (y == 13)
+                    {
+                        nums[x, y] = randMod.Next(100);
+                        nums[x, y] = nums[x, y] + randMod.NextDouble();
+                    }
+                    else
+                    {
+                        nums[x, y] = randMod.Next(10);
+                        nums[x, y] = nums[x, y] + randMod.NextDouble();
+                    }
+                }
+            }
+            for (int y = 0; y < 5; y++)
+            {
+                if (y < 2)
+                {
+                    nums[9, y] = randMod.Next(10, 800);
+                    nums[9, y] = nums[9, y] + randMod.NextDouble();
+                }
+                else if (y < 4)
+                {
+                    nums[9, y] = randMod.Next(200);
+                    nums[9, y] = nums[9, y] + randMod.NextDouble();
+                }
+                else
+                {
+                    nums[9, y] = randMod.Next(40);
+                    nums[9, y] = nums[9, y] + randMod.NextDouble();
+                }
+            }
+            for (int x = 10; x < 12; x++)
+            {
+                for (int y = 0; y < 6; y++)
+                {
+                    if (x == 10)
+                    {
+                        if (y < 2)
+                        {
+                            nums[x, y] = randMod.Next(2001);
+                        }
+                        else if (y == 2)
+                        {
+                            nums[x, y] = randMod.Next(8, 1001);
+                        }
+                        else if (y == 3)
+                        {
+                            nums[x, y] = randMod.NextDouble();
+                        }
+                        else if (y == 4)
+                        {
+                            nums[x, y] = randMod.Next(1, 65);
+                        }
+                        else
+                        {
+                            nums[x, y] = randMod.Next(10, 500);
+                            nums[x, y] = nums[x, y] + randMod.NextDouble();
+                        }
+                    }
+                    else
+                    {
+                        if (y == 0)
+                        {
+                            nums[x, y] = randMod.Next(-100, 100);
+                            nums[x, y] = nums[x, y] + randMod.NextDouble();
+                        }
+                        else if (y == 1)
+                        {
+                            nums[x, y] = randMod.Next(200);
+                            nums[x, y] = nums[x, y] + randMod.NextDouble();
+                        }
+                        else if (y == 2)
+                        {
+                            nums[x, y] = randMod.Next(5);
+                            nums[x, y] = nums[x, y] + randMod.NextDouble();
+                        }
+                        else if (y == 3)
+                        {
+                            nums[x, y] = randMod.Next(501);
+                        }
+                        else
+                        {
+                            nums[x, y] = randMod.Next(100);
+                            nums[x, y] = nums[x, y] + randMod.NextDouble();
+                        }
+                    }
+                }
+            }
             return nums;
         }
 
         private void fireButt_Click(object sender, EventArgs e)
         {
-            int[] fNums = new int[6];
+            double[] fNums = new double[6];
+            string line = null;
+            int x = -1;
+            int y = 0;
+
+            if (fChaos.Checked)
+            {
+                fNums = fChaosNums();
+            }
+
+            if (File.Exists(Globals.exeFolder + "\\fire.twk"))
+            {
+                using (StreamReader sr = new StreamReader(Globals.exeFolder + "\\fire.twk"))
+                {
+                    using (StreamWriter sw = new StreamWriter(Globals.exeFolder + "\\tempFile.twk"))
+                    {
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            if (line.Contains("Ctrl0_Label"))
+                            {
+                                y = 0;
+                            }
+                            if (line.Contains("Value"))
+                            {
+                                if (y == 1 || y == 4)
+                                {
+                                    line = "Ctrl" + y.ToString() + "_Value=" + fNums[y].ToString("0");
+                                }
+                                else
+                                {
+                                    line = "Ctrl" + y.ToString() + "_Value=" + fNums[y].ToString("0.0");
+                                }
+                                y++;
+                            }
+                            sw.WriteLine(line);
+                        }
+                        sw.Close();
+                    }
+                    sr.Close();
+                }
+                File.Delete(Globals.exeFolder + "\\fire.twk");
+                File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\fire.twk");
+                File.Delete(Globals.exeFolder + "\\tempFile.twk");
+                System.Windows.Forms.MessageBox.Show("Fire Settings Randomized.");
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("This must run in SimCopter's tweak folder.");
+            }
+        }
+
+        private double[] fChaosNums()
+        {
+            double[] nums = new double[6];
+            Random randMod = new Random();
+            
+            //Douse Points
+            nums[0] = randMod.Next(10, 128);
+            nums[0] = nums[0] + randMod.NextDouble();
+            //Douse Mult
+            nums[1] = randMod.Next(1, 101);
+            //TimeToLive
+            nums[2] = randMod.Next(80, 1000);
+            nums[2] = nums[2] + randMod.NextDouble();
+            //SpreadInterval
+            nums[3] = randMod.Next(18, 100);
+            nums[3] = nums[3] + randMod.NextDouble();
+            //SpreadProb
+            nums[4] = randMod.Next(40, 1025);
+            //Fire Radius
+            nums[5] = randMod.Next(30, 256);
+            nums[5] = nums[5] + randMod.NextDouble();
+
+            return nums;
         }
 
         private void amssnButt_Click(object sender, EventArgs e)
         {
             int[] aNums = new int[2];
+            string line = null;
+            int y = 0;
+
+            if (amssnChaos.Checked)
+            {
+                aNums = chaosAMssnNums();
+            }
+
+            if (File.Exists(Globals.exeFolder + "\\automssn.twk"))
+            {
+                using (StreamReader sr = new StreamReader(Globals.exeFolder + "\\automssn.twk"))
+                {
+                    using (StreamWriter sw = new StreamWriter(Globals.exeFolder + "\\tempFile.twk"))
+                    {
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            if (line.Contains("Value"))
+                            {
+                                line = "Ctrl" + y.ToString() + "_Value=" + aNums[y].ToString("0");
+                                y++;
+                            }
+                            sw.WriteLine(line);
+                        }
+                        sw.Close();
+                    }
+                    sr.Close();
+                }
+                File.Delete(Globals.exeFolder + "\\automssn.twk");
+                File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\automssn.twk");
+                File.Delete(Globals.exeFolder + "\\tempFile.twk");
+                System.Windows.Forms.MessageBox.Show("Auto Mission Settings Randomized.");
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("This must run in SimCopter's tweak folder.");
+            }
+        }
+
+        private int[] chaosAMssnNums()
+        {
+            int[] nums = new int[2];
+            Random randMod = new Random();
+
+            //Fire Scan
+            nums[0] = randMod.Next(3, 11);
+            //Road Scan
+            nums[1] = randMod.Next(3, 11);
+
+            return nums;
         }
 
         private void resetButt_Click(object sender, EventArgs e)

@@ -57,18 +57,18 @@
             this.Fire = new System.Windows.Forms.TabPage();
             this.fireButt = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.fChaos = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.AutoMissions = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.amssnChaos = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.amssnButt = new System.Windows.Forms.Button();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.resetButt = new System.Windows.Forms.Button();
             this.cPanel.SuspendLayout();
@@ -382,7 +382,6 @@
             // 
             // heliButt
             // 
-            this.heliButt.Enabled = false;
             this.heliButt.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.heliButt.Location = new System.Drawing.Point(8, 208);
             this.heliButt.Name = "heliButt";
@@ -405,7 +404,6 @@
             // 
             // fireButt
             // 
-            this.fireButt.Enabled = false;
             this.fireButt.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fireButt.Location = new System.Drawing.Point(9, 211);
             this.fireButt.Name = "fireButt";
@@ -418,7 +416,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.radioButton10);
-            this.panel2.Controls.Add(this.radioButton4);
+            this.panel2.Controls.Add(this.fChaos);
             this.panel2.Controls.Add(this.radioButton5);
             this.panel2.Controls.Add(this.radioButton6);
             this.panel2.Controls.Add(this.label4);
@@ -427,18 +425,31 @@
             this.panel2.Size = new System.Drawing.Size(340, 196);
             this.panel2.TabIndex = 1;
             // 
-            // radioButton4
+            // radioButton10
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Checked = true;
-            this.radioButton4.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(58, 154);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(93, 28);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Chaos";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Enabled = false;
+            this.radioButton10.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton10.Location = new System.Drawing.Point(58, 64);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(106, 28);
+            this.radioButton10.TabIndex = 4;
+            this.radioButton10.Text = "Easier";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButton10.Visible = false;
+            // 
+            // fChaos
+            // 
+            this.fChaos.AutoSize = true;
+            this.fChaos.Checked = true;
+            this.fChaos.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fChaos.Location = new System.Drawing.Point(58, 154);
+            this.fChaos.Name = "fChaos";
+            this.fChaos.Size = new System.Drawing.Size(93, 28);
+            this.fChaos.TabIndex = 3;
+            this.fChaos.TabStop = true;
+            this.fChaos.Text = "Chaos";
+            this.fChaos.UseVisualStyleBackColor = true;
             // 
             // radioButton5
             // 
@@ -489,7 +500,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.radioButton7);
+            this.panel3.Controls.Add(this.amssnChaos);
             this.panel3.Controls.Add(this.radioButton8);
             this.panel3.Controls.Add(this.radioButton9);
             this.panel3.Controls.Add(this.label5);
@@ -498,18 +509,18 @@
             this.panel3.Size = new System.Drawing.Size(340, 196);
             this.panel3.TabIndex = 5;
             // 
-            // radioButton7
+            // amssnChaos
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Checked = true;
-            this.radioButton7.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(58, 154);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(93, 28);
-            this.radioButton7.TabIndex = 3;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Chaos";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.amssnChaos.AutoSize = true;
+            this.amssnChaos.Checked = true;
+            this.amssnChaos.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amssnChaos.Location = new System.Drawing.Point(58, 154);
+            this.amssnChaos.Name = "amssnChaos";
+            this.amssnChaos.Size = new System.Drawing.Size(93, 28);
+            this.amssnChaos.TabIndex = 3;
+            this.amssnChaos.TabStop = true;
+            this.amssnChaos.Text = "Chaos";
+            this.amssnChaos.UseVisualStyleBackColor = true;
             // 
             // radioButton8
             // 
@@ -549,7 +560,6 @@
             // 
             // amssnButt
             // 
-            this.amssnButt.Enabled = false;
             this.amssnButt.Font = new System.Drawing.Font("NSimSun", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amssnButt.Location = new System.Drawing.Point(9, 210);
             this.amssnButt.Name = "amssnButt";
@@ -558,19 +568,6 @@
             this.amssnButt.Text = "Randomize!";
             this.amssnButt.UseVisualStyleBackColor = true;
             this.amssnButt.Click += new System.EventHandler(this.amssnButt_Click);
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Enabled = false;
-            this.radioButton10.Font = new System.Drawing.Font("NSimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(58, 64);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(106, 28);
-            this.radioButton10.TabIndex = 4;
-            this.radioButton10.Text = "Easier";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            this.radioButton10.Visible = false;
             // 
             // tabPage1
             // 
@@ -651,13 +648,13 @@
         private System.Windows.Forms.TabPage Fire;
         private System.Windows.Forms.Button fireButt;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton fChaos;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage AutoMissions;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton amssnChaos;
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.Label label5;
