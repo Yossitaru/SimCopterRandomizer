@@ -1020,6 +1020,14 @@ namespace SimCopter_Randomizer
                         nums[x, y] = randMod.Next(1, 2001);
                     }
                 }
+                //If none of the missions will spawn.
+                while (nums[x, 1] == 0 && nums[x, 2] == 0 && nums[x, 3] == 0 && nums[x, 4] == 0 && nums[x, 5] == 0 && nums[x, 6] == 0 && nums[x, 7] == 0)
+                {
+                    for (int z = 1; z < 8; z++)
+                    {
+                        nums[x, z] = randMod.Next(100);
+                    }
+                }
             }
             return nums;
 
@@ -1387,7 +1395,6 @@ namespace SimCopter_Randomizer
         {
             double[] fNums = new double[6];
             string line = null;
-            int x = -1;
             int y = 0;
 
             if (fChaos.Checked)
@@ -1440,7 +1447,7 @@ namespace SimCopter_Randomizer
         {
             double[] nums = new double[6];
             Random randMod = new Random();
-            
+
             //Douse Points
             nums[0] = randMod.Next(10, 128);
             nums[0] = nums[0] + randMod.NextDouble();
@@ -1554,7 +1561,17 @@ namespace SimCopter_Randomizer
                 File.Delete(Globals.exeFolder + "\\career.twk");
                 File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\career.twk");
                 File.Delete(Globals.exeFolder + "\\tempFile.twk");
-                z++;
+                //Check File Hash
+                using (FileStream st = File.OpenRead(Globals.exeFolder + "\\career.twk"))
+                {
+                    System.Security.Cryptography.SHA256 hash = System.Security.Cryptography.SHA256.Create();
+                    if (bTS(hash.ComputeHash(st)).Contains("72f8052778037e2a7943258e29a812c29e02f81138dfb39e3a9d43f29b782988"))
+                    {
+                        z++;
+                    }
+                    hash.Dispose();
+                    st.Close();
+                }
             }
             else
             {
@@ -1574,6 +1591,14 @@ namespace SimCopter_Randomizer
                     {
                         while ((line = sr.ReadLine()) != null)
                         {
+                            if (line.Contains("ReadFile"))
+                            {
+                                line = "ReadFile=ALL";
+                            }
+                            if (line.Contains("ReadSection"))
+                            {
+                                line = "ReadSection=";
+                            }
                             if (line.Contains("Ctrl0_Label"))
                             {
                                 x++;
@@ -1600,7 +1625,17 @@ namespace SimCopter_Randomizer
                 File.Delete(Globals.exeFolder + "\\sim3d.twk");
                 File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\sim3d.twk");
                 File.Delete(Globals.exeFolder + "\\tempFile.twk");
-                z++;
+                //Check file Hash.
+                using (FileStream st = File.OpenRead(Globals.exeFolder + "\\sim3d.twk"))
+                {
+                    System.Security.Cryptography.SHA256 hash = System.Security.Cryptography.SHA256.Create();
+                    if (bTS(hash.ComputeHash(st)).Contains("fd576bddb084964d7ca2279c3b406c15f8ee82c59c4554efb64590013d86f719"))
+                    {
+                        z++;
+                    }
+                    hash.Dispose();
+                    st.Close();
+                }
             }
             else
             {
@@ -1646,7 +1681,17 @@ namespace SimCopter_Randomizer
                 File.Delete(Globals.exeFolder + "\\heli.twk");
                 File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\heli.twk");
                 File.Delete(Globals.exeFolder + "\\tempFile.twk");
-                z++;
+                //Check File Hash.
+                using (FileStream st = File.OpenRead(Globals.exeFolder + "\\heli.twk"))
+                {
+                    System.Security.Cryptography.SHA256 hash = System.Security.Cryptography.SHA256.Create();
+                    if (bTS(hash.ComputeHash(st)).Contains("f0ddb81b86ba3ec55218be9ab8b213b6b279b679ade2330e6fc28a2c41c36d0b"))
+                    {
+                        z++;
+                    }
+                    hash.Dispose();
+                    st.Close();
+                }
             }
             else
             {
@@ -1691,7 +1736,17 @@ namespace SimCopter_Randomizer
                 File.Delete(Globals.exeFolder + "\\fire.twk");
                 File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\fire.twk");
                 File.Delete(Globals.exeFolder + "\\tempFile.twk");
-                z++;
+                //Check File Hash
+                using (FileStream st = File.OpenRead(Globals.exeFolder + "\\fire.twk"))
+                {
+                    System.Security.Cryptography.SHA256 hash = System.Security.Cryptography.SHA256.Create();
+                    if (bTS(hash.ComputeHash(st)).Contains("2e0e722f36d389049110a22c0540a8a904c70aca24d986a424258fb78a29cf83"))
+                    {
+                        z++;
+                    }
+                    hash.Dispose();
+                    st.Close();
+                }
             }
             else
             {
@@ -1728,7 +1783,17 @@ namespace SimCopter_Randomizer
                 File.Delete(Globals.exeFolder + "\\automssn.twk");
                 File.Copy(Globals.exeFolder + "\\tempFile.twk", Globals.exeFolder + "\\automssn.twk");
                 File.Delete(Globals.exeFolder + "\\tempFile.twk");
-                z++;
+                //Check File Hash
+                using (FileStream st = File.OpenRead(Globals.exeFolder + "\\automssn.twk"))
+                {
+                    System.Security.Cryptography.SHA256 hash = System.Security.Cryptography.SHA256.Create();
+                    if (bTS(hash.ComputeHash(st)).Contains("ae1efb64438087b83fdd44f87ec8b7fea90164cefeaa946c61c2b3c93ec81838"))
+                    {
+                        z++;
+                    }
+                    hash.Dispose();
+                    st.Close();
+                }
             }
             else
             {
@@ -1740,8 +1805,16 @@ namespace SimCopter_Randomizer
             }
             else
             {
-                System.Windows.Forms.MessageBox.Show("One or more files missing.");
+                System.Windows.Forms.MessageBox.Show("One or more files missing or improperly written.");
             }
+        }
+
+
+        private string bTS(byte[] hash)
+        {
+            string hashst = "";
+            foreach (byte b in hash) hashst += b.ToString("x2");
+            return hashst;
         }
     }
 }
