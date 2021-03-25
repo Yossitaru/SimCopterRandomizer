@@ -1129,7 +1129,7 @@ namespace SimCopter_Randomizer
             Random randMod = new Random();
 
             //General Mission
-            nums[0, 0] = randMod.Next(11);
+            nums[0, 0] = randMod.Next(1, 11);
             nums[0, 1] = randMod.Next(100, 1000);
             nums[0, 1] = nums[0, 1] + randMod.NextDouble();
             nums[0, 2] = randMod.Next(2);
