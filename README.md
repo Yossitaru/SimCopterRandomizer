@@ -12,3 +12,7 @@ Helicopters randomizes the settings of helicopters in every game mode. The helic
 Fire randomizes the remaining aspects of fires. These settings include dousing progress rewards, life time of fires, speed and likelihood of fires spreading, and general size of individual fires.
 
 AutoMissions randomizes Fire Scan and Road Scan values. What these do is currently unknown, and if you have any insights, please let me know so that this document may be updated.
+
+Customized mode allows for customization of each individual item in each tweak file within the ranges originally defined in the files. Any items which are checked off will be skipped and remain unchanged.
+
+The optional seed value can be any string. If you want a random seed, leave the box blank.
