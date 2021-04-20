@@ -1,7 +1,7 @@
 # SimCopterRandomizer
-Replaces the tweak filees with randomized values. Includes a reseet option to return everything back to default values.
+Replaces the tweak files with randomized values. Includes a reset option to return everything back to default values.
 
-Place the executable in the SIMCOPTER\tweak folder, and then use the buttons to choose which aspeects of the game to randomize.
+Place the executable in the SIMCOPTER\tweak folder, and then use the buttons to choose which aspects of the game to randomize.
 
 Career randomizes the settings of every city when playing a Career Game. These settings include the difficulty and frequency of missions, how many points you require to finish a city, and how much money you receive when completing the city.
 
