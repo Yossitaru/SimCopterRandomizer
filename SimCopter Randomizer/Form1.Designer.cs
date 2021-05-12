@@ -2366,6 +2366,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Fire = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.fCheckOnButt = new System.Windows.Forms.Button();
+            this.fCheckOffButt = new System.Windows.Forms.Button();
             this.fGroup = new System.Windows.Forms.GroupBox();
             this.fMax5 = new System.Windows.Forms.NumericUpDown();
             this.fMin5 = new System.Windows.Forms.NumericUpDown();
@@ -2398,6 +2400,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.AutoMissions = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.amssnCheckOnButt = new System.Windows.Forms.Button();
+            this.amssnCheckOffButt = new System.Windows.Forms.Button();
             this.amssnGroup = new System.Windows.Forms.GroupBox();
             this.amssnMax1 = new System.Windows.Forms.NumericUpDown();
             this.amssnMin1 = new System.Windows.Forms.NumericUpDown();
@@ -2420,10 +2424,6 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fCheckOnButt = new System.Windows.Forms.Button();
-            this.fCheckOffButt = new System.Windows.Forms.Button();
-            this.amssnCheckOnButt = new System.Windows.Forms.Button();
-            this.amssnCheckOffButt = new System.Windows.Forms.Button();
             this.cPanel.SuspendLayout();
             this.cityTabs.SuspendLayout();
             this.C0.SuspendLayout();
@@ -3599,7 +3599,7 @@
             this.cPanel.Controls.Add(this.label1);
             this.cPanel.Location = new System.Drawing.Point(8, 6);
             this.cPanel.Name = "cPanel";
-            this.cPanel.Size = new System.Drawing.Size(307, 434);
+            this.cPanel.Size = new System.Drawing.Size(318, 434);
             this.cPanel.TabIndex = 0;
             // 
             // cCheckOnButt
@@ -3609,7 +3609,7 @@
             this.cCheckOnButt.Location = new System.Drawing.Point(145, 377);
             this.cCheckOnButt.Name = "cCheckOnButt";
             this.cCheckOnButt.Size = new System.Drawing.Size(75, 23);
-            this.cCheckOnButt.TabIndex = 7;
+            this.cCheckOnButt.TabIndex = 3;
             this.cCheckOnButt.Text = "All On";
             this.cCheckOnButt.UseVisualStyleBackColor = true;
             this.cCheckOnButt.Click += new System.EventHandler(this.cCheckOnButt_Click);
@@ -3621,7 +3621,7 @@
             this.cCheckOffButt.Location = new System.Drawing.Point(64, 377);
             this.cCheckOffButt.Name = "cCheckOffButt";
             this.cCheckOffButt.Size = new System.Drawing.Size(75, 23);
-            this.cCheckOffButt.TabIndex = 6;
+            this.cCheckOffButt.TabIndex = 2;
             this.cCheckOffButt.Text = "All Off";
             this.cCheckOffButt.UseVisualStyleBackColor = true;
             this.cCheckOffButt.Click += new System.EventHandler(this.cCheckOffButt_Click);
@@ -3633,7 +3633,7 @@
             this.cCustom.Location = new System.Drawing.Point(70, 37);
             this.cCustom.Name = "cCustom";
             this.cCustom.Size = new System.Drawing.Size(158, 28);
-            this.cCustom.TabIndex = 5;
+            this.cCustom.TabIndex = 0;
             this.cCustom.Text = "Customized";
             this.cCustom.UseVisualStyleBackColor = true;
             this.cCustom.CheckedChanged += new System.EventHandler(this.cCustom_CheckedChanged);
@@ -3675,7 +3675,7 @@
             this.cityTabs.Name = "cityTabs";
             this.cityTabs.SelectedIndex = 0;
             this.cityTabs.Size = new System.Drawing.Size(313, 307);
-            this.cityTabs.TabIndex = 4;
+            this.cityTabs.TabIndex = 1;
             // 
             // C0
             // 
@@ -3744,7 +3744,7 @@
             0});
             this.c0TransportMax.Name = "c0TransportMax";
             this.c0TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c0TransportMax.TabIndex = 45;
+            this.c0TransportMax.TabIndex = 24;
             this.c0TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -3762,7 +3762,7 @@
             0});
             this.c0MedevacMax.Name = "c0MedevacMax";
             this.c0MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c0MedevacMax.TabIndex = 44;
+            this.c0MedevacMax.TabIndex = 21;
             this.c0MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -3780,7 +3780,7 @@
             0});
             this.c0TransportMin.Name = "c0TransportMin";
             this.c0TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c0TransportMin.TabIndex = 43;
+            this.c0TransportMin.TabIndex = 23;
             this.c0TransportMin.ValueChanged += new System.EventHandler(this.c0TransportMin_ValueChanged);
             // 
             // c0MedevacMin
@@ -3793,7 +3793,7 @@
             0});
             this.c0MedevacMin.Name = "c0MedevacMin";
             this.c0MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c0MedevacMin.TabIndex = 42;
+            this.c0MedevacMin.TabIndex = 20;
             this.c0MedevacMin.ValueChanged += new System.EventHandler(this.c0MedevacMin_ValueChanged);
             // 
             // label335
@@ -3803,9 +3803,9 @@
             this.label335.Location = new System.Drawing.Point(29, 206);
             this.label335.Name = "label335";
             this.label335.Size = new System.Drawing.Size(119, 13);
-            this.label335.TabIndex = 41;
+            this.label335.TabIndex = 0;
             this.label335.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label335, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label335, "Frequency of transport missions in this city.");
             // 
             // label334
             // 
@@ -3814,9 +3814,9 @@
             this.label334.Location = new System.Drawing.Point(29, 180);
             this.label334.Name = "label334";
             this.label334.Size = new System.Drawing.Size(103, 13);
-            this.label334.TabIndex = 40;
+            this.label334.TabIndex = 0;
             this.label334.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label334, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label334, "Frequency of medevac missions in this city.");
             // 
             // c0TransportCheck
             // 
@@ -3826,7 +3826,7 @@
             this.c0TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c0TransportCheck.Name = "c0TransportCheck";
             this.c0TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0TransportCheck.TabIndex = 39;
+            this.c0TransportCheck.TabIndex = 22;
             this.c0TransportCheck.UseVisualStyleBackColor = true;
             this.c0TransportCheck.CheckedChanged += new System.EventHandler(this.c0TransportCheck_CheckedChanged);
             // 
@@ -3838,7 +3838,7 @@
             this.c0MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c0MedevacCheck.Name = "c0MedevacCheck";
             this.c0MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0MedevacCheck.TabIndex = 38;
+            this.c0MedevacCheck.TabIndex = 19;
             this.c0MedevacCheck.UseVisualStyleBackColor = true;
             this.c0MedevacCheck.CheckedChanged += new System.EventHandler(this.c0MedevacCheck_CheckedChanged);
             // 
@@ -3850,7 +3850,7 @@
             this.c0MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c0MoneyCheck.Name = "c0MoneyCheck";
             this.c0MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0MoneyCheck.TabIndex = 37;
+            this.c0MoneyCheck.TabIndex = 31;
             this.c0MoneyCheck.UseVisualStyleBackColor = true;
             this.c0MoneyCheck.CheckedChanged += new System.EventHandler(this.c0MoneyCheck_CheckedChanged);
             // 
@@ -3862,7 +3862,7 @@
             this.c0PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c0PointCheck.Name = "c0PointCheck";
             this.c0PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0PointCheck.TabIndex = 36;
+            this.c0PointCheck.TabIndex = 28;
             this.c0PointCheck.UseVisualStyleBackColor = true;
             this.c0PointCheck.CheckedChanged += new System.EventHandler(this.c0PointCheck_CheckedChanged);
             // 
@@ -3874,7 +3874,7 @@
             this.c0DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c0DayCheck.Name = "c0DayCheck";
             this.c0DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0DayCheck.TabIndex = 35;
+            this.c0DayCheck.TabIndex = 25;
             this.c0DayCheck.UseVisualStyleBackColor = true;
             this.c0DayCheck.CheckedChanged += new System.EventHandler(this.c0DayCheck_CheckedChanged);
             // 
@@ -3886,7 +3886,7 @@
             this.c0TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c0TrafficCheck.Name = "c0TrafficCheck";
             this.c0TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0TrafficCheck.TabIndex = 34;
+            this.c0TrafficCheck.TabIndex = 16;
             this.c0TrafficCheck.UseVisualStyleBackColor = true;
             this.c0TrafficCheck.CheckedChanged += new System.EventHandler(this.c0TrafficCheck_CheckedChanged);
             // 
@@ -3898,7 +3898,7 @@
             this.c0RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c0RiotCheck.Name = "c0RiotCheck";
             this.c0RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0RiotCheck.TabIndex = 33;
+            this.c0RiotCheck.TabIndex = 13;
             this.c0RiotCheck.UseVisualStyleBackColor = true;
             this.c0RiotCheck.CheckedChanged += new System.EventHandler(this.c0RiotCheck_CheckedChanged);
             // 
@@ -3910,7 +3910,7 @@
             this.c0RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c0RescueCheck.Name = "c0RescueCheck";
             this.c0RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0RescueCheck.TabIndex = 32;
+            this.c0RescueCheck.TabIndex = 10;
             this.c0RescueCheck.UseVisualStyleBackColor = true;
             this.c0RescueCheck.CheckedChanged += new System.EventHandler(this.c0RescueCheck_CheckedChanged);
             // 
@@ -3922,7 +3922,7 @@
             this.c0CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c0CrimeCheck.Name = "c0CrimeCheck";
             this.c0CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0CrimeCheck.TabIndex = 31;
+            this.c0CrimeCheck.TabIndex = 7;
             this.c0CrimeCheck.UseVisualStyleBackColor = true;
             this.c0CrimeCheck.CheckedChanged += new System.EventHandler(this.c0CrimeCheck_CheckedChanged);
             // 
@@ -3934,7 +3934,7 @@
             this.c0FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c0FireCheck.Name = "c0FireCheck";
             this.c0FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0FireCheck.TabIndex = 30;
+            this.c0FireCheck.TabIndex = 4;
             this.c0FireCheck.UseVisualStyleBackColor = true;
             this.c0FireCheck.CheckedChanged += new System.EventHandler(this.c0FireCheck_CheckedChanged);
             // 
@@ -3946,7 +3946,7 @@
             this.c0DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c0DiffCheck.Name = "c0DiffCheck";
             this.c0DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c0DiffCheck.TabIndex = 29;
+            this.c0DiffCheck.TabIndex = 1;
             this.c0DiffCheck.UseVisualStyleBackColor = true;
             this.c0DiffCheck.CheckedChanged += new System.EventHandler(this.c0DiffCheck_CheckedChanged);
             // 
@@ -3985,7 +3985,7 @@
             0});
             this.c0MoneyMax.Name = "c0MoneyMax";
             this.c0MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c0MoneyMax.TabIndex = 26;
+            this.c0MoneyMax.TabIndex = 33;
             this.c0MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -4008,7 +4008,7 @@
             0});
             this.c0MoneyMin.Name = "c0MoneyMin";
             this.c0MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c0MoneyMin.TabIndex = 25;
+            this.c0MoneyMin.TabIndex = 32;
             this.c0MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -4023,9 +4023,9 @@
             this.label12.Location = new System.Drawing.Point(29, 284);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 13);
-            this.label12.TabIndex = 24;
+            this.label12.TabIndex = 0;
             this.label12.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label12, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label12, "Amount of money given when completing this city.");
             // 
             // c0PointsMax
             // 
@@ -4042,7 +4042,7 @@
             0});
             this.c0PointsMax.Name = "c0PointsMax";
             this.c0PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c0PointsMax.TabIndex = 23;
+            this.c0PointsMax.TabIndex = 30;
             this.c0PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -4065,7 +4065,7 @@
             0});
             this.c0PointsMin.Name = "c0PointsMin";
             this.c0PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c0PointsMin.TabIndex = 22;
+            this.c0PointsMin.TabIndex = 29;
             this.c0PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -4080,7 +4080,7 @@
             this.label11.Location = new System.Drawing.Point(29, 258);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 13);
-            this.label11.TabIndex = 21;
+            this.label11.TabIndex = 0;
             this.label11.Text = "Points";
             this.toolTip.SetToolTip(this.label11, "Points needed to beat the level.");
             // 
@@ -4094,7 +4094,7 @@
             0});
             this.c0DayMax.Name = "c0DayMax";
             this.c0DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c0DayMax.TabIndex = 20;
+            this.c0DayMax.TabIndex = 27;
             this.c0DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -4112,7 +4112,7 @@
             0});
             this.c0DayMin.Name = "c0DayMin";
             this.c0DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c0DayMin.TabIndex = 19;
+            this.c0DayMin.TabIndex = 26;
             this.c0DayMin.ValueChanged += new System.EventHandler(this.c0DayMin_ValueChanged);
             // 
             // label10
@@ -4122,7 +4122,7 @@
             this.label10.Location = new System.Drawing.Point(29, 232);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 13);
-            this.label10.TabIndex = 18;
+            this.label10.TabIndex = 0;
             this.label10.Text = "Day or Night";
             this.toolTip.SetToolTip(this.label10, "Daytime or Nighttime");
             // 
@@ -4136,7 +4136,7 @@
             0});
             this.c0TrafficMax.Name = "c0TrafficMax";
             this.c0TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c0TrafficMax.TabIndex = 17;
+            this.c0TrafficMax.TabIndex = 18;
             this.c0TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4154,7 +4154,7 @@
             0});
             this.c0TrafficMin.Name = "c0TrafficMin";
             this.c0TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c0TrafficMin.TabIndex = 16;
+            this.c0TrafficMin.TabIndex = 17;
             this.c0TrafficMin.ValueChanged += new System.EventHandler(this.c0TrafficMin_ValueChanged);
             // 
             // label9
@@ -4163,8 +4163,9 @@
             this.label9.Font = new System.Drawing.Font("NSimSun", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(29, 154);
             this.label9.Name = "label9";
+            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label9.Size = new System.Drawing.Size(103, 13);
-            this.label9.TabIndex = 15;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Traffic Rate";
             this.toolTip.SetToolTip(this.label9, "Frequency of traffic missions in this city.");
             // 
@@ -4178,7 +4179,7 @@
             0});
             this.c0RiotMax.Name = "c0RiotMax";
             this.c0RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c0RiotMax.TabIndex = 14;
+            this.c0RiotMax.TabIndex = 15;
             this.c0RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4196,7 +4197,7 @@
             0});
             this.c0RiotMin.Name = "c0RiotMin";
             this.c0RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c0RiotMin.TabIndex = 13;
+            this.c0RiotMin.TabIndex = 14;
             this.c0RiotMin.ValueChanged += new System.EventHandler(this.c0RiotMin_ValueChanged);
             // 
             // label8
@@ -4206,7 +4207,7 @@
             this.label8.Location = new System.Drawing.Point(29, 128);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 13);
-            this.label8.TabIndex = 12;
+            this.label8.TabIndex = 0;
             this.label8.Text = "Riot Rate";
             this.toolTip.SetToolTip(this.label8, "Frequency of riot missions in this city.");
             // 
@@ -4220,7 +4221,7 @@
             0});
             this.c0RescueMax.Name = "c0RescueMax";
             this.c0RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c0RescueMax.TabIndex = 11;
+            this.c0RescueMax.TabIndex = 12;
             this.c0RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4238,7 +4239,7 @@
             0});
             this.c0RescueMin.Name = "c0RescueMin";
             this.c0RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c0RescueMin.TabIndex = 10;
+            this.c0RescueMin.TabIndex = 11;
             this.c0RescueMin.ValueChanged += new System.EventHandler(this.c0RescueMin_ValueChanged);
             // 
             // label7
@@ -4248,7 +4249,7 @@
             this.label7.Location = new System.Drawing.Point(29, 102);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 13);
-            this.label7.TabIndex = 9;
+            this.label7.TabIndex = 0;
             this.label7.Text = "Rescue Rate";
             this.toolTip.SetToolTip(this.label7, "Frequency of rescue missions in this city.");
             // 
@@ -4262,7 +4263,7 @@
             0});
             this.c0CrimeMax.Name = "c0CrimeMax";
             this.c0CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c0CrimeMax.TabIndex = 8;
+            this.c0CrimeMax.TabIndex = 9;
             this.c0CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4280,7 +4281,7 @@
             0});
             this.c0CrimeMin.Name = "c0CrimeMin";
             this.c0CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c0CrimeMin.TabIndex = 7;
+            this.c0CrimeMin.TabIndex = 8;
             this.c0CrimeMin.ValueChanged += new System.EventHandler(this.c0CrimeMin_ValueChanged);
             // 
             // label6
@@ -4290,7 +4291,7 @@
             this.label6.Location = new System.Drawing.Point(29, 76);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 13);
-            this.label6.TabIndex = 6;
+            this.label6.TabIndex = 0;
             this.label6.Text = "Crime Rate";
             this.toolTip.SetToolTip(this.label6, "Frequency of crime missions in this city.");
             // 
@@ -4304,7 +4305,7 @@
             0});
             this.c0FireMax.Name = "c0FireMax";
             this.c0FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c0FireMax.TabIndex = 5;
+            this.c0FireMax.TabIndex = 6;
             this.c0FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4322,7 +4323,7 @@
             0});
             this.c0FireMin.Name = "c0FireMin";
             this.c0FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c0FireMin.TabIndex = 4;
+            this.c0FireMin.TabIndex = 5;
             this.c0FireMin.ValueChanged += new System.EventHandler(this.c0FireMin_ValueChanged);
             // 
             // cFireLabel
@@ -4332,7 +4333,7 @@
             this.cFireLabel.Location = new System.Drawing.Point(29, 50);
             this.cFireLabel.Name = "cFireLabel";
             this.cFireLabel.Size = new System.Drawing.Size(79, 13);
-            this.cFireLabel.TabIndex = 3;
+            this.cFireLabel.TabIndex = 0;
             this.cFireLabel.Text = "Fire Rate";
             this.toolTip.SetToolTip(this.cFireLabel, "Frequency of fire missions in this city.");
             // 
@@ -4346,7 +4347,7 @@
             0});
             this.c0DiffMax.Name = "c0DiffMax";
             this.c0DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c0DiffMax.TabIndex = 2;
+            this.c0DiffMax.TabIndex = 3;
             this.c0DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -4364,7 +4365,7 @@
             0});
             this.c0DiffMin.Name = "c0DiffMin";
             this.c0DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c0DiffMin.TabIndex = 1;
+            this.c0DiffMin.TabIndex = 2;
             this.c0DiffMin.ValueChanged += new System.EventHandler(this.c0DiffMin_ValueChanged);
             // 
             // cDiffLabel
@@ -4445,7 +4446,7 @@
             0});
             this.c1TransportMax.Name = "c1TransportMax";
             this.c1TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c1TransportMax.TabIndex = 74;
+            this.c1TransportMax.TabIndex = 23;
             this.c1TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4463,7 +4464,7 @@
             0});
             this.c1MedevacMax.Name = "c1MedevacMax";
             this.c1MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c1MedevacMax.TabIndex = 73;
+            this.c1MedevacMax.TabIndex = 20;
             this.c1MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4481,7 +4482,7 @@
             0});
             this.c1TransportMin.Name = "c1TransportMin";
             this.c1TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c1TransportMin.TabIndex = 72;
+            this.c1TransportMin.TabIndex = 22;
             this.c1TransportMin.ValueChanged += new System.EventHandler(this.c1TransportMin_ValueChanged);
             // 
             // c1MedevacMin
@@ -4494,7 +4495,7 @@
             0});
             this.c1MedevacMin.Name = "c1MedevacMin";
             this.c1MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c1MedevacMin.TabIndex = 71;
+            this.c1MedevacMin.TabIndex = 19;
             this.c1MedevacMin.ValueChanged += new System.EventHandler(this.c1MedevacMin_ValueChanged);
             // 
             // label336
@@ -4506,7 +4507,7 @@
             this.label336.Size = new System.Drawing.Size(119, 13);
             this.label336.TabIndex = 70;
             this.label336.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label336, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label336, "Frequency of transport missions in this city.");
             // 
             // label337
             // 
@@ -4517,7 +4518,7 @@
             this.label337.Size = new System.Drawing.Size(103, 13);
             this.label337.TabIndex = 69;
             this.label337.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label337, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label337, "Frequency of medevac missions in this city.");
             // 
             // c1TransportCheck
             // 
@@ -4527,7 +4528,7 @@
             this.c1TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c1TransportCheck.Name = "c1TransportCheck";
             this.c1TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1TransportCheck.TabIndex = 68;
+            this.c1TransportCheck.TabIndex = 21;
             this.c1TransportCheck.UseVisualStyleBackColor = true;
             this.c1TransportCheck.CheckedChanged += new System.EventHandler(this.c1TransportCheck_CheckedChanged);
             // 
@@ -4539,7 +4540,7 @@
             this.c1MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c1MedevacCheck.Name = "c1MedevacCheck";
             this.c1MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1MedevacCheck.TabIndex = 67;
+            this.c1MedevacCheck.TabIndex = 18;
             this.c1MedevacCheck.UseVisualStyleBackColor = true;
             this.c1MedevacCheck.CheckedChanged += new System.EventHandler(this.c1MedevacCheck_CheckedChanged);
             // 
@@ -4551,7 +4552,7 @@
             this.c1MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c1MoneyCheck.Name = "c1MoneyCheck";
             this.c1MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1MoneyCheck.TabIndex = 66;
+            this.c1MoneyCheck.TabIndex = 30;
             this.c1MoneyCheck.UseVisualStyleBackColor = true;
             this.c1MoneyCheck.CheckedChanged += new System.EventHandler(this.c1MoneyCheck_CheckedChanged);
             // 
@@ -4563,7 +4564,7 @@
             this.c1PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c1PointCheck.Name = "c1PointCheck";
             this.c1PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1PointCheck.TabIndex = 65;
+            this.c1PointCheck.TabIndex = 27;
             this.c1PointCheck.UseVisualStyleBackColor = true;
             this.c1PointCheck.CheckedChanged += new System.EventHandler(this.c1PointCheck_CheckedChanged);
             // 
@@ -4575,7 +4576,7 @@
             this.c1DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c1DayCheck.Name = "c1DayCheck";
             this.c1DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1DayCheck.TabIndex = 64;
+            this.c1DayCheck.TabIndex = 24;
             this.c1DayCheck.UseVisualStyleBackColor = true;
             this.c1DayCheck.CheckedChanged += new System.EventHandler(this.c1DayCheck_CheckedChanged);
             // 
@@ -4587,7 +4588,7 @@
             this.c1TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c1TrafficCheck.Name = "c1TrafficCheck";
             this.c1TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1TrafficCheck.TabIndex = 63;
+            this.c1TrafficCheck.TabIndex = 15;
             this.c1TrafficCheck.UseVisualStyleBackColor = true;
             this.c1TrafficCheck.CheckedChanged += new System.EventHandler(this.c1TrafficCheck_CheckedChanged);
             // 
@@ -4599,7 +4600,7 @@
             this.c1RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c1RiotCheck.Name = "c1RiotCheck";
             this.c1RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1RiotCheck.TabIndex = 62;
+            this.c1RiotCheck.TabIndex = 12;
             this.c1RiotCheck.UseVisualStyleBackColor = true;
             this.c1RiotCheck.CheckedChanged += new System.EventHandler(this.c1RiotCheck_CheckedChanged);
             // 
@@ -4611,7 +4612,7 @@
             this.c1RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c1RescueCheck.Name = "c1RescueCheck";
             this.c1RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1RescueCheck.TabIndex = 61;
+            this.c1RescueCheck.TabIndex = 9;
             this.c1RescueCheck.UseVisualStyleBackColor = true;
             this.c1RescueCheck.CheckedChanged += new System.EventHandler(this.c1RescueCheck_CheckedChanged);
             // 
@@ -4623,7 +4624,7 @@
             this.c1CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c1CrimeCheck.Name = "c1CrimeCheck";
             this.c1CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1CrimeCheck.TabIndex = 60;
+            this.c1CrimeCheck.TabIndex = 6;
             this.c1CrimeCheck.UseVisualStyleBackColor = true;
             this.c1CrimeCheck.CheckedChanged += new System.EventHandler(this.c1CrimeCheck_CheckedChanged);
             // 
@@ -4635,7 +4636,7 @@
             this.c1FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c1FireCheck.Name = "c1FireCheck";
             this.c1FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1FireCheck.TabIndex = 59;
+            this.c1FireCheck.TabIndex = 3;
             this.c1FireCheck.UseVisualStyleBackColor = true;
             this.c1FireCheck.CheckedChanged += new System.EventHandler(this.c1FireCheck_CheckedChanged);
             // 
@@ -4647,7 +4648,7 @@
             this.c1DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c1DiffCheck.Name = "c1DiffCheck";
             this.c1DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c1DiffCheck.TabIndex = 58;
+            this.c1DiffCheck.TabIndex = 0;
             this.c1DiffCheck.UseVisualStyleBackColor = true;
             this.c1DiffCheck.CheckedChanged += new System.EventHandler(this.c1DiffCheck_CheckedChanged);
             // 
@@ -4686,7 +4687,7 @@
             0});
             this.c1MoneyMax.Name = "c1MoneyMax";
             this.c1MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c1MoneyMax.TabIndex = 55;
+            this.c1MoneyMax.TabIndex = 32;
             this.c1MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -4709,7 +4710,7 @@
             0});
             this.c1MoneyMin.Name = "c1MoneyMin";
             this.c1MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c1MoneyMin.TabIndex = 54;
+            this.c1MoneyMin.TabIndex = 31;
             this.c1MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -4726,7 +4727,7 @@
             this.label17.Size = new System.Drawing.Size(103, 13);
             this.label17.TabIndex = 53;
             this.label17.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label17, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label17, "Amount of money given when completing this city.");
             // 
             // c1PointsMax
             // 
@@ -4743,7 +4744,7 @@
             0});
             this.c1PointsMax.Name = "c1PointsMax";
             this.c1PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c1PointsMax.TabIndex = 52;
+            this.c1PointsMax.TabIndex = 29;
             this.c1PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -4766,7 +4767,7 @@
             0});
             this.c1PointsMin.Name = "c1PointsMin";
             this.c1PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c1PointsMin.TabIndex = 51;
+            this.c1PointsMin.TabIndex = 28;
             this.c1PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -4795,7 +4796,7 @@
             0});
             this.c1DayMax.Name = "c1DayMax";
             this.c1DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c1DayMax.TabIndex = 49;
+            this.c1DayMax.TabIndex = 26;
             this.c1DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -4813,7 +4814,7 @@
             0});
             this.c1DayMin.Name = "c1DayMin";
             this.c1DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c1DayMin.TabIndex = 48;
+            this.c1DayMin.TabIndex = 25;
             this.c1DayMin.ValueChanged += new System.EventHandler(this.c1DayMin_ValueChanged);
             // 
             // label19
@@ -4837,7 +4838,7 @@
             0});
             this.c1TrafficMax.Name = "c1TrafficMax";
             this.c1TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c1TrafficMax.TabIndex = 46;
+            this.c1TrafficMax.TabIndex = 17;
             this.c1TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4855,7 +4856,7 @@
             0});
             this.c1TrafficMin.Name = "c1TrafficMin";
             this.c1TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c1TrafficMin.TabIndex = 45;
+            this.c1TrafficMin.TabIndex = 16;
             this.c1TrafficMin.ValueChanged += new System.EventHandler(this.c1TrafficMin_ValueChanged);
             // 
             // label20
@@ -4879,7 +4880,7 @@
             0});
             this.c1RiotMax.Name = "c1RiotMax";
             this.c1RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c1RiotMax.TabIndex = 43;
+            this.c1RiotMax.TabIndex = 14;
             this.c1RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4897,7 +4898,7 @@
             0});
             this.c1RiotMin.Name = "c1RiotMin";
             this.c1RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c1RiotMin.TabIndex = 42;
+            this.c1RiotMin.TabIndex = 13;
             this.c1RiotMin.ValueChanged += new System.EventHandler(this.c1RiotMin_ValueChanged);
             // 
             // label21
@@ -4921,7 +4922,7 @@
             0});
             this.c1RescueMax.Name = "c1RescueMax";
             this.c1RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c1RescueMax.TabIndex = 40;
+            this.c1RescueMax.TabIndex = 11;
             this.c1RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4939,7 +4940,7 @@
             0});
             this.c1RescueMin.Name = "c1RescueMin";
             this.c1RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c1RescueMin.TabIndex = 39;
+            this.c1RescueMin.TabIndex = 10;
             this.c1RescueMin.ValueChanged += new System.EventHandler(this.c1RescueMin_ValueChanged);
             // 
             // label22
@@ -4963,7 +4964,7 @@
             0});
             this.c1CrimeMax.Name = "c1CrimeMax";
             this.c1CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c1CrimeMax.TabIndex = 37;
+            this.c1CrimeMax.TabIndex = 8;
             this.c1CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -4981,7 +4982,7 @@
             0});
             this.c1CrimeMin.Name = "c1CrimeMin";
             this.c1CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c1CrimeMin.TabIndex = 36;
+            this.c1CrimeMin.TabIndex = 7;
             this.c1CrimeMin.ValueChanged += new System.EventHandler(this.c1CrimeMin_ValueChanged);
             // 
             // label23
@@ -5005,7 +5006,7 @@
             0});
             this.c1FireMax.Name = "c1FireMax";
             this.c1FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c1FireMax.TabIndex = 34;
+            this.c1FireMax.TabIndex = 5;
             this.c1FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5023,7 +5024,7 @@
             0});
             this.c1FireMin.Name = "c1FireMin";
             this.c1FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c1FireMin.TabIndex = 33;
+            this.c1FireMin.TabIndex = 4;
             this.c1FireMin.ValueChanged += new System.EventHandler(this.c1FireMin_ValueChanged);
             // 
             // label24
@@ -5047,7 +5048,7 @@
             0});
             this.c1DiffMax.Name = "c1DiffMax";
             this.c1DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c1DiffMax.TabIndex = 31;
+            this.c1DiffMax.TabIndex = 2;
             this.c1DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -5065,7 +5066,7 @@
             0});
             this.c1DiffMin.Name = "c1DiffMin";
             this.c1DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c1DiffMin.TabIndex = 30;
+            this.c1DiffMin.TabIndex = 1;
             this.c1DiffMin.ValueChanged += new System.EventHandler(this.c1DiffMin_ValueChanged);
             // 
             // label25
@@ -5075,7 +5076,7 @@
             this.label25.Location = new System.Drawing.Point(29, 24);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(87, 13);
-            this.label25.TabIndex = 29;
+            this.label25.TabIndex = 0;
             this.label25.Text = "Difficulty";
             this.toolTip.SetToolTip(this.label25, "Difficulty of missions in this city.");
             // 
@@ -5145,7 +5146,7 @@
             0});
             this.c2TransportMax.Name = "c2TransportMax";
             this.c2TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c2TransportMax.TabIndex = 103;
+            this.c2TransportMax.TabIndex = 23;
             this.c2TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5163,7 +5164,7 @@
             0});
             this.c2MedevacMax.Name = "c2MedevacMax";
             this.c2MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c2MedevacMax.TabIndex = 102;
+            this.c2MedevacMax.TabIndex = 20;
             this.c2MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5181,7 +5182,7 @@
             0});
             this.c2TransportMin.Name = "c2TransportMin";
             this.c2TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c2TransportMin.TabIndex = 101;
+            this.c2TransportMin.TabIndex = 22;
             this.c2TransportMin.ValueChanged += new System.EventHandler(this.c2TransportMin_ValueChanged);
             // 
             // c2MedevacMin
@@ -5194,7 +5195,7 @@
             0});
             this.c2MedevacMin.Name = "c2MedevacMin";
             this.c2MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c2MedevacMin.TabIndex = 100;
+            this.c2MedevacMin.TabIndex = 19;
             this.c2MedevacMin.ValueChanged += new System.EventHandler(this.c2MedevacMin_ValueChanged);
             // 
             // label338
@@ -5206,7 +5207,7 @@
             this.label338.Size = new System.Drawing.Size(119, 13);
             this.label338.TabIndex = 99;
             this.label338.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label338, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label338, "Frequency of transport missions in this city.");
             // 
             // label339
             // 
@@ -5217,7 +5218,7 @@
             this.label339.Size = new System.Drawing.Size(103, 13);
             this.label339.TabIndex = 98;
             this.label339.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label339, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label339, "Frequency of medevac missions in this city.");
             // 
             // c2TransportCheck
             // 
@@ -5227,7 +5228,7 @@
             this.c2TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c2TransportCheck.Name = "c2TransportCheck";
             this.c2TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2TransportCheck.TabIndex = 97;
+            this.c2TransportCheck.TabIndex = 21;
             this.c2TransportCheck.UseVisualStyleBackColor = true;
             this.c2TransportCheck.CheckedChanged += new System.EventHandler(this.c2TransportCheck_CheckedChanged);
             // 
@@ -5239,7 +5240,7 @@
             this.c2MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c2MedevacCheck.Name = "c2MedevacCheck";
             this.c2MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2MedevacCheck.TabIndex = 96;
+            this.c2MedevacCheck.TabIndex = 18;
             this.c2MedevacCheck.UseVisualStyleBackColor = true;
             this.c2MedevacCheck.CheckedChanged += new System.EventHandler(this.c2MedevacCheck_CheckedChanged);
             // 
@@ -5251,7 +5252,7 @@
             this.c2MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c2MoneyCheck.Name = "c2MoneyCheck";
             this.c2MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2MoneyCheck.TabIndex = 95;
+            this.c2MoneyCheck.TabIndex = 30;
             this.c2MoneyCheck.UseVisualStyleBackColor = true;
             this.c2MoneyCheck.CheckedChanged += new System.EventHandler(this.c2MoneyCheck_CheckedChanged);
             // 
@@ -5263,7 +5264,7 @@
             this.c2PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c2PointCheck.Name = "c2PointCheck";
             this.c2PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2PointCheck.TabIndex = 94;
+            this.c2PointCheck.TabIndex = 27;
             this.c2PointCheck.UseVisualStyleBackColor = true;
             this.c2PointCheck.CheckedChanged += new System.EventHandler(this.c2PointCheck_CheckedChanged);
             // 
@@ -5275,7 +5276,7 @@
             this.c2DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c2DayCheck.Name = "c2DayCheck";
             this.c2DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2DayCheck.TabIndex = 93;
+            this.c2DayCheck.TabIndex = 24;
             this.c2DayCheck.UseVisualStyleBackColor = true;
             this.c2DayCheck.CheckedChanged += new System.EventHandler(this.c2DayCheck_CheckedChanged);
             // 
@@ -5287,7 +5288,7 @@
             this.c2TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c2TrafficCheck.Name = "c2TrafficCheck";
             this.c2TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2TrafficCheck.TabIndex = 92;
+            this.c2TrafficCheck.TabIndex = 15;
             this.c2TrafficCheck.UseVisualStyleBackColor = true;
             this.c2TrafficCheck.CheckedChanged += new System.EventHandler(this.c2TrafficCheck_CheckedChanged);
             // 
@@ -5299,7 +5300,7 @@
             this.c2RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c2RiotCheck.Name = "c2RiotCheck";
             this.c2RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2RiotCheck.TabIndex = 91;
+            this.c2RiotCheck.TabIndex = 12;
             this.c2RiotCheck.UseVisualStyleBackColor = true;
             this.c2RiotCheck.CheckedChanged += new System.EventHandler(this.c2RiotCheck_CheckedChanged);
             // 
@@ -5311,7 +5312,7 @@
             this.c2RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c2RescueCheck.Name = "c2RescueCheck";
             this.c2RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2RescueCheck.TabIndex = 90;
+            this.c2RescueCheck.TabIndex = 9;
             this.c2RescueCheck.UseVisualStyleBackColor = true;
             this.c2RescueCheck.CheckedChanged += new System.EventHandler(this.c2RescueCheck_CheckedChanged);
             // 
@@ -5323,7 +5324,7 @@
             this.c2CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c2CrimeCheck.Name = "c2CrimeCheck";
             this.c2CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2CrimeCheck.TabIndex = 89;
+            this.c2CrimeCheck.TabIndex = 6;
             this.c2CrimeCheck.UseVisualStyleBackColor = true;
             this.c2CrimeCheck.CheckedChanged += new System.EventHandler(this.c2CrimeCheck_CheckedChanged);
             // 
@@ -5335,7 +5336,7 @@
             this.c2FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c2FireCheck.Name = "c2FireCheck";
             this.c2FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2FireCheck.TabIndex = 88;
+            this.c2FireCheck.TabIndex = 3;
             this.c2FireCheck.UseVisualStyleBackColor = true;
             this.c2FireCheck.CheckedChanged += new System.EventHandler(this.c2FireCheck_CheckedChanged);
             // 
@@ -5347,7 +5348,7 @@
             this.c2DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c2DiffCheck.Name = "c2DiffCheck";
             this.c2DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c2DiffCheck.TabIndex = 87;
+            this.c2DiffCheck.TabIndex = 0;
             this.c2DiffCheck.UseVisualStyleBackColor = true;
             this.c2DiffCheck.CheckedChanged += new System.EventHandler(this.c2DiffCheck_CheckedChanged);
             // 
@@ -5386,7 +5387,7 @@
             0});
             this.c2MoneyMax.Name = "c2MoneyMax";
             this.c2MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c2MoneyMax.TabIndex = 84;
+            this.c2MoneyMax.TabIndex = 32;
             this.c2MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -5409,7 +5410,7 @@
             0});
             this.c2MoneyMin.Name = "c2MoneyMin";
             this.c2MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c2MoneyMin.TabIndex = 83;
+            this.c2MoneyMin.TabIndex = 31;
             this.c2MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -5426,7 +5427,7 @@
             this.label28.Size = new System.Drawing.Size(103, 13);
             this.label28.TabIndex = 82;
             this.label28.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label28, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label28, "Amount of money given when completing this city.");
             // 
             // c2PointsMax
             // 
@@ -5443,7 +5444,7 @@
             0});
             this.c2PointsMax.Name = "c2PointsMax";
             this.c2PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c2PointsMax.TabIndex = 81;
+            this.c2PointsMax.TabIndex = 29;
             this.c2PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -5466,7 +5467,7 @@
             0});
             this.c2PointsMin.Name = "c2PointsMin";
             this.c2PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c2PointsMin.TabIndex = 80;
+            this.c2PointsMin.TabIndex = 28;
             this.c2PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -5495,7 +5496,7 @@
             0});
             this.c2DayMax.Name = "c2DayMax";
             this.c2DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c2DayMax.TabIndex = 78;
+            this.c2DayMax.TabIndex = 26;
             this.c2DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -5513,7 +5514,7 @@
             0});
             this.c2DayMin.Name = "c2DayMin";
             this.c2DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c2DayMin.TabIndex = 77;
+            this.c2DayMin.TabIndex = 25;
             this.c2DayMin.ValueChanged += new System.EventHandler(this.c2DayMin_ValueChanged);
             // 
             // label30
@@ -5537,7 +5538,7 @@
             0});
             this.c2TrafficMax.Name = "c2TrafficMax";
             this.c2TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c2TrafficMax.TabIndex = 75;
+            this.c2TrafficMax.TabIndex = 17;
             this.c2TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5555,7 +5556,7 @@
             0});
             this.c2TrafficMin.Name = "c2TrafficMin";
             this.c2TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c2TrafficMin.TabIndex = 74;
+            this.c2TrafficMin.TabIndex = 16;
             this.c2TrafficMin.ValueChanged += new System.EventHandler(this.c2TrafficMin_ValueChanged);
             // 
             // label31
@@ -5579,7 +5580,7 @@
             0});
             this.c2RiotMax.Name = "c2RiotMax";
             this.c2RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c2RiotMax.TabIndex = 72;
+            this.c2RiotMax.TabIndex = 14;
             this.c2RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5597,7 +5598,7 @@
             0});
             this.c2RiotMin.Name = "c2RiotMin";
             this.c2RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c2RiotMin.TabIndex = 71;
+            this.c2RiotMin.TabIndex = 13;
             this.c2RiotMin.ValueChanged += new System.EventHandler(this.c2RiotMin_ValueChanged);
             // 
             // label32
@@ -5621,7 +5622,7 @@
             0});
             this.c2RescueMax.Name = "c2RescueMax";
             this.c2RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c2RescueMax.TabIndex = 69;
+            this.c2RescueMax.TabIndex = 11;
             this.c2RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5639,7 +5640,7 @@
             0});
             this.c2RescueMin.Name = "c2RescueMin";
             this.c2RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c2RescueMin.TabIndex = 68;
+            this.c2RescueMin.TabIndex = 10;
             this.c2RescueMin.ValueChanged += new System.EventHandler(this.c2RescueMin_ValueChanged);
             // 
             // label33
@@ -5663,7 +5664,7 @@
             0});
             this.c2CrimeMax.Name = "c2CrimeMax";
             this.c2CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c2CrimeMax.TabIndex = 66;
+            this.c2CrimeMax.TabIndex = 8;
             this.c2CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5681,7 +5682,7 @@
             0});
             this.c2CrimeMin.Name = "c2CrimeMin";
             this.c2CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c2CrimeMin.TabIndex = 65;
+            this.c2CrimeMin.TabIndex = 7;
             this.c2CrimeMin.ValueChanged += new System.EventHandler(this.c2CrimeMin_ValueChanged);
             // 
             // label34
@@ -5705,7 +5706,7 @@
             0});
             this.c2FireMax.Name = "c2FireMax";
             this.c2FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c2FireMax.TabIndex = 63;
+            this.c2FireMax.TabIndex = 5;
             this.c2FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5723,7 +5724,7 @@
             0});
             this.c2FireMin.Name = "c2FireMin";
             this.c2FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c2FireMin.TabIndex = 62;
+            this.c2FireMin.TabIndex = 4;
             this.c2FireMin.ValueChanged += new System.EventHandler(this.c2FireMin_ValueChanged);
             // 
             // label35
@@ -5747,7 +5748,7 @@
             0});
             this.c2DiffMax.Name = "c2DiffMax";
             this.c2DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c2DiffMax.TabIndex = 60;
+            this.c2DiffMax.TabIndex = 2;
             this.c2DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -5765,7 +5766,7 @@
             0});
             this.c2DiffMin.Name = "c2DiffMin";
             this.c2DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c2DiffMin.TabIndex = 59;
+            this.c2DiffMin.TabIndex = 1;
             this.c2DiffMin.ValueChanged += new System.EventHandler(this.c2DiffMin_ValueChanged);
             // 
             // label36
@@ -5845,7 +5846,7 @@
             0});
             this.c3TransportMax.Name = "c3TransportMax";
             this.c3TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c3TransportMax.TabIndex = 103;
+            this.c3TransportMax.TabIndex = 23;
             this.c3TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5863,7 +5864,7 @@
             0});
             this.c3MedevacMax.Name = "c3MedevacMax";
             this.c3MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c3MedevacMax.TabIndex = 102;
+            this.c3MedevacMax.TabIndex = 20;
             this.c3MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -5881,7 +5882,7 @@
             0});
             this.c3TransportMin.Name = "c3TransportMin";
             this.c3TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c3TransportMin.TabIndex = 101;
+            this.c3TransportMin.TabIndex = 22;
             this.c3TransportMin.ValueChanged += new System.EventHandler(this.c3TransportMin_ValueChanged);
             // 
             // c3MedevacMin
@@ -5894,7 +5895,7 @@
             0});
             this.c3MedevacMin.Name = "c3MedevacMin";
             this.c3MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c3MedevacMin.TabIndex = 100;
+            this.c3MedevacMin.TabIndex = 19;
             this.c3MedevacMin.ValueChanged += new System.EventHandler(this.c3MedevacMin_ValueChanged);
             // 
             // label340
@@ -5906,7 +5907,7 @@
             this.label340.Size = new System.Drawing.Size(119, 13);
             this.label340.TabIndex = 99;
             this.label340.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label340, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label340, "Frequency of transport missions in this city.");
             // 
             // label341
             // 
@@ -5917,7 +5918,7 @@
             this.label341.Size = new System.Drawing.Size(103, 13);
             this.label341.TabIndex = 98;
             this.label341.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label341, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label341, "Frequency of medevac missions in this city.");
             // 
             // c3TransportCheck
             // 
@@ -5927,7 +5928,7 @@
             this.c3TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c3TransportCheck.Name = "c3TransportCheck";
             this.c3TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3TransportCheck.TabIndex = 97;
+            this.c3TransportCheck.TabIndex = 21;
             this.c3TransportCheck.UseVisualStyleBackColor = true;
             this.c3TransportCheck.CheckedChanged += new System.EventHandler(this.c3TransportCheck_CheckedChanged);
             // 
@@ -5939,7 +5940,7 @@
             this.c3MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c3MedevacCheck.Name = "c3MedevacCheck";
             this.c3MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3MedevacCheck.TabIndex = 96;
+            this.c3MedevacCheck.TabIndex = 18;
             this.c3MedevacCheck.UseVisualStyleBackColor = true;
             this.c3MedevacCheck.CheckedChanged += new System.EventHandler(this.c3MedevacCheck_CheckedChanged);
             // 
@@ -5951,7 +5952,7 @@
             this.c3MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c3MoneyCheck.Name = "c3MoneyCheck";
             this.c3MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3MoneyCheck.TabIndex = 95;
+            this.c3MoneyCheck.TabIndex = 30;
             this.c3MoneyCheck.UseVisualStyleBackColor = true;
             this.c3MoneyCheck.CheckedChanged += new System.EventHandler(this.c3MoneyCheck_CheckedChanged);
             // 
@@ -5963,7 +5964,7 @@
             this.c3PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c3PointCheck.Name = "c3PointCheck";
             this.c3PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3PointCheck.TabIndex = 94;
+            this.c3PointCheck.TabIndex = 27;
             this.c3PointCheck.UseVisualStyleBackColor = true;
             this.c3PointCheck.CheckedChanged += new System.EventHandler(this.c3PointCheck_CheckedChanged);
             // 
@@ -5975,7 +5976,7 @@
             this.c3DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c3DayCheck.Name = "c3DayCheck";
             this.c3DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3DayCheck.TabIndex = 93;
+            this.c3DayCheck.TabIndex = 24;
             this.c3DayCheck.UseVisualStyleBackColor = true;
             this.c3DayCheck.CheckedChanged += new System.EventHandler(this.c3DayCheck_CheckedChanged);
             // 
@@ -5987,7 +5988,7 @@
             this.c3TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c3TrafficCheck.Name = "c3TrafficCheck";
             this.c3TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3TrafficCheck.TabIndex = 92;
+            this.c3TrafficCheck.TabIndex = 15;
             this.c3TrafficCheck.UseVisualStyleBackColor = true;
             this.c3TrafficCheck.CheckedChanged += new System.EventHandler(this.c3TrafficCheck_CheckedChanged);
             // 
@@ -5999,7 +6000,7 @@
             this.c3RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c3RiotCheck.Name = "c3RiotCheck";
             this.c3RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3RiotCheck.TabIndex = 91;
+            this.c3RiotCheck.TabIndex = 12;
             this.c3RiotCheck.UseVisualStyleBackColor = true;
             this.c3RiotCheck.CheckedChanged += new System.EventHandler(this.c3RiotCheck_CheckedChanged);
             // 
@@ -6011,7 +6012,7 @@
             this.c3RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c3RescueCheck.Name = "c3RescueCheck";
             this.c3RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3RescueCheck.TabIndex = 90;
+            this.c3RescueCheck.TabIndex = 9;
             this.c3RescueCheck.UseVisualStyleBackColor = true;
             this.c3RescueCheck.CheckedChanged += new System.EventHandler(this.c3RescueCheck_CheckedChanged);
             // 
@@ -6023,7 +6024,7 @@
             this.c3CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c3CrimeCheck.Name = "c3CrimeCheck";
             this.c3CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3CrimeCheck.TabIndex = 89;
+            this.c3CrimeCheck.TabIndex = 6;
             this.c3CrimeCheck.UseVisualStyleBackColor = true;
             this.c3CrimeCheck.CheckedChanged += new System.EventHandler(this.c3CrimeCheck_CheckedChanged);
             // 
@@ -6035,7 +6036,7 @@
             this.c3FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c3FireCheck.Name = "c3FireCheck";
             this.c3FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3FireCheck.TabIndex = 88;
+            this.c3FireCheck.TabIndex = 3;
             this.c3FireCheck.UseVisualStyleBackColor = true;
             this.c3FireCheck.CheckedChanged += new System.EventHandler(this.c3FireCheck_CheckedChanged);
             // 
@@ -6047,7 +6048,7 @@
             this.c3DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c3DiffCheck.Name = "c3DiffCheck";
             this.c3DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c3DiffCheck.TabIndex = 87;
+            this.c3DiffCheck.TabIndex = 0;
             this.c3DiffCheck.UseVisualStyleBackColor = true;
             this.c3DiffCheck.CheckedChanged += new System.EventHandler(this.c3DiffCheck_CheckedChanged);
             // 
@@ -6086,7 +6087,7 @@
             0});
             this.c3MoneyMax.Name = "c3MoneyMax";
             this.c3MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c3MoneyMax.TabIndex = 84;
+            this.c3MoneyMax.TabIndex = 32;
             this.c3MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -6109,7 +6110,7 @@
             0});
             this.c3MoneyMin.Name = "c3MoneyMin";
             this.c3MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c3MoneyMin.TabIndex = 83;
+            this.c3MoneyMin.TabIndex = 31;
             this.c3MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -6126,7 +6127,7 @@
             this.label39.Size = new System.Drawing.Size(103, 13);
             this.label39.TabIndex = 82;
             this.label39.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label39, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label39, "Amount of money given when completing this city.");
             // 
             // c3PointsMax
             // 
@@ -6143,7 +6144,7 @@
             0});
             this.c3PointsMax.Name = "c3PointsMax";
             this.c3PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c3PointsMax.TabIndex = 81;
+            this.c3PointsMax.TabIndex = 29;
             this.c3PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -6166,7 +6167,7 @@
             0});
             this.c3PointsMin.Name = "c3PointsMin";
             this.c3PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c3PointsMin.TabIndex = 80;
+            this.c3PointsMin.TabIndex = 28;
             this.c3PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -6195,7 +6196,7 @@
             0});
             this.c3DayMax.Name = "c3DayMax";
             this.c3DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c3DayMax.TabIndex = 78;
+            this.c3DayMax.TabIndex = 26;
             this.c3DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -6213,7 +6214,7 @@
             0});
             this.c3DayMin.Name = "c3DayMin";
             this.c3DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c3DayMin.TabIndex = 77;
+            this.c3DayMin.TabIndex = 25;
             this.c3DayMin.ValueChanged += new System.EventHandler(this.c3DayMin_ValueChanged);
             // 
             // label41
@@ -6237,7 +6238,7 @@
             0});
             this.c3TrafficMax.Name = "c3TrafficMax";
             this.c3TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c3TrafficMax.TabIndex = 75;
+            this.c3TrafficMax.TabIndex = 17;
             this.c3TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6255,7 +6256,7 @@
             0});
             this.c3TrafficMin.Name = "c3TrafficMin";
             this.c3TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c3TrafficMin.TabIndex = 74;
+            this.c3TrafficMin.TabIndex = 16;
             this.c3TrafficMin.ValueChanged += new System.EventHandler(this.c3TrafficMin_ValueChanged);
             // 
             // label42
@@ -6279,7 +6280,7 @@
             0});
             this.c3RiotMax.Name = "c3RiotMax";
             this.c3RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c3RiotMax.TabIndex = 72;
+            this.c3RiotMax.TabIndex = 14;
             this.c3RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6297,7 +6298,7 @@
             0});
             this.c3RiotMin.Name = "c3RiotMin";
             this.c3RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c3RiotMin.TabIndex = 71;
+            this.c3RiotMin.TabIndex = 13;
             this.c3RiotMin.ValueChanged += new System.EventHandler(this.c3RiotMin_ValueChanged);
             // 
             // label43
@@ -6321,7 +6322,7 @@
             0});
             this.c3RescueMax.Name = "c3RescueMax";
             this.c3RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c3RescueMax.TabIndex = 69;
+            this.c3RescueMax.TabIndex = 11;
             this.c3RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6339,7 +6340,7 @@
             0});
             this.c3RescueMin.Name = "c3RescueMin";
             this.c3RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c3RescueMin.TabIndex = 68;
+            this.c3RescueMin.TabIndex = 10;
             this.c3RescueMin.ValueChanged += new System.EventHandler(this.c3RescueMin_ValueChanged);
             // 
             // label44
@@ -6363,7 +6364,7 @@
             0});
             this.c3CrimeMax.Name = "c3CrimeMax";
             this.c3CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c3CrimeMax.TabIndex = 66;
+            this.c3CrimeMax.TabIndex = 8;
             this.c3CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6381,7 +6382,7 @@
             0});
             this.c3CrimeMin.Name = "c3CrimeMin";
             this.c3CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c3CrimeMin.TabIndex = 65;
+            this.c3CrimeMin.TabIndex = 7;
             this.c3CrimeMin.ValueChanged += new System.EventHandler(this.c3CrimeMin_ValueChanged);
             // 
             // label45
@@ -6405,7 +6406,7 @@
             0});
             this.c3FireMax.Name = "c3FireMax";
             this.c3FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c3FireMax.TabIndex = 63;
+            this.c3FireMax.TabIndex = 5;
             this.c3FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6423,7 +6424,7 @@
             0});
             this.c3FireMin.Name = "c3FireMin";
             this.c3FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c3FireMin.TabIndex = 62;
+            this.c3FireMin.TabIndex = 4;
             this.c3FireMin.ValueChanged += new System.EventHandler(this.c3FireMin_ValueChanged);
             // 
             // label46
@@ -6447,7 +6448,7 @@
             0});
             this.c3DiffMax.Name = "c3DiffMax";
             this.c3DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c3DiffMax.TabIndex = 60;
+            this.c3DiffMax.TabIndex = 2;
             this.c3DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -6465,7 +6466,7 @@
             0});
             this.c3DiffMin.Name = "c3DiffMin";
             this.c3DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c3DiffMin.TabIndex = 59;
+            this.c3DiffMin.TabIndex = 1;
             this.c3DiffMin.ValueChanged += new System.EventHandler(this.c3DiffMin_ValueChanged);
             // 
             // label47
@@ -6545,7 +6546,7 @@
             0});
             this.c4TransportMax.Name = "c4TransportMax";
             this.c4TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c4TransportMax.TabIndex = 103;
+            this.c4TransportMax.TabIndex = 23;
             this.c4TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6563,7 +6564,7 @@
             0});
             this.c4MedevacMax.Name = "c4MedevacMax";
             this.c4MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c4MedevacMax.TabIndex = 102;
+            this.c4MedevacMax.TabIndex = 20;
             this.c4MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6581,7 +6582,7 @@
             0});
             this.c4TransportMin.Name = "c4TransportMin";
             this.c4TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c4TransportMin.TabIndex = 101;
+            this.c4TransportMin.TabIndex = 22;
             this.c4TransportMin.ValueChanged += new System.EventHandler(this.c4TransportMin_ValueChanged);
             // 
             // c4MedevacMin
@@ -6594,7 +6595,7 @@
             0});
             this.c4MedevacMin.Name = "c4MedevacMin";
             this.c4MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c4MedevacMin.TabIndex = 100;
+            this.c4MedevacMin.TabIndex = 19;
             this.c4MedevacMin.ValueChanged += new System.EventHandler(this.c4MedevacMin_ValueChanged);
             // 
             // label342
@@ -6606,7 +6607,7 @@
             this.label342.Size = new System.Drawing.Size(119, 13);
             this.label342.TabIndex = 99;
             this.label342.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label342, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label342, "Frequency of transport missions in this city.");
             // 
             // label343
             // 
@@ -6617,7 +6618,7 @@
             this.label343.Size = new System.Drawing.Size(103, 13);
             this.label343.TabIndex = 98;
             this.label343.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label343, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label343, "Frequency of transport missions in this city.");
             // 
             // c4TransportCheck
             // 
@@ -6627,7 +6628,7 @@
             this.c4TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c4TransportCheck.Name = "c4TransportCheck";
             this.c4TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4TransportCheck.TabIndex = 97;
+            this.c4TransportCheck.TabIndex = 21;
             this.c4TransportCheck.UseVisualStyleBackColor = true;
             this.c4TransportCheck.CheckedChanged += new System.EventHandler(this.c4TransportCheck_CheckedChanged);
             // 
@@ -6639,7 +6640,7 @@
             this.c4MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c4MedevacCheck.Name = "c4MedevacCheck";
             this.c4MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4MedevacCheck.TabIndex = 96;
+            this.c4MedevacCheck.TabIndex = 18;
             this.c4MedevacCheck.UseVisualStyleBackColor = true;
             this.c4MedevacCheck.CheckedChanged += new System.EventHandler(this.c4MedevacCheck_CheckedChanged);
             // 
@@ -6651,7 +6652,7 @@
             this.c4MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c4MoneyCheck.Name = "c4MoneyCheck";
             this.c4MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4MoneyCheck.TabIndex = 95;
+            this.c4MoneyCheck.TabIndex = 30;
             this.c4MoneyCheck.UseVisualStyleBackColor = true;
             this.c4MoneyCheck.CheckedChanged += new System.EventHandler(this.c4MoneyCheck_CheckedChanged);
             // 
@@ -6663,7 +6664,7 @@
             this.c4PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c4PointCheck.Name = "c4PointCheck";
             this.c4PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4PointCheck.TabIndex = 94;
+            this.c4PointCheck.TabIndex = 27;
             this.c4PointCheck.UseVisualStyleBackColor = true;
             this.c4PointCheck.CheckedChanged += new System.EventHandler(this.c4PointCheck_CheckedChanged);
             // 
@@ -6675,7 +6676,7 @@
             this.c4DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c4DayCheck.Name = "c4DayCheck";
             this.c4DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4DayCheck.TabIndex = 93;
+            this.c4DayCheck.TabIndex = 24;
             this.c4DayCheck.UseVisualStyleBackColor = true;
             this.c4DayCheck.CheckedChanged += new System.EventHandler(this.c4DayCheck_CheckedChanged);
             // 
@@ -6687,7 +6688,7 @@
             this.c4TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c4TrafficCheck.Name = "c4TrafficCheck";
             this.c4TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4TrafficCheck.TabIndex = 92;
+            this.c4TrafficCheck.TabIndex = 15;
             this.c4TrafficCheck.UseVisualStyleBackColor = true;
             this.c4TrafficCheck.CheckedChanged += new System.EventHandler(this.c4TrafficCheck_CheckedChanged);
             // 
@@ -6699,7 +6700,7 @@
             this.c4RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c4RiotCheck.Name = "c4RiotCheck";
             this.c4RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4RiotCheck.TabIndex = 91;
+            this.c4RiotCheck.TabIndex = 12;
             this.c4RiotCheck.UseVisualStyleBackColor = true;
             this.c4RiotCheck.CheckedChanged += new System.EventHandler(this.c4RiotCheck_CheckedChanged);
             // 
@@ -6711,7 +6712,7 @@
             this.c4RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c4RescueCheck.Name = "c4RescueCheck";
             this.c4RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4RescueCheck.TabIndex = 90;
+            this.c4RescueCheck.TabIndex = 9;
             this.c4RescueCheck.UseVisualStyleBackColor = true;
             this.c4RescueCheck.CheckedChanged += new System.EventHandler(this.c4RescueCheck_CheckedChanged);
             // 
@@ -6723,7 +6724,7 @@
             this.c4CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c4CrimeCheck.Name = "c4CrimeCheck";
             this.c4CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4CrimeCheck.TabIndex = 89;
+            this.c4CrimeCheck.TabIndex = 6;
             this.c4CrimeCheck.UseVisualStyleBackColor = true;
             this.c4CrimeCheck.CheckedChanged += new System.EventHandler(this.c4CrimeCheck_CheckedChanged);
             // 
@@ -6735,7 +6736,7 @@
             this.c4FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c4FireCheck.Name = "c4FireCheck";
             this.c4FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4FireCheck.TabIndex = 88;
+            this.c4FireCheck.TabIndex = 3;
             this.c4FireCheck.UseVisualStyleBackColor = true;
             this.c4FireCheck.CheckedChanged += new System.EventHandler(this.c4FireCheck_CheckedChanged);
             // 
@@ -6747,7 +6748,7 @@
             this.c4DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c4DiffCheck.Name = "c4DiffCheck";
             this.c4DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c4DiffCheck.TabIndex = 87;
+            this.c4DiffCheck.TabIndex = 0;
             this.c4DiffCheck.UseVisualStyleBackColor = true;
             this.c4DiffCheck.CheckedChanged += new System.EventHandler(this.c4DiffCheck_CheckedChanged);
             // 
@@ -6786,7 +6787,7 @@
             0});
             this.c4MoneyMax.Name = "c4MoneyMax";
             this.c4MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c4MoneyMax.TabIndex = 84;
+            this.c4MoneyMax.TabIndex = 32;
             this.c4MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -6809,7 +6810,7 @@
             0});
             this.c4MoneyMin.Name = "c4MoneyMin";
             this.c4MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c4MoneyMin.TabIndex = 83;
+            this.c4MoneyMin.TabIndex = 31;
             this.c4MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -6826,7 +6827,7 @@
             this.label50.Size = new System.Drawing.Size(103, 13);
             this.label50.TabIndex = 82;
             this.label50.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label50, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label50, "Amount of money given when completing this city.");
             // 
             // c4PointsMax
             // 
@@ -6843,7 +6844,7 @@
             0});
             this.c4PointsMax.Name = "c4PointsMax";
             this.c4PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c4PointsMax.TabIndex = 81;
+            this.c4PointsMax.TabIndex = 29;
             this.c4PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -6866,7 +6867,7 @@
             0});
             this.c4PointsMin.Name = "c4PointsMin";
             this.c4PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c4PointsMin.TabIndex = 80;
+            this.c4PointsMin.TabIndex = 28;
             this.c4PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -6895,7 +6896,7 @@
             0});
             this.c4DayMax.Name = "c4DayMax";
             this.c4DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c4DayMax.TabIndex = 78;
+            this.c4DayMax.TabIndex = 26;
             this.c4DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -6913,7 +6914,7 @@
             0});
             this.c4DayMin.Name = "c4DayMin";
             this.c4DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c4DayMin.TabIndex = 77;
+            this.c4DayMin.TabIndex = 25;
             this.c4DayMin.ValueChanged += new System.EventHandler(this.c4DayMin_ValueChanged);
             // 
             // label52
@@ -6937,7 +6938,7 @@
             0});
             this.c4TrafficMax.Name = "c4TrafficMax";
             this.c4TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c4TrafficMax.TabIndex = 75;
+            this.c4TrafficMax.TabIndex = 17;
             this.c4TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6955,7 +6956,7 @@
             0});
             this.c4TrafficMin.Name = "c4TrafficMin";
             this.c4TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c4TrafficMin.TabIndex = 74;
+            this.c4TrafficMin.TabIndex = 16;
             this.c4TrafficMin.ValueChanged += new System.EventHandler(this.c4TrafficMin_ValueChanged);
             // 
             // label53
@@ -6979,7 +6980,7 @@
             0});
             this.c4RiotMax.Name = "c4RiotMax";
             this.c4RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c4RiotMax.TabIndex = 72;
+            this.c4RiotMax.TabIndex = 14;
             this.c4RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -6997,7 +6998,7 @@
             0});
             this.c4RiotMin.Name = "c4RiotMin";
             this.c4RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c4RiotMin.TabIndex = 71;
+            this.c4RiotMin.TabIndex = 13;
             this.c4RiotMin.ValueChanged += new System.EventHandler(this.c4RiotMin_ValueChanged);
             // 
             // label54
@@ -7021,7 +7022,7 @@
             0});
             this.c4RescueMax.Name = "c4RescueMax";
             this.c4RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c4RescueMax.TabIndex = 69;
+            this.c4RescueMax.TabIndex = 11;
             this.c4RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7039,7 +7040,7 @@
             0});
             this.c4RescueMin.Name = "c4RescueMin";
             this.c4RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c4RescueMin.TabIndex = 68;
+            this.c4RescueMin.TabIndex = 10;
             this.c4RescueMin.ValueChanged += new System.EventHandler(this.c4RescueMin_ValueChanged);
             // 
             // label55
@@ -7063,7 +7064,7 @@
             0});
             this.c4CrimeMax.Name = "c4CrimeMax";
             this.c4CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c4CrimeMax.TabIndex = 66;
+            this.c4CrimeMax.TabIndex = 8;
             this.c4CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7081,7 +7082,7 @@
             0});
             this.c4CrimeMin.Name = "c4CrimeMin";
             this.c4CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c4CrimeMin.TabIndex = 65;
+            this.c4CrimeMin.TabIndex = 7;
             this.c4CrimeMin.ValueChanged += new System.EventHandler(this.c4CrimeMin_ValueChanged);
             // 
             // label56
@@ -7105,7 +7106,7 @@
             0});
             this.c4FireMax.Name = "c4FireMax";
             this.c4FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c4FireMax.TabIndex = 63;
+            this.c4FireMax.TabIndex = 5;
             this.c4FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7123,7 +7124,7 @@
             0});
             this.c4FireMin.Name = "c4FireMin";
             this.c4FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c4FireMin.TabIndex = 62;
+            this.c4FireMin.TabIndex = 4;
             this.c4FireMin.ValueChanged += new System.EventHandler(this.c4FireMin_ValueChanged);
             // 
             // label57
@@ -7147,7 +7148,7 @@
             0});
             this.c4DiffMax.Name = "c4DiffMax";
             this.c4DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c4DiffMax.TabIndex = 60;
+            this.c4DiffMax.TabIndex = 2;
             this.c4DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -7165,7 +7166,7 @@
             0});
             this.c4DiffMin.Name = "c4DiffMin";
             this.c4DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c4DiffMin.TabIndex = 59;
+            this.c4DiffMin.TabIndex = 1;
             this.c4DiffMin.ValueChanged += new System.EventHandler(this.c4DiffMin_ValueChanged);
             // 
             // label58
@@ -7245,7 +7246,7 @@
             0});
             this.c5TransportMax.Name = "c5TransportMax";
             this.c5TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c5TransportMax.TabIndex = 103;
+            this.c5TransportMax.TabIndex = 23;
             this.c5TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7263,7 +7264,7 @@
             0});
             this.c5MedevacMax.Name = "c5MedevacMax";
             this.c5MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c5MedevacMax.TabIndex = 102;
+            this.c5MedevacMax.TabIndex = 20;
             this.c5MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7281,7 +7282,7 @@
             0});
             this.c5TransportMin.Name = "c5TransportMin";
             this.c5TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c5TransportMin.TabIndex = 101;
+            this.c5TransportMin.TabIndex = 22;
             this.c5TransportMin.ValueChanged += new System.EventHandler(this.c5TransportMin_ValueChanged);
             // 
             // c5MedevacMin
@@ -7294,7 +7295,7 @@
             0});
             this.c5MedevacMin.Name = "c5MedevacMin";
             this.c5MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c5MedevacMin.TabIndex = 100;
+            this.c5MedevacMin.TabIndex = 19;
             this.c5MedevacMin.ValueChanged += new System.EventHandler(this.c5MedevacMin_ValueChanged);
             // 
             // label344
@@ -7306,7 +7307,7 @@
             this.label344.Size = new System.Drawing.Size(119, 13);
             this.label344.TabIndex = 99;
             this.label344.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label344, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label344, "Frequency of transport missions in this city.");
             // 
             // label345
             // 
@@ -7317,7 +7318,7 @@
             this.label345.Size = new System.Drawing.Size(103, 13);
             this.label345.TabIndex = 98;
             this.label345.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label345, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label345, "Frequency of medevac missions in this city.");
             // 
             // c5TransportCheck
             // 
@@ -7327,7 +7328,7 @@
             this.c5TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c5TransportCheck.Name = "c5TransportCheck";
             this.c5TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5TransportCheck.TabIndex = 97;
+            this.c5TransportCheck.TabIndex = 21;
             this.c5TransportCheck.UseVisualStyleBackColor = true;
             this.c5TransportCheck.CheckedChanged += new System.EventHandler(this.c5TransportCheck_CheckedChanged);
             // 
@@ -7339,7 +7340,7 @@
             this.c5MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c5MedevacCheck.Name = "c5MedevacCheck";
             this.c5MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5MedevacCheck.TabIndex = 96;
+            this.c5MedevacCheck.TabIndex = 18;
             this.c5MedevacCheck.UseVisualStyleBackColor = true;
             this.c5MedevacCheck.CheckedChanged += new System.EventHandler(this.c5MedevacCheck_CheckedChanged);
             // 
@@ -7351,7 +7352,7 @@
             this.c5MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c5MoneyCheck.Name = "c5MoneyCheck";
             this.c5MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5MoneyCheck.TabIndex = 95;
+            this.c5MoneyCheck.TabIndex = 30;
             this.c5MoneyCheck.UseVisualStyleBackColor = true;
             this.c5MoneyCheck.CheckedChanged += new System.EventHandler(this.c5MoneyCheck_CheckedChanged);
             // 
@@ -7363,7 +7364,7 @@
             this.c5PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c5PointCheck.Name = "c5PointCheck";
             this.c5PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5PointCheck.TabIndex = 94;
+            this.c5PointCheck.TabIndex = 27;
             this.c5PointCheck.UseVisualStyleBackColor = true;
             this.c5PointCheck.CheckedChanged += new System.EventHandler(this.c5PointCheck_CheckedChanged);
             // 
@@ -7375,7 +7376,7 @@
             this.c5DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c5DayCheck.Name = "c5DayCheck";
             this.c5DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5DayCheck.TabIndex = 93;
+            this.c5DayCheck.TabIndex = 24;
             this.c5DayCheck.UseVisualStyleBackColor = true;
             this.c5DayCheck.CheckedChanged += new System.EventHandler(this.c5DayCheck_CheckedChanged);
             // 
@@ -7387,7 +7388,7 @@
             this.c5TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c5TrafficCheck.Name = "c5TrafficCheck";
             this.c5TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5TrafficCheck.TabIndex = 92;
+            this.c5TrafficCheck.TabIndex = 15;
             this.c5TrafficCheck.UseVisualStyleBackColor = true;
             this.c5TrafficCheck.CheckedChanged += new System.EventHandler(this.c5TrafficCheck_CheckedChanged);
             // 
@@ -7399,7 +7400,7 @@
             this.c5RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c5RiotCheck.Name = "c5RiotCheck";
             this.c5RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5RiotCheck.TabIndex = 91;
+            this.c5RiotCheck.TabIndex = 12;
             this.c5RiotCheck.UseVisualStyleBackColor = true;
             this.c5RiotCheck.CheckedChanged += new System.EventHandler(this.c5RiotCheck_CheckedChanged);
             // 
@@ -7411,7 +7412,7 @@
             this.c5RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c5RescueCheck.Name = "c5RescueCheck";
             this.c5RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5RescueCheck.TabIndex = 90;
+            this.c5RescueCheck.TabIndex = 9;
             this.c5RescueCheck.UseVisualStyleBackColor = true;
             this.c5RescueCheck.CheckedChanged += new System.EventHandler(this.c5RescueCheck_CheckedChanged);
             // 
@@ -7423,7 +7424,7 @@
             this.c5CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c5CrimeCheck.Name = "c5CrimeCheck";
             this.c5CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5CrimeCheck.TabIndex = 89;
+            this.c5CrimeCheck.TabIndex = 6;
             this.c5CrimeCheck.UseVisualStyleBackColor = true;
             this.c5CrimeCheck.CheckedChanged += new System.EventHandler(this.c5CrimeCheck_CheckedChanged);
             // 
@@ -7435,7 +7436,7 @@
             this.c5FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c5FireCheck.Name = "c5FireCheck";
             this.c5FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5FireCheck.TabIndex = 88;
+            this.c5FireCheck.TabIndex = 3;
             this.c5FireCheck.UseVisualStyleBackColor = true;
             this.c5FireCheck.CheckedChanged += new System.EventHandler(this.c5FireCheck_CheckedChanged);
             // 
@@ -7447,7 +7448,7 @@
             this.c5DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c5DiffCheck.Name = "c5DiffCheck";
             this.c5DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c5DiffCheck.TabIndex = 87;
+            this.c5DiffCheck.TabIndex = 0;
             this.c5DiffCheck.UseVisualStyleBackColor = true;
             this.c5DiffCheck.CheckedChanged += new System.EventHandler(this.c5DiffCheck_CheckedChanged);
             // 
@@ -7486,7 +7487,7 @@
             0});
             this.c5MoneyMax.Name = "c5MoneyMax";
             this.c5MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c5MoneyMax.TabIndex = 84;
+            this.c5MoneyMax.TabIndex = 32;
             this.c5MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -7509,7 +7510,7 @@
             0});
             this.c5MoneyMin.Name = "c5MoneyMin";
             this.c5MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c5MoneyMin.TabIndex = 83;
+            this.c5MoneyMin.TabIndex = 31;
             this.c5MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -7526,7 +7527,7 @@
             this.label61.Size = new System.Drawing.Size(103, 13);
             this.label61.TabIndex = 82;
             this.label61.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label61, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label61, "Amount of money given when completing this city.");
             // 
             // c5PointsMax
             // 
@@ -7543,7 +7544,7 @@
             0});
             this.c5PointsMax.Name = "c5PointsMax";
             this.c5PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c5PointsMax.TabIndex = 81;
+            this.c5PointsMax.TabIndex = 29;
             this.c5PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -7566,7 +7567,7 @@
             0});
             this.c5PointsMin.Name = "c5PointsMin";
             this.c5PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c5PointsMin.TabIndex = 80;
+            this.c5PointsMin.TabIndex = 28;
             this.c5PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -7595,7 +7596,7 @@
             0});
             this.c5DayMax.Name = "c5DayMax";
             this.c5DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c5DayMax.TabIndex = 78;
+            this.c5DayMax.TabIndex = 26;
             this.c5DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -7613,7 +7614,7 @@
             0});
             this.c5DayMin.Name = "c5DayMin";
             this.c5DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c5DayMin.TabIndex = 77;
+            this.c5DayMin.TabIndex = 25;
             this.c5DayMin.ValueChanged += new System.EventHandler(this.c5DayMin_ValueChanged);
             // 
             // label63
@@ -7637,7 +7638,7 @@
             0});
             this.c5TrafficMax.Name = "c5TrafficMax";
             this.c5TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c5TrafficMax.TabIndex = 75;
+            this.c5TrafficMax.TabIndex = 17;
             this.c5TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7655,7 +7656,7 @@
             0});
             this.c5TrafficMin.Name = "c5TrafficMin";
             this.c5TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c5TrafficMin.TabIndex = 74;
+            this.c5TrafficMin.TabIndex = 16;
             this.c5TrafficMin.ValueChanged += new System.EventHandler(this.c5TrafficMin_ValueChanged);
             // 
             // label64
@@ -7679,7 +7680,7 @@
             0});
             this.c5RiotMax.Name = "c5RiotMax";
             this.c5RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c5RiotMax.TabIndex = 72;
+            this.c5RiotMax.TabIndex = 14;
             this.c5RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7697,7 +7698,7 @@
             0});
             this.c5RiotMin.Name = "c5RiotMin";
             this.c5RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c5RiotMin.TabIndex = 71;
+            this.c5RiotMin.TabIndex = 13;
             this.c5RiotMin.ValueChanged += new System.EventHandler(this.c5RiotMin_ValueChanged);
             // 
             // label65
@@ -7721,7 +7722,7 @@
             0});
             this.c5RescueMax.Name = "c5RescueMax";
             this.c5RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c5RescueMax.TabIndex = 69;
+            this.c5RescueMax.TabIndex = 11;
             this.c5RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7739,7 +7740,7 @@
             0});
             this.c5RescueMin.Name = "c5RescueMin";
             this.c5RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c5RescueMin.TabIndex = 68;
+            this.c5RescueMin.TabIndex = 10;
             this.c5RescueMin.ValueChanged += new System.EventHandler(this.c5RescueMin_ValueChanged);
             // 
             // label66
@@ -7763,7 +7764,7 @@
             0});
             this.c5CrimeMax.Name = "c5CrimeMax";
             this.c5CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c5CrimeMax.TabIndex = 66;
+            this.c5CrimeMax.TabIndex = 8;
             this.c5CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7781,7 +7782,7 @@
             0});
             this.c5CrimeMin.Name = "c5CrimeMin";
             this.c5CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c5CrimeMin.TabIndex = 65;
+            this.c5CrimeMin.TabIndex = 7;
             this.c5CrimeMin.ValueChanged += new System.EventHandler(this.c5CrimeMin_ValueChanged);
             // 
             // label67
@@ -7805,7 +7806,7 @@
             0});
             this.c5FireMax.Name = "c5FireMax";
             this.c5FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c5FireMax.TabIndex = 63;
+            this.c5FireMax.TabIndex = 5;
             this.c5FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7823,7 +7824,7 @@
             0});
             this.c5FireMin.Name = "c5FireMin";
             this.c5FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c5FireMin.TabIndex = 62;
+            this.c5FireMin.TabIndex = 4;
             this.c5FireMin.ValueChanged += new System.EventHandler(this.c5FireMin_ValueChanged);
             // 
             // label68
@@ -7847,7 +7848,7 @@
             0});
             this.c5DiffMax.Name = "c5DiffMax";
             this.c5DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c5DiffMax.TabIndex = 60;
+            this.c5DiffMax.TabIndex = 2;
             this.c5DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -7865,7 +7866,7 @@
             0});
             this.c5DiffMin.Name = "c5DiffMin";
             this.c5DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c5DiffMin.TabIndex = 59;
+            this.c5DiffMin.TabIndex = 1;
             this.c5DiffMin.ValueChanged += new System.EventHandler(this.c5DiffMin_ValueChanged);
             // 
             // label69
@@ -7945,7 +7946,7 @@
             0});
             this.c6TransportMax.Name = "c6TransportMax";
             this.c6TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c6TransportMax.TabIndex = 103;
+            this.c6TransportMax.TabIndex = 23;
             this.c6TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7963,7 +7964,7 @@
             0});
             this.c6MedevacMax.Name = "c6MedevacMax";
             this.c6MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c6MedevacMax.TabIndex = 102;
+            this.c6MedevacMax.TabIndex = 20;
             this.c6MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -7981,7 +7982,7 @@
             0});
             this.c6TransportMin.Name = "c6TransportMin";
             this.c6TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c6TransportMin.TabIndex = 101;
+            this.c6TransportMin.TabIndex = 22;
             this.c6TransportMin.ValueChanged += new System.EventHandler(this.c6TransportMin_ValueChanged);
             // 
             // c6MedevacMin
@@ -7994,7 +7995,7 @@
             0});
             this.c6MedevacMin.Name = "c6MedevacMin";
             this.c6MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c6MedevacMin.TabIndex = 100;
+            this.c6MedevacMin.TabIndex = 19;
             this.c6MedevacMin.ValueChanged += new System.EventHandler(this.c6MedevacMin_ValueChanged);
             // 
             // label346
@@ -8006,7 +8007,7 @@
             this.label346.Size = new System.Drawing.Size(119, 13);
             this.label346.TabIndex = 99;
             this.label346.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label346, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label346, "Frequency of transport missions in this city.");
             // 
             // label347
             // 
@@ -8017,7 +8018,7 @@
             this.label347.Size = new System.Drawing.Size(103, 13);
             this.label347.TabIndex = 98;
             this.label347.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label347, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label347, "Frequency of medevac missions in this city.");
             // 
             // c6TransportCheck
             // 
@@ -8027,7 +8028,7 @@
             this.c6TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c6TransportCheck.Name = "c6TransportCheck";
             this.c6TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6TransportCheck.TabIndex = 97;
+            this.c6TransportCheck.TabIndex = 21;
             this.c6TransportCheck.UseVisualStyleBackColor = true;
             this.c6TransportCheck.CheckedChanged += new System.EventHandler(this.c6TransportCheck_CheckedChanged);
             // 
@@ -8039,7 +8040,7 @@
             this.c6MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c6MedevacCheck.Name = "c6MedevacCheck";
             this.c6MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6MedevacCheck.TabIndex = 96;
+            this.c6MedevacCheck.TabIndex = 18;
             this.c6MedevacCheck.UseVisualStyleBackColor = true;
             this.c6MedevacCheck.CheckedChanged += new System.EventHandler(this.c6MedevacCheck_CheckedChanged);
             // 
@@ -8051,7 +8052,7 @@
             this.c6MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c6MoneyCheck.Name = "c6MoneyCheck";
             this.c6MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6MoneyCheck.TabIndex = 95;
+            this.c6MoneyCheck.TabIndex = 30;
             this.c6MoneyCheck.UseVisualStyleBackColor = true;
             this.c6MoneyCheck.CheckedChanged += new System.EventHandler(this.c6MoneyCheck_CheckedChanged);
             // 
@@ -8063,7 +8064,7 @@
             this.c6PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c6PointCheck.Name = "c6PointCheck";
             this.c6PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6PointCheck.TabIndex = 94;
+            this.c6PointCheck.TabIndex = 27;
             this.c6PointCheck.UseVisualStyleBackColor = true;
             this.c6PointCheck.CheckedChanged += new System.EventHandler(this.c6PointCheck_CheckedChanged);
             // 
@@ -8075,7 +8076,7 @@
             this.c6DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c6DayCheck.Name = "c6DayCheck";
             this.c6DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6DayCheck.TabIndex = 93;
+            this.c6DayCheck.TabIndex = 24;
             this.c6DayCheck.UseVisualStyleBackColor = true;
             this.c6DayCheck.CheckedChanged += new System.EventHandler(this.c6DayCheck_CheckedChanged);
             // 
@@ -8087,7 +8088,7 @@
             this.c6TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c6TrafficCheck.Name = "c6TrafficCheck";
             this.c6TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6TrafficCheck.TabIndex = 92;
+            this.c6TrafficCheck.TabIndex = 15;
             this.c6TrafficCheck.UseVisualStyleBackColor = true;
             this.c6TrafficCheck.CheckedChanged += new System.EventHandler(this.c6TrafficCheck_CheckedChanged);
             // 
@@ -8099,7 +8100,7 @@
             this.c6RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c6RiotCheck.Name = "c6RiotCheck";
             this.c6RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6RiotCheck.TabIndex = 91;
+            this.c6RiotCheck.TabIndex = 12;
             this.c6RiotCheck.UseVisualStyleBackColor = true;
             this.c6RiotCheck.CheckedChanged += new System.EventHandler(this.c6RiotCheck_CheckedChanged);
             // 
@@ -8111,7 +8112,7 @@
             this.c6RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c6RescueCheck.Name = "c6RescueCheck";
             this.c6RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6RescueCheck.TabIndex = 90;
+            this.c6RescueCheck.TabIndex = 9;
             this.c6RescueCheck.UseVisualStyleBackColor = true;
             this.c6RescueCheck.CheckedChanged += new System.EventHandler(this.c6RescueCheck_CheckedChanged);
             // 
@@ -8123,7 +8124,7 @@
             this.c6CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c6CrimeCheck.Name = "c6CrimeCheck";
             this.c6CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6CrimeCheck.TabIndex = 89;
+            this.c6CrimeCheck.TabIndex = 6;
             this.c6CrimeCheck.UseVisualStyleBackColor = true;
             this.c6CrimeCheck.CheckedChanged += new System.EventHandler(this.c6CrimeCheck_CheckedChanged);
             // 
@@ -8135,7 +8136,7 @@
             this.c6FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c6FireCheck.Name = "c6FireCheck";
             this.c6FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6FireCheck.TabIndex = 88;
+            this.c6FireCheck.TabIndex = 3;
             this.c6FireCheck.UseVisualStyleBackColor = true;
             this.c6FireCheck.CheckedChanged += new System.EventHandler(this.c6FireCheck_CheckedChanged);
             // 
@@ -8147,7 +8148,7 @@
             this.c6DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c6DiffCheck.Name = "c6DiffCheck";
             this.c6DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c6DiffCheck.TabIndex = 87;
+            this.c6DiffCheck.TabIndex = 0;
             this.c6DiffCheck.UseVisualStyleBackColor = true;
             this.c6DiffCheck.CheckedChanged += new System.EventHandler(this.c6DiffCheck_CheckedChanged);
             // 
@@ -8186,7 +8187,7 @@
             0});
             this.c6MoneyMax.Name = "c6MoneyMax";
             this.c6MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c6MoneyMax.TabIndex = 84;
+            this.c6MoneyMax.TabIndex = 32;
             this.c6MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -8209,7 +8210,7 @@
             0});
             this.c6MoneyMin.Name = "c6MoneyMin";
             this.c6MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c6MoneyMin.TabIndex = 83;
+            this.c6MoneyMin.TabIndex = 31;
             this.c6MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -8226,7 +8227,7 @@
             this.label72.Size = new System.Drawing.Size(103, 13);
             this.label72.TabIndex = 82;
             this.label72.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label72, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label72, "Amount of money given when completing this city.");
             // 
             // c6PointsMax
             // 
@@ -8243,7 +8244,7 @@
             0});
             this.c6PointsMax.Name = "c6PointsMax";
             this.c6PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c6PointsMax.TabIndex = 81;
+            this.c6PointsMax.TabIndex = 29;
             this.c6PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -8266,7 +8267,7 @@
             0});
             this.c6PointsMin.Name = "c6PointsMin";
             this.c6PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c6PointsMin.TabIndex = 80;
+            this.c6PointsMin.TabIndex = 28;
             this.c6PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -8295,7 +8296,7 @@
             0});
             this.c6DayMax.Name = "c6DayMax";
             this.c6DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c6DayMax.TabIndex = 78;
+            this.c6DayMax.TabIndex = 26;
             this.c6DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -8313,7 +8314,7 @@
             0});
             this.c6DayMin.Name = "c6DayMin";
             this.c6DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c6DayMin.TabIndex = 77;
+            this.c6DayMin.TabIndex = 25;
             this.c6DayMin.ValueChanged += new System.EventHandler(this.c6DayMin_ValueChanged);
             // 
             // label74
@@ -8337,7 +8338,7 @@
             0});
             this.c6TrafficMax.Name = "c6TrafficMax";
             this.c6TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c6TrafficMax.TabIndex = 75;
+            this.c6TrafficMax.TabIndex = 17;
             this.c6TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -8355,7 +8356,7 @@
             0});
             this.c6TrafficMin.Name = "c6TrafficMin";
             this.c6TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c6TrafficMin.TabIndex = 74;
+            this.c6TrafficMin.TabIndex = 16;
             this.c6TrafficMin.ValueChanged += new System.EventHandler(this.c6TrafficMin_ValueChanged);
             // 
             // label75
@@ -8379,7 +8380,7 @@
             0});
             this.c6RiotMax.Name = "c6RiotMax";
             this.c6RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c6RiotMax.TabIndex = 72;
+            this.c6RiotMax.TabIndex = 14;
             this.c6RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -8397,7 +8398,7 @@
             0});
             this.c6RiotMin.Name = "c6RiotMin";
             this.c6RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c6RiotMin.TabIndex = 71;
+            this.c6RiotMin.TabIndex = 13;
             this.c6RiotMin.ValueChanged += new System.EventHandler(this.c6RiotMin_ValueChanged);
             // 
             // label76
@@ -8421,7 +8422,7 @@
             0});
             this.c6RescueMax.Name = "c6RescueMax";
             this.c6RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c6RescueMax.TabIndex = 69;
+            this.c6RescueMax.TabIndex = 11;
             this.c6RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -8439,7 +8440,7 @@
             0});
             this.c6RescueMin.Name = "c6RescueMin";
             this.c6RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c6RescueMin.TabIndex = 68;
+            this.c6RescueMin.TabIndex = 10;
             this.c6RescueMin.ValueChanged += new System.EventHandler(this.c6RescueMin_ValueChanged);
             // 
             // label77
@@ -8463,7 +8464,7 @@
             0});
             this.c6CrimeMax.Name = "c6CrimeMax";
             this.c6CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c6CrimeMax.TabIndex = 66;
+            this.c6CrimeMax.TabIndex = 8;
             this.c6CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -8481,7 +8482,7 @@
             0});
             this.c6CrimeMin.Name = "c6CrimeMin";
             this.c6CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c6CrimeMin.TabIndex = 65;
+            this.c6CrimeMin.TabIndex = 7;
             this.c6CrimeMin.ValueChanged += new System.EventHandler(this.c6CrimeMin_ValueChanged);
             // 
             // label78
@@ -8505,7 +8506,7 @@
             0});
             this.c6FireMax.Name = "c6FireMax";
             this.c6FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c6FireMax.TabIndex = 63;
+            this.c6FireMax.TabIndex = 5;
             this.c6FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -8523,7 +8524,7 @@
             0});
             this.c6FireMin.Name = "c6FireMin";
             this.c6FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c6FireMin.TabIndex = 62;
+            this.c6FireMin.TabIndex = 4;
             this.c6FireMin.ValueChanged += new System.EventHandler(this.c6FireMin_ValueChanged);
             // 
             // label79
@@ -8547,7 +8548,7 @@
             0});
             this.c6DiffMax.Name = "c6DiffMax";
             this.c6DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c6DiffMax.TabIndex = 60;
+            this.c6DiffMax.TabIndex = 2;
             this.c6DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -8565,7 +8566,7 @@
             0});
             this.c6DiffMin.Name = "c6DiffMin";
             this.c6DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c6DiffMin.TabIndex = 59;
+            this.c6DiffMin.TabIndex = 1;
             this.c6DiffMin.ValueChanged += new System.EventHandler(this.c6DiffMin_ValueChanged);
             // 
             // label80
@@ -8645,7 +8646,7 @@
             0});
             this.c7TransportMax.Name = "c7TransportMax";
             this.c7TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c7TransportMax.TabIndex = 103;
+            this.c7TransportMax.TabIndex = 23;
             this.c7TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -8663,7 +8664,7 @@
             0});
             this.c7MedevacMax.Name = "c7MedevacMax";
             this.c7MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c7MedevacMax.TabIndex = 102;
+            this.c7MedevacMax.TabIndex = 20;
             this.c7MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -8681,7 +8682,7 @@
             0});
             this.c7TransportMin.Name = "c7TransportMin";
             this.c7TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c7TransportMin.TabIndex = 101;
+            this.c7TransportMin.TabIndex = 22;
             this.c7TransportMin.ValueChanged += new System.EventHandler(this.c7TransportMin_ValueChanged);
             // 
             // c7MedevacMin
@@ -8694,7 +8695,7 @@
             0});
             this.c7MedevacMin.Name = "c7MedevacMin";
             this.c7MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c7MedevacMin.TabIndex = 100;
+            this.c7MedevacMin.TabIndex = 19;
             this.c7MedevacMin.ValueChanged += new System.EventHandler(this.c7MedevacMin_ValueChanged);
             // 
             // label348
@@ -8706,7 +8707,7 @@
             this.label348.Size = new System.Drawing.Size(119, 13);
             this.label348.TabIndex = 99;
             this.label348.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label348, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label348, "Frequency of transport missions in this city.");
             // 
             // label349
             // 
@@ -8717,7 +8718,7 @@
             this.label349.Size = new System.Drawing.Size(103, 13);
             this.label349.TabIndex = 98;
             this.label349.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label349, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label349, "Frequency of medevac missions in this city.");
             // 
             // c7TransportCheck
             // 
@@ -8727,7 +8728,7 @@
             this.c7TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c7TransportCheck.Name = "c7TransportCheck";
             this.c7TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7TransportCheck.TabIndex = 97;
+            this.c7TransportCheck.TabIndex = 21;
             this.c7TransportCheck.UseVisualStyleBackColor = true;
             this.c7TransportCheck.CheckedChanged += new System.EventHandler(this.c7TransportCheck_CheckedChanged);
             // 
@@ -8739,7 +8740,7 @@
             this.c7MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c7MedevacCheck.Name = "c7MedevacCheck";
             this.c7MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7MedevacCheck.TabIndex = 96;
+            this.c7MedevacCheck.TabIndex = 18;
             this.c7MedevacCheck.UseVisualStyleBackColor = true;
             this.c7MedevacCheck.CheckedChanged += new System.EventHandler(this.c7MedevacCheck_CheckedChanged);
             // 
@@ -8751,7 +8752,7 @@
             this.c7MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c7MoneyCheck.Name = "c7MoneyCheck";
             this.c7MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7MoneyCheck.TabIndex = 95;
+            this.c7MoneyCheck.TabIndex = 30;
             this.c7MoneyCheck.UseVisualStyleBackColor = true;
             this.c7MoneyCheck.CheckedChanged += new System.EventHandler(this.c7MoneyCheck_CheckedChanged);
             // 
@@ -8763,7 +8764,7 @@
             this.c7PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c7PointCheck.Name = "c7PointCheck";
             this.c7PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7PointCheck.TabIndex = 94;
+            this.c7PointCheck.TabIndex = 27;
             this.c7PointCheck.UseVisualStyleBackColor = true;
             this.c7PointCheck.CheckedChanged += new System.EventHandler(this.c7PointCheck_CheckedChanged);
             // 
@@ -8775,7 +8776,7 @@
             this.c7DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c7DayCheck.Name = "c7DayCheck";
             this.c7DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7DayCheck.TabIndex = 93;
+            this.c7DayCheck.TabIndex = 24;
             this.c7DayCheck.UseVisualStyleBackColor = true;
             this.c7DayCheck.CheckedChanged += new System.EventHandler(this.c7DayCheck_CheckedChanged);
             // 
@@ -8787,7 +8788,7 @@
             this.c7TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c7TrafficCheck.Name = "c7TrafficCheck";
             this.c7TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7TrafficCheck.TabIndex = 92;
+            this.c7TrafficCheck.TabIndex = 15;
             this.c7TrafficCheck.UseVisualStyleBackColor = true;
             this.c7TrafficCheck.CheckedChanged += new System.EventHandler(this.c7TrafficCheck_CheckedChanged);
             // 
@@ -8799,7 +8800,7 @@
             this.c7RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c7RiotCheck.Name = "c7RiotCheck";
             this.c7RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7RiotCheck.TabIndex = 91;
+            this.c7RiotCheck.TabIndex = 12;
             this.c7RiotCheck.UseVisualStyleBackColor = true;
             this.c7RiotCheck.CheckedChanged += new System.EventHandler(this.c7RiotCheck_CheckedChanged);
             // 
@@ -8811,7 +8812,7 @@
             this.c7RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c7RescueCheck.Name = "c7RescueCheck";
             this.c7RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7RescueCheck.TabIndex = 90;
+            this.c7RescueCheck.TabIndex = 9;
             this.c7RescueCheck.UseVisualStyleBackColor = true;
             this.c7RescueCheck.CheckedChanged += new System.EventHandler(this.c7RescueCheck_CheckedChanged);
             // 
@@ -8823,7 +8824,7 @@
             this.c7CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c7CrimeCheck.Name = "c7CrimeCheck";
             this.c7CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7CrimeCheck.TabIndex = 89;
+            this.c7CrimeCheck.TabIndex = 6;
             this.c7CrimeCheck.UseVisualStyleBackColor = true;
             this.c7CrimeCheck.CheckedChanged += new System.EventHandler(this.c7CrimeCheck_CheckedChanged);
             // 
@@ -8835,7 +8836,7 @@
             this.c7FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c7FireCheck.Name = "c7FireCheck";
             this.c7FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7FireCheck.TabIndex = 88;
+            this.c7FireCheck.TabIndex = 3;
             this.c7FireCheck.UseVisualStyleBackColor = true;
             this.c7FireCheck.CheckedChanged += new System.EventHandler(this.c7FireCheck_CheckedChanged);
             // 
@@ -8847,7 +8848,7 @@
             this.c7DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c7DiffCheck.Name = "c7DiffCheck";
             this.c7DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c7DiffCheck.TabIndex = 87;
+            this.c7DiffCheck.TabIndex = 0;
             this.c7DiffCheck.UseVisualStyleBackColor = true;
             this.c7DiffCheck.CheckedChanged += new System.EventHandler(this.c7DiffCheck_CheckedChanged);
             // 
@@ -8886,7 +8887,7 @@
             0});
             this.c7MoneyMax.Name = "c7MoneyMax";
             this.c7MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c7MoneyMax.TabIndex = 84;
+            this.c7MoneyMax.TabIndex = 32;
             this.c7MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -8909,7 +8910,7 @@
             0});
             this.c7MoneyMin.Name = "c7MoneyMin";
             this.c7MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c7MoneyMin.TabIndex = 83;
+            this.c7MoneyMin.TabIndex = 31;
             this.c7MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -8926,7 +8927,7 @@
             this.label83.Size = new System.Drawing.Size(103, 13);
             this.label83.TabIndex = 82;
             this.label83.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label83, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label83, "Amount of money given when completing this city.");
             // 
             // c7PointsMax
             // 
@@ -8943,7 +8944,7 @@
             0});
             this.c7PointsMax.Name = "c7PointsMax";
             this.c7PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c7PointsMax.TabIndex = 81;
+            this.c7PointsMax.TabIndex = 29;
             this.c7PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -8966,7 +8967,7 @@
             0});
             this.c7PointsMin.Name = "c7PointsMin";
             this.c7PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c7PointsMin.TabIndex = 80;
+            this.c7PointsMin.TabIndex = 28;
             this.c7PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -8995,7 +8996,7 @@
             0});
             this.c7DayMax.Name = "c7DayMax";
             this.c7DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c7DayMax.TabIndex = 78;
+            this.c7DayMax.TabIndex = 26;
             this.c7DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -9013,7 +9014,7 @@
             0});
             this.c7DayMin.Name = "c7DayMin";
             this.c7DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c7DayMin.TabIndex = 77;
+            this.c7DayMin.TabIndex = 25;
             this.c7DayMin.ValueChanged += new System.EventHandler(this.c7DayMin_ValueChanged);
             // 
             // label85
@@ -9037,7 +9038,7 @@
             0});
             this.c7TrafficMax.Name = "c7TrafficMax";
             this.c7TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c7TrafficMax.TabIndex = 75;
+            this.c7TrafficMax.TabIndex = 17;
             this.c7TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9055,7 +9056,7 @@
             0});
             this.c7TrafficMin.Name = "c7TrafficMin";
             this.c7TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c7TrafficMin.TabIndex = 74;
+            this.c7TrafficMin.TabIndex = 16;
             this.c7TrafficMin.ValueChanged += new System.EventHandler(this.c7TrafficMin_ValueChanged);
             // 
             // label86
@@ -9079,7 +9080,7 @@
             0});
             this.c7RiotMax.Name = "c7RiotMax";
             this.c7RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c7RiotMax.TabIndex = 72;
+            this.c7RiotMax.TabIndex = 14;
             this.c7RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9097,7 +9098,7 @@
             0});
             this.c7RiotMin.Name = "c7RiotMin";
             this.c7RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c7RiotMin.TabIndex = 71;
+            this.c7RiotMin.TabIndex = 13;
             this.c7RiotMin.ValueChanged += new System.EventHandler(this.c7RiotMin_ValueChanged);
             // 
             // label87
@@ -9121,7 +9122,7 @@
             0});
             this.c7RescueMax.Name = "c7RescueMax";
             this.c7RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c7RescueMax.TabIndex = 69;
+            this.c7RescueMax.TabIndex = 11;
             this.c7RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9139,7 +9140,7 @@
             0});
             this.c7RescueMin.Name = "c7RescueMin";
             this.c7RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c7RescueMin.TabIndex = 68;
+            this.c7RescueMin.TabIndex = 10;
             this.c7RescueMin.ValueChanged += new System.EventHandler(this.c7RescueMin_ValueChanged);
             // 
             // label88
@@ -9163,7 +9164,7 @@
             0});
             this.c7CrimeMax.Name = "c7CrimeMax";
             this.c7CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c7CrimeMax.TabIndex = 66;
+            this.c7CrimeMax.TabIndex = 8;
             this.c7CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9181,7 +9182,7 @@
             0});
             this.c7CrimeMin.Name = "c7CrimeMin";
             this.c7CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c7CrimeMin.TabIndex = 65;
+            this.c7CrimeMin.TabIndex = 7;
             this.c7CrimeMin.ValueChanged += new System.EventHandler(this.c7CrimeMin_ValueChanged);
             // 
             // label89
@@ -9205,7 +9206,7 @@
             0});
             this.c7FireMax.Name = "c7FireMax";
             this.c7FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c7FireMax.TabIndex = 63;
+            this.c7FireMax.TabIndex = 5;
             this.c7FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9223,7 +9224,7 @@
             0});
             this.c7FireMin.Name = "c7FireMin";
             this.c7FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c7FireMin.TabIndex = 62;
+            this.c7FireMin.TabIndex = 4;
             this.c7FireMin.ValueChanged += new System.EventHandler(this.c7FireMin_ValueChanged);
             // 
             // label90
@@ -9247,7 +9248,7 @@
             0});
             this.c7DiffMax.Name = "c7DiffMax";
             this.c7DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c7DiffMax.TabIndex = 60;
+            this.c7DiffMax.TabIndex = 2;
             this.c7DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -9265,7 +9266,7 @@
             0});
             this.c7DiffMin.Name = "c7DiffMin";
             this.c7DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c7DiffMin.TabIndex = 59;
+            this.c7DiffMin.TabIndex = 1;
             this.c7DiffMin.ValueChanged += new System.EventHandler(this.c7DiffMin_ValueChanged);
             // 
             // label91
@@ -9345,7 +9346,7 @@
             0});
             this.c8TransportMax.Name = "c8TransportMax";
             this.c8TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c8TransportMax.TabIndex = 103;
+            this.c8TransportMax.TabIndex = 23;
             this.c8TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9363,7 +9364,7 @@
             0});
             this.c8MedevacMax.Name = "c8MedevacMax";
             this.c8MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c8MedevacMax.TabIndex = 102;
+            this.c8MedevacMax.TabIndex = 20;
             this.c8MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9381,7 +9382,7 @@
             0});
             this.c8TransportMin.Name = "c8TransportMin";
             this.c8TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c8TransportMin.TabIndex = 101;
+            this.c8TransportMin.TabIndex = 22;
             this.c8TransportMin.ValueChanged += new System.EventHandler(this.c8TransportMin_ValueChanged);
             // 
             // c8MedevacMin
@@ -9394,7 +9395,7 @@
             0});
             this.c8MedevacMin.Name = "c8MedevacMin";
             this.c8MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c8MedevacMin.TabIndex = 100;
+            this.c8MedevacMin.TabIndex = 19;
             this.c8MedevacMin.ValueChanged += new System.EventHandler(this.c8MedevacMin_ValueChanged);
             // 
             // label350
@@ -9406,7 +9407,7 @@
             this.label350.Size = new System.Drawing.Size(119, 13);
             this.label350.TabIndex = 99;
             this.label350.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label350, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label350, "Frequency of transport missions in this city.");
             // 
             // label351
             // 
@@ -9417,7 +9418,7 @@
             this.label351.Size = new System.Drawing.Size(103, 13);
             this.label351.TabIndex = 98;
             this.label351.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label351, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label351, "Frequency of medevac missions in this city.");
             // 
             // c8TransportCheck
             // 
@@ -9427,7 +9428,7 @@
             this.c8TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c8TransportCheck.Name = "c8TransportCheck";
             this.c8TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8TransportCheck.TabIndex = 97;
+            this.c8TransportCheck.TabIndex = 21;
             this.c8TransportCheck.UseVisualStyleBackColor = true;
             this.c8TransportCheck.CheckedChanged += new System.EventHandler(this.c8TransportCheck_CheckedChanged);
             // 
@@ -9439,7 +9440,7 @@
             this.c8MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c8MedevacCheck.Name = "c8MedevacCheck";
             this.c8MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8MedevacCheck.TabIndex = 96;
+            this.c8MedevacCheck.TabIndex = 18;
             this.c8MedevacCheck.UseVisualStyleBackColor = true;
             this.c8MedevacCheck.CheckedChanged += new System.EventHandler(this.c8MedevacCheck_CheckedChanged);
             // 
@@ -9451,7 +9452,7 @@
             this.c8MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c8MoneyCheck.Name = "c8MoneyCheck";
             this.c8MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8MoneyCheck.TabIndex = 95;
+            this.c8MoneyCheck.TabIndex = 30;
             this.c8MoneyCheck.UseVisualStyleBackColor = true;
             this.c8MoneyCheck.CheckedChanged += new System.EventHandler(this.c8MoneyCheck_CheckedChanged);
             // 
@@ -9463,7 +9464,7 @@
             this.c8PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c8PointCheck.Name = "c8PointCheck";
             this.c8PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8PointCheck.TabIndex = 94;
+            this.c8PointCheck.TabIndex = 27;
             this.c8PointCheck.UseVisualStyleBackColor = true;
             this.c8PointCheck.CheckedChanged += new System.EventHandler(this.c8PointCheck_CheckedChanged);
             // 
@@ -9475,7 +9476,7 @@
             this.c8DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c8DayCheck.Name = "c8DayCheck";
             this.c8DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8DayCheck.TabIndex = 93;
+            this.c8DayCheck.TabIndex = 24;
             this.c8DayCheck.UseVisualStyleBackColor = true;
             this.c8DayCheck.CheckedChanged += new System.EventHandler(this.c8DayCheck_CheckedChanged);
             // 
@@ -9487,7 +9488,7 @@
             this.c8TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c8TrafficCheck.Name = "c8TrafficCheck";
             this.c8TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8TrafficCheck.TabIndex = 92;
+            this.c8TrafficCheck.TabIndex = 15;
             this.c8TrafficCheck.UseVisualStyleBackColor = true;
             this.c8TrafficCheck.CheckedChanged += new System.EventHandler(this.c8TrafficCheck_CheckedChanged);
             // 
@@ -9499,7 +9500,7 @@
             this.c8RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c8RiotCheck.Name = "c8RiotCheck";
             this.c8RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8RiotCheck.TabIndex = 91;
+            this.c8RiotCheck.TabIndex = 12;
             this.c8RiotCheck.UseVisualStyleBackColor = true;
             this.c8RiotCheck.CheckedChanged += new System.EventHandler(this.c8RiotCheck_CheckedChanged);
             // 
@@ -9511,7 +9512,7 @@
             this.c8RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c8RescueCheck.Name = "c8RescueCheck";
             this.c8RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8RescueCheck.TabIndex = 90;
+            this.c8RescueCheck.TabIndex = 9;
             this.c8RescueCheck.UseVisualStyleBackColor = true;
             this.c8RescueCheck.CheckedChanged += new System.EventHandler(this.c8RescueCheck_CheckedChanged);
             // 
@@ -9523,7 +9524,7 @@
             this.c8CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c8CrimeCheck.Name = "c8CrimeCheck";
             this.c8CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8CrimeCheck.TabIndex = 89;
+            this.c8CrimeCheck.TabIndex = 6;
             this.c8CrimeCheck.UseVisualStyleBackColor = true;
             this.c8CrimeCheck.CheckedChanged += new System.EventHandler(this.c8CrimeCheck_CheckedChanged);
             // 
@@ -9535,7 +9536,7 @@
             this.c8FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c8FireCheck.Name = "c8FireCheck";
             this.c8FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8FireCheck.TabIndex = 88;
+            this.c8FireCheck.TabIndex = 3;
             this.c8FireCheck.UseVisualStyleBackColor = true;
             this.c8FireCheck.CheckedChanged += new System.EventHandler(this.c8FireCheck_CheckedChanged);
             // 
@@ -9547,7 +9548,7 @@
             this.c8DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c8DiffCheck.Name = "c8DiffCheck";
             this.c8DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c8DiffCheck.TabIndex = 87;
+            this.c8DiffCheck.TabIndex = 0;
             this.c8DiffCheck.UseVisualStyleBackColor = true;
             this.c8DiffCheck.CheckedChanged += new System.EventHandler(this.c8DiffCheck_CheckedChanged);
             // 
@@ -9586,7 +9587,7 @@
             0});
             this.c8MoneyMax.Name = "c8MoneyMax";
             this.c8MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c8MoneyMax.TabIndex = 84;
+            this.c8MoneyMax.TabIndex = 32;
             this.c8MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -9609,7 +9610,7 @@
             0});
             this.c8MoneyMin.Name = "c8MoneyMin";
             this.c8MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c8MoneyMin.TabIndex = 83;
+            this.c8MoneyMin.TabIndex = 31;
             this.c8MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -9626,7 +9627,7 @@
             this.label94.Size = new System.Drawing.Size(103, 13);
             this.label94.TabIndex = 82;
             this.label94.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label94, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label94, "Amount of money given when completing this city.");
             // 
             // c8PointsMax
             // 
@@ -9643,7 +9644,7 @@
             0});
             this.c8PointsMax.Name = "c8PointsMax";
             this.c8PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c8PointsMax.TabIndex = 81;
+            this.c8PointsMax.TabIndex = 29;
             this.c8PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -9666,7 +9667,7 @@
             0});
             this.c8PointsMin.Name = "c8PointsMin";
             this.c8PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c8PointsMin.TabIndex = 80;
+            this.c8PointsMin.TabIndex = 28;
             this.c8PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -9695,7 +9696,7 @@
             0});
             this.c8DayMax.Name = "c8DayMax";
             this.c8DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c8DayMax.TabIndex = 78;
+            this.c8DayMax.TabIndex = 26;
             this.c8DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -9713,7 +9714,7 @@
             0});
             this.c8DayMin.Name = "c8DayMin";
             this.c8DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c8DayMin.TabIndex = 77;
+            this.c8DayMin.TabIndex = 25;
             this.c8DayMin.ValueChanged += new System.EventHandler(this.c8DayMin_ValueChanged);
             // 
             // label96
@@ -9737,7 +9738,7 @@
             0});
             this.c8TrafficMax.Name = "c8TrafficMax";
             this.c8TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c8TrafficMax.TabIndex = 75;
+            this.c8TrafficMax.TabIndex = 17;
             this.c8TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9755,7 +9756,7 @@
             0});
             this.c8TrafficMin.Name = "c8TrafficMin";
             this.c8TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c8TrafficMin.TabIndex = 74;
+            this.c8TrafficMin.TabIndex = 16;
             this.c8TrafficMin.ValueChanged += new System.EventHandler(this.c8TrafficMin_ValueChanged);
             // 
             // label97
@@ -9779,7 +9780,7 @@
             0});
             this.c8RiotMax.Name = "c8RiotMax";
             this.c8RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c8RiotMax.TabIndex = 72;
+            this.c8RiotMax.TabIndex = 14;
             this.c8RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9797,7 +9798,7 @@
             0});
             this.c8RiotMin.Name = "c8RiotMin";
             this.c8RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c8RiotMin.TabIndex = 71;
+            this.c8RiotMin.TabIndex = 13;
             this.c8RiotMin.ValueChanged += new System.EventHandler(this.c8RiotMin_ValueChanged);
             // 
             // label98
@@ -9821,7 +9822,7 @@
             0});
             this.c8RescueMax.Name = "c8RescueMax";
             this.c8RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c8RescueMax.TabIndex = 69;
+            this.c8RescueMax.TabIndex = 11;
             this.c8RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9839,7 +9840,7 @@
             0});
             this.c8RescueMin.Name = "c8RescueMin";
             this.c8RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c8RescueMin.TabIndex = 68;
+            this.c8RescueMin.TabIndex = 10;
             this.c8RescueMin.ValueChanged += new System.EventHandler(this.c8RescueMin_ValueChanged);
             // 
             // label99
@@ -9863,7 +9864,7 @@
             0});
             this.c8CrimeMax.Name = "c8CrimeMax";
             this.c8CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c8CrimeMax.TabIndex = 66;
+            this.c8CrimeMax.TabIndex = 8;
             this.c8CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9881,7 +9882,7 @@
             0});
             this.c8CrimeMin.Name = "c8CrimeMin";
             this.c8CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c8CrimeMin.TabIndex = 65;
+            this.c8CrimeMin.TabIndex = 7;
             this.c8CrimeMin.ValueChanged += new System.EventHandler(this.c8CrimeMin_ValueChanged);
             // 
             // label100
@@ -9905,7 +9906,7 @@
             0});
             this.c8FireMax.Name = "c8FireMax";
             this.c8FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c8FireMax.TabIndex = 63;
+            this.c8FireMax.TabIndex = 5;
             this.c8FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -9923,7 +9924,7 @@
             0});
             this.c8FireMin.Name = "c8FireMin";
             this.c8FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c8FireMin.TabIndex = 62;
+            this.c8FireMin.TabIndex = 4;
             this.c8FireMin.ValueChanged += new System.EventHandler(this.c8FireMin_ValueChanged);
             // 
             // label101
@@ -9947,7 +9948,7 @@
             0});
             this.c8DiffMax.Name = "c8DiffMax";
             this.c8DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c8DiffMax.TabIndex = 60;
+            this.c8DiffMax.TabIndex = 2;
             this.c8DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -9965,7 +9966,7 @@
             0});
             this.c8DiffMin.Name = "c8DiffMin";
             this.c8DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c8DiffMin.TabIndex = 59;
+            this.c8DiffMin.TabIndex = 1;
             this.c8DiffMin.ValueChanged += new System.EventHandler(this.c8DiffMin_ValueChanged);
             // 
             // label102
@@ -10045,7 +10046,7 @@
             0});
             this.c9TransportMax.Name = "c9TransportMax";
             this.c9TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c9TransportMax.TabIndex = 103;
+            this.c9TransportMax.TabIndex = 23;
             this.c9TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10063,7 +10064,7 @@
             0});
             this.c9MedevacMax.Name = "c9MedevacMax";
             this.c9MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c9MedevacMax.TabIndex = 102;
+            this.c9MedevacMax.TabIndex = 20;
             this.c9MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10081,7 +10082,7 @@
             0});
             this.c9TransportMin.Name = "c9TransportMin";
             this.c9TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c9TransportMin.TabIndex = 101;
+            this.c9TransportMin.TabIndex = 22;
             this.c9TransportMin.ValueChanged += new System.EventHandler(this.c9TransportMin_ValueChanged);
             // 
             // c9MedevacMin
@@ -10094,7 +10095,7 @@
             0});
             this.c9MedevacMin.Name = "c9MedevacMin";
             this.c9MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c9MedevacMin.TabIndex = 100;
+            this.c9MedevacMin.TabIndex = 19;
             this.c9MedevacMin.ValueChanged += new System.EventHandler(this.c9MedevacMin_ValueChanged);
             // 
             // label352
@@ -10106,7 +10107,7 @@
             this.label352.Size = new System.Drawing.Size(119, 13);
             this.label352.TabIndex = 99;
             this.label352.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label352, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label352, "Frequency of transport missions in this city.");
             // 
             // label353
             // 
@@ -10117,7 +10118,7 @@
             this.label353.Size = new System.Drawing.Size(103, 13);
             this.label353.TabIndex = 98;
             this.label353.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label353, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label353, "Frequency of medevac missions in this city.");
             // 
             // c9TransportCheck
             // 
@@ -10127,7 +10128,7 @@
             this.c9TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c9TransportCheck.Name = "c9TransportCheck";
             this.c9TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9TransportCheck.TabIndex = 97;
+            this.c9TransportCheck.TabIndex = 21;
             this.c9TransportCheck.UseVisualStyleBackColor = true;
             this.c9TransportCheck.CheckedChanged += new System.EventHandler(this.c9TransportCheck_CheckedChanged);
             // 
@@ -10139,7 +10140,7 @@
             this.c9MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c9MedevacCheck.Name = "c9MedevacCheck";
             this.c9MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9MedevacCheck.TabIndex = 96;
+            this.c9MedevacCheck.TabIndex = 18;
             this.c9MedevacCheck.UseVisualStyleBackColor = true;
             this.c9MedevacCheck.CheckedChanged += new System.EventHandler(this.c9MedevacCheck_CheckedChanged);
             // 
@@ -10151,7 +10152,7 @@
             this.c9MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c9MoneyCheck.Name = "c9MoneyCheck";
             this.c9MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9MoneyCheck.TabIndex = 95;
+            this.c9MoneyCheck.TabIndex = 30;
             this.c9MoneyCheck.UseVisualStyleBackColor = true;
             this.c9MoneyCheck.CheckedChanged += new System.EventHandler(this.c9MoneyCheck_CheckedChanged);
             // 
@@ -10163,7 +10164,7 @@
             this.c9PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c9PointCheck.Name = "c9PointCheck";
             this.c9PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9PointCheck.TabIndex = 94;
+            this.c9PointCheck.TabIndex = 27;
             this.c9PointCheck.UseVisualStyleBackColor = true;
             this.c9PointCheck.CheckedChanged += new System.EventHandler(this.c9PointCheck_CheckedChanged);
             // 
@@ -10175,7 +10176,7 @@
             this.c9DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c9DayCheck.Name = "c9DayCheck";
             this.c9DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9DayCheck.TabIndex = 93;
+            this.c9DayCheck.TabIndex = 24;
             this.c9DayCheck.UseVisualStyleBackColor = true;
             this.c9DayCheck.CheckedChanged += new System.EventHandler(this.c9DayCheck_CheckedChanged);
             // 
@@ -10187,7 +10188,7 @@
             this.c9TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c9TrafficCheck.Name = "c9TrafficCheck";
             this.c9TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9TrafficCheck.TabIndex = 92;
+            this.c9TrafficCheck.TabIndex = 15;
             this.c9TrafficCheck.UseVisualStyleBackColor = true;
             this.c9TrafficCheck.CheckedChanged += new System.EventHandler(this.c9TrafficCheck_CheckedChanged);
             // 
@@ -10199,7 +10200,7 @@
             this.c9RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c9RiotCheck.Name = "c9RiotCheck";
             this.c9RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9RiotCheck.TabIndex = 91;
+            this.c9RiotCheck.TabIndex = 12;
             this.c9RiotCheck.UseVisualStyleBackColor = true;
             this.c9RiotCheck.CheckedChanged += new System.EventHandler(this.c9RiotCheck_CheckedChanged);
             // 
@@ -10211,7 +10212,7 @@
             this.c9RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c9RescueCheck.Name = "c9RescueCheck";
             this.c9RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9RescueCheck.TabIndex = 90;
+            this.c9RescueCheck.TabIndex = 9;
             this.c9RescueCheck.UseVisualStyleBackColor = true;
             this.c9RescueCheck.CheckedChanged += new System.EventHandler(this.c9RescueCheck_CheckedChanged);
             // 
@@ -10223,7 +10224,7 @@
             this.c9CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c9CrimeCheck.Name = "c9CrimeCheck";
             this.c9CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9CrimeCheck.TabIndex = 89;
+            this.c9CrimeCheck.TabIndex = 6;
             this.c9CrimeCheck.UseVisualStyleBackColor = true;
             this.c9CrimeCheck.CheckedChanged += new System.EventHandler(this.c9CrimeCheck_CheckedChanged);
             // 
@@ -10235,7 +10236,7 @@
             this.c9FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c9FireCheck.Name = "c9FireCheck";
             this.c9FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9FireCheck.TabIndex = 88;
+            this.c9FireCheck.TabIndex = 3;
             this.c9FireCheck.UseVisualStyleBackColor = true;
             this.c9FireCheck.CheckedChanged += new System.EventHandler(this.c9FireCheck_CheckedChanged);
             // 
@@ -10247,7 +10248,7 @@
             this.c9DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c9DiffCheck.Name = "c9DiffCheck";
             this.c9DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c9DiffCheck.TabIndex = 87;
+            this.c9DiffCheck.TabIndex = 0;
             this.c9DiffCheck.UseVisualStyleBackColor = true;
             this.c9DiffCheck.CheckedChanged += new System.EventHandler(this.c9DiffCheck_CheckedChanged);
             // 
@@ -10286,7 +10287,7 @@
             0});
             this.c9MoneyMax.Name = "c9MoneyMax";
             this.c9MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c9MoneyMax.TabIndex = 84;
+            this.c9MoneyMax.TabIndex = 32;
             this.c9MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -10309,7 +10310,7 @@
             0});
             this.c9MoneyMin.Name = "c9MoneyMin";
             this.c9MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c9MoneyMin.TabIndex = 83;
+            this.c9MoneyMin.TabIndex = 31;
             this.c9MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -10326,7 +10327,7 @@
             this.label105.Size = new System.Drawing.Size(103, 13);
             this.label105.TabIndex = 82;
             this.label105.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label105, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label105, "Amount of money given when completing this city.");
             // 
             // c9PointsMax
             // 
@@ -10343,7 +10344,7 @@
             0});
             this.c9PointsMax.Name = "c9PointsMax";
             this.c9PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c9PointsMax.TabIndex = 81;
+            this.c9PointsMax.TabIndex = 29;
             this.c9PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -10366,7 +10367,7 @@
             0});
             this.c9PointsMin.Name = "c9PointsMin";
             this.c9PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c9PointsMin.TabIndex = 80;
+            this.c9PointsMin.TabIndex = 28;
             this.c9PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -10395,7 +10396,7 @@
             0});
             this.c9DayMax.Name = "c9DayMax";
             this.c9DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c9DayMax.TabIndex = 78;
+            this.c9DayMax.TabIndex = 26;
             this.c9DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -10413,7 +10414,7 @@
             0});
             this.c9DayMin.Name = "c9DayMin";
             this.c9DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c9DayMin.TabIndex = 77;
+            this.c9DayMin.TabIndex = 25;
             this.c9DayMin.ValueChanged += new System.EventHandler(this.c9DayMin_ValueChanged);
             // 
             // label107
@@ -10437,7 +10438,7 @@
             0});
             this.c9TrafficMax.Name = "c9TrafficMax";
             this.c9TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c9TrafficMax.TabIndex = 75;
+            this.c9TrafficMax.TabIndex = 17;
             this.c9TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10455,7 +10456,7 @@
             0});
             this.c9TrafficMin.Name = "c9TrafficMin";
             this.c9TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c9TrafficMin.TabIndex = 74;
+            this.c9TrafficMin.TabIndex = 16;
             this.c9TrafficMin.ValueChanged += new System.EventHandler(this.c9TrafficMin_ValueChanged);
             // 
             // label108
@@ -10479,7 +10480,7 @@
             0});
             this.c9RiotMax.Name = "c9RiotMax";
             this.c9RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c9RiotMax.TabIndex = 72;
+            this.c9RiotMax.TabIndex = 14;
             this.c9RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10497,7 +10498,7 @@
             0});
             this.c9RiotMin.Name = "c9RiotMin";
             this.c9RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c9RiotMin.TabIndex = 71;
+            this.c9RiotMin.TabIndex = 13;
             this.c9RiotMin.ValueChanged += new System.EventHandler(this.c9RiotMin_ValueChanged);
             // 
             // label109
@@ -10521,7 +10522,7 @@
             0});
             this.c9RescueMax.Name = "c9RescueMax";
             this.c9RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c9RescueMax.TabIndex = 69;
+            this.c9RescueMax.TabIndex = 11;
             this.c9RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10539,7 +10540,7 @@
             0});
             this.c9RescueMin.Name = "c9RescueMin";
             this.c9RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c9RescueMin.TabIndex = 68;
+            this.c9RescueMin.TabIndex = 10;
             this.c9RescueMin.ValueChanged += new System.EventHandler(this.c9RescueMin_ValueChanged);
             // 
             // label110
@@ -10563,7 +10564,7 @@
             0});
             this.c9CrimeMax.Name = "c9CrimeMax";
             this.c9CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c9CrimeMax.TabIndex = 66;
+            this.c9CrimeMax.TabIndex = 8;
             this.c9CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10581,7 +10582,7 @@
             0});
             this.c9CrimeMin.Name = "c9CrimeMin";
             this.c9CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c9CrimeMin.TabIndex = 65;
+            this.c9CrimeMin.TabIndex = 7;
             this.c9CrimeMin.ValueChanged += new System.EventHandler(this.c9CrimeMin_ValueChanged);
             // 
             // label111
@@ -10605,7 +10606,7 @@
             0});
             this.c9FireMax.Name = "c9FireMax";
             this.c9FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c9FireMax.TabIndex = 63;
+            this.c9FireMax.TabIndex = 5;
             this.c9FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10623,7 +10624,7 @@
             0});
             this.c9FireMin.Name = "c9FireMin";
             this.c9FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c9FireMin.TabIndex = 62;
+            this.c9FireMin.TabIndex = 4;
             this.c9FireMin.ValueChanged += new System.EventHandler(this.c9FireMin_ValueChanged);
             // 
             // label112
@@ -10647,7 +10648,7 @@
             0});
             this.c9DiffMax.Name = "c9DiffMax";
             this.c9DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c9DiffMax.TabIndex = 60;
+            this.c9DiffMax.TabIndex = 2;
             this.c9DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -10665,7 +10666,7 @@
             0});
             this.c9DiffMin.Name = "c9DiffMin";
             this.c9DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c9DiffMin.TabIndex = 59;
+            this.c9DiffMin.TabIndex = 1;
             this.c9DiffMin.ValueChanged += new System.EventHandler(this.c9DiffMin_ValueChanged);
             // 
             // label113
@@ -10745,7 +10746,7 @@
             0});
             this.c10TransportMax.Name = "c10TransportMax";
             this.c10TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c10TransportMax.TabIndex = 103;
+            this.c10TransportMax.TabIndex = 23;
             this.c10TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10763,7 +10764,7 @@
             0});
             this.c10MedevacMax.Name = "c10MedevacMax";
             this.c10MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c10MedevacMax.TabIndex = 102;
+            this.c10MedevacMax.TabIndex = 20;
             this.c10MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -10781,7 +10782,7 @@
             0});
             this.c10TransportMin.Name = "c10TransportMin";
             this.c10TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c10TransportMin.TabIndex = 101;
+            this.c10TransportMin.TabIndex = 22;
             this.c10TransportMin.ValueChanged += new System.EventHandler(this.c10TransportMin_ValueChanged);
             // 
             // c10MedevacMin
@@ -10794,7 +10795,7 @@
             0});
             this.c10MedevacMin.Name = "c10MedevacMin";
             this.c10MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c10MedevacMin.TabIndex = 100;
+            this.c10MedevacMin.TabIndex = 19;
             this.c10MedevacMin.ValueChanged += new System.EventHandler(this.c10MedevacMin_ValueChanged);
             // 
             // label354
@@ -10806,7 +10807,7 @@
             this.label354.Size = new System.Drawing.Size(119, 13);
             this.label354.TabIndex = 99;
             this.label354.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label354, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label354, "Frequency of transport missions in this city.");
             // 
             // label355
             // 
@@ -10817,7 +10818,7 @@
             this.label355.Size = new System.Drawing.Size(103, 13);
             this.label355.TabIndex = 98;
             this.label355.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label355, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label355, "Frequency of medevac missions in this city.");
             // 
             // c10TransportCheck
             // 
@@ -10827,7 +10828,7 @@
             this.c10TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c10TransportCheck.Name = "c10TransportCheck";
             this.c10TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10TransportCheck.TabIndex = 97;
+            this.c10TransportCheck.TabIndex = 21;
             this.c10TransportCheck.UseVisualStyleBackColor = true;
             this.c10TransportCheck.CheckedChanged += new System.EventHandler(this.c10TransportCheck_CheckedChanged);
             // 
@@ -10839,7 +10840,7 @@
             this.c10MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c10MedevacCheck.Name = "c10MedevacCheck";
             this.c10MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10MedevacCheck.TabIndex = 96;
+            this.c10MedevacCheck.TabIndex = 18;
             this.c10MedevacCheck.UseVisualStyleBackColor = true;
             this.c10MedevacCheck.CheckedChanged += new System.EventHandler(this.c10MedevacCheck_CheckedChanged);
             // 
@@ -10851,7 +10852,7 @@
             this.c10MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c10MoneyCheck.Name = "c10MoneyCheck";
             this.c10MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10MoneyCheck.TabIndex = 95;
+            this.c10MoneyCheck.TabIndex = 30;
             this.c10MoneyCheck.UseVisualStyleBackColor = true;
             this.c10MoneyCheck.CheckedChanged += new System.EventHandler(this.c10MoneyCheck_CheckedChanged);
             // 
@@ -10863,7 +10864,7 @@
             this.c10PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c10PointCheck.Name = "c10PointCheck";
             this.c10PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10PointCheck.TabIndex = 94;
+            this.c10PointCheck.TabIndex = 27;
             this.c10PointCheck.UseVisualStyleBackColor = true;
             this.c10PointCheck.CheckedChanged += new System.EventHandler(this.c10PointCheck_CheckedChanged);
             // 
@@ -10875,7 +10876,7 @@
             this.c10DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c10DayCheck.Name = "c10DayCheck";
             this.c10DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10DayCheck.TabIndex = 93;
+            this.c10DayCheck.TabIndex = 24;
             this.c10DayCheck.UseVisualStyleBackColor = true;
             this.c10DayCheck.CheckedChanged += new System.EventHandler(this.c10DayCheck_CheckedChanged);
             // 
@@ -10887,7 +10888,7 @@
             this.c10TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c10TrafficCheck.Name = "c10TrafficCheck";
             this.c10TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10TrafficCheck.TabIndex = 92;
+            this.c10TrafficCheck.TabIndex = 15;
             this.c10TrafficCheck.UseVisualStyleBackColor = true;
             this.c10TrafficCheck.CheckedChanged += new System.EventHandler(this.c10TrafficCheck_CheckedChanged);
             // 
@@ -10899,7 +10900,7 @@
             this.c10RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c10RiotCheck.Name = "c10RiotCheck";
             this.c10RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10RiotCheck.TabIndex = 91;
+            this.c10RiotCheck.TabIndex = 12;
             this.c10RiotCheck.UseVisualStyleBackColor = true;
             this.c10RiotCheck.CheckedChanged += new System.EventHandler(this.c10RiotCheck_CheckedChanged);
             // 
@@ -10911,7 +10912,7 @@
             this.c10RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c10RescueCheck.Name = "c10RescueCheck";
             this.c10RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10RescueCheck.TabIndex = 90;
+            this.c10RescueCheck.TabIndex = 9;
             this.c10RescueCheck.UseVisualStyleBackColor = true;
             this.c10RescueCheck.CheckedChanged += new System.EventHandler(this.c10RescueCheck_CheckedChanged);
             // 
@@ -10923,7 +10924,7 @@
             this.c10CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c10CrimeCheck.Name = "c10CrimeCheck";
             this.c10CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10CrimeCheck.TabIndex = 89;
+            this.c10CrimeCheck.TabIndex = 6;
             this.c10CrimeCheck.UseVisualStyleBackColor = true;
             this.c10CrimeCheck.CheckedChanged += new System.EventHandler(this.c10CrimeCheck_CheckedChanged);
             // 
@@ -10935,7 +10936,7 @@
             this.c10FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c10FireCheck.Name = "c10FireCheck";
             this.c10FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10FireCheck.TabIndex = 88;
+            this.c10FireCheck.TabIndex = 3;
             this.c10FireCheck.UseVisualStyleBackColor = true;
             this.c10FireCheck.CheckedChanged += new System.EventHandler(this.c10FireCheck_CheckedChanged);
             // 
@@ -10947,7 +10948,7 @@
             this.c10DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c10DiffCheck.Name = "c10DiffCheck";
             this.c10DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c10DiffCheck.TabIndex = 87;
+            this.c10DiffCheck.TabIndex = 0;
             this.c10DiffCheck.UseVisualStyleBackColor = true;
             this.c10DiffCheck.CheckedChanged += new System.EventHandler(this.c10DiffCheck_CheckedChanged);
             // 
@@ -10986,7 +10987,7 @@
             0});
             this.c10MoneyMax.Name = "c10MoneyMax";
             this.c10MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c10MoneyMax.TabIndex = 84;
+            this.c10MoneyMax.TabIndex = 32;
             this.c10MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -11009,7 +11010,7 @@
             0});
             this.c10MoneyMin.Name = "c10MoneyMin";
             this.c10MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c10MoneyMin.TabIndex = 83;
+            this.c10MoneyMin.TabIndex = 31;
             this.c10MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -11026,7 +11027,7 @@
             this.label116.Size = new System.Drawing.Size(103, 13);
             this.label116.TabIndex = 82;
             this.label116.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label116, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label116, "Amount of money given when completing this city.");
             // 
             // c10PointsMax
             // 
@@ -11043,7 +11044,7 @@
             0});
             this.c10PointsMax.Name = "c10PointsMax";
             this.c10PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c10PointsMax.TabIndex = 81;
+            this.c10PointsMax.TabIndex = 29;
             this.c10PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -11066,7 +11067,7 @@
             0});
             this.c10PointsMin.Name = "c10PointsMin";
             this.c10PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c10PointsMin.TabIndex = 80;
+            this.c10PointsMin.TabIndex = 28;
             this.c10PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -11095,7 +11096,7 @@
             0});
             this.c10DayMax.Name = "c10DayMax";
             this.c10DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c10DayMax.TabIndex = 78;
+            this.c10DayMax.TabIndex = 26;
             this.c10DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -11113,7 +11114,7 @@
             0});
             this.c10DayMin.Name = "c10DayMin";
             this.c10DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c10DayMin.TabIndex = 77;
+            this.c10DayMin.TabIndex = 25;
             this.c10DayMin.ValueChanged += new System.EventHandler(this.c10DayMin_ValueChanged);
             // 
             // label118
@@ -11137,7 +11138,7 @@
             0});
             this.c10TrafficMax.Name = "c10TrafficMax";
             this.c10TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c10TrafficMax.TabIndex = 75;
+            this.c10TrafficMax.TabIndex = 17;
             this.c10TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11155,7 +11156,7 @@
             0});
             this.c10TrafficMin.Name = "c10TrafficMin";
             this.c10TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c10TrafficMin.TabIndex = 74;
+            this.c10TrafficMin.TabIndex = 16;
             this.c10TrafficMin.ValueChanged += new System.EventHandler(this.c10TrafficMin_ValueChanged);
             // 
             // label119
@@ -11179,7 +11180,7 @@
             0});
             this.c10RiotMax.Name = "c10RiotMax";
             this.c10RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c10RiotMax.TabIndex = 72;
+            this.c10RiotMax.TabIndex = 14;
             this.c10RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11197,7 +11198,7 @@
             0});
             this.c10RiotMin.Name = "c10RiotMin";
             this.c10RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c10RiotMin.TabIndex = 71;
+            this.c10RiotMin.TabIndex = 13;
             this.c10RiotMin.ValueChanged += new System.EventHandler(this.c10RiotMin_ValueChanged);
             // 
             // label120
@@ -11221,7 +11222,7 @@
             0});
             this.c10RescueMax.Name = "c10RescueMax";
             this.c10RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c10RescueMax.TabIndex = 69;
+            this.c10RescueMax.TabIndex = 11;
             this.c10RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11239,7 +11240,7 @@
             0});
             this.c10RescueMin.Name = "c10RescueMin";
             this.c10RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c10RescueMin.TabIndex = 68;
+            this.c10RescueMin.TabIndex = 10;
             this.c10RescueMin.ValueChanged += new System.EventHandler(this.c10RescueMin_ValueChanged);
             // 
             // label121
@@ -11263,7 +11264,7 @@
             0});
             this.c10CrimeMax.Name = "c10CrimeMax";
             this.c10CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c10CrimeMax.TabIndex = 66;
+            this.c10CrimeMax.TabIndex = 8;
             this.c10CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11281,7 +11282,7 @@
             0});
             this.c10CrimeMin.Name = "c10CrimeMin";
             this.c10CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c10CrimeMin.TabIndex = 65;
+            this.c10CrimeMin.TabIndex = 7;
             this.c10CrimeMin.ValueChanged += new System.EventHandler(this.c10CrimeMin_ValueChanged);
             // 
             // label122
@@ -11305,7 +11306,7 @@
             0});
             this.c10FireMax.Name = "c10FireMax";
             this.c10FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c10FireMax.TabIndex = 63;
+            this.c10FireMax.TabIndex = 5;
             this.c10FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11323,7 +11324,7 @@
             0});
             this.c10FireMin.Name = "c10FireMin";
             this.c10FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c10FireMin.TabIndex = 62;
+            this.c10FireMin.TabIndex = 4;
             this.c10FireMin.ValueChanged += new System.EventHandler(this.c10FireMin_ValueChanged);
             // 
             // label123
@@ -11347,7 +11348,7 @@
             0});
             this.c10DiffMax.Name = "c10DiffMax";
             this.c10DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c10DiffMax.TabIndex = 60;
+            this.c10DiffMax.TabIndex = 2;
             this.c10DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -11365,7 +11366,7 @@
             0});
             this.c10DiffMin.Name = "c10DiffMin";
             this.c10DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c10DiffMin.TabIndex = 59;
+            this.c10DiffMin.TabIndex = 1;
             this.c10DiffMin.ValueChanged += new System.EventHandler(this.c10DiffMin_ValueChanged);
             // 
             // label124
@@ -11445,7 +11446,7 @@
             0});
             this.c11TransportMax.Name = "c11TransportMax";
             this.c11TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c11TransportMax.TabIndex = 103;
+            this.c11TransportMax.TabIndex = 23;
             this.c11TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11463,7 +11464,7 @@
             0});
             this.c11MedevacMax.Name = "c11MedevacMax";
             this.c11MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c11MedevacMax.TabIndex = 102;
+            this.c11MedevacMax.TabIndex = 20;
             this.c11MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11481,7 +11482,7 @@
             0});
             this.c11TransportMin.Name = "c11TransportMin";
             this.c11TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c11TransportMin.TabIndex = 101;
+            this.c11TransportMin.TabIndex = 22;
             this.c11TransportMin.ValueChanged += new System.EventHandler(this.c11TransportMin_ValueChanged);
             // 
             // c11MedevacMin
@@ -11494,7 +11495,7 @@
             0});
             this.c11MedevacMin.Name = "c11MedevacMin";
             this.c11MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c11MedevacMin.TabIndex = 100;
+            this.c11MedevacMin.TabIndex = 19;
             this.c11MedevacMin.ValueChanged += new System.EventHandler(this.c11MedevacMin_ValueChanged);
             // 
             // label356
@@ -11506,7 +11507,7 @@
             this.label356.Size = new System.Drawing.Size(119, 13);
             this.label356.TabIndex = 99;
             this.label356.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label356, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label356, "Frequency of transport missions in this city.");
             // 
             // label357
             // 
@@ -11517,7 +11518,7 @@
             this.label357.Size = new System.Drawing.Size(103, 13);
             this.label357.TabIndex = 98;
             this.label357.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label357, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label357, "Frequency of medevac missions in this city.");
             // 
             // c11TransportCheck
             // 
@@ -11527,7 +11528,7 @@
             this.c11TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c11TransportCheck.Name = "c11TransportCheck";
             this.c11TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11TransportCheck.TabIndex = 97;
+            this.c11TransportCheck.TabIndex = 21;
             this.c11TransportCheck.UseVisualStyleBackColor = true;
             this.c11TransportCheck.CheckedChanged += new System.EventHandler(this.c11TransportCheck_CheckedChanged);
             // 
@@ -11539,7 +11540,7 @@
             this.c11MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c11MedevacCheck.Name = "c11MedevacCheck";
             this.c11MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11MedevacCheck.TabIndex = 96;
+            this.c11MedevacCheck.TabIndex = 18;
             this.c11MedevacCheck.UseVisualStyleBackColor = true;
             this.c11MedevacCheck.CheckedChanged += new System.EventHandler(this.c11MedevacCheck_CheckedChanged);
             // 
@@ -11551,7 +11552,7 @@
             this.c11MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c11MoneyCheck.Name = "c11MoneyCheck";
             this.c11MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11MoneyCheck.TabIndex = 95;
+            this.c11MoneyCheck.TabIndex = 30;
             this.c11MoneyCheck.UseVisualStyleBackColor = true;
             this.c11MoneyCheck.CheckedChanged += new System.EventHandler(this.c11MoneyCheck_CheckedChanged);
             // 
@@ -11563,7 +11564,7 @@
             this.c11PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c11PointCheck.Name = "c11PointCheck";
             this.c11PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11PointCheck.TabIndex = 94;
+            this.c11PointCheck.TabIndex = 27;
             this.c11PointCheck.UseVisualStyleBackColor = true;
             this.c11PointCheck.CheckedChanged += new System.EventHandler(this.c11PointCheck_CheckedChanged);
             // 
@@ -11575,7 +11576,7 @@
             this.c11DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c11DayCheck.Name = "c11DayCheck";
             this.c11DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11DayCheck.TabIndex = 93;
+            this.c11DayCheck.TabIndex = 24;
             this.c11DayCheck.UseVisualStyleBackColor = true;
             this.c11DayCheck.CheckedChanged += new System.EventHandler(this.c11DayCheck_CheckedChanged);
             // 
@@ -11587,7 +11588,7 @@
             this.c11TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c11TrafficCheck.Name = "c11TrafficCheck";
             this.c11TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11TrafficCheck.TabIndex = 92;
+            this.c11TrafficCheck.TabIndex = 15;
             this.c11TrafficCheck.UseVisualStyleBackColor = true;
             this.c11TrafficCheck.CheckedChanged += new System.EventHandler(this.c11TrafficCheck_CheckedChanged);
             // 
@@ -11599,7 +11600,7 @@
             this.c11RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c11RiotCheck.Name = "c11RiotCheck";
             this.c11RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11RiotCheck.TabIndex = 91;
+            this.c11RiotCheck.TabIndex = 12;
             this.c11RiotCheck.UseVisualStyleBackColor = true;
             this.c11RiotCheck.CheckedChanged += new System.EventHandler(this.c11RiotCheck_CheckedChanged);
             // 
@@ -11611,7 +11612,7 @@
             this.c11RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c11RescueCheck.Name = "c11RescueCheck";
             this.c11RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11RescueCheck.TabIndex = 90;
+            this.c11RescueCheck.TabIndex = 9;
             this.c11RescueCheck.UseVisualStyleBackColor = true;
             this.c11RescueCheck.CheckedChanged += new System.EventHandler(this.c11RescueCheck_CheckedChanged);
             // 
@@ -11623,7 +11624,7 @@
             this.c11CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c11CrimeCheck.Name = "c11CrimeCheck";
             this.c11CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11CrimeCheck.TabIndex = 89;
+            this.c11CrimeCheck.TabIndex = 6;
             this.c11CrimeCheck.UseVisualStyleBackColor = true;
             this.c11CrimeCheck.CheckedChanged += new System.EventHandler(this.c11CrimeCheck_CheckedChanged);
             // 
@@ -11635,7 +11636,7 @@
             this.c11FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c11FireCheck.Name = "c11FireCheck";
             this.c11FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11FireCheck.TabIndex = 88;
+            this.c11FireCheck.TabIndex = 3;
             this.c11FireCheck.UseVisualStyleBackColor = true;
             this.c11FireCheck.CheckedChanged += new System.EventHandler(this.c11FireCheck_CheckedChanged);
             // 
@@ -11647,7 +11648,7 @@
             this.c11DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c11DiffCheck.Name = "c11DiffCheck";
             this.c11DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c11DiffCheck.TabIndex = 87;
+            this.c11DiffCheck.TabIndex = 0;
             this.c11DiffCheck.UseVisualStyleBackColor = true;
             this.c11DiffCheck.CheckedChanged += new System.EventHandler(this.c11DiffCheck_CheckedChanged);
             // 
@@ -11686,7 +11687,7 @@
             0});
             this.c11MoneyMax.Name = "c11MoneyMax";
             this.c11MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c11MoneyMax.TabIndex = 84;
+            this.c11MoneyMax.TabIndex = 32;
             this.c11MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -11709,7 +11710,7 @@
             0});
             this.c11MoneyMin.Name = "c11MoneyMin";
             this.c11MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c11MoneyMin.TabIndex = 83;
+            this.c11MoneyMin.TabIndex = 31;
             this.c11MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -11726,7 +11727,7 @@
             this.label127.Size = new System.Drawing.Size(103, 13);
             this.label127.TabIndex = 82;
             this.label127.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label127, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label127, "Amount of money given when completing this city.");
             // 
             // c11PointsMax
             // 
@@ -11743,7 +11744,7 @@
             0});
             this.c11PointsMax.Name = "c11PointsMax";
             this.c11PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c11PointsMax.TabIndex = 81;
+            this.c11PointsMax.TabIndex = 29;
             this.c11PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -11766,7 +11767,7 @@
             0});
             this.c11PointsMin.Name = "c11PointsMin";
             this.c11PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c11PointsMin.TabIndex = 80;
+            this.c11PointsMin.TabIndex = 28;
             this.c11PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -11795,7 +11796,7 @@
             0});
             this.c11DayMax.Name = "c11DayMax";
             this.c11DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c11DayMax.TabIndex = 78;
+            this.c11DayMax.TabIndex = 26;
             this.c11DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -11813,7 +11814,7 @@
             0});
             this.c11DayMin.Name = "c11DayMin";
             this.c11DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c11DayMin.TabIndex = 77;
+            this.c11DayMin.TabIndex = 25;
             this.c11DayMin.ValueChanged += new System.EventHandler(this.c11DayMin_ValueChanged);
             // 
             // label129
@@ -11837,7 +11838,7 @@
             0});
             this.c11TrafficMax.Name = "c11TrafficMax";
             this.c11TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c11TrafficMax.TabIndex = 75;
+            this.c11TrafficMax.TabIndex = 17;
             this.c11TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11855,7 +11856,7 @@
             0});
             this.c11TrafficMin.Name = "c11TrafficMin";
             this.c11TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c11TrafficMin.TabIndex = 74;
+            this.c11TrafficMin.TabIndex = 16;
             this.c11TrafficMin.ValueChanged += new System.EventHandler(this.c11TrafficMin_ValueChanged);
             // 
             // label130
@@ -11879,7 +11880,7 @@
             0});
             this.c11RiotMax.Name = "c11RiotMax";
             this.c11RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c11RiotMax.TabIndex = 72;
+            this.c11RiotMax.TabIndex = 14;
             this.c11RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11897,7 +11898,7 @@
             0});
             this.c11RiotMin.Name = "c11RiotMin";
             this.c11RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c11RiotMin.TabIndex = 71;
+            this.c11RiotMin.TabIndex = 13;
             this.c11RiotMin.ValueChanged += new System.EventHandler(this.c11RiotMin_ValueChanged);
             // 
             // label131
@@ -11921,7 +11922,7 @@
             0});
             this.c11RescueMax.Name = "c11RescueMax";
             this.c11RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c11RescueMax.TabIndex = 69;
+            this.c11RescueMax.TabIndex = 11;
             this.c11RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11939,7 +11940,7 @@
             0});
             this.c11RescueMin.Name = "c11RescueMin";
             this.c11RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c11RescueMin.TabIndex = 68;
+            this.c11RescueMin.TabIndex = 10;
             this.c11RescueMin.ValueChanged += new System.EventHandler(this.c11RescueMin_ValueChanged);
             // 
             // label132
@@ -11963,7 +11964,7 @@
             0});
             this.c11CrimeMax.Name = "c11CrimeMax";
             this.c11CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c11CrimeMax.TabIndex = 66;
+            this.c11CrimeMax.TabIndex = 8;
             this.c11CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -11981,7 +11982,7 @@
             0});
             this.c11CrimeMin.Name = "c11CrimeMin";
             this.c11CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c11CrimeMin.TabIndex = 65;
+            this.c11CrimeMin.TabIndex = 7;
             this.c11CrimeMin.ValueChanged += new System.EventHandler(this.c11CrimeMin_ValueChanged);
             // 
             // label133
@@ -12005,7 +12006,7 @@
             0});
             this.c11FireMax.Name = "c11FireMax";
             this.c11FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c11FireMax.TabIndex = 63;
+            this.c11FireMax.TabIndex = 5;
             this.c11FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12023,7 +12024,7 @@
             0});
             this.c11FireMin.Name = "c11FireMin";
             this.c11FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c11FireMin.TabIndex = 62;
+            this.c11FireMin.TabIndex = 4;
             this.c11FireMin.ValueChanged += new System.EventHandler(this.c11FireMin_ValueChanged);
             // 
             // label134
@@ -12047,7 +12048,7 @@
             0});
             this.c11DiffMax.Name = "c11DiffMax";
             this.c11DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c11DiffMax.TabIndex = 60;
+            this.c11DiffMax.TabIndex = 2;
             this.c11DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -12065,7 +12066,7 @@
             0});
             this.c11DiffMin.Name = "c11DiffMin";
             this.c11DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c11DiffMin.TabIndex = 59;
+            this.c11DiffMin.TabIndex = 1;
             this.c11DiffMin.ValueChanged += new System.EventHandler(this.c11DiffMin_ValueChanged);
             // 
             // label135
@@ -12145,7 +12146,7 @@
             0});
             this.c12TransportMax.Name = "c12TransportMax";
             this.c12TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c12TransportMax.TabIndex = 103;
+            this.c12TransportMax.TabIndex = 23;
             this.c12TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12163,7 +12164,7 @@
             0});
             this.c12MedevacMax.Name = "c12MedevacMax";
             this.c12MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c12MedevacMax.TabIndex = 102;
+            this.c12MedevacMax.TabIndex = 20;
             this.c12MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12181,7 +12182,7 @@
             0});
             this.c12TransportMin.Name = "c12TransportMin";
             this.c12TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c12TransportMin.TabIndex = 101;
+            this.c12TransportMin.TabIndex = 22;
             this.c12TransportMin.ValueChanged += new System.EventHandler(this.c12TransportMin_ValueChanged);
             // 
             // c12MedevacMin
@@ -12194,7 +12195,7 @@
             0});
             this.c12MedevacMin.Name = "c12MedevacMin";
             this.c12MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c12MedevacMin.TabIndex = 100;
+            this.c12MedevacMin.TabIndex = 19;
             this.c12MedevacMin.ValueChanged += new System.EventHandler(this.c12MedevacMin_ValueChanged);
             // 
             // label358
@@ -12206,7 +12207,7 @@
             this.label358.Size = new System.Drawing.Size(119, 13);
             this.label358.TabIndex = 99;
             this.label358.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label358, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label358, "Frequency of transport missions in this city.");
             // 
             // label359
             // 
@@ -12217,7 +12218,7 @@
             this.label359.Size = new System.Drawing.Size(103, 13);
             this.label359.TabIndex = 98;
             this.label359.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label359, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label359, "Frequency of medevac missions in this city.");
             // 
             // c12TransportCheck
             // 
@@ -12227,7 +12228,7 @@
             this.c12TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c12TransportCheck.Name = "c12TransportCheck";
             this.c12TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12TransportCheck.TabIndex = 97;
+            this.c12TransportCheck.TabIndex = 21;
             this.c12TransportCheck.UseVisualStyleBackColor = true;
             this.c12TransportCheck.CheckedChanged += new System.EventHandler(this.c12TransportCheck_CheckedChanged);
             // 
@@ -12239,7 +12240,7 @@
             this.c12MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c12MedevacCheck.Name = "c12MedevacCheck";
             this.c12MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12MedevacCheck.TabIndex = 96;
+            this.c12MedevacCheck.TabIndex = 18;
             this.c12MedevacCheck.UseVisualStyleBackColor = true;
             this.c12MedevacCheck.CheckedChanged += new System.EventHandler(this.c12MedevacCheck_CheckedChanged);
             // 
@@ -12251,7 +12252,7 @@
             this.c12MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c12MoneyCheck.Name = "c12MoneyCheck";
             this.c12MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12MoneyCheck.TabIndex = 95;
+            this.c12MoneyCheck.TabIndex = 30;
             this.c12MoneyCheck.UseVisualStyleBackColor = true;
             this.c12MoneyCheck.CheckedChanged += new System.EventHandler(this.c12MoneyCheck_CheckedChanged);
             // 
@@ -12263,7 +12264,7 @@
             this.c12PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c12PointCheck.Name = "c12PointCheck";
             this.c12PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12PointCheck.TabIndex = 94;
+            this.c12PointCheck.TabIndex = 27;
             this.c12PointCheck.UseVisualStyleBackColor = true;
             this.c12PointCheck.CheckedChanged += new System.EventHandler(this.c12PointCheck_CheckedChanged);
             // 
@@ -12275,7 +12276,7 @@
             this.c12DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c12DayCheck.Name = "c12DayCheck";
             this.c12DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12DayCheck.TabIndex = 93;
+            this.c12DayCheck.TabIndex = 24;
             this.c12DayCheck.UseVisualStyleBackColor = true;
             this.c12DayCheck.CheckedChanged += new System.EventHandler(this.c12DayCheck_CheckedChanged);
             // 
@@ -12287,7 +12288,7 @@
             this.c12TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c12TrafficCheck.Name = "c12TrafficCheck";
             this.c12TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12TrafficCheck.TabIndex = 92;
+            this.c12TrafficCheck.TabIndex = 15;
             this.c12TrafficCheck.UseVisualStyleBackColor = true;
             this.c12TrafficCheck.CheckedChanged += new System.EventHandler(this.c12TrafficCheck_CheckedChanged);
             // 
@@ -12299,7 +12300,7 @@
             this.c12RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c12RiotCheck.Name = "c12RiotCheck";
             this.c12RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12RiotCheck.TabIndex = 91;
+            this.c12RiotCheck.TabIndex = 12;
             this.c12RiotCheck.UseVisualStyleBackColor = true;
             this.c12RiotCheck.CheckedChanged += new System.EventHandler(this.c12RiotCheck_CheckedChanged);
             // 
@@ -12311,7 +12312,7 @@
             this.c12RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c12RescueCheck.Name = "c12RescueCheck";
             this.c12RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12RescueCheck.TabIndex = 90;
+            this.c12RescueCheck.TabIndex = 9;
             this.c12RescueCheck.UseVisualStyleBackColor = true;
             this.c12RescueCheck.CheckedChanged += new System.EventHandler(this.c12RescueCheck_CheckedChanged);
             // 
@@ -12323,7 +12324,7 @@
             this.c12CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c12CrimeCheck.Name = "c12CrimeCheck";
             this.c12CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12CrimeCheck.TabIndex = 89;
+            this.c12CrimeCheck.TabIndex = 6;
             this.c12CrimeCheck.UseVisualStyleBackColor = true;
             this.c12CrimeCheck.CheckedChanged += new System.EventHandler(this.c12CrimeCheck_CheckedChanged);
             // 
@@ -12335,7 +12336,7 @@
             this.c12FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c12FireCheck.Name = "c12FireCheck";
             this.c12FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12FireCheck.TabIndex = 88;
+            this.c12FireCheck.TabIndex = 3;
             this.c12FireCheck.UseVisualStyleBackColor = true;
             this.c12FireCheck.CheckedChanged += new System.EventHandler(this.c12FireCheck_CheckedChanged);
             // 
@@ -12347,7 +12348,7 @@
             this.c12DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c12DiffCheck.Name = "c12DiffCheck";
             this.c12DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c12DiffCheck.TabIndex = 87;
+            this.c12DiffCheck.TabIndex = 0;
             this.c12DiffCheck.UseVisualStyleBackColor = true;
             this.c12DiffCheck.CheckedChanged += new System.EventHandler(this.c12DiffCheck_CheckedChanged);
             // 
@@ -12386,7 +12387,7 @@
             0});
             this.c12MoneyMax.Name = "c12MoneyMax";
             this.c12MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c12MoneyMax.TabIndex = 84;
+            this.c12MoneyMax.TabIndex = 32;
             this.c12MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -12409,7 +12410,7 @@
             0});
             this.c12MoneyMin.Name = "c12MoneyMin";
             this.c12MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c12MoneyMin.TabIndex = 83;
+            this.c12MoneyMin.TabIndex = 31;
             this.c12MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -12426,7 +12427,7 @@
             this.label138.Size = new System.Drawing.Size(103, 13);
             this.label138.TabIndex = 82;
             this.label138.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label138, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label138, "Amount of money given when completing this city.");
             // 
             // c12PointsMax
             // 
@@ -12443,7 +12444,7 @@
             0});
             this.c12PointsMax.Name = "c12PointsMax";
             this.c12PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c12PointsMax.TabIndex = 81;
+            this.c12PointsMax.TabIndex = 29;
             this.c12PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -12466,7 +12467,7 @@
             0});
             this.c12PointsMin.Name = "c12PointsMin";
             this.c12PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c12PointsMin.TabIndex = 80;
+            this.c12PointsMin.TabIndex = 28;
             this.c12PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -12495,7 +12496,7 @@
             0});
             this.c12DayMax.Name = "c12DayMax";
             this.c12DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c12DayMax.TabIndex = 78;
+            this.c12DayMax.TabIndex = 26;
             this.c12DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -12513,7 +12514,7 @@
             0});
             this.c12DayMin.Name = "c12DayMin";
             this.c12DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c12DayMin.TabIndex = 77;
+            this.c12DayMin.TabIndex = 25;
             this.c12DayMin.ValueChanged += new System.EventHandler(this.c12DayMin_ValueChanged);
             // 
             // label140
@@ -12537,7 +12538,7 @@
             0});
             this.c12TrafficMax.Name = "c12TrafficMax";
             this.c12TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c12TrafficMax.TabIndex = 75;
+            this.c12TrafficMax.TabIndex = 17;
             this.c12TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12555,7 +12556,7 @@
             0});
             this.c12TrafficMin.Name = "c12TrafficMin";
             this.c12TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c12TrafficMin.TabIndex = 74;
+            this.c12TrafficMin.TabIndex = 16;
             this.c12TrafficMin.ValueChanged += new System.EventHandler(this.c12TrafficMin_ValueChanged);
             // 
             // label141
@@ -12579,7 +12580,7 @@
             0});
             this.c12RiotMax.Name = "c12RiotMax";
             this.c12RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c12RiotMax.TabIndex = 72;
+            this.c12RiotMax.TabIndex = 14;
             this.c12RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12597,7 +12598,7 @@
             0});
             this.c12RiotMin.Name = "c12RiotMin";
             this.c12RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c12RiotMin.TabIndex = 71;
+            this.c12RiotMin.TabIndex = 13;
             this.c12RiotMin.ValueChanged += new System.EventHandler(this.c12RiotMin_ValueChanged);
             // 
             // label142
@@ -12621,7 +12622,7 @@
             0});
             this.c12RescueMax.Name = "c12RescueMax";
             this.c12RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c12RescueMax.TabIndex = 69;
+            this.c12RescueMax.TabIndex = 11;
             this.c12RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12639,7 +12640,7 @@
             0});
             this.c12RescueMin.Name = "c12RescueMin";
             this.c12RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c12RescueMin.TabIndex = 68;
+            this.c12RescueMin.TabIndex = 10;
             this.c12RescueMin.ValueChanged += new System.EventHandler(this.c12RescueMin_ValueChanged);
             // 
             // label143
@@ -12663,7 +12664,7 @@
             0});
             this.c12CrimeMax.Name = "c12CrimeMax";
             this.c12CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c12CrimeMax.TabIndex = 66;
+            this.c12CrimeMax.TabIndex = 8;
             this.c12CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12681,7 +12682,7 @@
             0});
             this.c12CrimeMin.Name = "c12CrimeMin";
             this.c12CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c12CrimeMin.TabIndex = 65;
+            this.c12CrimeMin.TabIndex = 7;
             this.c12CrimeMin.ValueChanged += new System.EventHandler(this.c12CrimeMin_ValueChanged);
             // 
             // label144
@@ -12705,7 +12706,7 @@
             0});
             this.c12FireMax.Name = "c12FireMax";
             this.c12FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c12FireMax.TabIndex = 63;
+            this.c12FireMax.TabIndex = 5;
             this.c12FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12723,7 +12724,7 @@
             0});
             this.c12FireMin.Name = "c12FireMin";
             this.c12FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c12FireMin.TabIndex = 62;
+            this.c12FireMin.TabIndex = 4;
             this.c12FireMin.ValueChanged += new System.EventHandler(this.c12FireMin_ValueChanged);
             // 
             // label145
@@ -12747,7 +12748,7 @@
             0});
             this.c12DiffMax.Name = "c12DiffMax";
             this.c12DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c12DiffMax.TabIndex = 60;
+            this.c12DiffMax.TabIndex = 2;
             this.c12DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -12765,7 +12766,7 @@
             0});
             this.c12DiffMin.Name = "c12DiffMin";
             this.c12DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c12DiffMin.TabIndex = 59;
+            this.c12DiffMin.TabIndex = 1;
             this.c12DiffMin.ValueChanged += new System.EventHandler(this.c12DiffMin_ValueChanged);
             // 
             // label146
@@ -12845,7 +12846,7 @@
             0});
             this.c13TransportMax.Name = "c13TransportMax";
             this.c13TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c13TransportMax.TabIndex = 103;
+            this.c13TransportMax.TabIndex = 23;
             this.c13TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12863,7 +12864,7 @@
             0});
             this.c13MedevacMax.Name = "c13MedevacMax";
             this.c13MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c13MedevacMax.TabIndex = 102;
+            this.c13MedevacMax.TabIndex = 20;
             this.c13MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -12881,7 +12882,7 @@
             0});
             this.c13TransportMin.Name = "c13TransportMin";
             this.c13TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c13TransportMin.TabIndex = 101;
+            this.c13TransportMin.TabIndex = 22;
             this.c13TransportMin.ValueChanged += new System.EventHandler(this.c13TransportMin_ValueChanged);
             // 
             // c13MedevacMin
@@ -12894,7 +12895,7 @@
             0});
             this.c13MedevacMin.Name = "c13MedevacMin";
             this.c13MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c13MedevacMin.TabIndex = 100;
+            this.c13MedevacMin.TabIndex = 19;
             this.c13MedevacMin.ValueChanged += new System.EventHandler(this.c13MedevacMin_ValueChanged);
             // 
             // label360
@@ -12906,7 +12907,7 @@
             this.label360.Size = new System.Drawing.Size(119, 13);
             this.label360.TabIndex = 99;
             this.label360.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label360, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label360, "Frequency of transport missions in this city.");
             // 
             // label361
             // 
@@ -12917,7 +12918,7 @@
             this.label361.Size = new System.Drawing.Size(103, 13);
             this.label361.TabIndex = 98;
             this.label361.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label361, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label361, "Frequency of medevac missions in this city.");
             // 
             // c13TransportCheck
             // 
@@ -12927,7 +12928,7 @@
             this.c13TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c13TransportCheck.Name = "c13TransportCheck";
             this.c13TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13TransportCheck.TabIndex = 97;
+            this.c13TransportCheck.TabIndex = 21;
             this.c13TransportCheck.UseVisualStyleBackColor = true;
             this.c13TransportCheck.CheckedChanged += new System.EventHandler(this.c13TransportCheck_CheckedChanged);
             // 
@@ -12939,7 +12940,7 @@
             this.c13MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c13MedevacCheck.Name = "c13MedevacCheck";
             this.c13MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13MedevacCheck.TabIndex = 96;
+            this.c13MedevacCheck.TabIndex = 18;
             this.c13MedevacCheck.UseVisualStyleBackColor = true;
             this.c13MedevacCheck.CheckedChanged += new System.EventHandler(this.c13MedevacCheck_CheckedChanged);
             // 
@@ -12951,7 +12952,7 @@
             this.c13MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c13MoneyCheck.Name = "c13MoneyCheck";
             this.c13MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13MoneyCheck.TabIndex = 95;
+            this.c13MoneyCheck.TabIndex = 30;
             this.c13MoneyCheck.UseVisualStyleBackColor = true;
             this.c13MoneyCheck.CheckedChanged += new System.EventHandler(this.c13MoneyCheck_CheckedChanged);
             // 
@@ -12963,7 +12964,7 @@
             this.c13PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c13PointCheck.Name = "c13PointCheck";
             this.c13PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13PointCheck.TabIndex = 94;
+            this.c13PointCheck.TabIndex = 27;
             this.c13PointCheck.UseVisualStyleBackColor = true;
             this.c13PointCheck.CheckedChanged += new System.EventHandler(this.c13PointCheck_CheckedChanged);
             // 
@@ -12975,7 +12976,7 @@
             this.c13DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c13DayCheck.Name = "c13DayCheck";
             this.c13DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13DayCheck.TabIndex = 93;
+            this.c13DayCheck.TabIndex = 24;
             this.c13DayCheck.UseVisualStyleBackColor = true;
             this.c13DayCheck.CheckedChanged += new System.EventHandler(this.c13DayCheck_CheckedChanged);
             // 
@@ -12987,7 +12988,7 @@
             this.c13TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c13TrafficCheck.Name = "c13TrafficCheck";
             this.c13TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13TrafficCheck.TabIndex = 92;
+            this.c13TrafficCheck.TabIndex = 15;
             this.c13TrafficCheck.UseVisualStyleBackColor = true;
             this.c13TrafficCheck.CheckedChanged += new System.EventHandler(this.c13TrafficCheck_CheckedChanged);
             // 
@@ -12999,7 +13000,7 @@
             this.c13RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c13RiotCheck.Name = "c13RiotCheck";
             this.c13RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13RiotCheck.TabIndex = 91;
+            this.c13RiotCheck.TabIndex = 12;
             this.c13RiotCheck.UseVisualStyleBackColor = true;
             this.c13RiotCheck.CheckedChanged += new System.EventHandler(this.c13RiotCheck_CheckedChanged);
             // 
@@ -13011,7 +13012,7 @@
             this.c13RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c13RescueCheck.Name = "c13RescueCheck";
             this.c13RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13RescueCheck.TabIndex = 90;
+            this.c13RescueCheck.TabIndex = 9;
             this.c13RescueCheck.UseVisualStyleBackColor = true;
             this.c13RescueCheck.CheckedChanged += new System.EventHandler(this.c13RescueCheck_CheckedChanged);
             // 
@@ -13023,7 +13024,7 @@
             this.c13CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c13CrimeCheck.Name = "c13CrimeCheck";
             this.c13CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13CrimeCheck.TabIndex = 89;
+            this.c13CrimeCheck.TabIndex = 6;
             this.c13CrimeCheck.UseVisualStyleBackColor = true;
             this.c13CrimeCheck.CheckedChanged += new System.EventHandler(this.c13CrimeCheck_CheckedChanged);
             // 
@@ -13035,7 +13036,7 @@
             this.c13FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c13FireCheck.Name = "c13FireCheck";
             this.c13FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13FireCheck.TabIndex = 88;
+            this.c13FireCheck.TabIndex = 3;
             this.c13FireCheck.UseVisualStyleBackColor = true;
             this.c13FireCheck.CheckedChanged += new System.EventHandler(this.c13FireCheck_CheckedChanged);
             // 
@@ -13047,7 +13048,7 @@
             this.c13DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c13DiffCheck.Name = "c13DiffCheck";
             this.c13DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c13DiffCheck.TabIndex = 87;
+            this.c13DiffCheck.TabIndex = 0;
             this.c13DiffCheck.UseVisualStyleBackColor = true;
             this.c13DiffCheck.CheckedChanged += new System.EventHandler(this.c13DiffCheck_CheckedChanged);
             // 
@@ -13086,7 +13087,7 @@
             0});
             this.c13MoneyMax.Name = "c13MoneyMax";
             this.c13MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c13MoneyMax.TabIndex = 84;
+            this.c13MoneyMax.TabIndex = 32;
             this.c13MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -13109,7 +13110,7 @@
             0});
             this.c13MoneyMin.Name = "c13MoneyMin";
             this.c13MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c13MoneyMin.TabIndex = 83;
+            this.c13MoneyMin.TabIndex = 31;
             this.c13MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -13126,7 +13127,7 @@
             this.label149.Size = new System.Drawing.Size(103, 13);
             this.label149.TabIndex = 82;
             this.label149.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label149, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label149, "Amount of money given when completing this city.");
             // 
             // c13PointsMax
             // 
@@ -13143,7 +13144,7 @@
             0});
             this.c13PointsMax.Name = "c13PointsMax";
             this.c13PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c13PointsMax.TabIndex = 81;
+            this.c13PointsMax.TabIndex = 29;
             this.c13PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -13166,7 +13167,7 @@
             0});
             this.c13PointsMin.Name = "c13PointsMin";
             this.c13PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c13PointsMin.TabIndex = 80;
+            this.c13PointsMin.TabIndex = 28;
             this.c13PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -13195,7 +13196,7 @@
             0});
             this.c13DayMax.Name = "c13DayMax";
             this.c13DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c13DayMax.TabIndex = 78;
+            this.c13DayMax.TabIndex = 26;
             this.c13DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -13213,7 +13214,7 @@
             0});
             this.c13DayMin.Name = "c13DayMin";
             this.c13DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c13DayMin.TabIndex = 77;
+            this.c13DayMin.TabIndex = 25;
             this.c13DayMin.ValueChanged += new System.EventHandler(this.c13DayMin_ValueChanged);
             // 
             // label151
@@ -13237,7 +13238,7 @@
             0});
             this.c13TrafficMax.Name = "c13TrafficMax";
             this.c13TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c13TrafficMax.TabIndex = 75;
+            this.c13TrafficMax.TabIndex = 17;
             this.c13TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13255,7 +13256,7 @@
             0});
             this.c13TrafficMin.Name = "c13TrafficMin";
             this.c13TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c13TrafficMin.TabIndex = 74;
+            this.c13TrafficMin.TabIndex = 16;
             this.c13TrafficMin.ValueChanged += new System.EventHandler(this.c13TrafficMin_ValueChanged);
             // 
             // label152
@@ -13279,7 +13280,7 @@
             0});
             this.c13RiotMax.Name = "c13RiotMax";
             this.c13RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c13RiotMax.TabIndex = 72;
+            this.c13RiotMax.TabIndex = 14;
             this.c13RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13297,7 +13298,7 @@
             0});
             this.c13RiotMin.Name = "c13RiotMin";
             this.c13RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c13RiotMin.TabIndex = 71;
+            this.c13RiotMin.TabIndex = 13;
             this.c13RiotMin.ValueChanged += new System.EventHandler(this.c13RiotMin_ValueChanged);
             // 
             // label153
@@ -13321,7 +13322,7 @@
             0});
             this.c13RescueMax.Name = "c13RescueMax";
             this.c13RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c13RescueMax.TabIndex = 69;
+            this.c13RescueMax.TabIndex = 11;
             this.c13RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13339,7 +13340,7 @@
             0});
             this.c13RescueMin.Name = "c13RescueMin";
             this.c13RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c13RescueMin.TabIndex = 68;
+            this.c13RescueMin.TabIndex = 10;
             this.c13RescueMin.ValueChanged += new System.EventHandler(this.c13RescueMin_ValueChanged);
             // 
             // label154
@@ -13363,7 +13364,7 @@
             0});
             this.c13CrimeMax.Name = "c13CrimeMax";
             this.c13CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c13CrimeMax.TabIndex = 66;
+            this.c13CrimeMax.TabIndex = 8;
             this.c13CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13381,7 +13382,7 @@
             0});
             this.c13CrimeMin.Name = "c13CrimeMin";
             this.c13CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c13CrimeMin.TabIndex = 65;
+            this.c13CrimeMin.TabIndex = 7;
             this.c13CrimeMin.ValueChanged += new System.EventHandler(this.c13CrimeMin_ValueChanged);
             // 
             // label155
@@ -13405,7 +13406,7 @@
             0});
             this.c13FireMax.Name = "c13FireMax";
             this.c13FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c13FireMax.TabIndex = 63;
+            this.c13FireMax.TabIndex = 5;
             this.c13FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13423,7 +13424,7 @@
             0});
             this.c13FireMin.Name = "c13FireMin";
             this.c13FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c13FireMin.TabIndex = 62;
+            this.c13FireMin.TabIndex = 4;
             this.c13FireMin.ValueChanged += new System.EventHandler(this.c13FireMin_ValueChanged);
             // 
             // label156
@@ -13447,7 +13448,7 @@
             0});
             this.c13DiffMax.Name = "c13DiffMax";
             this.c13DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c13DiffMax.TabIndex = 60;
+            this.c13DiffMax.TabIndex = 2;
             this.c13DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -13465,7 +13466,7 @@
             0});
             this.c13DiffMin.Name = "c13DiffMin";
             this.c13DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c13DiffMin.TabIndex = 59;
+            this.c13DiffMin.TabIndex = 1;
             this.c13DiffMin.ValueChanged += new System.EventHandler(this.c13DiffMin_ValueChanged);
             // 
             // label157
@@ -13545,7 +13546,7 @@
             0});
             this.c14TransportMax.Name = "c14TransportMax";
             this.c14TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c14TransportMax.TabIndex = 103;
+            this.c14TransportMax.TabIndex = 23;
             this.c14TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13563,7 +13564,7 @@
             0});
             this.c14MedevacMax.Name = "c14MedevacMax";
             this.c14MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c14MedevacMax.TabIndex = 102;
+            this.c14MedevacMax.TabIndex = 20;
             this.c14MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13581,7 +13582,7 @@
             0});
             this.c14TransportMin.Name = "c14TransportMin";
             this.c14TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c14TransportMin.TabIndex = 101;
+            this.c14TransportMin.TabIndex = 22;
             this.c14TransportMin.ValueChanged += new System.EventHandler(this.c14TransportMin_ValueChanged);
             // 
             // c14MedevacMin
@@ -13594,7 +13595,7 @@
             0});
             this.c14MedevacMin.Name = "c14MedevacMin";
             this.c14MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c14MedevacMin.TabIndex = 100;
+            this.c14MedevacMin.TabIndex = 19;
             this.c14MedevacMin.ValueChanged += new System.EventHandler(this.c14MedevacMin_ValueChanged);
             // 
             // label362
@@ -13606,7 +13607,7 @@
             this.label362.Size = new System.Drawing.Size(119, 13);
             this.label362.TabIndex = 99;
             this.label362.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label362, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label362, "Frequency of transport missions in this city.");
             // 
             // label363
             // 
@@ -13617,7 +13618,7 @@
             this.label363.Size = new System.Drawing.Size(103, 13);
             this.label363.TabIndex = 98;
             this.label363.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label363, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label363, "Frequency of medevac missions in this city.");
             // 
             // c14TransportCheck
             // 
@@ -13627,7 +13628,7 @@
             this.c14TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c14TransportCheck.Name = "c14TransportCheck";
             this.c14TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14TransportCheck.TabIndex = 97;
+            this.c14TransportCheck.TabIndex = 21;
             this.c14TransportCheck.UseVisualStyleBackColor = true;
             this.c14TransportCheck.CheckedChanged += new System.EventHandler(this.c14TransportCheck_CheckedChanged);
             // 
@@ -13639,7 +13640,7 @@
             this.c14MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c14MedevacCheck.Name = "c14MedevacCheck";
             this.c14MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14MedevacCheck.TabIndex = 96;
+            this.c14MedevacCheck.TabIndex = 18;
             this.c14MedevacCheck.UseVisualStyleBackColor = true;
             this.c14MedevacCheck.CheckedChanged += new System.EventHandler(this.c14MedevacCheck_CheckedChanged);
             // 
@@ -13651,7 +13652,7 @@
             this.c14MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c14MoneyCheck.Name = "c14MoneyCheck";
             this.c14MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14MoneyCheck.TabIndex = 95;
+            this.c14MoneyCheck.TabIndex = 30;
             this.c14MoneyCheck.UseVisualStyleBackColor = true;
             this.c14MoneyCheck.CheckedChanged += new System.EventHandler(this.c14MoneyCheck_CheckedChanged);
             // 
@@ -13663,7 +13664,7 @@
             this.c14PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c14PointCheck.Name = "c14PointCheck";
             this.c14PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14PointCheck.TabIndex = 94;
+            this.c14PointCheck.TabIndex = 27;
             this.c14PointCheck.UseVisualStyleBackColor = true;
             this.c14PointCheck.CheckedChanged += new System.EventHandler(this.c14PointCheck_CheckedChanged);
             // 
@@ -13675,7 +13676,7 @@
             this.c14DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c14DayCheck.Name = "c14DayCheck";
             this.c14DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14DayCheck.TabIndex = 93;
+            this.c14DayCheck.TabIndex = 24;
             this.c14DayCheck.UseVisualStyleBackColor = true;
             this.c14DayCheck.CheckedChanged += new System.EventHandler(this.c14DayCheck_CheckedChanged);
             // 
@@ -13687,7 +13688,7 @@
             this.c14TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c14TrafficCheck.Name = "c14TrafficCheck";
             this.c14TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14TrafficCheck.TabIndex = 92;
+            this.c14TrafficCheck.TabIndex = 15;
             this.c14TrafficCheck.UseVisualStyleBackColor = true;
             this.c14TrafficCheck.CheckedChanged += new System.EventHandler(this.c14TrafficCheck_CheckedChanged);
             // 
@@ -13699,7 +13700,7 @@
             this.c14RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c14RiotCheck.Name = "c14RiotCheck";
             this.c14RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14RiotCheck.TabIndex = 91;
+            this.c14RiotCheck.TabIndex = 12;
             this.c14RiotCheck.UseVisualStyleBackColor = true;
             this.c14RiotCheck.CheckedChanged += new System.EventHandler(this.c14RiotCheck_CheckedChanged);
             // 
@@ -13711,7 +13712,7 @@
             this.c14RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c14RescueCheck.Name = "c14RescueCheck";
             this.c14RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14RescueCheck.TabIndex = 90;
+            this.c14RescueCheck.TabIndex = 9;
             this.c14RescueCheck.UseVisualStyleBackColor = true;
             this.c14RescueCheck.CheckedChanged += new System.EventHandler(this.c14RescueCheck_CheckedChanged);
             // 
@@ -13723,7 +13724,7 @@
             this.c14CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c14CrimeCheck.Name = "c14CrimeCheck";
             this.c14CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14CrimeCheck.TabIndex = 89;
+            this.c14CrimeCheck.TabIndex = 6;
             this.c14CrimeCheck.UseVisualStyleBackColor = true;
             this.c14CrimeCheck.CheckedChanged += new System.EventHandler(this.c15CrimeCheck_CheckedChanged);
             // 
@@ -13735,7 +13736,7 @@
             this.c14FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c14FireCheck.Name = "c14FireCheck";
             this.c14FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14FireCheck.TabIndex = 88;
+            this.c14FireCheck.TabIndex = 3;
             this.c14FireCheck.UseVisualStyleBackColor = true;
             this.c14FireCheck.CheckedChanged += new System.EventHandler(this.c14FireCheck_CheckedChanged);
             // 
@@ -13747,7 +13748,7 @@
             this.c14DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c14DiffCheck.Name = "c14DiffCheck";
             this.c14DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c14DiffCheck.TabIndex = 87;
+            this.c14DiffCheck.TabIndex = 0;
             this.c14DiffCheck.UseVisualStyleBackColor = true;
             this.c14DiffCheck.CheckedChanged += new System.EventHandler(this.c14DiffCheck_CheckedChanged);
             // 
@@ -13786,7 +13787,7 @@
             0});
             this.c14MoneyMax.Name = "c14MoneyMax";
             this.c14MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c14MoneyMax.TabIndex = 84;
+            this.c14MoneyMax.TabIndex = 32;
             this.c14MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -13809,7 +13810,7 @@
             0});
             this.c14MoneyMin.Name = "c14MoneyMin";
             this.c14MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c14MoneyMin.TabIndex = 83;
+            this.c14MoneyMin.TabIndex = 31;
             this.c14MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -13826,7 +13827,7 @@
             this.label160.Size = new System.Drawing.Size(103, 13);
             this.label160.TabIndex = 82;
             this.label160.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label160, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label160, "Amount of money given when completing this city.");
             // 
             // c14PointsMax
             // 
@@ -13843,7 +13844,7 @@
             0});
             this.c14PointsMax.Name = "c14PointsMax";
             this.c14PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c14PointsMax.TabIndex = 81;
+            this.c14PointsMax.TabIndex = 29;
             this.c14PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -13866,7 +13867,7 @@
             0});
             this.c14PointsMin.Name = "c14PointsMin";
             this.c14PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c14PointsMin.TabIndex = 80;
+            this.c14PointsMin.TabIndex = 28;
             this.c14PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -13895,7 +13896,7 @@
             0});
             this.c14DayMax.Name = "c14DayMax";
             this.c14DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c14DayMax.TabIndex = 78;
+            this.c14DayMax.TabIndex = 26;
             this.c14DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -13913,7 +13914,7 @@
             0});
             this.c14DayMin.Name = "c14DayMin";
             this.c14DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c14DayMin.TabIndex = 77;
+            this.c14DayMin.TabIndex = 25;
             this.c14DayMin.ValueChanged += new System.EventHandler(this.c14DayMin_ValueChanged);
             // 
             // label162
@@ -13937,7 +13938,7 @@
             0});
             this.c14TrafficMax.Name = "c14TrafficMax";
             this.c14TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c14TrafficMax.TabIndex = 75;
+            this.c14TrafficMax.TabIndex = 17;
             this.c14TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13955,7 +13956,7 @@
             0});
             this.c14TrafficMin.Name = "c14TrafficMin";
             this.c14TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c14TrafficMin.TabIndex = 74;
+            this.c14TrafficMin.TabIndex = 16;
             this.c14TrafficMin.ValueChanged += new System.EventHandler(this.c14TrafficMin_ValueChanged);
             // 
             // label163
@@ -13979,7 +13980,7 @@
             0});
             this.c14RiotMax.Name = "c14RiotMax";
             this.c14RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c14RiotMax.TabIndex = 72;
+            this.c14RiotMax.TabIndex = 14;
             this.c14RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -13997,7 +13998,7 @@
             0});
             this.c14RiotMin.Name = "c14RiotMin";
             this.c14RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c14RiotMin.TabIndex = 71;
+            this.c14RiotMin.TabIndex = 13;
             this.c14RiotMin.ValueChanged += new System.EventHandler(this.c14RiotMin_ValueChanged);
             // 
             // label164
@@ -14021,7 +14022,7 @@
             0});
             this.c14RescueMax.Name = "c14RescueMax";
             this.c14RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c14RescueMax.TabIndex = 69;
+            this.c14RescueMax.TabIndex = 11;
             this.c14RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14039,7 +14040,7 @@
             0});
             this.c14RescueMin.Name = "c14RescueMin";
             this.c14RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c14RescueMin.TabIndex = 68;
+            this.c14RescueMin.TabIndex = 10;
             this.c14RescueMin.ValueChanged += new System.EventHandler(this.c14RescueMin_ValueChanged);
             // 
             // label165
@@ -14063,7 +14064,7 @@
             0});
             this.c14CrimeMax.Name = "c14CrimeMax";
             this.c14CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c14CrimeMax.TabIndex = 66;
+            this.c14CrimeMax.TabIndex = 8;
             this.c14CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14081,7 +14082,7 @@
             0});
             this.c14CrimeMin.Name = "c14CrimeMin";
             this.c14CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c14CrimeMin.TabIndex = 65;
+            this.c14CrimeMin.TabIndex = 7;
             this.c14CrimeMin.ValueChanged += new System.EventHandler(this.c14CrimeMin_ValueChanged);
             // 
             // label166
@@ -14105,7 +14106,7 @@
             0});
             this.c14FireMax.Name = "c14FireMax";
             this.c14FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c14FireMax.TabIndex = 63;
+            this.c14FireMax.TabIndex = 5;
             this.c14FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14123,7 +14124,7 @@
             0});
             this.c14FireMin.Name = "c14FireMin";
             this.c14FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c14FireMin.TabIndex = 62;
+            this.c14FireMin.TabIndex = 4;
             this.c14FireMin.ValueChanged += new System.EventHandler(this.c14FireMin_ValueChanged);
             // 
             // label167
@@ -14147,7 +14148,7 @@
             0});
             this.c14DiffMax.Name = "c14DiffMax";
             this.c14DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c14DiffMax.TabIndex = 60;
+            this.c14DiffMax.TabIndex = 2;
             this.c14DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -14165,7 +14166,7 @@
             0});
             this.c14DiffMin.Name = "c14DiffMin";
             this.c14DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c14DiffMin.TabIndex = 59;
+            this.c14DiffMin.TabIndex = 1;
             this.c14DiffMin.ValueChanged += new System.EventHandler(this.c14DiffMin_ValueChanged);
             // 
             // label168
@@ -14245,7 +14246,7 @@
             0});
             this.c15TransportMax.Name = "c15TransportMax";
             this.c15TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c15TransportMax.TabIndex = 103;
+            this.c15TransportMax.TabIndex = 23;
             this.c15TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14263,7 +14264,7 @@
             0});
             this.c15MedevacMax.Name = "c15MedevacMax";
             this.c15MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c15MedevacMax.TabIndex = 102;
+            this.c15MedevacMax.TabIndex = 20;
             this.c15MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14281,7 +14282,7 @@
             0});
             this.c15TransportMin.Name = "c15TransportMin";
             this.c15TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c15TransportMin.TabIndex = 101;
+            this.c15TransportMin.TabIndex = 22;
             this.c15TransportMin.ValueChanged += new System.EventHandler(this.c15TransportMin_ValueChanged);
             // 
             // c15MedevacMin
@@ -14294,7 +14295,7 @@
             0});
             this.c15MedevacMin.Name = "c15MedevacMin";
             this.c15MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c15MedevacMin.TabIndex = 100;
+            this.c15MedevacMin.TabIndex = 19;
             this.c15MedevacMin.ValueChanged += new System.EventHandler(this.c15MedevacMin_ValueChanged);
             // 
             // label364
@@ -14306,7 +14307,7 @@
             this.label364.Size = new System.Drawing.Size(119, 13);
             this.label364.TabIndex = 99;
             this.label364.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label364, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label364, "Frequency of transport missions in this city.");
             // 
             // label365
             // 
@@ -14317,7 +14318,7 @@
             this.label365.Size = new System.Drawing.Size(103, 13);
             this.label365.TabIndex = 98;
             this.label365.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label365, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label365, "Frequency of medevac missions in this city.");
             // 
             // c15TransportCheck
             // 
@@ -14327,7 +14328,7 @@
             this.c15TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c15TransportCheck.Name = "c15TransportCheck";
             this.c15TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15TransportCheck.TabIndex = 97;
+            this.c15TransportCheck.TabIndex = 21;
             this.c15TransportCheck.UseVisualStyleBackColor = true;
             this.c15TransportCheck.CheckedChanged += new System.EventHandler(this.c15TransportCheck_CheckedChanged);
             // 
@@ -14339,7 +14340,7 @@
             this.c15MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c15MedevacCheck.Name = "c15MedevacCheck";
             this.c15MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15MedevacCheck.TabIndex = 96;
+            this.c15MedevacCheck.TabIndex = 18;
             this.c15MedevacCheck.UseVisualStyleBackColor = true;
             this.c15MedevacCheck.CheckedChanged += new System.EventHandler(this.c15MedevacCheck_CheckedChanged);
             // 
@@ -14351,7 +14352,7 @@
             this.c15MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c15MoneyCheck.Name = "c15MoneyCheck";
             this.c15MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15MoneyCheck.TabIndex = 95;
+            this.c15MoneyCheck.TabIndex = 30;
             this.c15MoneyCheck.UseVisualStyleBackColor = true;
             this.c15MoneyCheck.CheckedChanged += new System.EventHandler(this.c15MoneyCheck_CheckedChanged);
             // 
@@ -14363,7 +14364,7 @@
             this.c15PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c15PointCheck.Name = "c15PointCheck";
             this.c15PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15PointCheck.TabIndex = 94;
+            this.c15PointCheck.TabIndex = 27;
             this.c15PointCheck.UseVisualStyleBackColor = true;
             this.c15PointCheck.CheckedChanged += new System.EventHandler(this.c15PointCheck_CheckedChanged);
             // 
@@ -14375,7 +14376,7 @@
             this.c15DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c15DayCheck.Name = "c15DayCheck";
             this.c15DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15DayCheck.TabIndex = 93;
+            this.c15DayCheck.TabIndex = 24;
             this.c15DayCheck.UseVisualStyleBackColor = true;
             this.c15DayCheck.CheckedChanged += new System.EventHandler(this.c15DayCheck_CheckedChanged);
             // 
@@ -14387,7 +14388,7 @@
             this.c15TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c15TrafficCheck.Name = "c15TrafficCheck";
             this.c15TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15TrafficCheck.TabIndex = 92;
+            this.c15TrafficCheck.TabIndex = 15;
             this.c15TrafficCheck.UseVisualStyleBackColor = true;
             this.c15TrafficCheck.CheckedChanged += new System.EventHandler(this.c15TrafficCheck_CheckedChanged);
             // 
@@ -14399,7 +14400,7 @@
             this.c15RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c15RiotCheck.Name = "c15RiotCheck";
             this.c15RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15RiotCheck.TabIndex = 91;
+            this.c15RiotCheck.TabIndex = 12;
             this.c15RiotCheck.UseVisualStyleBackColor = true;
             this.c15RiotCheck.CheckedChanged += new System.EventHandler(this.c15RiotCheck_CheckedChanged);
             // 
@@ -14411,7 +14412,7 @@
             this.c15RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c15RescueCheck.Name = "c15RescueCheck";
             this.c15RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15RescueCheck.TabIndex = 90;
+            this.c15RescueCheck.TabIndex = 9;
             this.c15RescueCheck.UseVisualStyleBackColor = true;
             this.c15RescueCheck.CheckedChanged += new System.EventHandler(this.c15RescueCheck_CheckedChanged);
             // 
@@ -14423,7 +14424,7 @@
             this.c15CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c15CrimeCheck.Name = "c15CrimeCheck";
             this.c15CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15CrimeCheck.TabIndex = 89;
+            this.c15CrimeCheck.TabIndex = 6;
             this.c15CrimeCheck.UseVisualStyleBackColor = true;
             this.c15CrimeCheck.CheckedChanged += new System.EventHandler(this.c15CrimeCheck_CheckedChanged);
             // 
@@ -14435,7 +14436,7 @@
             this.c15FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c15FireCheck.Name = "c15FireCheck";
             this.c15FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15FireCheck.TabIndex = 88;
+            this.c15FireCheck.TabIndex = 3;
             this.c15FireCheck.UseVisualStyleBackColor = true;
             this.c15FireCheck.CheckedChanged += new System.EventHandler(this.c15FireCheck_CheckedChanged);
             // 
@@ -14447,7 +14448,7 @@
             this.c15DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c15DiffCheck.Name = "c15DiffCheck";
             this.c15DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c15DiffCheck.TabIndex = 87;
+            this.c15DiffCheck.TabIndex = 0;
             this.c15DiffCheck.UseVisualStyleBackColor = true;
             this.c15DiffCheck.CheckedChanged += new System.EventHandler(this.c15DiffCheck_CheckedChanged);
             // 
@@ -14486,7 +14487,7 @@
             0});
             this.c15MoneyMax.Name = "c15MoneyMax";
             this.c15MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c15MoneyMax.TabIndex = 84;
+            this.c15MoneyMax.TabIndex = 32;
             this.c15MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -14509,7 +14510,7 @@
             0});
             this.c15MoneyMin.Name = "c15MoneyMin";
             this.c15MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c15MoneyMin.TabIndex = 83;
+            this.c15MoneyMin.TabIndex = 31;
             this.c15MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -14526,7 +14527,7 @@
             this.label171.Size = new System.Drawing.Size(103, 13);
             this.label171.TabIndex = 82;
             this.label171.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label171, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label171, "Amount of money given when completing this city.");
             // 
             // c15PointsMax
             // 
@@ -14543,7 +14544,7 @@
             0});
             this.c15PointsMax.Name = "c15PointsMax";
             this.c15PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c15PointsMax.TabIndex = 81;
+            this.c15PointsMax.TabIndex = 29;
             this.c15PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -14566,7 +14567,7 @@
             0});
             this.c15PointsMin.Name = "c15PointsMin";
             this.c15PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c15PointsMin.TabIndex = 80;
+            this.c15PointsMin.TabIndex = 28;
             this.c15PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -14595,7 +14596,7 @@
             0});
             this.c15DayMax.Name = "c15DayMax";
             this.c15DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c15DayMax.TabIndex = 78;
+            this.c15DayMax.TabIndex = 26;
             this.c15DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -14613,7 +14614,7 @@
             0});
             this.c15DayMin.Name = "c15DayMin";
             this.c15DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c15DayMin.TabIndex = 77;
+            this.c15DayMin.TabIndex = 25;
             this.c15DayMin.ValueChanged += new System.EventHandler(this.c15DayMin_ValueChanged);
             // 
             // label173
@@ -14637,7 +14638,7 @@
             0});
             this.c15TrafficMax.Name = "c15TrafficMax";
             this.c15TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c15TrafficMax.TabIndex = 75;
+            this.c15TrafficMax.TabIndex = 17;
             this.c15TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14655,7 +14656,7 @@
             0});
             this.c15TrafficMin.Name = "c15TrafficMin";
             this.c15TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c15TrafficMin.TabIndex = 74;
+            this.c15TrafficMin.TabIndex = 16;
             this.c15TrafficMin.ValueChanged += new System.EventHandler(this.c15TrafficMin_ValueChanged);
             // 
             // label174
@@ -14679,7 +14680,7 @@
             0});
             this.c15RiotMax.Name = "c15RiotMax";
             this.c15RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c15RiotMax.TabIndex = 72;
+            this.c15RiotMax.TabIndex = 14;
             this.c15RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14697,7 +14698,7 @@
             0});
             this.c15RiotMin.Name = "c15RiotMin";
             this.c15RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c15RiotMin.TabIndex = 71;
+            this.c15RiotMin.TabIndex = 13;
             this.c15RiotMin.ValueChanged += new System.EventHandler(this.c15RiotMin_ValueChanged);
             // 
             // label175
@@ -14721,7 +14722,7 @@
             0});
             this.c15RescueMax.Name = "c15RescueMax";
             this.c15RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c15RescueMax.TabIndex = 69;
+            this.c15RescueMax.TabIndex = 11;
             this.c15RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14739,7 +14740,7 @@
             0});
             this.c15RescueMin.Name = "c15RescueMin";
             this.c15RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c15RescueMin.TabIndex = 68;
+            this.c15RescueMin.TabIndex = 10;
             this.c15RescueMin.ValueChanged += new System.EventHandler(this.c15RescueMin_ValueChanged);
             // 
             // label176
@@ -14763,7 +14764,7 @@
             0});
             this.c15CrimeMax.Name = "c15CrimeMax";
             this.c15CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c15CrimeMax.TabIndex = 66;
+            this.c15CrimeMax.TabIndex = 8;
             this.c15CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14781,7 +14782,7 @@
             0});
             this.c15CrimeMin.Name = "c15CrimeMin";
             this.c15CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c15CrimeMin.TabIndex = 65;
+            this.c15CrimeMin.TabIndex = 7;
             this.c15CrimeMin.ValueChanged += new System.EventHandler(this.c15CrimeMin_ValueChanged);
             // 
             // label177
@@ -14805,7 +14806,7 @@
             0});
             this.c15FireMax.Name = "c15FireMax";
             this.c15FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c15FireMax.TabIndex = 63;
+            this.c15FireMax.TabIndex = 5;
             this.c15FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14823,7 +14824,7 @@
             0});
             this.c15FireMin.Name = "c15FireMin";
             this.c15FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c15FireMin.TabIndex = 62;
+            this.c15FireMin.TabIndex = 4;
             this.c15FireMin.ValueChanged += new System.EventHandler(this.c15FireMin_ValueChanged);
             // 
             // label178
@@ -14847,7 +14848,7 @@
             0});
             this.c15DiffMax.Name = "c15DiffMax";
             this.c15DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c15DiffMax.TabIndex = 60;
+            this.c15DiffMax.TabIndex = 2;
             this.c15DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -14865,7 +14866,7 @@
             0});
             this.c15DiffMin.Name = "c15DiffMin";
             this.c15DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c15DiffMin.TabIndex = 59;
+            this.c15DiffMin.TabIndex = 1;
             this.c15DiffMin.ValueChanged += new System.EventHandler(this.c15DiffMin_ValueChanged);
             // 
             // label179
@@ -14945,7 +14946,7 @@
             0});
             this.c16TransportMax.Name = "c16TransportMax";
             this.c16TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c16TransportMax.TabIndex = 103;
+            this.c16TransportMax.TabIndex = 23;
             this.c16TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14962,7 +14963,7 @@
             0});
             this.c16MedevacMax.Name = "c16MedevacMax";
             this.c16MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c16MedevacMax.TabIndex = 102;
+            this.c16MedevacMax.TabIndex = 20;
             this.c16MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -14980,7 +14981,7 @@
             0});
             this.c16TransportMin.Name = "c16TransportMin";
             this.c16TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c16TransportMin.TabIndex = 101;
+            this.c16TransportMin.TabIndex = 22;
             this.c16TransportMin.ValueChanged += new System.EventHandler(this.c16TransportMin_ValueChanged);
             // 
             // c16MedevacMin
@@ -14993,7 +14994,7 @@
             0});
             this.c16MedevacMin.Name = "c16MedevacMin";
             this.c16MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c16MedevacMin.TabIndex = 100;
+            this.c16MedevacMin.TabIndex = 19;
             this.c16MedevacMin.ValueChanged += new System.EventHandler(this.c16MedevacMin_ValueChanged);
             // 
             // label366
@@ -15005,7 +15006,7 @@
             this.label366.Size = new System.Drawing.Size(119, 13);
             this.label366.TabIndex = 99;
             this.label366.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label366, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label366, "Frequency of transport missions in this city.");
             // 
             // label367
             // 
@@ -15016,7 +15017,7 @@
             this.label367.Size = new System.Drawing.Size(103, 13);
             this.label367.TabIndex = 98;
             this.label367.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label367, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label367, "Frequency of medevac missions in this city.");
             // 
             // c16TransportCheck
             // 
@@ -15026,7 +15027,7 @@
             this.c16TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c16TransportCheck.Name = "c16TransportCheck";
             this.c16TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16TransportCheck.TabIndex = 97;
+            this.c16TransportCheck.TabIndex = 21;
             this.c16TransportCheck.UseVisualStyleBackColor = true;
             this.c16TransportCheck.CheckedChanged += new System.EventHandler(this.c16TransportCheck_CheckedChanged);
             // 
@@ -15038,7 +15039,7 @@
             this.c16MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c16MedevacCheck.Name = "c16MedevacCheck";
             this.c16MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16MedevacCheck.TabIndex = 96;
+            this.c16MedevacCheck.TabIndex = 18;
             this.c16MedevacCheck.UseVisualStyleBackColor = true;
             this.c16MedevacCheck.CheckedChanged += new System.EventHandler(this.c16MedevacCheck_CheckedChanged);
             // 
@@ -15050,7 +15051,7 @@
             this.c16MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c16MoneyCheck.Name = "c16MoneyCheck";
             this.c16MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16MoneyCheck.TabIndex = 95;
+            this.c16MoneyCheck.TabIndex = 30;
             this.c16MoneyCheck.UseVisualStyleBackColor = true;
             this.c16MoneyCheck.CheckedChanged += new System.EventHandler(this.c16MoneyCheck_CheckedChanged);
             // 
@@ -15062,7 +15063,7 @@
             this.c16PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c16PointCheck.Name = "c16PointCheck";
             this.c16PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16PointCheck.TabIndex = 94;
+            this.c16PointCheck.TabIndex = 27;
             this.c16PointCheck.UseVisualStyleBackColor = true;
             this.c16PointCheck.CheckedChanged += new System.EventHandler(this.c16PointCheck_CheckedChanged);
             // 
@@ -15074,7 +15075,7 @@
             this.c16DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c16DayCheck.Name = "c16DayCheck";
             this.c16DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16DayCheck.TabIndex = 93;
+            this.c16DayCheck.TabIndex = 24;
             this.c16DayCheck.UseVisualStyleBackColor = true;
             this.c16DayCheck.CheckedChanged += new System.EventHandler(this.c16DayCheck_CheckedChanged);
             // 
@@ -15086,7 +15087,7 @@
             this.c16TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c16TrafficCheck.Name = "c16TrafficCheck";
             this.c16TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16TrafficCheck.TabIndex = 92;
+            this.c16TrafficCheck.TabIndex = 15;
             this.c16TrafficCheck.UseVisualStyleBackColor = true;
             this.c16TrafficCheck.CheckedChanged += new System.EventHandler(this.c16TrafficCheck_CheckedChanged);
             // 
@@ -15098,7 +15099,7 @@
             this.c16RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c16RiotCheck.Name = "c16RiotCheck";
             this.c16RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16RiotCheck.TabIndex = 91;
+            this.c16RiotCheck.TabIndex = 12;
             this.c16RiotCheck.UseVisualStyleBackColor = true;
             this.c16RiotCheck.CheckedChanged += new System.EventHandler(this.c16RiotCheck_CheckedChanged);
             // 
@@ -15110,7 +15111,7 @@
             this.c16RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c16RescueCheck.Name = "c16RescueCheck";
             this.c16RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16RescueCheck.TabIndex = 90;
+            this.c16RescueCheck.TabIndex = 9;
             this.c16RescueCheck.UseVisualStyleBackColor = true;
             this.c16RescueCheck.CheckedChanged += new System.EventHandler(this.c16RescueCheck_CheckedChanged);
             // 
@@ -15122,7 +15123,7 @@
             this.c16CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c16CrimeCheck.Name = "c16CrimeCheck";
             this.c16CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16CrimeCheck.TabIndex = 89;
+            this.c16CrimeCheck.TabIndex = 6;
             this.c16CrimeCheck.UseVisualStyleBackColor = true;
             this.c16CrimeCheck.CheckedChanged += new System.EventHandler(this.c16CrimeCheck_CheckedChanged);
             // 
@@ -15134,7 +15135,7 @@
             this.c16FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c16FireCheck.Name = "c16FireCheck";
             this.c16FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16FireCheck.TabIndex = 88;
+            this.c16FireCheck.TabIndex = 3;
             this.c16FireCheck.UseVisualStyleBackColor = true;
             this.c16FireCheck.CheckedChanged += new System.EventHandler(this.c16FireCheck_CheckedChanged);
             // 
@@ -15146,7 +15147,7 @@
             this.c16DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c16DiffCheck.Name = "c16DiffCheck";
             this.c16DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c16DiffCheck.TabIndex = 87;
+            this.c16DiffCheck.TabIndex = 0;
             this.c16DiffCheck.UseVisualStyleBackColor = true;
             this.c16DiffCheck.CheckedChanged += new System.EventHandler(this.c16DiffCheck_CheckedChanged);
             // 
@@ -15185,7 +15186,7 @@
             0});
             this.c16MoneyMax.Name = "c16MoneyMax";
             this.c16MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c16MoneyMax.TabIndex = 84;
+            this.c16MoneyMax.TabIndex = 32;
             this.c16MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -15208,7 +15209,7 @@
             0});
             this.c16MoneyMin.Name = "c16MoneyMin";
             this.c16MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c16MoneyMin.TabIndex = 83;
+            this.c16MoneyMin.TabIndex = 31;
             this.c16MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -15225,7 +15226,7 @@
             this.label182.Size = new System.Drawing.Size(103, 13);
             this.label182.TabIndex = 82;
             this.label182.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label182, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label182, "Amount of money given when completing this city.");
             // 
             // c16PointsMax
             // 
@@ -15242,7 +15243,7 @@
             0});
             this.c16PointsMax.Name = "c16PointsMax";
             this.c16PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c16PointsMax.TabIndex = 81;
+            this.c16PointsMax.TabIndex = 29;
             this.c16PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -15265,7 +15266,7 @@
             0});
             this.c16PointsMin.Name = "c16PointsMin";
             this.c16PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c16PointsMin.TabIndex = 80;
+            this.c16PointsMin.TabIndex = 28;
             this.c16PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -15294,7 +15295,7 @@
             0});
             this.c16DayMax.Name = "c16DayMax";
             this.c16DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c16DayMax.TabIndex = 78;
+            this.c16DayMax.TabIndex = 26;
             this.c16DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -15312,7 +15313,7 @@
             0});
             this.c16DayMin.Name = "c16DayMin";
             this.c16DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c16DayMin.TabIndex = 77;
+            this.c16DayMin.TabIndex = 25;
             this.c16DayMin.ValueChanged += new System.EventHandler(this.c16DayMin_ValueChanged);
             // 
             // label184
@@ -15336,7 +15337,7 @@
             0});
             this.c16TrafficMax.Name = "c16TrafficMax";
             this.c16TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c16TrafficMax.TabIndex = 75;
+            this.c16TrafficMax.TabIndex = 17;
             this.c16TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -15354,7 +15355,7 @@
             0});
             this.c16TrafficMin.Name = "c16TrafficMin";
             this.c16TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c16TrafficMin.TabIndex = 74;
+            this.c16TrafficMin.TabIndex = 16;
             this.c16TrafficMin.ValueChanged += new System.EventHandler(this.c16TrafficMin_ValueChanged);
             // 
             // label185
@@ -15378,7 +15379,7 @@
             0});
             this.c16RiotMax.Name = "c16RiotMax";
             this.c16RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c16RiotMax.TabIndex = 72;
+            this.c16RiotMax.TabIndex = 14;
             this.c16RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -15396,7 +15397,7 @@
             0});
             this.c16RiotMin.Name = "c16RiotMin";
             this.c16RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c16RiotMin.TabIndex = 71;
+            this.c16RiotMin.TabIndex = 13;
             this.c16RiotMin.ValueChanged += new System.EventHandler(this.c16RiotMin_ValueChanged);
             // 
             // label186
@@ -15420,7 +15421,7 @@
             0});
             this.c16RescueMax.Name = "c16RescueMax";
             this.c16RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c16RescueMax.TabIndex = 69;
+            this.c16RescueMax.TabIndex = 11;
             this.c16RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -15438,7 +15439,7 @@
             0});
             this.c16RescueMin.Name = "c16RescueMin";
             this.c16RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c16RescueMin.TabIndex = 68;
+            this.c16RescueMin.TabIndex = 10;
             this.c16RescueMin.ValueChanged += new System.EventHandler(this.c16RescueMin_ValueChanged);
             // 
             // label187
@@ -15462,7 +15463,7 @@
             0});
             this.c16CrimeMax.Name = "c16CrimeMax";
             this.c16CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c16CrimeMax.TabIndex = 66;
+            this.c16CrimeMax.TabIndex = 8;
             this.c16CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -15480,7 +15481,7 @@
             0});
             this.c16CrimeMin.Name = "c16CrimeMin";
             this.c16CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c16CrimeMin.TabIndex = 65;
+            this.c16CrimeMin.TabIndex = 7;
             this.c16CrimeMin.ValueChanged += new System.EventHandler(this.c16CrimeMin_ValueChanged);
             // 
             // label188
@@ -15504,7 +15505,7 @@
             0});
             this.c16FireMax.Name = "c16FireMax";
             this.c16FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c16FireMax.TabIndex = 63;
+            this.c16FireMax.TabIndex = 5;
             this.c16FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -15522,7 +15523,7 @@
             0});
             this.c16FireMin.Name = "c16FireMin";
             this.c16FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c16FireMin.TabIndex = 62;
+            this.c16FireMin.TabIndex = 4;
             this.c16FireMin.ValueChanged += new System.EventHandler(this.c16FireMin_ValueChanged);
             // 
             // label189
@@ -15546,7 +15547,7 @@
             0});
             this.c16DiffMax.Name = "c16DiffMax";
             this.c16DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c16DiffMax.TabIndex = 60;
+            this.c16DiffMax.TabIndex = 2;
             this.c16DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -15564,7 +15565,7 @@
             0});
             this.c16DiffMin.Name = "c16DiffMin";
             this.c16DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c16DiffMin.TabIndex = 59;
+            this.c16DiffMin.TabIndex = 1;
             this.c16DiffMin.ValueChanged += new System.EventHandler(this.c16DiffMin_ValueChanged);
             // 
             // label190
@@ -15644,7 +15645,7 @@
             0});
             this.c17TransportMax.Name = "c17TransportMax";
             this.c17TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c17TransportMax.TabIndex = 103;
+            this.c17TransportMax.TabIndex = 23;
             this.c17TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -15662,7 +15663,7 @@
             0});
             this.c17MedevacMax.Name = "c17MedevacMax";
             this.c17MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c17MedevacMax.TabIndex = 102;
+            this.c17MedevacMax.TabIndex = 20;
             this.c17MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -15680,7 +15681,7 @@
             0});
             this.c17TransportMin.Name = "c17TransportMin";
             this.c17TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c17TransportMin.TabIndex = 101;
+            this.c17TransportMin.TabIndex = 22;
             this.c17TransportMin.ValueChanged += new System.EventHandler(this.c17TransportMin_ValueChanged);
             // 
             // c17MedevacMin
@@ -15693,7 +15694,7 @@
             0});
             this.c17MedevacMin.Name = "c17MedevacMin";
             this.c17MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c17MedevacMin.TabIndex = 100;
+            this.c17MedevacMin.TabIndex = 19;
             this.c17MedevacMin.ValueChanged += new System.EventHandler(this.c17MedevacMin_ValueChanged);
             // 
             // label368
@@ -15705,7 +15706,7 @@
             this.label368.Size = new System.Drawing.Size(119, 13);
             this.label368.TabIndex = 99;
             this.label368.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label368, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label368, "Frequency of transport missions in this city.");
             // 
             // label369
             // 
@@ -15716,7 +15717,7 @@
             this.label369.Size = new System.Drawing.Size(103, 13);
             this.label369.TabIndex = 98;
             this.label369.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label369, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label369, "Frequency of medevac missions in this city.");
             // 
             // c17TransportCheck
             // 
@@ -15726,7 +15727,7 @@
             this.c17TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c17TransportCheck.Name = "c17TransportCheck";
             this.c17TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17TransportCheck.TabIndex = 97;
+            this.c17TransportCheck.TabIndex = 21;
             this.c17TransportCheck.UseVisualStyleBackColor = true;
             this.c17TransportCheck.CheckedChanged += new System.EventHandler(this.c17TransportCheck_CheckedChanged);
             // 
@@ -15738,7 +15739,7 @@
             this.c17MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c17MedevacCheck.Name = "c17MedevacCheck";
             this.c17MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17MedevacCheck.TabIndex = 96;
+            this.c17MedevacCheck.TabIndex = 18;
             this.c17MedevacCheck.UseVisualStyleBackColor = true;
             this.c17MedevacCheck.CheckedChanged += new System.EventHandler(this.c17MedevacCheck_CheckedChanged);
             // 
@@ -15750,7 +15751,7 @@
             this.c17MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c17MoneyCheck.Name = "c17MoneyCheck";
             this.c17MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17MoneyCheck.TabIndex = 95;
+            this.c17MoneyCheck.TabIndex = 30;
             this.c17MoneyCheck.UseVisualStyleBackColor = true;
             this.c17MoneyCheck.CheckedChanged += new System.EventHandler(this.c17MoneyCheck_CheckedChanged);
             // 
@@ -15762,7 +15763,7 @@
             this.c17PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c17PointCheck.Name = "c17PointCheck";
             this.c17PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17PointCheck.TabIndex = 94;
+            this.c17PointCheck.TabIndex = 27;
             this.c17PointCheck.UseVisualStyleBackColor = true;
             this.c17PointCheck.CheckedChanged += new System.EventHandler(this.c17PointCheck_CheckedChanged);
             // 
@@ -15774,7 +15775,7 @@
             this.c17DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c17DayCheck.Name = "c17DayCheck";
             this.c17DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17DayCheck.TabIndex = 93;
+            this.c17DayCheck.TabIndex = 24;
             this.c17DayCheck.UseVisualStyleBackColor = true;
             this.c17DayCheck.CheckedChanged += new System.EventHandler(this.c17DayCheck_CheckedChanged);
             // 
@@ -15786,7 +15787,7 @@
             this.c17TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c17TrafficCheck.Name = "c17TrafficCheck";
             this.c17TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17TrafficCheck.TabIndex = 92;
+            this.c17TrafficCheck.TabIndex = 15;
             this.c17TrafficCheck.UseVisualStyleBackColor = true;
             this.c17TrafficCheck.CheckedChanged += new System.EventHandler(this.c17TrafficCheck_CheckedChanged);
             // 
@@ -15798,7 +15799,7 @@
             this.c17RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c17RiotCheck.Name = "c17RiotCheck";
             this.c17RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17RiotCheck.TabIndex = 91;
+            this.c17RiotCheck.TabIndex = 12;
             this.c17RiotCheck.UseVisualStyleBackColor = true;
             this.c17RiotCheck.CheckedChanged += new System.EventHandler(this.c17RiotCheck_CheckedChanged);
             // 
@@ -15810,7 +15811,7 @@
             this.c17RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c17RescueCheck.Name = "c17RescueCheck";
             this.c17RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17RescueCheck.TabIndex = 90;
+            this.c17RescueCheck.TabIndex = 9;
             this.c17RescueCheck.UseVisualStyleBackColor = true;
             this.c17RescueCheck.CheckedChanged += new System.EventHandler(this.c17RescueCheck_CheckedChanged);
             // 
@@ -15822,7 +15823,7 @@
             this.c17CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c17CrimeCheck.Name = "c17CrimeCheck";
             this.c17CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17CrimeCheck.TabIndex = 89;
+            this.c17CrimeCheck.TabIndex = 6;
             this.c17CrimeCheck.UseVisualStyleBackColor = true;
             this.c17CrimeCheck.CheckedChanged += new System.EventHandler(this.c17CrimeCheck_CheckedChanged);
             // 
@@ -15834,7 +15835,7 @@
             this.c17FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c17FireCheck.Name = "c17FireCheck";
             this.c17FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17FireCheck.TabIndex = 88;
+            this.c17FireCheck.TabIndex = 3;
             this.c17FireCheck.UseVisualStyleBackColor = true;
             this.c17FireCheck.CheckedChanged += new System.EventHandler(this.c17FireCheck_CheckedChanged);
             // 
@@ -15846,7 +15847,7 @@
             this.c17DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c17DiffCheck.Name = "c17DiffCheck";
             this.c17DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c17DiffCheck.TabIndex = 87;
+            this.c17DiffCheck.TabIndex = 0;
             this.c17DiffCheck.UseVisualStyleBackColor = true;
             this.c17DiffCheck.CheckedChanged += new System.EventHandler(this.c17DiffCheck_CheckedChanged);
             // 
@@ -15885,7 +15886,7 @@
             0});
             this.c17MoneyMax.Name = "c17MoneyMax";
             this.c17MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c17MoneyMax.TabIndex = 84;
+            this.c17MoneyMax.TabIndex = 32;
             this.c17MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -15908,7 +15909,7 @@
             0});
             this.c17MoneyMin.Name = "c17MoneyMin";
             this.c17MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c17MoneyMin.TabIndex = 83;
+            this.c17MoneyMin.TabIndex = 31;
             this.c17MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -15925,7 +15926,7 @@
             this.label193.Size = new System.Drawing.Size(103, 13);
             this.label193.TabIndex = 82;
             this.label193.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label193, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label193, "Amount of money given when completing this city.");
             // 
             // c17PointsMax
             // 
@@ -15942,7 +15943,7 @@
             0});
             this.c17PointsMax.Name = "c17PointsMax";
             this.c17PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c17PointsMax.TabIndex = 81;
+            this.c17PointsMax.TabIndex = 29;
             this.c17PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -15965,7 +15966,7 @@
             0});
             this.c17PointsMin.Name = "c17PointsMin";
             this.c17PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c17PointsMin.TabIndex = 80;
+            this.c17PointsMin.TabIndex = 28;
             this.c17PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -15994,7 +15995,7 @@
             0});
             this.c17DayMax.Name = "c17DayMax";
             this.c17DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c17DayMax.TabIndex = 78;
+            this.c17DayMax.TabIndex = 26;
             this.c17DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -16012,7 +16013,7 @@
             0});
             this.c17DayMin.Name = "c17DayMin";
             this.c17DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c17DayMin.TabIndex = 77;
+            this.c17DayMin.TabIndex = 25;
             this.c17DayMin.ValueChanged += new System.EventHandler(this.c17DayMin_ValueChanged);
             // 
             // label195
@@ -16036,7 +16037,7 @@
             0});
             this.c17TrafficMax.Name = "c17TrafficMax";
             this.c17TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c17TrafficMax.TabIndex = 75;
+            this.c17TrafficMax.TabIndex = 17;
             this.c17TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16054,7 +16055,7 @@
             0});
             this.c17TrafficMin.Name = "c17TrafficMin";
             this.c17TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c17TrafficMin.TabIndex = 74;
+            this.c17TrafficMin.TabIndex = 16;
             this.c17TrafficMin.ValueChanged += new System.EventHandler(this.c17TrafficMin_ValueChanged);
             // 
             // label196
@@ -16078,7 +16079,7 @@
             0});
             this.c17RiotMax.Name = "c17RiotMax";
             this.c17RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c17RiotMax.TabIndex = 72;
+            this.c17RiotMax.TabIndex = 14;
             this.c17RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16096,7 +16097,7 @@
             0});
             this.c17RiotMin.Name = "c17RiotMin";
             this.c17RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c17RiotMin.TabIndex = 71;
+            this.c17RiotMin.TabIndex = 13;
             this.c17RiotMin.ValueChanged += new System.EventHandler(this.c17RiotMin_ValueChanged);
             // 
             // label197
@@ -16120,7 +16121,7 @@
             0});
             this.c17RescueMax.Name = "c17RescueMax";
             this.c17RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c17RescueMax.TabIndex = 69;
+            this.c17RescueMax.TabIndex = 11;
             this.c17RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16138,7 +16139,7 @@
             0});
             this.c17RescueMin.Name = "c17RescueMin";
             this.c17RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c17RescueMin.TabIndex = 68;
+            this.c17RescueMin.TabIndex = 10;
             this.c17RescueMin.ValueChanged += new System.EventHandler(this.c17RescueMin_ValueChanged);
             // 
             // label198
@@ -16162,7 +16163,7 @@
             0});
             this.c17CrimeMax.Name = "c17CrimeMax";
             this.c17CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c17CrimeMax.TabIndex = 66;
+            this.c17CrimeMax.TabIndex = 8;
             this.c17CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16180,7 +16181,7 @@
             0});
             this.c17CrimeMin.Name = "c17CrimeMin";
             this.c17CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c17CrimeMin.TabIndex = 65;
+            this.c17CrimeMin.TabIndex = 7;
             this.c17CrimeMin.ValueChanged += new System.EventHandler(this.c17CrimeMin_ValueChanged);
             // 
             // label199
@@ -16204,7 +16205,7 @@
             0});
             this.c17FireMax.Name = "c17FireMax";
             this.c17FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c17FireMax.TabIndex = 63;
+            this.c17FireMax.TabIndex = 5;
             this.c17FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16222,7 +16223,7 @@
             0});
             this.c17FireMin.Name = "c17FireMin";
             this.c17FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c17FireMin.TabIndex = 62;
+            this.c17FireMin.TabIndex = 4;
             this.c17FireMin.ValueChanged += new System.EventHandler(this.c17FireMin_ValueChanged);
             // 
             // label200
@@ -16246,7 +16247,7 @@
             0});
             this.c17DiffMax.Name = "c17DiffMax";
             this.c17DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c17DiffMax.TabIndex = 60;
+            this.c17DiffMax.TabIndex = 2;
             this.c17DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -16264,7 +16265,7 @@
             0});
             this.c17DiffMin.Name = "c17DiffMin";
             this.c17DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c17DiffMin.TabIndex = 59;
+            this.c17DiffMin.TabIndex = 1;
             this.c17DiffMin.ValueChanged += new System.EventHandler(this.c17DiffMin_ValueChanged);
             // 
             // label201
@@ -16344,7 +16345,7 @@
             0});
             this.c18TransportMax.Name = "c18TransportMax";
             this.c18TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c18TransportMax.TabIndex = 103;
+            this.c18TransportMax.TabIndex = 23;
             this.c18TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16362,7 +16363,7 @@
             0});
             this.c18MedevacMax.Name = "c18MedevacMax";
             this.c18MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c18MedevacMax.TabIndex = 102;
+            this.c18MedevacMax.TabIndex = 20;
             this.c18MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16380,7 +16381,7 @@
             0});
             this.c18TransportMin.Name = "c18TransportMin";
             this.c18TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c18TransportMin.TabIndex = 101;
+            this.c18TransportMin.TabIndex = 22;
             this.c18TransportMin.ValueChanged += new System.EventHandler(this.c18TransportMin_ValueChanged);
             // 
             // c18MedevacMin
@@ -16393,7 +16394,7 @@
             0});
             this.c18MedevacMin.Name = "c18MedevacMin";
             this.c18MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c18MedevacMin.TabIndex = 100;
+            this.c18MedevacMin.TabIndex = 19;
             this.c18MedevacMin.ValueChanged += new System.EventHandler(this.c18MedevacMin_ValueChanged);
             // 
             // label370
@@ -16405,7 +16406,7 @@
             this.label370.Size = new System.Drawing.Size(119, 13);
             this.label370.TabIndex = 99;
             this.label370.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label370, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label370, "Frequency of transport missions in this city.");
             // 
             // label371
             // 
@@ -16416,7 +16417,7 @@
             this.label371.Size = new System.Drawing.Size(103, 13);
             this.label371.TabIndex = 98;
             this.label371.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label371, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label371, "Frequency of medevac missions in this city.");
             // 
             // c18TransportCheck
             // 
@@ -16426,7 +16427,7 @@
             this.c18TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c18TransportCheck.Name = "c18TransportCheck";
             this.c18TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18TransportCheck.TabIndex = 97;
+            this.c18TransportCheck.TabIndex = 21;
             this.c18TransportCheck.UseVisualStyleBackColor = true;
             this.c18TransportCheck.CheckedChanged += new System.EventHandler(this.c18TransportCheck_CheckedChanged);
             // 
@@ -16438,7 +16439,7 @@
             this.c18MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c18MedevacCheck.Name = "c18MedevacCheck";
             this.c18MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18MedevacCheck.TabIndex = 96;
+            this.c18MedevacCheck.TabIndex = 18;
             this.c18MedevacCheck.UseVisualStyleBackColor = true;
             this.c18MedevacCheck.CheckedChanged += new System.EventHandler(this.c18MedevacCheck_CheckedChanged);
             // 
@@ -16450,7 +16451,7 @@
             this.c18MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c18MoneyCheck.Name = "c18MoneyCheck";
             this.c18MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18MoneyCheck.TabIndex = 95;
+            this.c18MoneyCheck.TabIndex = 30;
             this.c18MoneyCheck.UseVisualStyleBackColor = true;
             this.c18MoneyCheck.CheckedChanged += new System.EventHandler(this.c18MoneyCheck_CheckedChanged);
             // 
@@ -16462,7 +16463,7 @@
             this.c18PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c18PointCheck.Name = "c18PointCheck";
             this.c18PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18PointCheck.TabIndex = 94;
+            this.c18PointCheck.TabIndex = 27;
             this.c18PointCheck.UseVisualStyleBackColor = true;
             this.c18PointCheck.CheckedChanged += new System.EventHandler(this.c18PointCheck_CheckedChanged);
             // 
@@ -16474,7 +16475,7 @@
             this.c18DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c18DayCheck.Name = "c18DayCheck";
             this.c18DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18DayCheck.TabIndex = 93;
+            this.c18DayCheck.TabIndex = 24;
             this.c18DayCheck.UseVisualStyleBackColor = true;
             this.c18DayCheck.CheckedChanged += new System.EventHandler(this.c18DayCheck_CheckedChanged);
             // 
@@ -16486,7 +16487,7 @@
             this.c18TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c18TrafficCheck.Name = "c18TrafficCheck";
             this.c18TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18TrafficCheck.TabIndex = 92;
+            this.c18TrafficCheck.TabIndex = 15;
             this.c18TrafficCheck.UseVisualStyleBackColor = true;
             this.c18TrafficCheck.CheckedChanged += new System.EventHandler(this.c18TrafficCheck_CheckedChanged);
             // 
@@ -16498,7 +16499,7 @@
             this.c18RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c18RiotCheck.Name = "c18RiotCheck";
             this.c18RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18RiotCheck.TabIndex = 91;
+            this.c18RiotCheck.TabIndex = 12;
             this.c18RiotCheck.UseVisualStyleBackColor = true;
             this.c18RiotCheck.CheckedChanged += new System.EventHandler(this.c18RiotCheck_CheckedChanged);
             // 
@@ -16510,7 +16511,7 @@
             this.c18RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c18RescueCheck.Name = "c18RescueCheck";
             this.c18RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18RescueCheck.TabIndex = 90;
+            this.c18RescueCheck.TabIndex = 9;
             this.c18RescueCheck.UseVisualStyleBackColor = true;
             this.c18RescueCheck.CheckedChanged += new System.EventHandler(this.c18RescueCheck_CheckedChanged);
             // 
@@ -16522,7 +16523,7 @@
             this.c18CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c18CrimeCheck.Name = "c18CrimeCheck";
             this.c18CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18CrimeCheck.TabIndex = 89;
+            this.c18CrimeCheck.TabIndex = 6;
             this.c18CrimeCheck.UseVisualStyleBackColor = true;
             this.c18CrimeCheck.CheckedChanged += new System.EventHandler(this.c18CrimeCheck_CheckedChanged);
             // 
@@ -16534,7 +16535,7 @@
             this.c18FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c18FireCheck.Name = "c18FireCheck";
             this.c18FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18FireCheck.TabIndex = 88;
+            this.c18FireCheck.TabIndex = 3;
             this.c18FireCheck.UseVisualStyleBackColor = true;
             this.c18FireCheck.CheckedChanged += new System.EventHandler(this.c18FireCheck_CheckedChanged);
             // 
@@ -16546,7 +16547,7 @@
             this.c18DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c18DiffCheck.Name = "c18DiffCheck";
             this.c18DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c18DiffCheck.TabIndex = 87;
+            this.c18DiffCheck.TabIndex = 0;
             this.c18DiffCheck.UseVisualStyleBackColor = true;
             this.c18DiffCheck.CheckedChanged += new System.EventHandler(this.c18DiffCheck_CheckedChanged);
             // 
@@ -16585,7 +16586,7 @@
             0});
             this.c18MoneyMax.Name = "c18MoneyMax";
             this.c18MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c18MoneyMax.TabIndex = 84;
+            this.c18MoneyMax.TabIndex = 32;
             this.c18MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -16608,7 +16609,7 @@
             0});
             this.c18MoneyMin.Name = "c18MoneyMin";
             this.c18MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c18MoneyMin.TabIndex = 83;
+            this.c18MoneyMin.TabIndex = 31;
             this.c18MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -16625,7 +16626,7 @@
             this.label204.Size = new System.Drawing.Size(103, 13);
             this.label204.TabIndex = 82;
             this.label204.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label204, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label204, "Amount of money given when completing this city.");
             // 
             // c18PointsMax
             // 
@@ -16642,7 +16643,7 @@
             0});
             this.c18PointsMax.Name = "c18PointsMax";
             this.c18PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c18PointsMax.TabIndex = 81;
+            this.c18PointsMax.TabIndex = 29;
             this.c18PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -16665,7 +16666,7 @@
             0});
             this.c18PointsMin.Name = "c18PointsMin";
             this.c18PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c18PointsMin.TabIndex = 80;
+            this.c18PointsMin.TabIndex = 28;
             this.c18PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -16694,7 +16695,7 @@
             0});
             this.c18DayMax.Name = "c18DayMax";
             this.c18DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c18DayMax.TabIndex = 78;
+            this.c18DayMax.TabIndex = 26;
             this.c18DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -16712,7 +16713,7 @@
             0});
             this.c18DayMin.Name = "c18DayMin";
             this.c18DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c18DayMin.TabIndex = 77;
+            this.c18DayMin.TabIndex = 25;
             this.c18DayMin.ValueChanged += new System.EventHandler(this.c18DayMin_ValueChanged);
             // 
             // label206
@@ -16736,7 +16737,7 @@
             0});
             this.c18TrafficMax.Name = "c18TrafficMax";
             this.c18TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c18TrafficMax.TabIndex = 75;
+            this.c18TrafficMax.TabIndex = 17;
             this.c18TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16754,7 +16755,7 @@
             0});
             this.c18TrafficMin.Name = "c18TrafficMin";
             this.c18TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c18TrafficMin.TabIndex = 74;
+            this.c18TrafficMin.TabIndex = 16;
             this.c18TrafficMin.ValueChanged += new System.EventHandler(this.c18TrafficMin_ValueChanged);
             // 
             // label207
@@ -16778,7 +16779,7 @@
             0});
             this.c18RiotMax.Name = "c18RiotMax";
             this.c18RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c18RiotMax.TabIndex = 72;
+            this.c18RiotMax.TabIndex = 14;
             this.c18RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16796,7 +16797,7 @@
             0});
             this.c18RiotMin.Name = "c18RiotMin";
             this.c18RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c18RiotMin.TabIndex = 71;
+            this.c18RiotMin.TabIndex = 13;
             this.c18RiotMin.ValueChanged += new System.EventHandler(this.c18RiotMin_ValueChanged);
             // 
             // label208
@@ -16820,7 +16821,7 @@
             0});
             this.c18RescueMax.Name = "c18RescueMax";
             this.c18RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c18RescueMax.TabIndex = 69;
+            this.c18RescueMax.TabIndex = 11;
             this.c18RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16838,7 +16839,7 @@
             0});
             this.c18RescueMin.Name = "c18RescueMin";
             this.c18RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c18RescueMin.TabIndex = 68;
+            this.c18RescueMin.TabIndex = 10;
             this.c18RescueMin.ValueChanged += new System.EventHandler(this.c18RescueMin_ValueChanged);
             // 
             // label209
@@ -16862,7 +16863,7 @@
             0});
             this.c18CrimeMax.Name = "c18CrimeMax";
             this.c18CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c18CrimeMax.TabIndex = 66;
+            this.c18CrimeMax.TabIndex = 8;
             this.c18CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16880,7 +16881,7 @@
             0});
             this.c18CrimeMin.Name = "c18CrimeMin";
             this.c18CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c18CrimeMin.TabIndex = 65;
+            this.c18CrimeMin.TabIndex = 7;
             this.c18CrimeMin.ValueChanged += new System.EventHandler(this.c18CrimeMin_ValueChanged);
             // 
             // label210
@@ -16904,7 +16905,7 @@
             0});
             this.c18FireMax.Name = "c18FireMax";
             this.c18FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c18FireMax.TabIndex = 63;
+            this.c18FireMax.TabIndex = 5;
             this.c18FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -16922,7 +16923,7 @@
             0});
             this.c18FireMin.Name = "c18FireMin";
             this.c18FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c18FireMin.TabIndex = 62;
+            this.c18FireMin.TabIndex = 4;
             this.c18FireMin.ValueChanged += new System.EventHandler(this.c18FireMin_ValueChanged);
             // 
             // label211
@@ -16946,7 +16947,7 @@
             0});
             this.c18DiffMax.Name = "c18DiffMax";
             this.c18DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c18DiffMax.TabIndex = 60;
+            this.c18DiffMax.TabIndex = 2;
             this.c18DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -16964,7 +16965,7 @@
             0});
             this.c18DiffMin.Name = "c18DiffMin";
             this.c18DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c18DiffMin.TabIndex = 59;
+            this.c18DiffMin.TabIndex = 1;
             this.c18DiffMin.ValueChanged += new System.EventHandler(this.c18DiffMin_ValueChanged);
             // 
             // label212
@@ -17044,7 +17045,7 @@
             0});
             this.c19TransportMax.Name = "c19TransportMax";
             this.c19TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c19TransportMax.TabIndex = 103;
+            this.c19TransportMax.TabIndex = 23;
             this.c19TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17062,7 +17063,7 @@
             0});
             this.c19MedevacMax.Name = "c19MedevacMax";
             this.c19MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c19MedevacMax.TabIndex = 102;
+            this.c19MedevacMax.TabIndex = 20;
             this.c19MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17080,7 +17081,7 @@
             0});
             this.c19TransportMin.Name = "c19TransportMin";
             this.c19TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c19TransportMin.TabIndex = 101;
+            this.c19TransportMin.TabIndex = 22;
             this.c19TransportMin.ValueChanged += new System.EventHandler(this.c19TransportMin_ValueChanged);
             // 
             // c19MedevacMin
@@ -17093,7 +17094,7 @@
             0});
             this.c19MedevacMin.Name = "c19MedevacMin";
             this.c19MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c19MedevacMin.TabIndex = 100;
+            this.c19MedevacMin.TabIndex = 19;
             this.c19MedevacMin.ValueChanged += new System.EventHandler(this.c19MedevacMin_ValueChanged);
             // 
             // label372
@@ -17105,7 +17106,7 @@
             this.label372.Size = new System.Drawing.Size(119, 13);
             this.label372.TabIndex = 99;
             this.label372.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label372, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label372, "Frequency of transport missions in this city.");
             // 
             // label373
             // 
@@ -17116,7 +17117,7 @@
             this.label373.Size = new System.Drawing.Size(103, 13);
             this.label373.TabIndex = 98;
             this.label373.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label373, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label373, "Frequency of medevac missions in this city.");
             // 
             // c19TransportCheck
             // 
@@ -17126,7 +17127,7 @@
             this.c19TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c19TransportCheck.Name = "c19TransportCheck";
             this.c19TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19TransportCheck.TabIndex = 97;
+            this.c19TransportCheck.TabIndex = 21;
             this.c19TransportCheck.UseVisualStyleBackColor = true;
             this.c19TransportCheck.CheckedChanged += new System.EventHandler(this.c19TransportCheck_CheckedChanged);
             // 
@@ -17138,7 +17139,7 @@
             this.c19MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c19MedevacCheck.Name = "c19MedevacCheck";
             this.c19MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19MedevacCheck.TabIndex = 96;
+            this.c19MedevacCheck.TabIndex = 18;
             this.c19MedevacCheck.UseVisualStyleBackColor = true;
             this.c19MedevacCheck.CheckedChanged += new System.EventHandler(this.c19MedevacCheck_CheckedChanged);
             // 
@@ -17150,7 +17151,7 @@
             this.c19MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c19MoneyCheck.Name = "c19MoneyCheck";
             this.c19MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19MoneyCheck.TabIndex = 95;
+            this.c19MoneyCheck.TabIndex = 30;
             this.c19MoneyCheck.UseVisualStyleBackColor = true;
             this.c19MoneyCheck.CheckedChanged += new System.EventHandler(this.c19MoneyCheck_CheckedChanged);
             // 
@@ -17162,7 +17163,7 @@
             this.c19PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c19PointCheck.Name = "c19PointCheck";
             this.c19PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19PointCheck.TabIndex = 94;
+            this.c19PointCheck.TabIndex = 27;
             this.c19PointCheck.UseVisualStyleBackColor = true;
             this.c19PointCheck.CheckedChanged += new System.EventHandler(this.c19PointCheck_CheckedChanged);
             // 
@@ -17174,7 +17175,7 @@
             this.c19DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c19DayCheck.Name = "c19DayCheck";
             this.c19DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19DayCheck.TabIndex = 93;
+            this.c19DayCheck.TabIndex = 24;
             this.c19DayCheck.UseVisualStyleBackColor = true;
             this.c19DayCheck.CheckedChanged += new System.EventHandler(this.c19DayCheck_CheckedChanged);
             // 
@@ -17186,7 +17187,7 @@
             this.c19TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c19TrafficCheck.Name = "c19TrafficCheck";
             this.c19TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19TrafficCheck.TabIndex = 92;
+            this.c19TrafficCheck.TabIndex = 15;
             this.c19TrafficCheck.UseVisualStyleBackColor = true;
             this.c19TrafficCheck.CheckedChanged += new System.EventHandler(this.c19TrafficCheck_CheckedChanged);
             // 
@@ -17198,7 +17199,7 @@
             this.c19RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c19RiotCheck.Name = "c19RiotCheck";
             this.c19RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19RiotCheck.TabIndex = 91;
+            this.c19RiotCheck.TabIndex = 12;
             this.c19RiotCheck.UseVisualStyleBackColor = true;
             this.c19RiotCheck.CheckedChanged += new System.EventHandler(this.c19RiotCheck_CheckedChanged);
             // 
@@ -17210,7 +17211,7 @@
             this.c19RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c19RescueCheck.Name = "c19RescueCheck";
             this.c19RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19RescueCheck.TabIndex = 90;
+            this.c19RescueCheck.TabIndex = 9;
             this.c19RescueCheck.UseVisualStyleBackColor = true;
             this.c19RescueCheck.CheckedChanged += new System.EventHandler(this.c19RescueCheck_CheckedChanged);
             // 
@@ -17222,7 +17223,7 @@
             this.c19CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c19CrimeCheck.Name = "c19CrimeCheck";
             this.c19CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19CrimeCheck.TabIndex = 89;
+            this.c19CrimeCheck.TabIndex = 6;
             this.c19CrimeCheck.UseVisualStyleBackColor = true;
             this.c19CrimeCheck.CheckedChanged += new System.EventHandler(this.c19CrimeCheck_CheckedChanged);
             // 
@@ -17234,7 +17235,7 @@
             this.c19FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c19FireCheck.Name = "c19FireCheck";
             this.c19FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19FireCheck.TabIndex = 88;
+            this.c19FireCheck.TabIndex = 3;
             this.c19FireCheck.UseVisualStyleBackColor = true;
             this.c19FireCheck.CheckedChanged += new System.EventHandler(this.c19FireCheck_CheckedChanged);
             // 
@@ -17246,7 +17247,7 @@
             this.c19DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c19DiffCheck.Name = "c19DiffCheck";
             this.c19DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c19DiffCheck.TabIndex = 87;
+            this.c19DiffCheck.TabIndex = 0;
             this.c19DiffCheck.UseVisualStyleBackColor = true;
             this.c19DiffCheck.CheckedChanged += new System.EventHandler(this.c19DiffCheck_CheckedChanged);
             // 
@@ -17285,7 +17286,7 @@
             0});
             this.c19MoneyMax.Name = "c19MoneyMax";
             this.c19MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c19MoneyMax.TabIndex = 84;
+            this.c19MoneyMax.TabIndex = 32;
             this.c19MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -17308,7 +17309,7 @@
             0});
             this.c19MoneyMin.Name = "c19MoneyMin";
             this.c19MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c19MoneyMin.TabIndex = 83;
+            this.c19MoneyMin.TabIndex = 31;
             this.c19MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -17325,7 +17326,7 @@
             this.label215.Size = new System.Drawing.Size(103, 13);
             this.label215.TabIndex = 82;
             this.label215.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label215, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label215, "Amount of money given when completing this city.");
             // 
             // c19PointsMax
             // 
@@ -17342,7 +17343,7 @@
             0});
             this.c19PointsMax.Name = "c19PointsMax";
             this.c19PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c19PointsMax.TabIndex = 81;
+            this.c19PointsMax.TabIndex = 29;
             this.c19PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -17365,7 +17366,7 @@
             0});
             this.c19PointsMin.Name = "c19PointsMin";
             this.c19PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c19PointsMin.TabIndex = 80;
+            this.c19PointsMin.TabIndex = 28;
             this.c19PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -17394,7 +17395,7 @@
             0});
             this.c19DayMax.Name = "c19DayMax";
             this.c19DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c19DayMax.TabIndex = 78;
+            this.c19DayMax.TabIndex = 26;
             this.c19DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -17412,7 +17413,7 @@
             0});
             this.c19DayMin.Name = "c19DayMin";
             this.c19DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c19DayMin.TabIndex = 77;
+            this.c19DayMin.TabIndex = 25;
             this.c19DayMin.ValueChanged += new System.EventHandler(this.c19DayMin_ValueChanged);
             // 
             // label217
@@ -17436,7 +17437,7 @@
             0});
             this.c19TrafficMax.Name = "c19TrafficMax";
             this.c19TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c19TrafficMax.TabIndex = 75;
+            this.c19TrafficMax.TabIndex = 17;
             this.c19TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17454,7 +17455,7 @@
             0});
             this.c19TrafficMin.Name = "c19TrafficMin";
             this.c19TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c19TrafficMin.TabIndex = 74;
+            this.c19TrafficMin.TabIndex = 16;
             this.c19TrafficMin.ValueChanged += new System.EventHandler(this.c19TrafficMin_ValueChanged);
             // 
             // label218
@@ -17478,7 +17479,7 @@
             0});
             this.c19RiotMax.Name = "c19RiotMax";
             this.c19RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c19RiotMax.TabIndex = 72;
+            this.c19RiotMax.TabIndex = 14;
             this.c19RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17496,7 +17497,7 @@
             0});
             this.c19RiotMin.Name = "c19RiotMin";
             this.c19RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c19RiotMin.TabIndex = 71;
+            this.c19RiotMin.TabIndex = 13;
             this.c19RiotMin.ValueChanged += new System.EventHandler(this.c19RiotMin_ValueChanged);
             // 
             // label219
@@ -17520,7 +17521,7 @@
             0});
             this.c19RescueMax.Name = "c19RescueMax";
             this.c19RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c19RescueMax.TabIndex = 69;
+            this.c19RescueMax.TabIndex = 11;
             this.c19RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17538,7 +17539,7 @@
             0});
             this.c19RescueMin.Name = "c19RescueMin";
             this.c19RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c19RescueMin.TabIndex = 68;
+            this.c19RescueMin.TabIndex = 10;
             this.c19RescueMin.ValueChanged += new System.EventHandler(this.c19RescueMin_ValueChanged);
             // 
             // label220
@@ -17562,7 +17563,7 @@
             0});
             this.c19CrimeMax.Name = "c19CrimeMax";
             this.c19CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c19CrimeMax.TabIndex = 66;
+            this.c19CrimeMax.TabIndex = 8;
             this.c19CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17580,7 +17581,7 @@
             0});
             this.c19CrimeMin.Name = "c19CrimeMin";
             this.c19CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c19CrimeMin.TabIndex = 65;
+            this.c19CrimeMin.TabIndex = 7;
             this.c19CrimeMin.ValueChanged += new System.EventHandler(this.c19CrimeMin_ValueChanged);
             // 
             // label221
@@ -17604,7 +17605,7 @@
             0});
             this.c19FireMax.Name = "c19FireMax";
             this.c19FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c19FireMax.TabIndex = 63;
+            this.c19FireMax.TabIndex = 5;
             this.c19FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17622,7 +17623,7 @@
             0});
             this.c19FireMin.Name = "c19FireMin";
             this.c19FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c19FireMin.TabIndex = 62;
+            this.c19FireMin.TabIndex = 4;
             this.c19FireMin.ValueChanged += new System.EventHandler(this.c19FireMin_ValueChanged);
             // 
             // label222
@@ -17646,7 +17647,7 @@
             0});
             this.c19DiffMax.Name = "c19DiffMax";
             this.c19DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c19DiffMax.TabIndex = 60;
+            this.c19DiffMax.TabIndex = 2;
             this.c19DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -17664,7 +17665,7 @@
             0});
             this.c19DiffMin.Name = "c19DiffMin";
             this.c19DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c19DiffMin.TabIndex = 59;
+            this.c19DiffMin.TabIndex = 1;
             this.c19DiffMin.ValueChanged += new System.EventHandler(this.c19DiffMin_ValueChanged);
             // 
             // label223
@@ -17744,7 +17745,7 @@
             0});
             this.c20TransportMax.Name = "c20TransportMax";
             this.c20TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c20TransportMax.TabIndex = 103;
+            this.c20TransportMax.TabIndex = 23;
             this.c20TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17762,7 +17763,7 @@
             0});
             this.c20MedevacMax.Name = "c20MedevacMax";
             this.c20MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c20MedevacMax.TabIndex = 102;
+            this.c20MedevacMax.TabIndex = 20;
             this.c20MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -17780,7 +17781,7 @@
             0});
             this.c20TransportMin.Name = "c20TransportMin";
             this.c20TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c20TransportMin.TabIndex = 101;
+            this.c20TransportMin.TabIndex = 22;
             this.c20TransportMin.ValueChanged += new System.EventHandler(this.c20TransportMin_ValueChanged);
             // 
             // c20MedevacMin
@@ -17793,7 +17794,7 @@
             0});
             this.c20MedevacMin.Name = "c20MedevacMin";
             this.c20MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c20MedevacMin.TabIndex = 100;
+            this.c20MedevacMin.TabIndex = 19;
             this.c20MedevacMin.ValueChanged += new System.EventHandler(this.c20MedevacMin_ValueChanged);
             // 
             // label374
@@ -17805,7 +17806,7 @@
             this.label374.Size = new System.Drawing.Size(119, 13);
             this.label374.TabIndex = 99;
             this.label374.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label374, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label374, "Frequency of transport missions in this city.");
             // 
             // label375
             // 
@@ -17816,7 +17817,7 @@
             this.label375.Size = new System.Drawing.Size(103, 13);
             this.label375.TabIndex = 98;
             this.label375.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label375, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label375, "Frequency of medevac missions in this city.");
             // 
             // c20TransportCheck
             // 
@@ -17826,7 +17827,7 @@
             this.c20TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c20TransportCheck.Name = "c20TransportCheck";
             this.c20TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20TransportCheck.TabIndex = 97;
+            this.c20TransportCheck.TabIndex = 21;
             this.c20TransportCheck.UseVisualStyleBackColor = true;
             this.c20TransportCheck.CheckedChanged += new System.EventHandler(this.c20TransportCheck_CheckedChanged);
             // 
@@ -17838,7 +17839,7 @@
             this.c20MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c20MedevacCheck.Name = "c20MedevacCheck";
             this.c20MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20MedevacCheck.TabIndex = 96;
+            this.c20MedevacCheck.TabIndex = 18;
             this.c20MedevacCheck.UseVisualStyleBackColor = true;
             this.c20MedevacCheck.CheckedChanged += new System.EventHandler(this.c20MedevacCheck_CheckedChanged);
             // 
@@ -17850,7 +17851,7 @@
             this.c20MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c20MoneyCheck.Name = "c20MoneyCheck";
             this.c20MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20MoneyCheck.TabIndex = 95;
+            this.c20MoneyCheck.TabIndex = 30;
             this.c20MoneyCheck.UseVisualStyleBackColor = true;
             this.c20MoneyCheck.CheckedChanged += new System.EventHandler(this.c20MoneyCheck_CheckedChanged);
             // 
@@ -17862,7 +17863,7 @@
             this.c20PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c20PointCheck.Name = "c20PointCheck";
             this.c20PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20PointCheck.TabIndex = 94;
+            this.c20PointCheck.TabIndex = 27;
             this.c20PointCheck.UseVisualStyleBackColor = true;
             this.c20PointCheck.CheckedChanged += new System.EventHandler(this.c20PointCheck_CheckedChanged);
             // 
@@ -17874,7 +17875,7 @@
             this.c20DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c20DayCheck.Name = "c20DayCheck";
             this.c20DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20DayCheck.TabIndex = 93;
+            this.c20DayCheck.TabIndex = 24;
             this.c20DayCheck.UseVisualStyleBackColor = true;
             this.c20DayCheck.CheckedChanged += new System.EventHandler(this.c20DayCheck_CheckedChanged);
             // 
@@ -17886,7 +17887,7 @@
             this.c20TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c20TrafficCheck.Name = "c20TrafficCheck";
             this.c20TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20TrafficCheck.TabIndex = 92;
+            this.c20TrafficCheck.TabIndex = 15;
             this.c20TrafficCheck.UseVisualStyleBackColor = true;
             this.c20TrafficCheck.CheckedChanged += new System.EventHandler(this.c20TrafficCheck_CheckedChanged);
             // 
@@ -17898,7 +17899,7 @@
             this.c20RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c20RiotCheck.Name = "c20RiotCheck";
             this.c20RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20RiotCheck.TabIndex = 91;
+            this.c20RiotCheck.TabIndex = 12;
             this.c20RiotCheck.UseVisualStyleBackColor = true;
             this.c20RiotCheck.CheckedChanged += new System.EventHandler(this.c20RiotCheck_CheckedChanged);
             // 
@@ -17910,7 +17911,7 @@
             this.c20RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c20RescueCheck.Name = "c20RescueCheck";
             this.c20RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20RescueCheck.TabIndex = 90;
+            this.c20RescueCheck.TabIndex = 9;
             this.c20RescueCheck.UseVisualStyleBackColor = true;
             this.c20RescueCheck.CheckedChanged += new System.EventHandler(this.c20RescueCheck_CheckedChanged);
             // 
@@ -17922,7 +17923,7 @@
             this.c20CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c20CrimeCheck.Name = "c20CrimeCheck";
             this.c20CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20CrimeCheck.TabIndex = 89;
+            this.c20CrimeCheck.TabIndex = 6;
             this.c20CrimeCheck.UseVisualStyleBackColor = true;
             this.c20CrimeCheck.CheckedChanged += new System.EventHandler(this.c20CrimeCheck_CheckedChanged);
             // 
@@ -17934,7 +17935,7 @@
             this.c20FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c20FireCheck.Name = "c20FireCheck";
             this.c20FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20FireCheck.TabIndex = 88;
+            this.c20FireCheck.TabIndex = 3;
             this.c20FireCheck.UseVisualStyleBackColor = true;
             this.c20FireCheck.CheckedChanged += new System.EventHandler(this.c20FireCheck_CheckedChanged);
             // 
@@ -17946,7 +17947,7 @@
             this.c20DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c20DiffCheck.Name = "c20DiffCheck";
             this.c20DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c20DiffCheck.TabIndex = 87;
+            this.c20DiffCheck.TabIndex = 0;
             this.c20DiffCheck.UseVisualStyleBackColor = true;
             this.c20DiffCheck.CheckedChanged += new System.EventHandler(this.c20DiffCheck_CheckedChanged);
             // 
@@ -17985,7 +17986,7 @@
             0});
             this.c20MoneyMax.Name = "c20MoneyMax";
             this.c20MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c20MoneyMax.TabIndex = 84;
+            this.c20MoneyMax.TabIndex = 32;
             this.c20MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -18008,7 +18009,7 @@
             0});
             this.c20MoneyMin.Name = "c20MoneyMin";
             this.c20MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c20MoneyMin.TabIndex = 83;
+            this.c20MoneyMin.TabIndex = 31;
             this.c20MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -18025,7 +18026,7 @@
             this.label226.Size = new System.Drawing.Size(103, 13);
             this.label226.TabIndex = 82;
             this.label226.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label226, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label226, "Amount of money given when completing this city.");
             // 
             // c20PointsMax
             // 
@@ -18042,7 +18043,7 @@
             0});
             this.c20PointsMax.Name = "c20PointsMax";
             this.c20PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c20PointsMax.TabIndex = 81;
+            this.c20PointsMax.TabIndex = 29;
             this.c20PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -18065,7 +18066,7 @@
             0});
             this.c20PointsMin.Name = "c20PointsMin";
             this.c20PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c20PointsMin.TabIndex = 80;
+            this.c20PointsMin.TabIndex = 28;
             this.c20PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -18094,7 +18095,7 @@
             0});
             this.c20DayMax.Name = "c20DayMax";
             this.c20DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c20DayMax.TabIndex = 78;
+            this.c20DayMax.TabIndex = 26;
             this.c20DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -18112,7 +18113,7 @@
             0});
             this.c20DayMin.Name = "c20DayMin";
             this.c20DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c20DayMin.TabIndex = 77;
+            this.c20DayMin.TabIndex = 25;
             this.c20DayMin.ValueChanged += new System.EventHandler(this.c20DayMin_ValueChanged);
             // 
             // label228
@@ -18136,7 +18137,7 @@
             0});
             this.c20TrafficMax.Name = "c20TrafficMax";
             this.c20TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c20TrafficMax.TabIndex = 75;
+            this.c20TrafficMax.TabIndex = 17;
             this.c20TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18154,7 +18155,7 @@
             0});
             this.c20TrafficMin.Name = "c20TrafficMin";
             this.c20TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c20TrafficMin.TabIndex = 74;
+            this.c20TrafficMin.TabIndex = 16;
             this.c20TrafficMin.ValueChanged += new System.EventHandler(this.c20TrafficMin_ValueChanged);
             // 
             // label229
@@ -18178,7 +18179,7 @@
             0});
             this.c20RiotMax.Name = "c20RiotMax";
             this.c20RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c20RiotMax.TabIndex = 72;
+            this.c20RiotMax.TabIndex = 14;
             this.c20RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18196,7 +18197,7 @@
             0});
             this.c20RiotMin.Name = "c20RiotMin";
             this.c20RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c20RiotMin.TabIndex = 71;
+            this.c20RiotMin.TabIndex = 13;
             this.c20RiotMin.ValueChanged += new System.EventHandler(this.c20RiotMin_ValueChanged);
             // 
             // label230
@@ -18220,7 +18221,7 @@
             0});
             this.c20RescueMax.Name = "c20RescueMax";
             this.c20RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c20RescueMax.TabIndex = 69;
+            this.c20RescueMax.TabIndex = 11;
             this.c20RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18238,7 +18239,7 @@
             0});
             this.c20RescueMin.Name = "c20RescueMin";
             this.c20RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c20RescueMin.TabIndex = 68;
+            this.c20RescueMin.TabIndex = 10;
             this.c20RescueMin.ValueChanged += new System.EventHandler(this.c20RescueMin_ValueChanged);
             // 
             // label231
@@ -18262,7 +18263,7 @@
             0});
             this.c20CrimeMax.Name = "c20CrimeMax";
             this.c20CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c20CrimeMax.TabIndex = 66;
+            this.c20CrimeMax.TabIndex = 8;
             this.c20CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18280,7 +18281,7 @@
             0});
             this.c20CrimeMin.Name = "c20CrimeMin";
             this.c20CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c20CrimeMin.TabIndex = 65;
+            this.c20CrimeMin.TabIndex = 7;
             this.c20CrimeMin.ValueChanged += new System.EventHandler(this.c20CrimeMin_ValueChanged);
             // 
             // label232
@@ -18304,7 +18305,7 @@
             0});
             this.c20FireMax.Name = "c20FireMax";
             this.c20FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c20FireMax.TabIndex = 63;
+            this.c20FireMax.TabIndex = 5;
             this.c20FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18322,7 +18323,7 @@
             0});
             this.c20FireMin.Name = "c20FireMin";
             this.c20FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c20FireMin.TabIndex = 62;
+            this.c20FireMin.TabIndex = 4;
             this.c20FireMin.ValueChanged += new System.EventHandler(this.c20FireMin_ValueChanged);
             // 
             // label233
@@ -18346,7 +18347,7 @@
             0});
             this.c20DiffMax.Name = "c20DiffMax";
             this.c20DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c20DiffMax.TabIndex = 60;
+            this.c20DiffMax.TabIndex = 2;
             this.c20DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -18364,7 +18365,7 @@
             0});
             this.c20DiffMin.Name = "c20DiffMin";
             this.c20DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c20DiffMin.TabIndex = 59;
+            this.c20DiffMin.TabIndex = 1;
             this.c20DiffMin.ValueChanged += new System.EventHandler(this.c20DiffMin_ValueChanged);
             // 
             // label234
@@ -18444,7 +18445,7 @@
             0});
             this.c21TransportMax.Name = "c21TransportMax";
             this.c21TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c21TransportMax.TabIndex = 103;
+            this.c21TransportMax.TabIndex = 23;
             this.c21TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18462,7 +18463,7 @@
             0});
             this.c21MedevacMax.Name = "c21MedevacMax";
             this.c21MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c21MedevacMax.TabIndex = 102;
+            this.c21MedevacMax.TabIndex = 20;
             this.c21MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18480,7 +18481,7 @@
             0});
             this.c21TransportMin.Name = "c21TransportMin";
             this.c21TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c21TransportMin.TabIndex = 101;
+            this.c21TransportMin.TabIndex = 22;
             this.c21TransportMin.ValueChanged += new System.EventHandler(this.c21TransportMin_ValueChanged);
             // 
             // c21MedevacMin
@@ -18493,7 +18494,7 @@
             0});
             this.c21MedevacMin.Name = "c21MedevacMin";
             this.c21MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c21MedevacMin.TabIndex = 100;
+            this.c21MedevacMin.TabIndex = 19;
             this.c21MedevacMin.ValueChanged += new System.EventHandler(this.c21MedevacMin_ValueChanged);
             // 
             // label376
@@ -18505,7 +18506,7 @@
             this.label376.Size = new System.Drawing.Size(119, 13);
             this.label376.TabIndex = 99;
             this.label376.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label376, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label376, "Frequency of transport missions in this city.");
             // 
             // label377
             // 
@@ -18516,7 +18517,7 @@
             this.label377.Size = new System.Drawing.Size(103, 13);
             this.label377.TabIndex = 98;
             this.label377.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label377, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label377, "Frequency of medevac missions in this city.");
             // 
             // c21TransportCheck
             // 
@@ -18526,7 +18527,7 @@
             this.c21TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c21TransportCheck.Name = "c21TransportCheck";
             this.c21TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21TransportCheck.TabIndex = 97;
+            this.c21TransportCheck.TabIndex = 21;
             this.c21TransportCheck.UseVisualStyleBackColor = true;
             this.c21TransportCheck.CheckedChanged += new System.EventHandler(this.c21TransportCheck_CheckedChanged);
             // 
@@ -18538,7 +18539,7 @@
             this.c21MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c21MedevacCheck.Name = "c21MedevacCheck";
             this.c21MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21MedevacCheck.TabIndex = 96;
+            this.c21MedevacCheck.TabIndex = 18;
             this.c21MedevacCheck.UseVisualStyleBackColor = true;
             this.c21MedevacCheck.CheckedChanged += new System.EventHandler(this.c21MedevacCheck_CheckedChanged);
             // 
@@ -18550,7 +18551,7 @@
             this.c21MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c21MoneyCheck.Name = "c21MoneyCheck";
             this.c21MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21MoneyCheck.TabIndex = 95;
+            this.c21MoneyCheck.TabIndex = 30;
             this.c21MoneyCheck.UseVisualStyleBackColor = true;
             this.c21MoneyCheck.CheckedChanged += new System.EventHandler(this.c21MoneyCheck_CheckedChanged);
             // 
@@ -18562,7 +18563,7 @@
             this.c21PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c21PointCheck.Name = "c21PointCheck";
             this.c21PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21PointCheck.TabIndex = 94;
+            this.c21PointCheck.TabIndex = 27;
             this.c21PointCheck.UseVisualStyleBackColor = true;
             this.c21PointCheck.CheckedChanged += new System.EventHandler(this.c21PointCheck_CheckedChanged);
             // 
@@ -18574,7 +18575,7 @@
             this.c21DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c21DayCheck.Name = "c21DayCheck";
             this.c21DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21DayCheck.TabIndex = 93;
+            this.c21DayCheck.TabIndex = 24;
             this.c21DayCheck.UseVisualStyleBackColor = true;
             this.c21DayCheck.CheckedChanged += new System.EventHandler(this.c21DayCheck_CheckedChanged);
             // 
@@ -18586,7 +18587,7 @@
             this.c21TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c21TrafficCheck.Name = "c21TrafficCheck";
             this.c21TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21TrafficCheck.TabIndex = 92;
+            this.c21TrafficCheck.TabIndex = 15;
             this.c21TrafficCheck.UseVisualStyleBackColor = true;
             this.c21TrafficCheck.CheckedChanged += new System.EventHandler(this.c21TrafficCheck_CheckedChanged);
             // 
@@ -18598,7 +18599,7 @@
             this.c21RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c21RiotCheck.Name = "c21RiotCheck";
             this.c21RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21RiotCheck.TabIndex = 91;
+            this.c21RiotCheck.TabIndex = 12;
             this.c21RiotCheck.UseVisualStyleBackColor = true;
             this.c21RiotCheck.CheckedChanged += new System.EventHandler(this.c21RiotCheck_CheckedChanged);
             // 
@@ -18610,7 +18611,7 @@
             this.c21RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c21RescueCheck.Name = "c21RescueCheck";
             this.c21RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21RescueCheck.TabIndex = 90;
+            this.c21RescueCheck.TabIndex = 9;
             this.c21RescueCheck.UseVisualStyleBackColor = true;
             this.c21RescueCheck.CheckedChanged += new System.EventHandler(this.c21RescueCheck_CheckedChanged);
             // 
@@ -18622,7 +18623,7 @@
             this.c21CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c21CrimeCheck.Name = "c21CrimeCheck";
             this.c21CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21CrimeCheck.TabIndex = 89;
+            this.c21CrimeCheck.TabIndex = 6;
             this.c21CrimeCheck.UseVisualStyleBackColor = true;
             this.c21CrimeCheck.CheckedChanged += new System.EventHandler(this.c21CrimeCheck_CheckedChanged);
             // 
@@ -18634,7 +18635,7 @@
             this.c21FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c21FireCheck.Name = "c21FireCheck";
             this.c21FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21FireCheck.TabIndex = 88;
+            this.c21FireCheck.TabIndex = 3;
             this.c21FireCheck.UseVisualStyleBackColor = true;
             this.c21FireCheck.CheckedChanged += new System.EventHandler(this.c21FireCheck_CheckedChanged);
             // 
@@ -18646,7 +18647,7 @@
             this.c21DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c21DiffCheck.Name = "c21DiffCheck";
             this.c21DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c21DiffCheck.TabIndex = 87;
+            this.c21DiffCheck.TabIndex = 0;
             this.c21DiffCheck.UseVisualStyleBackColor = true;
             this.c21DiffCheck.CheckedChanged += new System.EventHandler(this.c21DiffCheck_CheckedChanged);
             // 
@@ -18685,7 +18686,7 @@
             0});
             this.c21MoneyMax.Name = "c21MoneyMax";
             this.c21MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c21MoneyMax.TabIndex = 84;
+            this.c21MoneyMax.TabIndex = 32;
             this.c21MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -18708,7 +18709,7 @@
             0});
             this.c21MoneyMin.Name = "c21MoneyMin";
             this.c21MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c21MoneyMin.TabIndex = 83;
+            this.c21MoneyMin.TabIndex = 31;
             this.c21MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -18725,7 +18726,7 @@
             this.label237.Size = new System.Drawing.Size(103, 13);
             this.label237.TabIndex = 82;
             this.label237.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label237, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label237, "Amount of money given when completing this city.");
             // 
             // c21PointsMax
             // 
@@ -18742,7 +18743,7 @@
             0});
             this.c21PointsMax.Name = "c21PointsMax";
             this.c21PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c21PointsMax.TabIndex = 81;
+            this.c21PointsMax.TabIndex = 29;
             this.c21PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -18765,7 +18766,7 @@
             0});
             this.c21PointsMin.Name = "c21PointsMin";
             this.c21PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c21PointsMin.TabIndex = 80;
+            this.c21PointsMin.TabIndex = 28;
             this.c21PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -18794,7 +18795,7 @@
             0});
             this.c21DayMax.Name = "c21DayMax";
             this.c21DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c21DayMax.TabIndex = 78;
+            this.c21DayMax.TabIndex = 26;
             this.c21DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -18812,7 +18813,7 @@
             0});
             this.c21DayMin.Name = "c21DayMin";
             this.c21DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c21DayMin.TabIndex = 77;
+            this.c21DayMin.TabIndex = 25;
             this.c21DayMin.ValueChanged += new System.EventHandler(this.c21DayMin_ValueChanged);
             // 
             // label239
@@ -18836,7 +18837,7 @@
             0});
             this.c21TrafficMax.Name = "c21TrafficMax";
             this.c21TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c21TrafficMax.TabIndex = 75;
+            this.c21TrafficMax.TabIndex = 17;
             this.c21TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18854,7 +18855,7 @@
             0});
             this.c21TrafficMin.Name = "c21TrafficMin";
             this.c21TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c21TrafficMin.TabIndex = 74;
+            this.c21TrafficMin.TabIndex = 16;
             this.c21TrafficMin.ValueChanged += new System.EventHandler(this.c21TrafficMin_ValueChanged);
             // 
             // label240
@@ -18878,7 +18879,7 @@
             0});
             this.c21RiotMax.Name = "c21RiotMax";
             this.c21RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c21RiotMax.TabIndex = 72;
+            this.c21RiotMax.TabIndex = 14;
             this.c21RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18896,7 +18897,7 @@
             0});
             this.c21RiotMin.Name = "c21RiotMin";
             this.c21RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c21RiotMin.TabIndex = 71;
+            this.c21RiotMin.TabIndex = 13;
             this.c21RiotMin.ValueChanged += new System.EventHandler(this.c21RiotMin_ValueChanged);
             // 
             // label241
@@ -18920,7 +18921,7 @@
             0});
             this.c21RescueMax.Name = "c21RescueMax";
             this.c21RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c21RescueMax.TabIndex = 69;
+            this.c21RescueMax.TabIndex = 11;
             this.c21RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18938,7 +18939,7 @@
             0});
             this.c21RescueMin.Name = "c21RescueMin";
             this.c21RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c21RescueMin.TabIndex = 68;
+            this.c21RescueMin.TabIndex = 10;
             this.c21RescueMin.ValueChanged += new System.EventHandler(this.c21RescueMin_ValueChanged);
             // 
             // label242
@@ -18962,7 +18963,7 @@
             0});
             this.c21CrimeMax.Name = "c21CrimeMax";
             this.c21CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c21CrimeMax.TabIndex = 66;
+            this.c21CrimeMax.TabIndex = 8;
             this.c21CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -18980,7 +18981,7 @@
             0});
             this.c21CrimeMin.Name = "c21CrimeMin";
             this.c21CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c21CrimeMin.TabIndex = 65;
+            this.c21CrimeMin.TabIndex = 7;
             this.c21CrimeMin.ValueChanged += new System.EventHandler(this.c21CrimeMin_ValueChanged);
             // 
             // label243
@@ -19004,7 +19005,7 @@
             0});
             this.c21FireMax.Name = "c21FireMax";
             this.c21FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c21FireMax.TabIndex = 63;
+            this.c21FireMax.TabIndex = 5;
             this.c21FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19022,7 +19023,7 @@
             0});
             this.c21FireMin.Name = "c21FireMin";
             this.c21FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c21FireMin.TabIndex = 62;
+            this.c21FireMin.TabIndex = 4;
             this.c21FireMin.ValueChanged += new System.EventHandler(this.c21FireMin_ValueChanged);
             // 
             // label244
@@ -19046,7 +19047,7 @@
             0});
             this.c21DiffMax.Name = "c21DiffMax";
             this.c21DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c21DiffMax.TabIndex = 60;
+            this.c21DiffMax.TabIndex = 2;
             this.c21DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -19064,7 +19065,7 @@
             0});
             this.c21DiffMin.Name = "c21DiffMin";
             this.c21DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c21DiffMin.TabIndex = 59;
+            this.c21DiffMin.TabIndex = 1;
             this.c21DiffMin.ValueChanged += new System.EventHandler(this.c21DiffMin_ValueChanged);
             // 
             // label245
@@ -19144,7 +19145,7 @@
             0});
             this.c22TransportMax.Name = "c22TransportMax";
             this.c22TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c22TransportMax.TabIndex = 103;
+            this.c22TransportMax.TabIndex = 23;
             this.c22TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19162,7 +19163,7 @@
             0});
             this.c22MedevacMax.Name = "c22MedevacMax";
             this.c22MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c22MedevacMax.TabIndex = 102;
+            this.c22MedevacMax.TabIndex = 20;
             this.c22MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19180,7 +19181,7 @@
             0});
             this.c22TransportMin.Name = "c22TransportMin";
             this.c22TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c22TransportMin.TabIndex = 101;
+            this.c22TransportMin.TabIndex = 22;
             this.c22TransportMin.ValueChanged += new System.EventHandler(this.c22TransportMin_ValueChanged);
             // 
             // c22MedevacMin
@@ -19193,7 +19194,7 @@
             0});
             this.c22MedevacMin.Name = "c22MedevacMin";
             this.c22MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c22MedevacMin.TabIndex = 100;
+            this.c22MedevacMin.TabIndex = 19;
             this.c22MedevacMin.ValueChanged += new System.EventHandler(this.c22MedevacMin_ValueChanged);
             // 
             // label378
@@ -19205,7 +19206,7 @@
             this.label378.Size = new System.Drawing.Size(119, 13);
             this.label378.TabIndex = 99;
             this.label378.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label378, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label378, "Frequency of transport missions in this city.");
             // 
             // label379
             // 
@@ -19216,7 +19217,7 @@
             this.label379.Size = new System.Drawing.Size(103, 13);
             this.label379.TabIndex = 98;
             this.label379.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label379, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label379, "Frequency of medevac missions in this city.");
             // 
             // c22TransportCheck
             // 
@@ -19226,7 +19227,7 @@
             this.c22TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c22TransportCheck.Name = "c22TransportCheck";
             this.c22TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22TransportCheck.TabIndex = 97;
+            this.c22TransportCheck.TabIndex = 21;
             this.c22TransportCheck.UseVisualStyleBackColor = true;
             this.c22TransportCheck.CheckedChanged += new System.EventHandler(this.c22TransportCheck_CheckedChanged);
             // 
@@ -19238,7 +19239,7 @@
             this.c22MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c22MedevacCheck.Name = "c22MedevacCheck";
             this.c22MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22MedevacCheck.TabIndex = 96;
+            this.c22MedevacCheck.TabIndex = 18;
             this.c22MedevacCheck.UseVisualStyleBackColor = true;
             this.c22MedevacCheck.CheckedChanged += new System.EventHandler(this.c22MedevacCheck_CheckedChanged);
             // 
@@ -19250,7 +19251,7 @@
             this.c22MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c22MoneyCheck.Name = "c22MoneyCheck";
             this.c22MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22MoneyCheck.TabIndex = 95;
+            this.c22MoneyCheck.TabIndex = 30;
             this.c22MoneyCheck.UseVisualStyleBackColor = true;
             this.c22MoneyCheck.CheckedChanged += new System.EventHandler(this.c22MoneyCheck_CheckedChanged);
             // 
@@ -19262,7 +19263,7 @@
             this.c22PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c22PointCheck.Name = "c22PointCheck";
             this.c22PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22PointCheck.TabIndex = 94;
+            this.c22PointCheck.TabIndex = 27;
             this.c22PointCheck.UseVisualStyleBackColor = true;
             this.c22PointCheck.CheckedChanged += new System.EventHandler(this.c22PointCheck_CheckedChanged);
             // 
@@ -19274,7 +19275,7 @@
             this.c22DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c22DayCheck.Name = "c22DayCheck";
             this.c22DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22DayCheck.TabIndex = 93;
+            this.c22DayCheck.TabIndex = 24;
             this.c22DayCheck.UseVisualStyleBackColor = true;
             this.c22DayCheck.CheckedChanged += new System.EventHandler(this.c22DayCheck_CheckedChanged);
             // 
@@ -19286,7 +19287,7 @@
             this.c22TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c22TrafficCheck.Name = "c22TrafficCheck";
             this.c22TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22TrafficCheck.TabIndex = 92;
+            this.c22TrafficCheck.TabIndex = 15;
             this.c22TrafficCheck.UseVisualStyleBackColor = true;
             this.c22TrafficCheck.CheckedChanged += new System.EventHandler(this.c22TrafficCheck_CheckedChanged);
             // 
@@ -19298,7 +19299,7 @@
             this.c22RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c22RiotCheck.Name = "c22RiotCheck";
             this.c22RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22RiotCheck.TabIndex = 91;
+            this.c22RiotCheck.TabIndex = 12;
             this.c22RiotCheck.UseVisualStyleBackColor = true;
             this.c22RiotCheck.CheckedChanged += new System.EventHandler(this.c22RiotCheck_CheckedChanged);
             // 
@@ -19310,7 +19311,7 @@
             this.c22RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c22RescueCheck.Name = "c22RescueCheck";
             this.c22RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22RescueCheck.TabIndex = 90;
+            this.c22RescueCheck.TabIndex = 9;
             this.c22RescueCheck.UseVisualStyleBackColor = true;
             this.c22RescueCheck.CheckedChanged += new System.EventHandler(this.c22RescueCheck_CheckedChanged);
             // 
@@ -19322,7 +19323,7 @@
             this.c22CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c22CrimeCheck.Name = "c22CrimeCheck";
             this.c22CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22CrimeCheck.TabIndex = 89;
+            this.c22CrimeCheck.TabIndex = 6;
             this.c22CrimeCheck.UseVisualStyleBackColor = true;
             this.c22CrimeCheck.CheckedChanged += new System.EventHandler(this.c22CrimeCheck_CheckedChanged);
             // 
@@ -19334,7 +19335,7 @@
             this.c22FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c22FireCheck.Name = "c22FireCheck";
             this.c22FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22FireCheck.TabIndex = 88;
+            this.c22FireCheck.TabIndex = 3;
             this.c22FireCheck.UseVisualStyleBackColor = true;
             this.c22FireCheck.CheckedChanged += new System.EventHandler(this.c22FireCheck_CheckedChanged);
             // 
@@ -19346,7 +19347,7 @@
             this.c22DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c22DiffCheck.Name = "c22DiffCheck";
             this.c22DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c22DiffCheck.TabIndex = 87;
+            this.c22DiffCheck.TabIndex = 0;
             this.c22DiffCheck.UseVisualStyleBackColor = true;
             this.c22DiffCheck.CheckedChanged += new System.EventHandler(this.c22DiffCheck_CheckedChanged);
             // 
@@ -19385,7 +19386,7 @@
             0});
             this.c22MoneyMax.Name = "c22MoneyMax";
             this.c22MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c22MoneyMax.TabIndex = 84;
+            this.c22MoneyMax.TabIndex = 32;
             this.c22MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -19408,7 +19409,7 @@
             0});
             this.c22MoneyMin.Name = "c22MoneyMin";
             this.c22MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c22MoneyMin.TabIndex = 83;
+            this.c22MoneyMin.TabIndex = 31;
             this.c22MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -19425,7 +19426,7 @@
             this.label248.Size = new System.Drawing.Size(103, 13);
             this.label248.TabIndex = 82;
             this.label248.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label248, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label248, "Amount of money given when completing this city.");
             // 
             // c22PointsMax
             // 
@@ -19442,7 +19443,7 @@
             0});
             this.c22PointsMax.Name = "c22PointsMax";
             this.c22PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c22PointsMax.TabIndex = 81;
+            this.c22PointsMax.TabIndex = 29;
             this.c22PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -19465,7 +19466,7 @@
             0});
             this.c22PointsMin.Name = "c22PointsMin";
             this.c22PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c22PointsMin.TabIndex = 80;
+            this.c22PointsMin.TabIndex = 28;
             this.c22PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -19494,7 +19495,7 @@
             0});
             this.c22DayMax.Name = "c22DayMax";
             this.c22DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c22DayMax.TabIndex = 78;
+            this.c22DayMax.TabIndex = 26;
             this.c22DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -19512,7 +19513,7 @@
             0});
             this.c22DayMin.Name = "c22DayMin";
             this.c22DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c22DayMin.TabIndex = 77;
+            this.c22DayMin.TabIndex = 25;
             this.c22DayMin.ValueChanged += new System.EventHandler(this.c22DayMin_ValueChanged);
             // 
             // label250
@@ -19536,7 +19537,7 @@
             0});
             this.c22TrafficMax.Name = "c22TrafficMax";
             this.c22TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c22TrafficMax.TabIndex = 75;
+            this.c22TrafficMax.TabIndex = 17;
             this.c22TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19554,7 +19555,7 @@
             0});
             this.c22TrafficMin.Name = "c22TrafficMin";
             this.c22TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c22TrafficMin.TabIndex = 74;
+            this.c22TrafficMin.TabIndex = 16;
             this.c22TrafficMin.ValueChanged += new System.EventHandler(this.c22TrafficMin_ValueChanged);
             // 
             // label251
@@ -19578,7 +19579,7 @@
             0});
             this.c22RiotMax.Name = "c22RiotMax";
             this.c22RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c22RiotMax.TabIndex = 72;
+            this.c22RiotMax.TabIndex = 14;
             this.c22RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19596,7 +19597,7 @@
             0});
             this.c22RiotMin.Name = "c22RiotMin";
             this.c22RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c22RiotMin.TabIndex = 71;
+            this.c22RiotMin.TabIndex = 13;
             this.c22RiotMin.ValueChanged += new System.EventHandler(this.c22RiotMin_ValueChanged);
             // 
             // label252
@@ -19620,7 +19621,7 @@
             0});
             this.c22RescueMax.Name = "c22RescueMax";
             this.c22RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c22RescueMax.TabIndex = 69;
+            this.c22RescueMax.TabIndex = 11;
             this.c22RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19638,7 +19639,7 @@
             0});
             this.c22RescueMin.Name = "c22RescueMin";
             this.c22RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c22RescueMin.TabIndex = 68;
+            this.c22RescueMin.TabIndex = 10;
             this.c22RescueMin.ValueChanged += new System.EventHandler(this.c22RescueMin_ValueChanged);
             // 
             // label253
@@ -19662,7 +19663,7 @@
             0});
             this.c22CrimeMax.Name = "c22CrimeMax";
             this.c22CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c22CrimeMax.TabIndex = 66;
+            this.c22CrimeMax.TabIndex = 8;
             this.c22CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19680,7 +19681,7 @@
             0});
             this.c22CrimeMin.Name = "c22CrimeMin";
             this.c22CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c22CrimeMin.TabIndex = 65;
+            this.c22CrimeMin.TabIndex = 7;
             this.c22CrimeMin.ValueChanged += new System.EventHandler(this.c22CrimeMin_ValueChanged);
             // 
             // label254
@@ -19704,7 +19705,7 @@
             0});
             this.c22FireMax.Name = "c22FireMax";
             this.c22FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c22FireMax.TabIndex = 63;
+            this.c22FireMax.TabIndex = 5;
             this.c22FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19722,7 +19723,7 @@
             0});
             this.c22FireMin.Name = "c22FireMin";
             this.c22FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c22FireMin.TabIndex = 62;
+            this.c22FireMin.TabIndex = 4;
             this.c22FireMin.ValueChanged += new System.EventHandler(this.c22FireMin_ValueChanged);
             // 
             // label255
@@ -19746,7 +19747,7 @@
             0});
             this.c22DiffMax.Name = "c22DiffMax";
             this.c22DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c22DiffMax.TabIndex = 60;
+            this.c22DiffMax.TabIndex = 2;
             this.c22DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -19764,7 +19765,7 @@
             0});
             this.c22DiffMin.Name = "c22DiffMin";
             this.c22DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c22DiffMin.TabIndex = 59;
+            this.c22DiffMin.TabIndex = 1;
             this.c22DiffMin.ValueChanged += new System.EventHandler(this.c22DiffMin_ValueChanged);
             // 
             // label256
@@ -19844,7 +19845,7 @@
             0});
             this.c23TransportMax.Name = "c23TransportMax";
             this.c23TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c23TransportMax.TabIndex = 103;
+            this.c23TransportMax.TabIndex = 23;
             this.c23TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19862,7 +19863,7 @@
             0});
             this.c23MedevacMax.Name = "c23MedevacMax";
             this.c23MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c23MedevacMax.TabIndex = 102;
+            this.c23MedevacMax.TabIndex = 20;
             this.c23MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -19880,7 +19881,7 @@
             0});
             this.c23TransportMin.Name = "c23TransportMin";
             this.c23TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c23TransportMin.TabIndex = 101;
+            this.c23TransportMin.TabIndex = 22;
             this.c23TransportMin.ValueChanged += new System.EventHandler(this.c23TransportMin_ValueChanged);
             // 
             // c23MedevacMin
@@ -19893,7 +19894,7 @@
             0});
             this.c23MedevacMin.Name = "c23MedevacMin";
             this.c23MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c23MedevacMin.TabIndex = 100;
+            this.c23MedevacMin.TabIndex = 19;
             this.c23MedevacMin.ValueChanged += new System.EventHandler(this.c23MedevacMin_ValueChanged);
             // 
             // label380
@@ -19905,7 +19906,7 @@
             this.label380.Size = new System.Drawing.Size(119, 13);
             this.label380.TabIndex = 99;
             this.label380.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label380, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label380, "Frequency of transport missions in this city.");
             // 
             // label381
             // 
@@ -19916,7 +19917,7 @@
             this.label381.Size = new System.Drawing.Size(103, 13);
             this.label381.TabIndex = 98;
             this.label381.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label381, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label381, "Frequency of medevac missions in this city.");
             // 
             // c23TransportCheck
             // 
@@ -19926,7 +19927,7 @@
             this.c23TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c23TransportCheck.Name = "c23TransportCheck";
             this.c23TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23TransportCheck.TabIndex = 97;
+            this.c23TransportCheck.TabIndex = 21;
             this.c23TransportCheck.UseVisualStyleBackColor = true;
             this.c23TransportCheck.CheckedChanged += new System.EventHandler(this.c23TransportCheck_CheckedChanged);
             // 
@@ -19938,7 +19939,7 @@
             this.c23MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c23MedevacCheck.Name = "c23MedevacCheck";
             this.c23MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23MedevacCheck.TabIndex = 96;
+            this.c23MedevacCheck.TabIndex = 18;
             this.c23MedevacCheck.UseVisualStyleBackColor = true;
             this.c23MedevacCheck.CheckedChanged += new System.EventHandler(this.c23MedevacCheck_CheckedChanged);
             // 
@@ -19950,7 +19951,7 @@
             this.c23MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c23MoneyCheck.Name = "c23MoneyCheck";
             this.c23MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23MoneyCheck.TabIndex = 95;
+            this.c23MoneyCheck.TabIndex = 30;
             this.c23MoneyCheck.UseVisualStyleBackColor = true;
             this.c23MoneyCheck.CheckedChanged += new System.EventHandler(this.c23MoneyCheck_CheckedChanged);
             // 
@@ -19962,7 +19963,7 @@
             this.c23PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c23PointCheck.Name = "c23PointCheck";
             this.c23PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23PointCheck.TabIndex = 94;
+            this.c23PointCheck.TabIndex = 27;
             this.c23PointCheck.UseVisualStyleBackColor = true;
             this.c23PointCheck.CheckedChanged += new System.EventHandler(this.c23PointCheck_CheckedChanged);
             // 
@@ -19974,7 +19975,7 @@
             this.c23DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c23DayCheck.Name = "c23DayCheck";
             this.c23DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23DayCheck.TabIndex = 93;
+            this.c23DayCheck.TabIndex = 24;
             this.c23DayCheck.UseVisualStyleBackColor = true;
             this.c23DayCheck.CheckedChanged += new System.EventHandler(this.c23DayCheck_CheckedChanged);
             // 
@@ -19986,7 +19987,7 @@
             this.c23TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c23TrafficCheck.Name = "c23TrafficCheck";
             this.c23TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23TrafficCheck.TabIndex = 92;
+            this.c23TrafficCheck.TabIndex = 15;
             this.c23TrafficCheck.UseVisualStyleBackColor = true;
             this.c23TrafficCheck.CheckedChanged += new System.EventHandler(this.c23TrafficCheck_CheckedChanged);
             // 
@@ -19998,7 +19999,7 @@
             this.c23RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c23RiotCheck.Name = "c23RiotCheck";
             this.c23RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23RiotCheck.TabIndex = 91;
+            this.c23RiotCheck.TabIndex = 12;
             this.c23RiotCheck.UseVisualStyleBackColor = true;
             this.c23RiotCheck.CheckedChanged += new System.EventHandler(this.c23RiotCheck_CheckedChanged);
             // 
@@ -20010,7 +20011,7 @@
             this.c23RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c23RescueCheck.Name = "c23RescueCheck";
             this.c23RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23RescueCheck.TabIndex = 90;
+            this.c23RescueCheck.TabIndex = 9;
             this.c23RescueCheck.UseVisualStyleBackColor = true;
             this.c23RescueCheck.CheckedChanged += new System.EventHandler(this.c23RescueCheck_CheckedChanged);
             // 
@@ -20022,7 +20023,7 @@
             this.c23CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c23CrimeCheck.Name = "c23CrimeCheck";
             this.c23CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23CrimeCheck.TabIndex = 89;
+            this.c23CrimeCheck.TabIndex = 6;
             this.c23CrimeCheck.UseVisualStyleBackColor = true;
             this.c23CrimeCheck.CheckedChanged += new System.EventHandler(this.c23CrimeCheck_CheckedChanged);
             // 
@@ -20034,7 +20035,7 @@
             this.c23FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c23FireCheck.Name = "c23FireCheck";
             this.c23FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23FireCheck.TabIndex = 88;
+            this.c23FireCheck.TabIndex = 3;
             this.c23FireCheck.UseVisualStyleBackColor = true;
             this.c23FireCheck.CheckedChanged += new System.EventHandler(this.c23FireCheck_CheckedChanged);
             // 
@@ -20046,7 +20047,7 @@
             this.c23DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c23DiffCheck.Name = "c23DiffCheck";
             this.c23DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c23DiffCheck.TabIndex = 87;
+            this.c23DiffCheck.TabIndex = 0;
             this.c23DiffCheck.UseVisualStyleBackColor = true;
             this.c23DiffCheck.CheckedChanged += new System.EventHandler(this.c23DiffCheck_CheckedChanged);
             // 
@@ -20085,7 +20086,7 @@
             0});
             this.c23MoneyMax.Name = "c23MoneyMax";
             this.c23MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c23MoneyMax.TabIndex = 84;
+            this.c23MoneyMax.TabIndex = 32;
             this.c23MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -20108,7 +20109,7 @@
             0});
             this.c23MoneyMin.Name = "c23MoneyMin";
             this.c23MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c23MoneyMin.TabIndex = 83;
+            this.c23MoneyMin.TabIndex = 31;
             this.c23MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -20125,7 +20126,7 @@
             this.label259.Size = new System.Drawing.Size(103, 13);
             this.label259.TabIndex = 82;
             this.label259.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label259, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label259, "Amount of money given when completing this city.");
             // 
             // c23PointsMax
             // 
@@ -20142,7 +20143,7 @@
             0});
             this.c23PointsMax.Name = "c23PointsMax";
             this.c23PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c23PointsMax.TabIndex = 81;
+            this.c23PointsMax.TabIndex = 29;
             this.c23PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -20165,7 +20166,7 @@
             0});
             this.c23PointsMin.Name = "c23PointsMin";
             this.c23PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c23PointsMin.TabIndex = 80;
+            this.c23PointsMin.TabIndex = 28;
             this.c23PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -20194,7 +20195,7 @@
             0});
             this.c23DayMax.Name = "c23DayMax";
             this.c23DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c23DayMax.TabIndex = 78;
+            this.c23DayMax.TabIndex = 26;
             this.c23DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -20212,7 +20213,7 @@
             0});
             this.c23DayMin.Name = "c23DayMin";
             this.c23DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c23DayMin.TabIndex = 77;
+            this.c23DayMin.TabIndex = 25;
             this.c23DayMin.ValueChanged += new System.EventHandler(this.c23DayMin_ValueChanged);
             // 
             // label261
@@ -20236,7 +20237,7 @@
             0});
             this.c23TrafficMax.Name = "c23TrafficMax";
             this.c23TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c23TrafficMax.TabIndex = 75;
+            this.c23TrafficMax.TabIndex = 17;
             this.c23TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20254,7 +20255,7 @@
             0});
             this.c23TrafficMin.Name = "c23TrafficMin";
             this.c23TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c23TrafficMin.TabIndex = 74;
+            this.c23TrafficMin.TabIndex = 16;
             this.c23TrafficMin.ValueChanged += new System.EventHandler(this.c23TrafficMin_ValueChanged);
             // 
             // label262
@@ -20278,7 +20279,7 @@
             0});
             this.c23RiotMax.Name = "c23RiotMax";
             this.c23RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c23RiotMax.TabIndex = 72;
+            this.c23RiotMax.TabIndex = 14;
             this.c23RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20296,7 +20297,7 @@
             0});
             this.c23RiotMin.Name = "c23RiotMin";
             this.c23RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c23RiotMin.TabIndex = 71;
+            this.c23RiotMin.TabIndex = 13;
             this.c23RiotMin.ValueChanged += new System.EventHandler(this.c23RiotMin_ValueChanged);
             // 
             // label263
@@ -20320,7 +20321,7 @@
             0});
             this.c23RescueMax.Name = "c23RescueMax";
             this.c23RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c23RescueMax.TabIndex = 69;
+            this.c23RescueMax.TabIndex = 11;
             this.c23RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20338,7 +20339,7 @@
             0});
             this.c23RescueMin.Name = "c23RescueMin";
             this.c23RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c23RescueMin.TabIndex = 68;
+            this.c23RescueMin.TabIndex = 10;
             this.c23RescueMin.ValueChanged += new System.EventHandler(this.c23RescueMin_ValueChanged);
             // 
             // label264
@@ -20362,7 +20363,7 @@
             0});
             this.c23CrimeMax.Name = "c23CrimeMax";
             this.c23CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c23CrimeMax.TabIndex = 66;
+            this.c23CrimeMax.TabIndex = 8;
             this.c23CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20380,7 +20381,7 @@
             0});
             this.c23CrimeMin.Name = "c23CrimeMin";
             this.c23CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c23CrimeMin.TabIndex = 65;
+            this.c23CrimeMin.TabIndex = 7;
             this.c23CrimeMin.ValueChanged += new System.EventHandler(this.c23CrimeMin_ValueChanged);
             // 
             // label265
@@ -20404,7 +20405,7 @@
             0});
             this.c23FireMax.Name = "c23FireMax";
             this.c23FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c23FireMax.TabIndex = 63;
+            this.c23FireMax.TabIndex = 5;
             this.c23FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20422,7 +20423,7 @@
             0});
             this.c23FireMin.Name = "c23FireMin";
             this.c23FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c23FireMin.TabIndex = 62;
+            this.c23FireMin.TabIndex = 4;
             this.c23FireMin.ValueChanged += new System.EventHandler(this.c23FireMin_ValueChanged);
             // 
             // label266
@@ -20446,7 +20447,7 @@
             0});
             this.c23DiffMax.Name = "c23DiffMax";
             this.c23DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c23DiffMax.TabIndex = 60;
+            this.c23DiffMax.TabIndex = 2;
             this.c23DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -20464,7 +20465,7 @@
             0});
             this.c23DiffMin.Name = "c23DiffMin";
             this.c23DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c23DiffMin.TabIndex = 59;
+            this.c23DiffMin.TabIndex = 1;
             this.c23DiffMin.ValueChanged += new System.EventHandler(this.c23DiffMin_ValueChanged);
             // 
             // label267
@@ -20544,7 +20545,7 @@
             0});
             this.c24TransportMax.Name = "c24TransportMax";
             this.c24TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c24TransportMax.TabIndex = 103;
+            this.c24TransportMax.TabIndex = 23;
             this.c24TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20562,7 +20563,7 @@
             0});
             this.c24MedevacMax.Name = "c24MedevacMax";
             this.c24MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c24MedevacMax.TabIndex = 102;
+            this.c24MedevacMax.TabIndex = 20;
             this.c24MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20580,7 +20581,7 @@
             0});
             this.c24TransportMin.Name = "c24TransportMin";
             this.c24TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c24TransportMin.TabIndex = 101;
+            this.c24TransportMin.TabIndex = 22;
             this.c24TransportMin.ValueChanged += new System.EventHandler(this.c24TransportMin_ValueChanged);
             // 
             // c24MedevacMin
@@ -20593,7 +20594,7 @@
             0});
             this.c24MedevacMin.Name = "c24MedevacMin";
             this.c24MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c24MedevacMin.TabIndex = 100;
+            this.c24MedevacMin.TabIndex = 19;
             this.c24MedevacMin.ValueChanged += new System.EventHandler(this.c24MedevacMin_ValueChanged);
             // 
             // label382
@@ -20605,7 +20606,7 @@
             this.label382.Size = new System.Drawing.Size(119, 13);
             this.label382.TabIndex = 99;
             this.label382.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label382, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label382, "Frequency of transport missions in this city.");
             // 
             // label383
             // 
@@ -20616,7 +20617,7 @@
             this.label383.Size = new System.Drawing.Size(103, 13);
             this.label383.TabIndex = 98;
             this.label383.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label383, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label383, "Frequency of medevac missions in this city.");
             // 
             // c24TransportCheck
             // 
@@ -20626,7 +20627,7 @@
             this.c24TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c24TransportCheck.Name = "c24TransportCheck";
             this.c24TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24TransportCheck.TabIndex = 97;
+            this.c24TransportCheck.TabIndex = 21;
             this.c24TransportCheck.UseVisualStyleBackColor = true;
             this.c24TransportCheck.CheckedChanged += new System.EventHandler(this.c24TransportCheck_CheckedChanged);
             // 
@@ -20638,7 +20639,7 @@
             this.c24MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c24MedevacCheck.Name = "c24MedevacCheck";
             this.c24MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24MedevacCheck.TabIndex = 96;
+            this.c24MedevacCheck.TabIndex = 18;
             this.c24MedevacCheck.UseVisualStyleBackColor = true;
             this.c24MedevacCheck.CheckedChanged += new System.EventHandler(this.c24MedevacCheck_CheckedChanged);
             // 
@@ -20650,7 +20651,7 @@
             this.c24MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c24MoneyCheck.Name = "c24MoneyCheck";
             this.c24MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24MoneyCheck.TabIndex = 95;
+            this.c24MoneyCheck.TabIndex = 30;
             this.c24MoneyCheck.UseVisualStyleBackColor = true;
             this.c24MoneyCheck.CheckedChanged += new System.EventHandler(this.c24MoneyCheck_CheckedChanged);
             // 
@@ -20662,7 +20663,7 @@
             this.c24PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c24PointCheck.Name = "c24PointCheck";
             this.c24PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24PointCheck.TabIndex = 94;
+            this.c24PointCheck.TabIndex = 27;
             this.c24PointCheck.UseVisualStyleBackColor = true;
             this.c24PointCheck.CheckedChanged += new System.EventHandler(this.c24PointCheck_CheckedChanged);
             // 
@@ -20674,7 +20675,7 @@
             this.c24DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c24DayCheck.Name = "c24DayCheck";
             this.c24DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24DayCheck.TabIndex = 93;
+            this.c24DayCheck.TabIndex = 24;
             this.c24DayCheck.UseVisualStyleBackColor = true;
             this.c24DayCheck.CheckedChanged += new System.EventHandler(this.c24DayCheck_CheckedChanged);
             // 
@@ -20686,7 +20687,7 @@
             this.c24TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c24TrafficCheck.Name = "c24TrafficCheck";
             this.c24TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24TrafficCheck.TabIndex = 92;
+            this.c24TrafficCheck.TabIndex = 15;
             this.c24TrafficCheck.UseVisualStyleBackColor = true;
             this.c24TrafficCheck.CheckedChanged += new System.EventHandler(this.c24TrafficCheck_CheckedChanged);
             // 
@@ -20698,7 +20699,7 @@
             this.c24RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c24RiotCheck.Name = "c24RiotCheck";
             this.c24RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24RiotCheck.TabIndex = 91;
+            this.c24RiotCheck.TabIndex = 12;
             this.c24RiotCheck.UseVisualStyleBackColor = true;
             this.c24RiotCheck.CheckedChanged += new System.EventHandler(this.c24RiotCheck_CheckedChanged);
             // 
@@ -20710,7 +20711,7 @@
             this.c24RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c24RescueCheck.Name = "c24RescueCheck";
             this.c24RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24RescueCheck.TabIndex = 90;
+            this.c24RescueCheck.TabIndex = 9;
             this.c24RescueCheck.UseVisualStyleBackColor = true;
             this.c24RescueCheck.CheckedChanged += new System.EventHandler(this.c24RescueCheck_CheckedChanged);
             // 
@@ -20722,7 +20723,7 @@
             this.c24CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c24CrimeCheck.Name = "c24CrimeCheck";
             this.c24CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24CrimeCheck.TabIndex = 89;
+            this.c24CrimeCheck.TabIndex = 6;
             this.c24CrimeCheck.UseVisualStyleBackColor = true;
             this.c24CrimeCheck.CheckedChanged += new System.EventHandler(this.c24CrimeCheck_CheckedChanged);
             // 
@@ -20734,7 +20735,7 @@
             this.c24FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c24FireCheck.Name = "c24FireCheck";
             this.c24FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24FireCheck.TabIndex = 88;
+            this.c24FireCheck.TabIndex = 3;
             this.c24FireCheck.UseVisualStyleBackColor = true;
             this.c24FireCheck.CheckedChanged += new System.EventHandler(this.c24FireCheck_CheckedChanged);
             // 
@@ -20746,7 +20747,7 @@
             this.c24DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c24DiffCheck.Name = "c24DiffCheck";
             this.c24DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c24DiffCheck.TabIndex = 87;
+            this.c24DiffCheck.TabIndex = 0;
             this.c24DiffCheck.UseVisualStyleBackColor = true;
             this.c24DiffCheck.CheckedChanged += new System.EventHandler(this.c24DiffCheck_CheckedChanged);
             // 
@@ -20785,7 +20786,7 @@
             0});
             this.c24MoneyMax.Name = "c24MoneyMax";
             this.c24MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c24MoneyMax.TabIndex = 84;
+            this.c24MoneyMax.TabIndex = 32;
             this.c24MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -20808,7 +20809,7 @@
             0});
             this.c24MoneyMin.Name = "c24MoneyMin";
             this.c24MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c24MoneyMin.TabIndex = 83;
+            this.c24MoneyMin.TabIndex = 31;
             this.c24MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -20825,7 +20826,7 @@
             this.label270.Size = new System.Drawing.Size(103, 13);
             this.label270.TabIndex = 82;
             this.label270.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label270, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label270, "Amount of money given when completing this city.");
             // 
             // c24PointsMax
             // 
@@ -20842,7 +20843,7 @@
             0});
             this.c24PointsMax.Name = "c24PointsMax";
             this.c24PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c24PointsMax.TabIndex = 81;
+            this.c24PointsMax.TabIndex = 29;
             this.c24PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -20865,7 +20866,7 @@
             0});
             this.c24PointsMin.Name = "c24PointsMin";
             this.c24PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c24PointsMin.TabIndex = 80;
+            this.c24PointsMin.TabIndex = 28;
             this.c24PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -20894,7 +20895,7 @@
             0});
             this.c24DayMax.Name = "c24DayMax";
             this.c24DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c24DayMax.TabIndex = 78;
+            this.c24DayMax.TabIndex = 26;
             this.c24DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -20912,7 +20913,7 @@
             0});
             this.c24DayMin.Name = "c24DayMin";
             this.c24DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c24DayMin.TabIndex = 77;
+            this.c24DayMin.TabIndex = 25;
             this.c24DayMin.ValueChanged += new System.EventHandler(this.c24DayMin_ValueChanged);
             // 
             // label272
@@ -20936,7 +20937,7 @@
             0});
             this.c24TrafficMax.Name = "c24TrafficMax";
             this.c24TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c24TrafficMax.TabIndex = 75;
+            this.c24TrafficMax.TabIndex = 17;
             this.c24TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20954,7 +20955,7 @@
             0});
             this.c24TrafficMin.Name = "c24TrafficMin";
             this.c24TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c24TrafficMin.TabIndex = 74;
+            this.c24TrafficMin.TabIndex = 16;
             this.c24TrafficMin.ValueChanged += new System.EventHandler(this.c24TrafficMin_ValueChanged);
             // 
             // label273
@@ -20978,7 +20979,7 @@
             0});
             this.c24RiotMax.Name = "c24RiotMax";
             this.c24RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c24RiotMax.TabIndex = 72;
+            this.c24RiotMax.TabIndex = 14;
             this.c24RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -20996,7 +20997,7 @@
             0});
             this.c24RiotMin.Name = "c24RiotMin";
             this.c24RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c24RiotMin.TabIndex = 71;
+            this.c24RiotMin.TabIndex = 13;
             this.c24RiotMin.ValueChanged += new System.EventHandler(this.c24RiotMin_ValueChanged);
             // 
             // label274
@@ -21020,7 +21021,7 @@
             0});
             this.c24RescueMax.Name = "c24RescueMax";
             this.c24RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c24RescueMax.TabIndex = 69;
+            this.c24RescueMax.TabIndex = 11;
             this.c24RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21038,7 +21039,7 @@
             0});
             this.c24RescueMin.Name = "c24RescueMin";
             this.c24RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c24RescueMin.TabIndex = 68;
+            this.c24RescueMin.TabIndex = 10;
             this.c24RescueMin.ValueChanged += new System.EventHandler(this.c24RescueMin_ValueChanged);
             // 
             // label275
@@ -21062,7 +21063,7 @@
             0});
             this.c24CrimeMax.Name = "c24CrimeMax";
             this.c24CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c24CrimeMax.TabIndex = 66;
+            this.c24CrimeMax.TabIndex = 8;
             this.c24CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21080,7 +21081,7 @@
             0});
             this.c24CrimeMin.Name = "c24CrimeMin";
             this.c24CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c24CrimeMin.TabIndex = 65;
+            this.c24CrimeMin.TabIndex = 7;
             this.c24CrimeMin.ValueChanged += new System.EventHandler(this.c24CrimeMin_ValueChanged);
             // 
             // label276
@@ -21104,7 +21105,7 @@
             0});
             this.c24FireMax.Name = "c24FireMax";
             this.c24FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c24FireMax.TabIndex = 63;
+            this.c24FireMax.TabIndex = 5;
             this.c24FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21122,7 +21123,7 @@
             0});
             this.c24FireMin.Name = "c24FireMin";
             this.c24FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c24FireMin.TabIndex = 62;
+            this.c24FireMin.TabIndex = 4;
             this.c24FireMin.ValueChanged += new System.EventHandler(this.c24FireMin_ValueChanged);
             // 
             // label277
@@ -21146,7 +21147,7 @@
             0});
             this.c24DiffMax.Name = "c24DiffMax";
             this.c24DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c24DiffMax.TabIndex = 60;
+            this.c24DiffMax.TabIndex = 2;
             this.c24DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -21164,7 +21165,7 @@
             0});
             this.c24DiffMin.Name = "c24DiffMin";
             this.c24DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c24DiffMin.TabIndex = 59;
+            this.c24DiffMin.TabIndex = 1;
             this.c24DiffMin.ValueChanged += new System.EventHandler(this.c24DiffMin_ValueChanged);
             // 
             // label278
@@ -21244,7 +21245,7 @@
             0});
             this.c25TransportMax.Name = "c25TransportMax";
             this.c25TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c25TransportMax.TabIndex = 103;
+            this.c25TransportMax.TabIndex = 23;
             this.c25TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21262,7 +21263,7 @@
             0});
             this.c25MedevacMax.Name = "c25MedevacMax";
             this.c25MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c25MedevacMax.TabIndex = 102;
+            this.c25MedevacMax.TabIndex = 20;
             this.c25MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21280,7 +21281,7 @@
             0});
             this.c25TransportMin.Name = "c25TransportMin";
             this.c25TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c25TransportMin.TabIndex = 101;
+            this.c25TransportMin.TabIndex = 22;
             this.c25TransportMin.ValueChanged += new System.EventHandler(this.c25TransportMin_ValueChanged);
             // 
             // c25MedevacMin
@@ -21293,7 +21294,7 @@
             0});
             this.c25MedevacMin.Name = "c25MedevacMin";
             this.c25MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c25MedevacMin.TabIndex = 100;
+            this.c25MedevacMin.TabIndex = 19;
             this.c25MedevacMin.ValueChanged += new System.EventHandler(this.c25MedevacMin_ValueChanged);
             // 
             // label384
@@ -21305,7 +21306,7 @@
             this.label384.Size = new System.Drawing.Size(119, 13);
             this.label384.TabIndex = 99;
             this.label384.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label384, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label384, "Frequency of transport missions in this city.");
             // 
             // label385
             // 
@@ -21316,7 +21317,7 @@
             this.label385.Size = new System.Drawing.Size(103, 13);
             this.label385.TabIndex = 98;
             this.label385.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label385, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label385, "Frequency of medevac missions in this city.");
             // 
             // c25TransportCheck
             // 
@@ -21326,7 +21327,7 @@
             this.c25TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c25TransportCheck.Name = "c25TransportCheck";
             this.c25TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25TransportCheck.TabIndex = 97;
+            this.c25TransportCheck.TabIndex = 21;
             this.c25TransportCheck.UseVisualStyleBackColor = true;
             this.c25TransportCheck.CheckedChanged += new System.EventHandler(this.c25TransportCheck_CheckedChanged);
             // 
@@ -21338,7 +21339,7 @@
             this.c25MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c25MedevacCheck.Name = "c25MedevacCheck";
             this.c25MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25MedevacCheck.TabIndex = 96;
+            this.c25MedevacCheck.TabIndex = 18;
             this.c25MedevacCheck.UseVisualStyleBackColor = true;
             this.c25MedevacCheck.CheckedChanged += new System.EventHandler(this.c25MedevacCheck_CheckedChanged);
             // 
@@ -21350,7 +21351,7 @@
             this.c25MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c25MoneyCheck.Name = "c25MoneyCheck";
             this.c25MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25MoneyCheck.TabIndex = 95;
+            this.c25MoneyCheck.TabIndex = 30;
             this.c25MoneyCheck.UseVisualStyleBackColor = true;
             this.c25MoneyCheck.CheckedChanged += new System.EventHandler(this.c25MoneyCheck_CheckedChanged);
             // 
@@ -21362,7 +21363,7 @@
             this.c25PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c25PointCheck.Name = "c25PointCheck";
             this.c25PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25PointCheck.TabIndex = 94;
+            this.c25PointCheck.TabIndex = 27;
             this.c25PointCheck.UseVisualStyleBackColor = true;
             this.c25PointCheck.CheckedChanged += new System.EventHandler(this.c25PointCheck_CheckedChanged);
             // 
@@ -21374,7 +21375,7 @@
             this.c25DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c25DayCheck.Name = "c25DayCheck";
             this.c25DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25DayCheck.TabIndex = 93;
+            this.c25DayCheck.TabIndex = 24;
             this.c25DayCheck.UseVisualStyleBackColor = true;
             this.c25DayCheck.CheckedChanged += new System.EventHandler(this.c25DayCheck_CheckedChanged);
             // 
@@ -21386,7 +21387,7 @@
             this.c25TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c25TrafficCheck.Name = "c25TrafficCheck";
             this.c25TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25TrafficCheck.TabIndex = 92;
+            this.c25TrafficCheck.TabIndex = 15;
             this.c25TrafficCheck.UseVisualStyleBackColor = true;
             this.c25TrafficCheck.CheckedChanged += new System.EventHandler(this.c25TrafficCheck_CheckedChanged);
             // 
@@ -21398,7 +21399,7 @@
             this.c25RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c25RiotCheck.Name = "c25RiotCheck";
             this.c25RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25RiotCheck.TabIndex = 91;
+            this.c25RiotCheck.TabIndex = 12;
             this.c25RiotCheck.UseVisualStyleBackColor = true;
             this.c25RiotCheck.CheckedChanged += new System.EventHandler(this.c25RiotCheck_CheckedChanged);
             // 
@@ -21410,7 +21411,7 @@
             this.c25RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c25RescueCheck.Name = "c25RescueCheck";
             this.c25RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25RescueCheck.TabIndex = 90;
+            this.c25RescueCheck.TabIndex = 9;
             this.c25RescueCheck.UseVisualStyleBackColor = true;
             this.c25RescueCheck.CheckedChanged += new System.EventHandler(this.c25RescueCheck_CheckedChanged);
             // 
@@ -21422,7 +21423,7 @@
             this.c25CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c25CrimeCheck.Name = "c25CrimeCheck";
             this.c25CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25CrimeCheck.TabIndex = 89;
+            this.c25CrimeCheck.TabIndex = 6;
             this.c25CrimeCheck.UseVisualStyleBackColor = true;
             this.c25CrimeCheck.CheckedChanged += new System.EventHandler(this.c25CrimeCheck_CheckedChanged);
             // 
@@ -21434,7 +21435,7 @@
             this.c25FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c25FireCheck.Name = "c25FireCheck";
             this.c25FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25FireCheck.TabIndex = 88;
+            this.c25FireCheck.TabIndex = 3;
             this.c25FireCheck.UseVisualStyleBackColor = true;
             this.c25FireCheck.CheckedChanged += new System.EventHandler(this.c25FireCheck_CheckedChanged);
             // 
@@ -21446,7 +21447,7 @@
             this.c25DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c25DiffCheck.Name = "c25DiffCheck";
             this.c25DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c25DiffCheck.TabIndex = 87;
+            this.c25DiffCheck.TabIndex = 0;
             this.c25DiffCheck.UseVisualStyleBackColor = true;
             this.c25DiffCheck.CheckedChanged += new System.EventHandler(this.c25DiffCheck_CheckedChanged);
             // 
@@ -21485,7 +21486,7 @@
             0});
             this.c25MoneyMax.Name = "c25MoneyMax";
             this.c25MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c25MoneyMax.TabIndex = 84;
+            this.c25MoneyMax.TabIndex = 32;
             this.c25MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -21508,7 +21509,7 @@
             0});
             this.c25MoneyMin.Name = "c25MoneyMin";
             this.c25MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c25MoneyMin.TabIndex = 83;
+            this.c25MoneyMin.TabIndex = 31;
             this.c25MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -21525,7 +21526,7 @@
             this.label281.Size = new System.Drawing.Size(103, 13);
             this.label281.TabIndex = 82;
             this.label281.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label281, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label281, "Amount of money given when completing this city.");
             // 
             // c25PointsMax
             // 
@@ -21542,7 +21543,7 @@
             0});
             this.c25PointsMax.Name = "c25PointsMax";
             this.c25PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c25PointsMax.TabIndex = 81;
+            this.c25PointsMax.TabIndex = 29;
             this.c25PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -21565,7 +21566,7 @@
             0});
             this.c25PointsMin.Name = "c25PointsMin";
             this.c25PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c25PointsMin.TabIndex = 80;
+            this.c25PointsMin.TabIndex = 28;
             this.c25PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -21594,7 +21595,7 @@
             0});
             this.c25DayMax.Name = "c25DayMax";
             this.c25DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c25DayMax.TabIndex = 78;
+            this.c25DayMax.TabIndex = 26;
             this.c25DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -21612,7 +21613,7 @@
             0});
             this.c25DayMin.Name = "c25DayMin";
             this.c25DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c25DayMin.TabIndex = 77;
+            this.c25DayMin.TabIndex = 25;
             this.c25DayMin.ValueChanged += new System.EventHandler(this.c25DayMin_ValueChanged);
             // 
             // label283
@@ -21636,7 +21637,7 @@
             0});
             this.c25TrafficMax.Name = "c25TrafficMax";
             this.c25TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c25TrafficMax.TabIndex = 75;
+            this.c25TrafficMax.TabIndex = 17;
             this.c25TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21654,7 +21655,7 @@
             0});
             this.c25TrafficMin.Name = "c25TrafficMin";
             this.c25TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c25TrafficMin.TabIndex = 74;
+            this.c25TrafficMin.TabIndex = 16;
             this.c25TrafficMin.ValueChanged += new System.EventHandler(this.c25TrafficMin_ValueChanged);
             // 
             // label284
@@ -21678,7 +21679,7 @@
             0});
             this.c25RiotMax.Name = "c25RiotMax";
             this.c25RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c25RiotMax.TabIndex = 72;
+            this.c25RiotMax.TabIndex = 14;
             this.c25RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21696,7 +21697,7 @@
             0});
             this.c25RiotMin.Name = "c25RiotMin";
             this.c25RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c25RiotMin.TabIndex = 71;
+            this.c25RiotMin.TabIndex = 13;
             this.c25RiotMin.ValueChanged += new System.EventHandler(this.c25RiotMin_ValueChanged);
             // 
             // label285
@@ -21720,7 +21721,7 @@
             0});
             this.c25RescueMax.Name = "c25RescueMax";
             this.c25RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c25RescueMax.TabIndex = 69;
+            this.c25RescueMax.TabIndex = 11;
             this.c25RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21738,7 +21739,7 @@
             0});
             this.c25RescueMin.Name = "c25RescueMin";
             this.c25RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c25RescueMin.TabIndex = 68;
+            this.c25RescueMin.TabIndex = 10;
             this.c25RescueMin.ValueChanged += new System.EventHandler(this.c25RescueMin_ValueChanged);
             // 
             // label286
@@ -21762,7 +21763,7 @@
             0});
             this.c25CrimeMax.Name = "c25CrimeMax";
             this.c25CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c25CrimeMax.TabIndex = 66;
+            this.c25CrimeMax.TabIndex = 8;
             this.c25CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21780,7 +21781,7 @@
             0});
             this.c25CrimeMin.Name = "c25CrimeMin";
             this.c25CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c25CrimeMin.TabIndex = 65;
+            this.c25CrimeMin.TabIndex = 7;
             this.c25CrimeMin.ValueChanged += new System.EventHandler(this.c25CrimeMin_ValueChanged);
             // 
             // label287
@@ -21804,7 +21805,7 @@
             0});
             this.c25FireMax.Name = "c25FireMax";
             this.c25FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c25FireMax.TabIndex = 63;
+            this.c25FireMax.TabIndex = 5;
             this.c25FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21822,7 +21823,7 @@
             0});
             this.c25FireMin.Name = "c25FireMin";
             this.c25FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c25FireMin.TabIndex = 62;
+            this.c25FireMin.TabIndex = 4;
             this.c25FireMin.ValueChanged += new System.EventHandler(this.c25FireMin_ValueChanged);
             // 
             // label288
@@ -21846,7 +21847,7 @@
             0});
             this.c25DiffMax.Name = "c25DiffMax";
             this.c25DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c25DiffMax.TabIndex = 60;
+            this.c25DiffMax.TabIndex = 2;
             this.c25DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -21864,7 +21865,7 @@
             0});
             this.c25DiffMin.Name = "c25DiffMin";
             this.c25DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c25DiffMin.TabIndex = 59;
+            this.c25DiffMin.TabIndex = 1;
             this.c25DiffMin.ValueChanged += new System.EventHandler(this.c25DiffMin_ValueChanged);
             // 
             // label289
@@ -21944,7 +21945,7 @@
             0});
             this.c26TransportMax.Name = "c26TransportMax";
             this.c26TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c26TransportMax.TabIndex = 103;
+            this.c26TransportMax.TabIndex = 23;
             this.c26TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21962,7 +21963,7 @@
             0});
             this.c26MedevacMax.Name = "c26MedevacMax";
             this.c26MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c26MedevacMax.TabIndex = 102;
+            this.c26MedevacMax.TabIndex = 20;
             this.c26MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -21980,7 +21981,7 @@
             0});
             this.c26TransportMin.Name = "c26TransportMin";
             this.c26TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c26TransportMin.TabIndex = 101;
+            this.c26TransportMin.TabIndex = 22;
             this.c26TransportMin.ValueChanged += new System.EventHandler(this.c26TransportMin_ValueChanged);
             // 
             // c26MedevacMin
@@ -21993,7 +21994,7 @@
             0});
             this.c26MedevacMin.Name = "c26MedevacMin";
             this.c26MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c26MedevacMin.TabIndex = 100;
+            this.c26MedevacMin.TabIndex = 19;
             this.c26MedevacMin.ValueChanged += new System.EventHandler(this.c26MedevacMin_ValueChanged);
             // 
             // label386
@@ -22005,7 +22006,7 @@
             this.label386.Size = new System.Drawing.Size(119, 13);
             this.label386.TabIndex = 99;
             this.label386.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label386, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label386, "Frequency of transport missions in this city.");
             // 
             // label387
             // 
@@ -22016,7 +22017,7 @@
             this.label387.Size = new System.Drawing.Size(103, 13);
             this.label387.TabIndex = 98;
             this.label387.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label387, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label387, "Frequency of medevac missions in this city.");
             // 
             // c26TransportCheck
             // 
@@ -22026,7 +22027,7 @@
             this.c26TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c26TransportCheck.Name = "c26TransportCheck";
             this.c26TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26TransportCheck.TabIndex = 97;
+            this.c26TransportCheck.TabIndex = 21;
             this.c26TransportCheck.UseVisualStyleBackColor = true;
             this.c26TransportCheck.CheckedChanged += new System.EventHandler(this.c26TransportCheck_CheckedChanged);
             // 
@@ -22038,7 +22039,7 @@
             this.c26MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c26MedevacCheck.Name = "c26MedevacCheck";
             this.c26MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26MedevacCheck.TabIndex = 96;
+            this.c26MedevacCheck.TabIndex = 18;
             this.c26MedevacCheck.UseVisualStyleBackColor = true;
             this.c26MedevacCheck.CheckedChanged += new System.EventHandler(this.c26MedevacCheck_CheckedChanged);
             // 
@@ -22050,7 +22051,7 @@
             this.c26MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c26MoneyCheck.Name = "c26MoneyCheck";
             this.c26MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26MoneyCheck.TabIndex = 95;
+            this.c26MoneyCheck.TabIndex = 30;
             this.c26MoneyCheck.UseVisualStyleBackColor = true;
             this.c26MoneyCheck.CheckedChanged += new System.EventHandler(this.c26MoneyCheck_CheckedChanged);
             // 
@@ -22062,7 +22063,7 @@
             this.c26PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c26PointCheck.Name = "c26PointCheck";
             this.c26PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26PointCheck.TabIndex = 94;
+            this.c26PointCheck.TabIndex = 27;
             this.c26PointCheck.UseVisualStyleBackColor = true;
             this.c26PointCheck.CheckedChanged += new System.EventHandler(this.c26PointCheck_CheckedChanged);
             // 
@@ -22074,7 +22075,7 @@
             this.c26DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c26DayCheck.Name = "c26DayCheck";
             this.c26DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26DayCheck.TabIndex = 93;
+            this.c26DayCheck.TabIndex = 24;
             this.c26DayCheck.UseVisualStyleBackColor = true;
             this.c26DayCheck.CheckedChanged += new System.EventHandler(this.c26DayCheck_CheckedChanged);
             // 
@@ -22086,7 +22087,7 @@
             this.c26TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c26TrafficCheck.Name = "c26TrafficCheck";
             this.c26TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26TrafficCheck.TabIndex = 92;
+            this.c26TrafficCheck.TabIndex = 15;
             this.c26TrafficCheck.UseVisualStyleBackColor = true;
             this.c26TrafficCheck.CheckedChanged += new System.EventHandler(this.c26TrafficCheck_CheckedChanged);
             // 
@@ -22098,7 +22099,7 @@
             this.c26RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c26RiotCheck.Name = "c26RiotCheck";
             this.c26RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26RiotCheck.TabIndex = 91;
+            this.c26RiotCheck.TabIndex = 12;
             this.c26RiotCheck.UseVisualStyleBackColor = true;
             this.c26RiotCheck.CheckedChanged += new System.EventHandler(this.c26RiotCheck_CheckedChanged);
             // 
@@ -22110,7 +22111,7 @@
             this.c26RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c26RescueCheck.Name = "c26RescueCheck";
             this.c26RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26RescueCheck.TabIndex = 90;
+            this.c26RescueCheck.TabIndex = 9;
             this.c26RescueCheck.UseVisualStyleBackColor = true;
             this.c26RescueCheck.CheckedChanged += new System.EventHandler(this.c26RescueCheck_CheckedChanged);
             // 
@@ -22122,7 +22123,7 @@
             this.c26CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c26CrimeCheck.Name = "c26CrimeCheck";
             this.c26CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26CrimeCheck.TabIndex = 89;
+            this.c26CrimeCheck.TabIndex = 6;
             this.c26CrimeCheck.UseVisualStyleBackColor = true;
             this.c26CrimeCheck.CheckedChanged += new System.EventHandler(this.c26CrimeCheck_CheckedChanged);
             // 
@@ -22134,7 +22135,7 @@
             this.c26FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c26FireCheck.Name = "c26FireCheck";
             this.c26FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26FireCheck.TabIndex = 88;
+            this.c26FireCheck.TabIndex = 3;
             this.c26FireCheck.UseVisualStyleBackColor = true;
             this.c26FireCheck.CheckedChanged += new System.EventHandler(this.c26FireCheck_CheckedChanged);
             // 
@@ -22146,7 +22147,7 @@
             this.c26DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c26DiffCheck.Name = "c26DiffCheck";
             this.c26DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c26DiffCheck.TabIndex = 87;
+            this.c26DiffCheck.TabIndex = 0;
             this.c26DiffCheck.UseVisualStyleBackColor = true;
             this.c26DiffCheck.CheckedChanged += new System.EventHandler(this.c26DiffCheck_CheckedChanged);
             // 
@@ -22185,7 +22186,7 @@
             0});
             this.c26MoneyMax.Name = "c26MoneyMax";
             this.c26MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c26MoneyMax.TabIndex = 84;
+            this.c26MoneyMax.TabIndex = 32;
             this.c26MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -22208,7 +22209,7 @@
             0});
             this.c26MoneyMin.Name = "c26MoneyMin";
             this.c26MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c26MoneyMin.TabIndex = 83;
+            this.c26MoneyMin.TabIndex = 31;
             this.c26MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -22225,7 +22226,7 @@
             this.label292.Size = new System.Drawing.Size(103, 13);
             this.label292.TabIndex = 82;
             this.label292.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label292, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label292, "Amount of money given when completing this city.");
             // 
             // c26PointsMax
             // 
@@ -22242,7 +22243,7 @@
             0});
             this.c26PointsMax.Name = "c26PointsMax";
             this.c26PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c26PointsMax.TabIndex = 81;
+            this.c26PointsMax.TabIndex = 29;
             this.c26PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -22265,7 +22266,7 @@
             0});
             this.c26PointsMin.Name = "c26PointsMin";
             this.c26PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c26PointsMin.TabIndex = 80;
+            this.c26PointsMin.TabIndex = 28;
             this.c26PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -22294,7 +22295,7 @@
             0});
             this.c26DayMax.Name = "c26DayMax";
             this.c26DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c26DayMax.TabIndex = 78;
+            this.c26DayMax.TabIndex = 26;
             this.c26DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -22312,7 +22313,7 @@
             0});
             this.c26DayMin.Name = "c26DayMin";
             this.c26DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c26DayMin.TabIndex = 77;
+            this.c26DayMin.TabIndex = 25;
             this.c26DayMin.ValueChanged += new System.EventHandler(this.c26DayMin_ValueChanged);
             // 
             // label294
@@ -22336,7 +22337,7 @@
             0});
             this.c26TrafficMax.Name = "c26TrafficMax";
             this.c26TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c26TrafficMax.TabIndex = 75;
+            this.c26TrafficMax.TabIndex = 17;
             this.c26TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -22354,7 +22355,7 @@
             0});
             this.c26TrafficMin.Name = "c26TrafficMin";
             this.c26TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c26TrafficMin.TabIndex = 74;
+            this.c26TrafficMin.TabIndex = 16;
             this.c26TrafficMin.ValueChanged += new System.EventHandler(this.c26TrafficMin_ValueChanged);
             // 
             // label295
@@ -22378,7 +22379,7 @@
             0});
             this.c26RiotMax.Name = "c26RiotMax";
             this.c26RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c26RiotMax.TabIndex = 72;
+            this.c26RiotMax.TabIndex = 14;
             this.c26RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -22396,7 +22397,7 @@
             0});
             this.c26RiotMin.Name = "c26RiotMin";
             this.c26RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c26RiotMin.TabIndex = 71;
+            this.c26RiotMin.TabIndex = 13;
             this.c26RiotMin.ValueChanged += new System.EventHandler(this.c26RiotMin_ValueChanged);
             // 
             // label296
@@ -22420,7 +22421,7 @@
             0});
             this.c26RescueMax.Name = "c26RescueMax";
             this.c26RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c26RescueMax.TabIndex = 69;
+            this.c26RescueMax.TabIndex = 11;
             this.c26RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -22438,7 +22439,7 @@
             0});
             this.c26RescueMin.Name = "c26RescueMin";
             this.c26RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c26RescueMin.TabIndex = 68;
+            this.c26RescueMin.TabIndex = 10;
             this.c26RescueMin.ValueChanged += new System.EventHandler(this.c26RescueMin_ValueChanged);
             // 
             // label297
@@ -22462,7 +22463,7 @@
             0});
             this.c26CrimeMax.Name = "c26CrimeMax";
             this.c26CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c26CrimeMax.TabIndex = 66;
+            this.c26CrimeMax.TabIndex = 8;
             this.c26CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -22480,7 +22481,7 @@
             0});
             this.c26CrimeMin.Name = "c26CrimeMin";
             this.c26CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c26CrimeMin.TabIndex = 65;
+            this.c26CrimeMin.TabIndex = 7;
             this.c26CrimeMin.ValueChanged += new System.EventHandler(this.c26CrimeMin_ValueChanged);
             // 
             // label298
@@ -22504,7 +22505,7 @@
             0});
             this.c26FireMax.Name = "c26FireMax";
             this.c26FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c26FireMax.TabIndex = 63;
+            this.c26FireMax.TabIndex = 5;
             this.c26FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -22522,7 +22523,7 @@
             0});
             this.c26FireMin.Name = "c26FireMin";
             this.c26FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c26FireMin.TabIndex = 62;
+            this.c26FireMin.TabIndex = 4;
             this.c26FireMin.ValueChanged += new System.EventHandler(this.c26FireMin_ValueChanged);
             // 
             // label299
@@ -22546,7 +22547,7 @@
             0});
             this.c26DiffMax.Name = "c26DiffMax";
             this.c26DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c26DiffMax.TabIndex = 60;
+            this.c26DiffMax.TabIndex = 2;
             this.c26DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -22564,7 +22565,7 @@
             0});
             this.c26DiffMin.Name = "c26DiffMin";
             this.c26DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c26DiffMin.TabIndex = 59;
+            this.c26DiffMin.TabIndex = 1;
             this.c26DiffMin.ValueChanged += new System.EventHandler(this.c26DiffMin_ValueChanged);
             // 
             // label300
@@ -22644,7 +22645,7 @@
             0});
             this.c27TransportMax.Name = "c27TransportMax";
             this.c27TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c27TransportMax.TabIndex = 103;
+            this.c27TransportMax.TabIndex = 23;
             this.c27TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -22662,7 +22663,7 @@
             0});
             this.c27MedevacMax.Name = "c27MedevacMax";
             this.c27MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c27MedevacMax.TabIndex = 102;
+            this.c27MedevacMax.TabIndex = 20;
             this.c27MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -22680,7 +22681,7 @@
             0});
             this.c27TransportMin.Name = "c27TransportMin";
             this.c27TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c27TransportMin.TabIndex = 101;
+            this.c27TransportMin.TabIndex = 22;
             this.c27TransportMin.ValueChanged += new System.EventHandler(this.c27TransportMin_ValueChanged);
             // 
             // c27MedevacMin
@@ -22693,7 +22694,7 @@
             0});
             this.c27MedevacMin.Name = "c27MedevacMin";
             this.c27MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c27MedevacMin.TabIndex = 100;
+            this.c27MedevacMin.TabIndex = 19;
             this.c27MedevacMin.ValueChanged += new System.EventHandler(this.c27MedevacMin_ValueChanged);
             // 
             // label388
@@ -22705,7 +22706,7 @@
             this.label388.Size = new System.Drawing.Size(119, 13);
             this.label388.TabIndex = 99;
             this.label388.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label388, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label388, "Frequency of transport missions in this city.");
             // 
             // label389
             // 
@@ -22716,7 +22717,7 @@
             this.label389.Size = new System.Drawing.Size(103, 13);
             this.label389.TabIndex = 98;
             this.label389.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label389, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label389, "Frequency of medevac missions in this city.");
             // 
             // c27TransportCheck
             // 
@@ -22726,7 +22727,7 @@
             this.c27TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c27TransportCheck.Name = "c27TransportCheck";
             this.c27TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27TransportCheck.TabIndex = 97;
+            this.c27TransportCheck.TabIndex = 21;
             this.c27TransportCheck.UseVisualStyleBackColor = true;
             this.c27TransportCheck.CheckedChanged += new System.EventHandler(this.c27TransportCheck_CheckedChanged);
             // 
@@ -22738,7 +22739,7 @@
             this.c27MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c27MedevacCheck.Name = "c27MedevacCheck";
             this.c27MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27MedevacCheck.TabIndex = 96;
+            this.c27MedevacCheck.TabIndex = 18;
             this.c27MedevacCheck.UseVisualStyleBackColor = true;
             this.c27MedevacCheck.CheckedChanged += new System.EventHandler(this.c27MedevacCheck_CheckedChanged);
             // 
@@ -22750,7 +22751,7 @@
             this.c27MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c27MoneyCheck.Name = "c27MoneyCheck";
             this.c27MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27MoneyCheck.TabIndex = 95;
+            this.c27MoneyCheck.TabIndex = 30;
             this.c27MoneyCheck.UseVisualStyleBackColor = true;
             this.c27MoneyCheck.CheckedChanged += new System.EventHandler(this.c27MoneyCheck_CheckedChanged);
             // 
@@ -22762,7 +22763,7 @@
             this.c27PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c27PointCheck.Name = "c27PointCheck";
             this.c27PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27PointCheck.TabIndex = 94;
+            this.c27PointCheck.TabIndex = 27;
             this.c27PointCheck.UseVisualStyleBackColor = true;
             this.c27PointCheck.CheckedChanged += new System.EventHandler(this.c27PointCheck_CheckedChanged);
             // 
@@ -22774,7 +22775,7 @@
             this.c27DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c27DayCheck.Name = "c27DayCheck";
             this.c27DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27DayCheck.TabIndex = 93;
+            this.c27DayCheck.TabIndex = 24;
             this.c27DayCheck.UseVisualStyleBackColor = true;
             this.c27DayCheck.CheckedChanged += new System.EventHandler(this.c27DayCheck_CheckedChanged);
             // 
@@ -22786,7 +22787,7 @@
             this.c27TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c27TrafficCheck.Name = "c27TrafficCheck";
             this.c27TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27TrafficCheck.TabIndex = 92;
+            this.c27TrafficCheck.TabIndex = 15;
             this.c27TrafficCheck.UseVisualStyleBackColor = true;
             this.c27TrafficCheck.CheckedChanged += new System.EventHandler(this.c27TrafficCheck_CheckedChanged);
             // 
@@ -22798,7 +22799,7 @@
             this.c27RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c27RiotCheck.Name = "c27RiotCheck";
             this.c27RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27RiotCheck.TabIndex = 91;
+            this.c27RiotCheck.TabIndex = 12;
             this.c27RiotCheck.UseVisualStyleBackColor = true;
             this.c27RiotCheck.CheckedChanged += new System.EventHandler(this.c27RiotCheck_CheckedChanged);
             // 
@@ -22810,7 +22811,7 @@
             this.c27RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c27RescueCheck.Name = "c27RescueCheck";
             this.c27RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27RescueCheck.TabIndex = 90;
+            this.c27RescueCheck.TabIndex = 9;
             this.c27RescueCheck.UseVisualStyleBackColor = true;
             this.c27RescueCheck.CheckedChanged += new System.EventHandler(this.c27RescueCheck_CheckedChanged);
             // 
@@ -22822,7 +22823,7 @@
             this.c27CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c27CrimeCheck.Name = "c27CrimeCheck";
             this.c27CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27CrimeCheck.TabIndex = 89;
+            this.c27CrimeCheck.TabIndex = 6;
             this.c27CrimeCheck.UseVisualStyleBackColor = true;
             this.c27CrimeCheck.CheckedChanged += new System.EventHandler(this.c27CrimeCheck_CheckedChanged);
             // 
@@ -22834,7 +22835,7 @@
             this.c27FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c27FireCheck.Name = "c27FireCheck";
             this.c27FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27FireCheck.TabIndex = 88;
+            this.c27FireCheck.TabIndex = 3;
             this.c27FireCheck.UseVisualStyleBackColor = true;
             this.c27FireCheck.CheckedChanged += new System.EventHandler(this.c27FireCheck_CheckedChanged);
             // 
@@ -22846,7 +22847,7 @@
             this.c27DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c27DiffCheck.Name = "c27DiffCheck";
             this.c27DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c27DiffCheck.TabIndex = 87;
+            this.c27DiffCheck.TabIndex = 0;
             this.c27DiffCheck.UseVisualStyleBackColor = true;
             this.c27DiffCheck.CheckedChanged += new System.EventHandler(this.c27DiffCheck_CheckedChanged);
             // 
@@ -22885,7 +22886,7 @@
             0});
             this.c27MoneyMax.Name = "c27MoneyMax";
             this.c27MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c27MoneyMax.TabIndex = 84;
+            this.c27MoneyMax.TabIndex = 32;
             this.c27MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -22908,7 +22909,7 @@
             0});
             this.c27MoneyMin.Name = "c27MoneyMin";
             this.c27MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c27MoneyMin.TabIndex = 83;
+            this.c27MoneyMin.TabIndex = 31;
             this.c27MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -22925,7 +22926,7 @@
             this.label303.Size = new System.Drawing.Size(103, 13);
             this.label303.TabIndex = 82;
             this.label303.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label303, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label303, "Amount of money given when completing this city.");
             // 
             // c27PointsMax
             // 
@@ -22942,7 +22943,7 @@
             0});
             this.c27PointsMax.Name = "c27PointsMax";
             this.c27PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c27PointsMax.TabIndex = 81;
+            this.c27PointsMax.TabIndex = 29;
             this.c27PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -22965,7 +22966,7 @@
             0});
             this.c27PointsMin.Name = "c27PointsMin";
             this.c27PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c27PointsMin.TabIndex = 80;
+            this.c27PointsMin.TabIndex = 28;
             this.c27PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -22994,7 +22995,7 @@
             0});
             this.c27DayMax.Name = "c27DayMax";
             this.c27DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c27DayMax.TabIndex = 78;
+            this.c27DayMax.TabIndex = 26;
             this.c27DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -23012,7 +23013,7 @@
             0});
             this.c27DayMin.Name = "c27DayMin";
             this.c27DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c27DayMin.TabIndex = 77;
+            this.c27DayMin.TabIndex = 25;
             this.c27DayMin.ValueChanged += new System.EventHandler(this.c27DayMin_ValueChanged);
             // 
             // label305
@@ -23036,7 +23037,7 @@
             0});
             this.c27TrafficMax.Name = "c27TrafficMax";
             this.c27TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c27TrafficMax.TabIndex = 75;
+            this.c27TrafficMax.TabIndex = 17;
             this.c27TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23054,7 +23055,7 @@
             0});
             this.c27TrafficMin.Name = "c27TrafficMin";
             this.c27TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c27TrafficMin.TabIndex = 74;
+            this.c27TrafficMin.TabIndex = 16;
             this.c27TrafficMin.ValueChanged += new System.EventHandler(this.c27TrafficMin_ValueChanged);
             // 
             // label306
@@ -23078,7 +23079,7 @@
             0});
             this.c27RiotMax.Name = "c27RiotMax";
             this.c27RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c27RiotMax.TabIndex = 72;
+            this.c27RiotMax.TabIndex = 14;
             this.c27RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23096,7 +23097,7 @@
             0});
             this.c27RiotMin.Name = "c27RiotMin";
             this.c27RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c27RiotMin.TabIndex = 71;
+            this.c27RiotMin.TabIndex = 13;
             this.c27RiotMin.ValueChanged += new System.EventHandler(this.c27RiotMin_ValueChanged);
             // 
             // label307
@@ -23120,7 +23121,7 @@
             0});
             this.c27RescueMax.Name = "c27RescueMax";
             this.c27RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c27RescueMax.TabIndex = 69;
+            this.c27RescueMax.TabIndex = 11;
             this.c27RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23138,7 +23139,7 @@
             0});
             this.c27RescueMin.Name = "c27RescueMin";
             this.c27RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c27RescueMin.TabIndex = 68;
+            this.c27RescueMin.TabIndex = 10;
             this.c27RescueMin.ValueChanged += new System.EventHandler(this.c27RescueMin_ValueChanged);
             // 
             // label308
@@ -23162,7 +23163,7 @@
             0});
             this.c27CrimeMax.Name = "c27CrimeMax";
             this.c27CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c27CrimeMax.TabIndex = 66;
+            this.c27CrimeMax.TabIndex = 8;
             this.c27CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23180,7 +23181,7 @@
             0});
             this.c27CrimeMin.Name = "c27CrimeMin";
             this.c27CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c27CrimeMin.TabIndex = 65;
+            this.c27CrimeMin.TabIndex = 7;
             this.c27CrimeMin.ValueChanged += new System.EventHandler(this.c27CrimeMin_ValueChanged);
             // 
             // label309
@@ -23204,7 +23205,7 @@
             0});
             this.c27FireMax.Name = "c27FireMax";
             this.c27FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c27FireMax.TabIndex = 63;
+            this.c27FireMax.TabIndex = 5;
             this.c27FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23222,7 +23223,7 @@
             0});
             this.c27FireMin.Name = "c27FireMin";
             this.c27FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c27FireMin.TabIndex = 62;
+            this.c27FireMin.TabIndex = 4;
             this.c27FireMin.ValueChanged += new System.EventHandler(this.c27FireMin_ValueChanged);
             // 
             // label310
@@ -23246,7 +23247,7 @@
             0});
             this.c27DiffMax.Name = "c27DiffMax";
             this.c27DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c27DiffMax.TabIndex = 60;
+            this.c27DiffMax.TabIndex = 2;
             this.c27DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -23264,7 +23265,7 @@
             0});
             this.c27DiffMin.Name = "c27DiffMin";
             this.c27DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c27DiffMin.TabIndex = 59;
+            this.c27DiffMin.TabIndex = 1;
             this.c27DiffMin.ValueChanged += new System.EventHandler(this.c27DiffMin_ValueChanged);
             // 
             // label311
@@ -23344,7 +23345,7 @@
             0});
             this.c28TransportMax.Name = "c28TransportMax";
             this.c28TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c28TransportMax.TabIndex = 103;
+            this.c28TransportMax.TabIndex = 23;
             this.c28TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23362,7 +23363,7 @@
             0});
             this.c28MedevacMax.Name = "c28MedevacMax";
             this.c28MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c28MedevacMax.TabIndex = 102;
+            this.c28MedevacMax.TabIndex = 20;
             this.c28MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23380,7 +23381,7 @@
             0});
             this.c28TransportMin.Name = "c28TransportMin";
             this.c28TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c28TransportMin.TabIndex = 101;
+            this.c28TransportMin.TabIndex = 22;
             this.c28TransportMin.ValueChanged += new System.EventHandler(this.c28TransportMin_ValueChanged);
             // 
             // c28MedevacMin
@@ -23393,7 +23394,7 @@
             0});
             this.c28MedevacMin.Name = "c28MedevacMin";
             this.c28MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c28MedevacMin.TabIndex = 100;
+            this.c28MedevacMin.TabIndex = 19;
             this.c28MedevacMin.ValueChanged += new System.EventHandler(this.c28MedevacMin_ValueChanged);
             // 
             // label390
@@ -23405,7 +23406,7 @@
             this.label390.Size = new System.Drawing.Size(119, 13);
             this.label390.TabIndex = 99;
             this.label390.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label390, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label390, "Frequency of transport missions in this city.");
             // 
             // label391
             // 
@@ -23416,7 +23417,7 @@
             this.label391.Size = new System.Drawing.Size(103, 13);
             this.label391.TabIndex = 98;
             this.label391.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label391, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label391, "Frequency of medevac missions in this city.");
             // 
             // c28TransportCheck
             // 
@@ -23426,7 +23427,7 @@
             this.c28TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c28TransportCheck.Name = "c28TransportCheck";
             this.c28TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28TransportCheck.TabIndex = 97;
+            this.c28TransportCheck.TabIndex = 21;
             this.c28TransportCheck.UseVisualStyleBackColor = true;
             this.c28TransportCheck.CheckedChanged += new System.EventHandler(this.c28TransportCheck_CheckedChanged);
             // 
@@ -23438,7 +23439,7 @@
             this.c28MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c28MedevacCheck.Name = "c28MedevacCheck";
             this.c28MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28MedevacCheck.TabIndex = 96;
+            this.c28MedevacCheck.TabIndex = 18;
             this.c28MedevacCheck.UseVisualStyleBackColor = true;
             this.c28MedevacCheck.CheckedChanged += new System.EventHandler(this.c28MedevacCheck_CheckedChanged);
             // 
@@ -23450,7 +23451,7 @@
             this.c28MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c28MoneyCheck.Name = "c28MoneyCheck";
             this.c28MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28MoneyCheck.TabIndex = 95;
+            this.c28MoneyCheck.TabIndex = 30;
             this.c28MoneyCheck.UseVisualStyleBackColor = true;
             this.c28MoneyCheck.CheckedChanged += new System.EventHandler(this.c28MoneyCheck_CheckedChanged);
             // 
@@ -23462,7 +23463,7 @@
             this.c28PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c28PointCheck.Name = "c28PointCheck";
             this.c28PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28PointCheck.TabIndex = 94;
+            this.c28PointCheck.TabIndex = 27;
             this.c28PointCheck.UseVisualStyleBackColor = true;
             this.c28PointCheck.CheckedChanged += new System.EventHandler(this.c28PointCheck_CheckedChanged);
             // 
@@ -23474,7 +23475,7 @@
             this.c28DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c28DayCheck.Name = "c28DayCheck";
             this.c28DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28DayCheck.TabIndex = 93;
+            this.c28DayCheck.TabIndex = 24;
             this.c28DayCheck.UseVisualStyleBackColor = true;
             this.c28DayCheck.CheckedChanged += new System.EventHandler(this.c28DayCheck_CheckedChanged);
             // 
@@ -23486,7 +23487,7 @@
             this.c28TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c28TrafficCheck.Name = "c28TrafficCheck";
             this.c28TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28TrafficCheck.TabIndex = 92;
+            this.c28TrafficCheck.TabIndex = 15;
             this.c28TrafficCheck.UseVisualStyleBackColor = true;
             this.c28TrafficCheck.CheckedChanged += new System.EventHandler(this.c28TrafficCheck_CheckedChanged);
             // 
@@ -23498,7 +23499,7 @@
             this.c28RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c28RiotCheck.Name = "c28RiotCheck";
             this.c28RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28RiotCheck.TabIndex = 91;
+            this.c28RiotCheck.TabIndex = 12;
             this.c28RiotCheck.UseVisualStyleBackColor = true;
             this.c28RiotCheck.CheckedChanged += new System.EventHandler(this.c28RiotCheck_CheckedChanged);
             // 
@@ -23510,7 +23511,7 @@
             this.c28RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c28RescueCheck.Name = "c28RescueCheck";
             this.c28RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28RescueCheck.TabIndex = 90;
+            this.c28RescueCheck.TabIndex = 9;
             this.c28RescueCheck.UseVisualStyleBackColor = true;
             this.c28RescueCheck.CheckedChanged += new System.EventHandler(this.c28RescueCheck_CheckedChanged);
             // 
@@ -23522,7 +23523,7 @@
             this.c28CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c28CrimeCheck.Name = "c28CrimeCheck";
             this.c28CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28CrimeCheck.TabIndex = 89;
+            this.c28CrimeCheck.TabIndex = 6;
             this.c28CrimeCheck.UseVisualStyleBackColor = true;
             this.c28CrimeCheck.CheckedChanged += new System.EventHandler(this.c28CrimeCheck_CheckedChanged);
             // 
@@ -23534,7 +23535,7 @@
             this.c28FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c28FireCheck.Name = "c28FireCheck";
             this.c28FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28FireCheck.TabIndex = 88;
+            this.c28FireCheck.TabIndex = 3;
             this.c28FireCheck.UseVisualStyleBackColor = true;
             this.c28FireCheck.CheckedChanged += new System.EventHandler(this.c28FireCheck_CheckedChanged);
             // 
@@ -23546,7 +23547,7 @@
             this.c28DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c28DiffCheck.Name = "c28DiffCheck";
             this.c28DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c28DiffCheck.TabIndex = 87;
+            this.c28DiffCheck.TabIndex = 0;
             this.c28DiffCheck.UseVisualStyleBackColor = true;
             this.c28DiffCheck.CheckedChanged += new System.EventHandler(this.c28DiffCheck_CheckedChanged);
             // 
@@ -23585,7 +23586,7 @@
             0});
             this.c28MoneyMax.Name = "c28MoneyMax";
             this.c28MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c28MoneyMax.TabIndex = 84;
+            this.c28MoneyMax.TabIndex = 32;
             this.c28MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -23608,7 +23609,7 @@
             0});
             this.c28MoneyMin.Name = "c28MoneyMin";
             this.c28MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c28MoneyMin.TabIndex = 83;
+            this.c28MoneyMin.TabIndex = 31;
             this.c28MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -23625,7 +23626,7 @@
             this.label314.Size = new System.Drawing.Size(103, 13);
             this.label314.TabIndex = 82;
             this.label314.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label314, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label314, "Amount of money given when completing this city.");
             // 
             // c28PointsMax
             // 
@@ -23642,7 +23643,7 @@
             0});
             this.c28PointsMax.Name = "c28PointsMax";
             this.c28PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c28PointsMax.TabIndex = 81;
+            this.c28PointsMax.TabIndex = 29;
             this.c28PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -23665,7 +23666,7 @@
             0});
             this.c28PointsMin.Name = "c28PointsMin";
             this.c28PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c28PointsMin.TabIndex = 80;
+            this.c28PointsMin.TabIndex = 28;
             this.c28PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -23694,7 +23695,7 @@
             0});
             this.c28DayMax.Name = "c28DayMax";
             this.c28DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c28DayMax.TabIndex = 78;
+            this.c28DayMax.TabIndex = 26;
             this.c28DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -23712,7 +23713,7 @@
             0});
             this.c28DayMin.Name = "c28DayMin";
             this.c28DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c28DayMin.TabIndex = 77;
+            this.c28DayMin.TabIndex = 25;
             this.c28DayMin.ValueChanged += new System.EventHandler(this.c28DayMin_ValueChanged);
             // 
             // label316
@@ -23736,7 +23737,7 @@
             0});
             this.c28TrafficMax.Name = "c28TrafficMax";
             this.c28TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c28TrafficMax.TabIndex = 75;
+            this.c28TrafficMax.TabIndex = 17;
             this.c28TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23754,7 +23755,7 @@
             0});
             this.c28TrafficMin.Name = "c28TrafficMin";
             this.c28TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c28TrafficMin.TabIndex = 74;
+            this.c28TrafficMin.TabIndex = 16;
             this.c28TrafficMin.ValueChanged += new System.EventHandler(this.c28TrafficMin_ValueChanged);
             // 
             // label317
@@ -23778,7 +23779,7 @@
             0});
             this.c28RiotMax.Name = "c28RiotMax";
             this.c28RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c28RiotMax.TabIndex = 72;
+            this.c28RiotMax.TabIndex = 14;
             this.c28RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23796,7 +23797,7 @@
             0});
             this.c28RiotMin.Name = "c28RiotMin";
             this.c28RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c28RiotMin.TabIndex = 71;
+            this.c28RiotMin.TabIndex = 13;
             this.c28RiotMin.ValueChanged += new System.EventHandler(this.c28RiotMin_ValueChanged);
             // 
             // label318
@@ -23820,7 +23821,7 @@
             0});
             this.c28RescueMax.Name = "c28RescueMax";
             this.c28RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c28RescueMax.TabIndex = 69;
+            this.c28RescueMax.TabIndex = 11;
             this.c28RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23838,7 +23839,7 @@
             0});
             this.c28RescueMin.Name = "c28RescueMin";
             this.c28RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c28RescueMin.TabIndex = 68;
+            this.c28RescueMin.TabIndex = 10;
             this.c28RescueMin.ValueChanged += new System.EventHandler(this.c28RescueMin_ValueChanged);
             // 
             // label319
@@ -23862,7 +23863,7 @@
             0});
             this.c28CrimeMax.Name = "c28CrimeMax";
             this.c28CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c28CrimeMax.TabIndex = 66;
+            this.c28CrimeMax.TabIndex = 8;
             this.c28CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23880,7 +23881,7 @@
             0});
             this.c28CrimeMin.Name = "c28CrimeMin";
             this.c28CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c28CrimeMin.TabIndex = 65;
+            this.c28CrimeMin.TabIndex = 7;
             this.c28CrimeMin.ValueChanged += new System.EventHandler(this.c28CrimeMin_ValueChanged);
             // 
             // label320
@@ -23904,7 +23905,7 @@
             0});
             this.c28FireMax.Name = "c28FireMax";
             this.c28FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c28FireMax.TabIndex = 63;
+            this.c28FireMax.TabIndex = 5;
             this.c28FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -23922,7 +23923,7 @@
             0});
             this.c28FireMin.Name = "c28FireMin";
             this.c28FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c28FireMin.TabIndex = 62;
+            this.c28FireMin.TabIndex = 4;
             this.c28FireMin.ValueChanged += new System.EventHandler(this.c28FireMin_ValueChanged);
             // 
             // label321
@@ -23946,7 +23947,7 @@
             0});
             this.c28DiffMax.Name = "c28DiffMax";
             this.c28DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c28DiffMax.TabIndex = 60;
+            this.c28DiffMax.TabIndex = 2;
             this.c28DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -23964,7 +23965,7 @@
             0});
             this.c28DiffMin.Name = "c28DiffMin";
             this.c28DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c28DiffMin.TabIndex = 59;
+            this.c28DiffMin.TabIndex = 1;
             this.c28DiffMin.ValueChanged += new System.EventHandler(this.c28DiffMin_ValueChanged);
             // 
             // label322
@@ -24044,7 +24045,7 @@
             0});
             this.c29TransportMax.Name = "c29TransportMax";
             this.c29TransportMax.Size = new System.Drawing.Size(55, 20);
-            this.c29TransportMax.TabIndex = 103;
+            this.c29TransportMax.TabIndex = 23;
             this.c29TransportMax.Value = new decimal(new int[] {
             99,
             0,
@@ -24062,7 +24063,7 @@
             0});
             this.c29MedevacMax.Name = "c29MedevacMax";
             this.c29MedevacMax.Size = new System.Drawing.Size(55, 20);
-            this.c29MedevacMax.TabIndex = 102;
+            this.c29MedevacMax.TabIndex = 20;
             this.c29MedevacMax.Value = new decimal(new int[] {
             99,
             0,
@@ -24080,7 +24081,7 @@
             0});
             this.c29TransportMin.Name = "c29TransportMin";
             this.c29TransportMin.Size = new System.Drawing.Size(55, 20);
-            this.c29TransportMin.TabIndex = 101;
+            this.c29TransportMin.TabIndex = 22;
             this.c29TransportMin.ValueChanged += new System.EventHandler(this.c29TransportMin_ValueChanged);
             // 
             // c29MedevacMin
@@ -24093,7 +24094,7 @@
             0});
             this.c29MedevacMin.Name = "c29MedevacMin";
             this.c29MedevacMin.Size = new System.Drawing.Size(55, 20);
-            this.c29MedevacMin.TabIndex = 100;
+            this.c29MedevacMin.TabIndex = 19;
             this.c29MedevacMin.ValueChanged += new System.EventHandler(this.c29MedevacMin_ValueChanged);
             // 
             // label392
@@ -24105,7 +24106,7 @@
             this.label392.Size = new System.Drawing.Size(119, 13);
             this.label392.TabIndex = 99;
             this.label392.Text = "Transport Rate";
-            this.toolTip.SetToolTip(this.label392, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label392, "Frequency of transport missions in this city.");
             // 
             // label393
             // 
@@ -24116,7 +24117,7 @@
             this.label393.Size = new System.Drawing.Size(103, 13);
             this.label393.TabIndex = 98;
             this.label393.Text = "MedEvac Rate";
-            this.toolTip.SetToolTip(this.label393, "Frequency of traffic missions in this city.");
+            this.toolTip.SetToolTip(this.label393, "Frequency of medevac missions in this city.");
             // 
             // c29TransportCheck
             // 
@@ -24126,7 +24127,7 @@
             this.c29TransportCheck.Location = new System.Drawing.Point(8, 206);
             this.c29TransportCheck.Name = "c29TransportCheck";
             this.c29TransportCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29TransportCheck.TabIndex = 97;
+            this.c29TransportCheck.TabIndex = 21;
             this.c29TransportCheck.UseVisualStyleBackColor = true;
             this.c29TransportCheck.CheckedChanged += new System.EventHandler(this.c29TransportCheck_CheckedChanged);
             // 
@@ -24138,7 +24139,7 @@
             this.c29MedevacCheck.Location = new System.Drawing.Point(8, 180);
             this.c29MedevacCheck.Name = "c29MedevacCheck";
             this.c29MedevacCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29MedevacCheck.TabIndex = 96;
+            this.c29MedevacCheck.TabIndex = 18;
             this.c29MedevacCheck.UseVisualStyleBackColor = true;
             this.c29MedevacCheck.CheckedChanged += new System.EventHandler(this.c29MedevacCheck_CheckedChanged);
             // 
@@ -24150,7 +24151,7 @@
             this.c29MoneyCheck.Location = new System.Drawing.Point(8, 284);
             this.c29MoneyCheck.Name = "c29MoneyCheck";
             this.c29MoneyCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29MoneyCheck.TabIndex = 95;
+            this.c29MoneyCheck.TabIndex = 30;
             this.c29MoneyCheck.UseVisualStyleBackColor = true;
             this.c29MoneyCheck.CheckedChanged += new System.EventHandler(this.c29MoneyCheck_CheckedChanged);
             // 
@@ -24162,7 +24163,7 @@
             this.c29PointCheck.Location = new System.Drawing.Point(8, 258);
             this.c29PointCheck.Name = "c29PointCheck";
             this.c29PointCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29PointCheck.TabIndex = 94;
+            this.c29PointCheck.TabIndex = 27;
             this.c29PointCheck.UseVisualStyleBackColor = true;
             this.c29PointCheck.CheckedChanged += new System.EventHandler(this.c29PointCheck_CheckedChanged);
             // 
@@ -24174,7 +24175,7 @@
             this.c29DayCheck.Location = new System.Drawing.Point(8, 232);
             this.c29DayCheck.Name = "c29DayCheck";
             this.c29DayCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29DayCheck.TabIndex = 93;
+            this.c29DayCheck.TabIndex = 24;
             this.c29DayCheck.UseVisualStyleBackColor = true;
             this.c29DayCheck.CheckedChanged += new System.EventHandler(this.c29DayCheck_CheckedChanged);
             // 
@@ -24186,7 +24187,7 @@
             this.c29TrafficCheck.Location = new System.Drawing.Point(8, 154);
             this.c29TrafficCheck.Name = "c29TrafficCheck";
             this.c29TrafficCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29TrafficCheck.TabIndex = 92;
+            this.c29TrafficCheck.TabIndex = 15;
             this.c29TrafficCheck.UseVisualStyleBackColor = true;
             this.c29TrafficCheck.CheckedChanged += new System.EventHandler(this.c29TrafficCheck_CheckedChanged);
             // 
@@ -24198,7 +24199,7 @@
             this.c29RiotCheck.Location = new System.Drawing.Point(8, 128);
             this.c29RiotCheck.Name = "c29RiotCheck";
             this.c29RiotCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29RiotCheck.TabIndex = 91;
+            this.c29RiotCheck.TabIndex = 12;
             this.c29RiotCheck.UseVisualStyleBackColor = true;
             this.c29RiotCheck.CheckedChanged += new System.EventHandler(this.c29RiotCheck_CheckedChanged);
             // 
@@ -24210,7 +24211,7 @@
             this.c29RescueCheck.Location = new System.Drawing.Point(8, 102);
             this.c29RescueCheck.Name = "c29RescueCheck";
             this.c29RescueCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29RescueCheck.TabIndex = 90;
+            this.c29RescueCheck.TabIndex = 9;
             this.c29RescueCheck.UseVisualStyleBackColor = true;
             this.c29RescueCheck.CheckedChanged += new System.EventHandler(this.c29RescueCheck_CheckedChanged);
             // 
@@ -24222,7 +24223,7 @@
             this.c29CrimeCheck.Location = new System.Drawing.Point(8, 76);
             this.c29CrimeCheck.Name = "c29CrimeCheck";
             this.c29CrimeCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29CrimeCheck.TabIndex = 89;
+            this.c29CrimeCheck.TabIndex = 6;
             this.c29CrimeCheck.UseVisualStyleBackColor = true;
             this.c29CrimeCheck.CheckedChanged += new System.EventHandler(this.c29CrimeCheck_CheckedChanged);
             // 
@@ -24234,7 +24235,7 @@
             this.c29FireCheck.Location = new System.Drawing.Point(8, 50);
             this.c29FireCheck.Name = "c29FireCheck";
             this.c29FireCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29FireCheck.TabIndex = 88;
+            this.c29FireCheck.TabIndex = 3;
             this.c29FireCheck.UseVisualStyleBackColor = true;
             this.c29FireCheck.CheckedChanged += new System.EventHandler(this.c29FireCheck_CheckedChanged);
             // 
@@ -24246,7 +24247,7 @@
             this.c29DiffCheck.Location = new System.Drawing.Point(8, 24);
             this.c29DiffCheck.Name = "c29DiffCheck";
             this.c29DiffCheck.Size = new System.Drawing.Size(15, 14);
-            this.c29DiffCheck.TabIndex = 87;
+            this.c29DiffCheck.TabIndex = 0;
             this.c29DiffCheck.UseVisualStyleBackColor = true;
             this.c29DiffCheck.CheckedChanged += new System.EventHandler(this.c29DiffCheck_CheckedChanged);
             // 
@@ -24285,7 +24286,7 @@
             0});
             this.c29MoneyMax.Name = "c29MoneyMax";
             this.c29MoneyMax.Size = new System.Drawing.Size(55, 20);
-            this.c29MoneyMax.TabIndex = 84;
+            this.c29MoneyMax.TabIndex = 32;
             this.c29MoneyMax.Value = new decimal(new int[] {
             2000,
             0,
@@ -24308,7 +24309,7 @@
             0});
             this.c29MoneyMin.Name = "c29MoneyMin";
             this.c29MoneyMin.Size = new System.Drawing.Size(55, 20);
-            this.c29MoneyMin.TabIndex = 83;
+            this.c29MoneyMin.TabIndex = 31;
             this.c29MoneyMin.Value = new decimal(new int[] {
             1,
             0,
@@ -24325,7 +24326,7 @@
             this.label325.Size = new System.Drawing.Size(103, 13);
             this.label325.TabIndex = 82;
             this.label325.Text = "Money Earned";
-            this.toolTip.SetToolTip(this.label325, "Amount of moneey given when completing this city.");
+            this.toolTip.SetToolTip(this.label325, "Amount of money given when completing this city.");
             // 
             // c29PointsMax
             // 
@@ -24342,7 +24343,7 @@
             0});
             this.c29PointsMax.Name = "c29PointsMax";
             this.c29PointsMax.Size = new System.Drawing.Size(55, 20);
-            this.c29PointsMax.TabIndex = 81;
+            this.c29PointsMax.TabIndex = 29;
             this.c29PointsMax.Value = new decimal(new int[] {
             5000,
             0,
@@ -24365,7 +24366,7 @@
             0});
             this.c29PointsMin.Name = "c29PointsMin";
             this.c29PointsMin.Size = new System.Drawing.Size(55, 20);
-            this.c29PointsMin.TabIndex = 80;
+            this.c29PointsMin.TabIndex = 28;
             this.c29PointsMin.Value = new decimal(new int[] {
             1,
             0,
@@ -24394,7 +24395,7 @@
             0});
             this.c29DayMax.Name = "c29DayMax";
             this.c29DayMax.Size = new System.Drawing.Size(55, 20);
-            this.c29DayMax.TabIndex = 78;
+            this.c29DayMax.TabIndex = 26;
             this.c29DayMax.Value = new decimal(new int[] {
             1,
             0,
@@ -24412,7 +24413,7 @@
             0});
             this.c29DayMin.Name = "c29DayMin";
             this.c29DayMin.Size = new System.Drawing.Size(55, 20);
-            this.c29DayMin.TabIndex = 77;
+            this.c29DayMin.TabIndex = 25;
             this.c29DayMin.ValueChanged += new System.EventHandler(this.c29DayMin_ValueChanged);
             // 
             // label327
@@ -24436,7 +24437,7 @@
             0});
             this.c29TrafficMax.Name = "c29TrafficMax";
             this.c29TrafficMax.Size = new System.Drawing.Size(55, 20);
-            this.c29TrafficMax.TabIndex = 75;
+            this.c29TrafficMax.TabIndex = 17;
             this.c29TrafficMax.Value = new decimal(new int[] {
             99,
             0,
@@ -24454,7 +24455,7 @@
             0});
             this.c29TrafficMin.Name = "c29TrafficMin";
             this.c29TrafficMin.Size = new System.Drawing.Size(55, 20);
-            this.c29TrafficMin.TabIndex = 74;
+            this.c29TrafficMin.TabIndex = 16;
             this.c29TrafficMin.ValueChanged += new System.EventHandler(this.c29TrafficMin_ValueChanged);
             // 
             // label328
@@ -24478,7 +24479,7 @@
             0});
             this.c29RiotMax.Name = "c29RiotMax";
             this.c29RiotMax.Size = new System.Drawing.Size(55, 20);
-            this.c29RiotMax.TabIndex = 72;
+            this.c29RiotMax.TabIndex = 14;
             this.c29RiotMax.Value = new decimal(new int[] {
             99,
             0,
@@ -24496,7 +24497,7 @@
             0});
             this.c29RiotMin.Name = "c29RiotMin";
             this.c29RiotMin.Size = new System.Drawing.Size(55, 20);
-            this.c29RiotMin.TabIndex = 71;
+            this.c29RiotMin.TabIndex = 13;
             this.c29RiotMin.ValueChanged += new System.EventHandler(this.c29RiotMin_ValueChanged);
             // 
             // label329
@@ -24520,7 +24521,7 @@
             0});
             this.c29RescueMax.Name = "c29RescueMax";
             this.c29RescueMax.Size = new System.Drawing.Size(55, 20);
-            this.c29RescueMax.TabIndex = 69;
+            this.c29RescueMax.TabIndex = 11;
             this.c29RescueMax.Value = new decimal(new int[] {
             99,
             0,
@@ -24538,7 +24539,7 @@
             0});
             this.c29RescueMin.Name = "c29RescueMin";
             this.c29RescueMin.Size = new System.Drawing.Size(55, 20);
-            this.c29RescueMin.TabIndex = 68;
+            this.c29RescueMin.TabIndex = 10;
             this.c29RescueMin.ValueChanged += new System.EventHandler(this.c29RescueMin_ValueChanged);
             // 
             // label330
@@ -24562,7 +24563,7 @@
             0});
             this.c29CrimeMax.Name = "c29CrimeMax";
             this.c29CrimeMax.Size = new System.Drawing.Size(55, 20);
-            this.c29CrimeMax.TabIndex = 66;
+            this.c29CrimeMax.TabIndex = 8;
             this.c29CrimeMax.Value = new decimal(new int[] {
             99,
             0,
@@ -24580,7 +24581,7 @@
             0});
             this.c29CrimeMin.Name = "c29CrimeMin";
             this.c29CrimeMin.Size = new System.Drawing.Size(55, 20);
-            this.c29CrimeMin.TabIndex = 65;
+            this.c29CrimeMin.TabIndex = 7;
             this.c29CrimeMin.ValueChanged += new System.EventHandler(this.c29CrimeMin_ValueChanged);
             // 
             // label331
@@ -24604,7 +24605,7 @@
             0});
             this.c29FireMax.Name = "c29FireMax";
             this.c29FireMax.Size = new System.Drawing.Size(55, 20);
-            this.c29FireMax.TabIndex = 63;
+            this.c29FireMax.TabIndex = 5;
             this.c29FireMax.Value = new decimal(new int[] {
             99,
             0,
@@ -24622,7 +24623,7 @@
             0});
             this.c29FireMin.Name = "c29FireMin";
             this.c29FireMin.Size = new System.Drawing.Size(55, 20);
-            this.c29FireMin.TabIndex = 62;
+            this.c29FireMin.TabIndex = 4;
             this.c29FireMin.ValueChanged += new System.EventHandler(this.c29FireMin_ValueChanged);
             // 
             // label332
@@ -24646,7 +24647,7 @@
             0});
             this.c29DiffMax.Name = "c29DiffMax";
             this.c29DiffMax.Size = new System.Drawing.Size(55, 20);
-            this.c29DiffMax.TabIndex = 60;
+            this.c29DiffMax.TabIndex = 2;
             this.c29DiffMax.Value = new decimal(new int[] {
             3,
             0,
@@ -24664,7 +24665,7 @@
             0});
             this.c29DiffMin.Name = "c29DiffMin";
             this.c29DiffMin.Size = new System.Drawing.Size(55, 20);
-            this.c29DiffMin.TabIndex = 59;
+            this.c29DiffMin.TabIndex = 1;
             this.c29DiffMin.ValueChanged += new System.EventHandler(this.c29DiffMin_ValueChanged);
             // 
             // label333
@@ -24686,7 +24687,7 @@
             this.cChaos.Location = new System.Drawing.Point(94, 403);
             this.cChaos.Name = "cChaos";
             this.cChaos.Size = new System.Drawing.Size(93, 28);
-            this.cChaos.TabIndex = 3;
+            this.cChaos.TabIndex = 4;
             this.cChaos.TabStop = true;
             this.cChaos.Text = "Chaos";
             this.cChaos.UseVisualStyleBackColor = true;
@@ -24696,7 +24697,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("NSimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 7);
+            this.label1.Location = new System.Drawing.Point(6, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(327, 27);
             this.label1.TabIndex = 0;
@@ -24800,7 +24801,7 @@
             0});
             this.genMax5.Name = "genMax5";
             this.genMax5.Size = new System.Drawing.Size(55, 20);
-            this.genMax5.TabIndex = 40;
+            this.genMax5.TabIndex = 14;
             this.genMax5.Value = new decimal(new int[] {
             2000,
             0,
@@ -24818,7 +24819,7 @@
             0});
             this.genMin5.Name = "genMin5";
             this.genMin5.Size = new System.Drawing.Size(55, 20);
-            this.genMin5.TabIndex = 39;
+            this.genMin5.TabIndex = 13;
             this.genMin5.ValueChanged += new System.EventHandler(this.genMin5_ValueChanged);
             // 
             // genMax4
@@ -24831,7 +24832,7 @@
             0});
             this.genMax4.Name = "genMax4";
             this.genMax4.Size = new System.Drawing.Size(55, 20);
-            this.genMax4.TabIndex = 38;
+            this.genMax4.TabIndex = 11;
             this.genMax4.Value = new decimal(new int[] {
             2000,
             0,
@@ -24849,7 +24850,7 @@
             0});
             this.genMin4.Name = "genMin4";
             this.genMin4.Size = new System.Drawing.Size(55, 20);
-            this.genMin4.TabIndex = 37;
+            this.genMin4.TabIndex = 10;
             this.genMin4.ValueChanged += new System.EventHandler(this.genMin4_ValueChanged);
             // 
             // genMax3
@@ -24863,7 +24864,7 @@
             0});
             this.genMax3.Name = "genMax3";
             this.genMax3.Size = new System.Drawing.Size(55, 20);
-            this.genMax3.TabIndex = 36;
+            this.genMax3.TabIndex = 8;
             this.genMax3.Value = new decimal(new int[] {
             2,
             0,
@@ -24882,7 +24883,7 @@
             0});
             this.genMin3.Name = "genMin3";
             this.genMin3.Size = new System.Drawing.Size(55, 20);
-            this.genMin3.TabIndex = 35;
+            this.genMin3.TabIndex = 7;
             this.genMin3.ValueChanged += new System.EventHandler(this.genMin3_ValueChanged);
             // 
             // genMax2
@@ -24901,7 +24902,7 @@
             0});
             this.genMax2.Name = "genMax2";
             this.genMax2.Size = new System.Drawing.Size(55, 20);
-            this.genMax2.TabIndex = 34;
+            this.genMax2.TabIndex = 5;
             this.genMax2.Value = new decimal(new int[] {
             1000,
             0,
@@ -24925,7 +24926,7 @@
             0});
             this.genMin2.Name = "genMin2";
             this.genMin2.Size = new System.Drawing.Size(55, 20);
-            this.genMin2.TabIndex = 33;
+            this.genMin2.TabIndex = 4;
             this.genMin2.Value = new decimal(new int[] {
             100,
             0,
@@ -24943,7 +24944,7 @@
             0});
             this.genMax1.Name = "genMax1";
             this.genMax1.Size = new System.Drawing.Size(55, 20);
-            this.genMax1.TabIndex = 32;
+            this.genMax1.TabIndex = 2;
             this.genMax1.Value = new decimal(new int[] {
             10,
             0,
@@ -24961,7 +24962,7 @@
             0});
             this.genMin1.Name = "genMin1";
             this.genMin1.Size = new System.Drawing.Size(55, 20);
-            this.genMin1.TabIndex = 31;
+            this.genMin1.TabIndex = 1;
             this.genMin1.ValueChanged += new System.EventHandler(this.genMin1_ValueChanged);
             // 
             // label399
@@ -25004,7 +25005,7 @@
             this.label397.Size = new System.Drawing.Size(79, 13);
             this.label397.TabIndex = 8;
             this.label397.Text = "UFO Money";
-            this.toolTip.SetToolTip(this.label397, "Moneey for shooting down UFO.");
+            this.toolTip.SetToolTip(this.label397, "Money for shooting down UFO.");
             // 
             // label396
             // 
@@ -25047,7 +25048,7 @@
             this.genCheck5.Location = new System.Drawing.Point(8, 128);
             this.genCheck5.Name = "genCheck5";
             this.genCheck5.Size = new System.Drawing.Size(15, 14);
-            this.genCheck5.TabIndex = 4;
+            this.genCheck5.TabIndex = 12;
             this.genCheck5.UseVisualStyleBackColor = true;
             this.genCheck5.CheckedChanged += new System.EventHandler(this.genCheck5_CheckedChanged);
             // 
@@ -25059,7 +25060,7 @@
             this.genCheck4.Location = new System.Drawing.Point(8, 101);
             this.genCheck4.Name = "genCheck4";
             this.genCheck4.Size = new System.Drawing.Size(15, 14);
-            this.genCheck4.TabIndex = 3;
+            this.genCheck4.TabIndex = 9;
             this.genCheck4.UseVisualStyleBackColor = true;
             this.genCheck4.CheckedChanged += new System.EventHandler(this.genCheck4_CheckedChanged);
             // 
@@ -25071,7 +25072,7 @@
             this.genCheck3.Location = new System.Drawing.Point(8, 76);
             this.genCheck3.Name = "genCheck3";
             this.genCheck3.Size = new System.Drawing.Size(15, 14);
-            this.genCheck3.TabIndex = 2;
+            this.genCheck3.TabIndex = 6;
             this.genCheck3.UseVisualStyleBackColor = true;
             this.genCheck3.CheckedChanged += new System.EventHandler(this.genCheck3_CheckedChanged);
             // 
@@ -25083,7 +25084,7 @@
             this.genCheck2.Location = new System.Drawing.Point(8, 50);
             this.genCheck2.Name = "genCheck2";
             this.genCheck2.Size = new System.Drawing.Size(15, 14);
-            this.genCheck2.TabIndex = 1;
+            this.genCheck2.TabIndex = 3;
             this.genCheck2.UseVisualStyleBackColor = true;
             this.genCheck2.CheckedChanged += new System.EventHandler(this.genCheck2_CheckedChanged);
             // 
@@ -25200,7 +25201,7 @@
             this.mFireCheck20.Location = new System.Drawing.Point(8, 518);
             this.mFireCheck20.Name = "mFireCheck20";
             this.mFireCheck20.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck20.TabIndex = 132;
+            this.mFireCheck20.TabIndex = 57;
             this.mFireCheck20.UseVisualStyleBackColor = true;
             this.mFireCheck20.CheckedChanged += new System.EventHandler(this.mFireCheck20_CheckedChanged);
             // 
@@ -25212,7 +25213,7 @@
             this.mFireCheck19.Location = new System.Drawing.Point(8, 492);
             this.mFireCheck19.Name = "mFireCheck19";
             this.mFireCheck19.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck19.TabIndex = 131;
+            this.mFireCheck19.TabIndex = 54;
             this.mFireCheck19.UseVisualStyleBackColor = true;
             this.mFireCheck19.CheckedChanged += new System.EventHandler(this.mFireCheck19_CheckedChanged);
             // 
@@ -25221,7 +25222,7 @@
             this.mFireMax20.Location = new System.Drawing.Point(233, 516);
             this.mFireMax20.Name = "mFireMax20";
             this.mFireMax20.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax20.TabIndex = 130;
+            this.mFireMax20.TabIndex = 59;
             this.mFireMax20.Value = new decimal(new int[] {
             100,
             0,
@@ -25234,7 +25235,7 @@
             this.mFireMin20.Location = new System.Drawing.Point(158, 516);
             this.mFireMin20.Name = "mFireMin20";
             this.mFireMin20.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin20.TabIndex = 129;
+            this.mFireMin20.TabIndex = 58;
             this.mFireMin20.ValueChanged += new System.EventHandler(this.mFireMin20_ValueChanged);
             // 
             // label419
@@ -25253,7 +25254,7 @@
             this.mFireMax19.Location = new System.Drawing.Point(233, 490);
             this.mFireMax19.Name = "mFireMax19";
             this.mFireMax19.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax19.TabIndex = 126;
+            this.mFireMax19.TabIndex = 56;
             this.mFireMax19.Value = new decimal(new int[] {
             100,
             0,
@@ -25266,7 +25267,7 @@
             this.mFireMin19.Location = new System.Drawing.Point(158, 490);
             this.mFireMin19.Name = "mFireMin19";
             this.mFireMin19.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin19.TabIndex = 125;
+            this.mFireMin19.TabIndex = 55;
             this.mFireMin19.ValueChanged += new System.EventHandler(this.mFireMin19_ValueChanged);
             // 
             // label420
@@ -25285,7 +25286,7 @@
             this.mFireMax18.Location = new System.Drawing.Point(233, 464);
             this.mFireMax18.Name = "mFireMax18";
             this.mFireMax18.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax18.TabIndex = 122;
+            this.mFireMax18.TabIndex = 53;
             this.mFireMax18.Value = new decimal(new int[] {
             100,
             0,
@@ -25298,7 +25299,7 @@
             this.mFireMin18.Location = new System.Drawing.Point(158, 464);
             this.mFireMin18.Name = "mFireMin18";
             this.mFireMin18.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin18.TabIndex = 121;
+            this.mFireMin18.TabIndex = 52;
             this.mFireMin18.ValueChanged += new System.EventHandler(this.mFireMin18_ValueChanged);
             // 
             // label421
@@ -25320,7 +25321,7 @@
             this.mFireCheck18.Location = new System.Drawing.Point(8, 465);
             this.mFireCheck18.Name = "mFireCheck18";
             this.mFireCheck18.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck18.TabIndex = 119;
+            this.mFireCheck18.TabIndex = 51;
             this.mFireCheck18.UseVisualStyleBackColor = true;
             this.mFireCheck18.CheckedChanged += new System.EventHandler(this.mFireCheck20_CheckedChanged);
             // 
@@ -25329,7 +25330,7 @@
             this.mFireMax17.Location = new System.Drawing.Point(233, 438);
             this.mFireMax17.Name = "mFireMax17";
             this.mFireMax17.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax17.TabIndex = 118;
+            this.mFireMax17.TabIndex = 50;
             this.mFireMax17.Value = new decimal(new int[] {
             100,
             0,
@@ -25342,7 +25343,7 @@
             this.mFireMin17.Location = new System.Drawing.Point(158, 438);
             this.mFireMin17.Name = "mFireMin17";
             this.mFireMin17.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin17.TabIndex = 117;
+            this.mFireMin17.TabIndex = 49;
             this.mFireMin17.ValueChanged += new System.EventHandler(this.mFireMin17_ValueChanged);
             // 
             // label422
@@ -25364,7 +25365,7 @@
             this.mFireCheck17.Location = new System.Drawing.Point(8, 439);
             this.mFireCheck17.Name = "mFireCheck17";
             this.mFireCheck17.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck17.TabIndex = 115;
+            this.mFireCheck17.TabIndex = 48;
             this.mFireCheck17.UseVisualStyleBackColor = true;
             this.mFireCheck17.CheckedChanged += new System.EventHandler(this.mFireCheck19_CheckedChanged);
             // 
@@ -25378,7 +25379,7 @@
             0});
             this.mFireMax16.Name = "mFireMax16";
             this.mFireMax16.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax16.TabIndex = 114;
+            this.mFireMax16.TabIndex = 47;
             this.mFireMax16.Value = new decimal(new int[] {
             200,
             0,
@@ -25396,7 +25397,7 @@
             0});
             this.mFireMin16.Name = "mFireMin16";
             this.mFireMin16.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin16.TabIndex = 113;
+            this.mFireMin16.TabIndex = 46;
             this.mFireMin16.ValueChanged += new System.EventHandler(this.mFireMin16_ValueChanged);
             // 
             // label423
@@ -25418,7 +25419,7 @@
             this.mFireCheck16.Location = new System.Drawing.Point(8, 413);
             this.mFireCheck16.Name = "mFireCheck16";
             this.mFireCheck16.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck16.TabIndex = 111;
+            this.mFireCheck16.TabIndex = 45;
             this.mFireCheck16.UseVisualStyleBackColor = true;
             this.mFireCheck16.CheckedChanged += new System.EventHandler(this.mFireCheck16_CheckedChanged);
             // 
@@ -25432,7 +25433,7 @@
             0});
             this.mFireMax15.Name = "mFireMax15";
             this.mFireMax15.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax15.TabIndex = 110;
+            this.mFireMax15.TabIndex = 44;
             this.mFireMax15.Value = new decimal(new int[] {
             200,
             0,
@@ -25450,7 +25451,7 @@
             0});
             this.mFireMin15.Name = "mFireMin15";
             this.mFireMin15.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin15.TabIndex = 109;
+            this.mFireMin15.TabIndex = 43;
             this.mFireMin15.ValueChanged += new System.EventHandler(this.mFireMin15_ValueChanged);
             // 
             // label424
@@ -25472,7 +25473,7 @@
             this.mFireCheck15.Location = new System.Drawing.Point(8, 387);
             this.mFireCheck15.Name = "mFireCheck15";
             this.mFireCheck15.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck15.TabIndex = 107;
+            this.mFireCheck15.TabIndex = 42;
             this.mFireCheck15.UseVisualStyleBackColor = true;
             this.mFireCheck15.CheckedChanged += new System.EventHandler(this.mFireCheck15_CheckedChanged);
             // 
@@ -25486,7 +25487,7 @@
             0});
             this.mFireMax14.Name = "mFireMax14";
             this.mFireMax14.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax14.TabIndex = 106;
+            this.mFireMax14.TabIndex = 41;
             this.mFireMax14.Value = new decimal(new int[] {
             200,
             0,
@@ -25504,7 +25505,7 @@
             0});
             this.mFireMin14.Name = "mFireMin14";
             this.mFireMin14.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin14.TabIndex = 105;
+            this.mFireMin14.TabIndex = 40;
             this.mFireMin14.ValueChanged += new System.EventHandler(this.mFireMin14_ValueChanged);
             // 
             // label417
@@ -25516,7 +25517,7 @@
             this.label417.Size = new System.Drawing.Size(87, 13);
             this.label417.TabIndex = 104;
             this.label417.Text = "Flame -Pts";
-            this.toolTip.SetToolTip(this.label417, "Points for having a flame spawn from a fire.");
+            this.toolTip.SetToolTip(this.label417, "Point penalty for having a flame spawn from a fire.");
             // 
             // mFireCheck14
             // 
@@ -25526,7 +25527,7 @@
             this.mFireCheck14.Location = new System.Drawing.Point(8, 361);
             this.mFireCheck14.Name = "mFireCheck14";
             this.mFireCheck14.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck14.TabIndex = 103;
+            this.mFireCheck14.TabIndex = 39;
             this.mFireCheck14.UseVisualStyleBackColor = true;
             this.mFireCheck14.CheckedChanged += new System.EventHandler(this.mFireCheck14_CheckedChanged);
             // 
@@ -25540,7 +25541,7 @@
             0});
             this.mFireMax13.Name = "mFireMax13";
             this.mFireMax13.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax13.TabIndex = 102;
+            this.mFireMax13.TabIndex = 38;
             this.mFireMax13.Value = new decimal(new int[] {
             2000,
             0,
@@ -25558,7 +25559,7 @@
             0});
             this.mFireMin13.Name = "mFireMin13";
             this.mFireMin13.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin13.TabIndex = 101;
+            this.mFireMin13.TabIndex = 37;
             this.mFireMin13.ValueChanged += new System.EventHandler(this.mFireMin13_ValueChanged);
             // 
             // label418
@@ -25580,7 +25581,7 @@
             this.mFireCheck13.Location = new System.Drawing.Point(8, 335);
             this.mFireCheck13.Name = "mFireCheck13";
             this.mFireCheck13.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck13.TabIndex = 99;
+            this.mFireCheck13.TabIndex = 36;
             this.mFireCheck13.UseVisualStyleBackColor = true;
             this.mFireCheck13.CheckedChanged += new System.EventHandler(this.mFireCheck13_CheckedChanged);
             // 
@@ -25594,7 +25595,7 @@
             0});
             this.mFireMax12.Name = "mFireMax12";
             this.mFireMax12.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax12.TabIndex = 98;
+            this.mFireMax12.TabIndex = 35;
             this.mFireMax12.Value = new decimal(new int[] {
             2000,
             0,
@@ -25612,7 +25613,7 @@
             0});
             this.mFireMin12.Name = "mFireMin12";
             this.mFireMin12.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin12.TabIndex = 97;
+            this.mFireMin12.TabIndex = 34;
             this.mFireMin12.ValueChanged += new System.EventHandler(this.mFireMin12_ValueChanged);
             // 
             // label415
@@ -25634,7 +25635,7 @@
             this.mFireCheck12.Location = new System.Drawing.Point(8, 309);
             this.mFireCheck12.Name = "mFireCheck12";
             this.mFireCheck12.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck12.TabIndex = 95;
+            this.mFireCheck12.TabIndex = 33;
             this.mFireCheck12.UseVisualStyleBackColor = true;
             this.mFireCheck12.CheckedChanged += new System.EventHandler(this.mFireCheck12_CheckedChanged);
             // 
@@ -25648,7 +25649,7 @@
             0});
             this.mFireMax11.Name = "mFireMax11";
             this.mFireMax11.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax11.TabIndex = 94;
+            this.mFireMax11.TabIndex = 32;
             this.mFireMax11.Value = new decimal(new int[] {
             2000,
             0,
@@ -25666,7 +25667,7 @@
             0});
             this.mFireMin11.Name = "mFireMin11";
             this.mFireMin11.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin11.TabIndex = 93;
+            this.mFireMin11.TabIndex = 31;
             this.mFireMin11.ValueChanged += new System.EventHandler(this.mFireMin11_ValueChanged);
             // 
             // label416
@@ -25688,7 +25689,7 @@
             this.mFireCheck11.Location = new System.Drawing.Point(8, 283);
             this.mFireCheck11.Name = "mFireCheck11";
             this.mFireCheck11.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck11.TabIndex = 91;
+            this.mFireCheck11.TabIndex = 30;
             this.mFireCheck11.UseVisualStyleBackColor = true;
             this.mFireCheck11.CheckedChanged += new System.EventHandler(this.mFireCheck11_CheckedChanged);
             // 
@@ -25702,7 +25703,7 @@
             0});
             this.mFireMax10.Name = "mFireMax10";
             this.mFireMax10.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax10.TabIndex = 82;
+            this.mFireMax10.TabIndex = 29;
             this.mFireMax10.Value = new decimal(new int[] {
             2000,
             0,
@@ -25720,7 +25721,7 @@
             0});
             this.mFireMin10.Name = "mFireMin10";
             this.mFireMin10.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin10.TabIndex = 81;
+            this.mFireMin10.TabIndex = 28;
             this.mFireMin10.ValueChanged += new System.EventHandler(this.mFireMin10_ValueChanged);
             // 
             // label411
@@ -25742,7 +25743,7 @@
             this.mFireCheck10.Location = new System.Drawing.Point(8, 257);
             this.mFireCheck10.Name = "mFireCheck10";
             this.mFireCheck10.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck10.TabIndex = 79;
+            this.mFireCheck10.TabIndex = 27;
             this.mFireCheck10.UseVisualStyleBackColor = true;
             this.mFireCheck10.CheckedChanged += new System.EventHandler(this.mFireCheck10_CheckedChanged);
             // 
@@ -25756,7 +25757,7 @@
             0});
             this.mFireMax9.Name = "mFireMax9";
             this.mFireMax9.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax9.TabIndex = 78;
+            this.mFireMax9.TabIndex = 26;
             this.mFireMax9.Value = new decimal(new int[] {
             2000,
             0,
@@ -25774,7 +25775,7 @@
             0});
             this.mFireMin9.Name = "mFireMin9";
             this.mFireMin9.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin9.TabIndex = 77;
+            this.mFireMin9.TabIndex = 25;
             this.mFireMin9.ValueChanged += new System.EventHandler(this.mFireMin9_ValueChanged);
             // 
             // label412
@@ -25796,7 +25797,7 @@
             this.mFireCheck9.Location = new System.Drawing.Point(8, 231);
             this.mFireCheck9.Name = "mFireCheck9";
             this.mFireCheck9.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck9.TabIndex = 75;
+            this.mFireCheck9.TabIndex = 24;
             this.mFireCheck9.UseVisualStyleBackColor = true;
             this.mFireCheck9.CheckedChanged += new System.EventHandler(this.mFireCheck9_CheckedChanged);
             // 
@@ -25810,7 +25811,7 @@
             0});
             this.mFireMax8.Name = "mFireMax8";
             this.mFireMax8.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax8.TabIndex = 74;
+            this.mFireMax8.TabIndex = 23;
             this.mFireMax8.Value = new decimal(new int[] {
             2000,
             0,
@@ -25828,7 +25829,7 @@
             0});
             this.mFireMin8.Name = "mFireMin8";
             this.mFireMin8.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin8.TabIndex = 73;
+            this.mFireMin8.TabIndex = 22;
             this.mFireMin8.ValueChanged += new System.EventHandler(this.mFireMin8_ValueChanged);
             // 
             // label409
@@ -25850,7 +25851,7 @@
             this.mFireCheck8.Location = new System.Drawing.Point(8, 205);
             this.mFireCheck8.Name = "mFireCheck8";
             this.mFireCheck8.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck8.TabIndex = 71;
+            this.mFireCheck8.TabIndex = 21;
             this.mFireCheck8.UseVisualStyleBackColor = true;
             this.mFireCheck8.CheckedChanged += new System.EventHandler(this.mFireCheck8_CheckedChanged);
             // 
@@ -25864,7 +25865,7 @@
             0});
             this.mFireMax7.Name = "mFireMax7";
             this.mFireMax7.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax7.TabIndex = 70;
+            this.mFireMax7.TabIndex = 20;
             this.mFireMax7.Value = new decimal(new int[] {
             2000,
             0,
@@ -25882,7 +25883,7 @@
             0});
             this.mFireMin7.Name = "mFireMin7";
             this.mFireMin7.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin7.TabIndex = 69;
+            this.mFireMin7.TabIndex = 19;
             this.mFireMin7.ValueChanged += new System.EventHandler(this.mFireMin7_ValueChanged);
             // 
             // label410
@@ -25904,7 +25905,7 @@
             this.mFireCheck7.Location = new System.Drawing.Point(8, 179);
             this.mFireCheck7.Name = "mFireCheck7";
             this.mFireCheck7.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck7.TabIndex = 67;
+            this.mFireCheck7.TabIndex = 18;
             this.mFireCheck7.UseVisualStyleBackColor = true;
             this.mFireCheck7.CheckedChanged += new System.EventHandler(this.mFireCheck7_CheckedChanged);
             // 
@@ -25918,7 +25919,7 @@
             0});
             this.mFireMax6.Name = "mFireMax6";
             this.mFireMax6.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax6.TabIndex = 66;
+            this.mFireMax6.TabIndex = 17;
             this.mFireMax6.Value = new decimal(new int[] {
             2000,
             0,
@@ -25936,7 +25937,7 @@
             0});
             this.mFireMin6.Name = "mFireMin6";
             this.mFireMin6.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin6.TabIndex = 65;
+            this.mFireMin6.TabIndex = 16;
             this.mFireMin6.ValueChanged += new System.EventHandler(this.mFireMin6_ValueChanged);
             // 
             // label408
@@ -25958,7 +25959,7 @@
             this.mFireCheck6.Location = new System.Drawing.Point(8, 153);
             this.mFireCheck6.Name = "mFireCheck6";
             this.mFireCheck6.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck6.TabIndex = 63;
+            this.mFireCheck6.TabIndex = 15;
             this.mFireCheck6.UseVisualStyleBackColor = true;
             this.mFireCheck6.CheckedChanged += new System.EventHandler(this.mFireCheck6_CheckedChanged);
             // 
@@ -25972,7 +25973,7 @@
             0});
             this.mFireMax5.Name = "mFireMax5";
             this.mFireMax5.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax5.TabIndex = 62;
+            this.mFireMax5.TabIndex = 14;
             this.mFireMax5.Value = new decimal(new int[] {
             2000,
             0,
@@ -25990,7 +25991,7 @@
             0});
             this.mFireMin5.Name = "mFireMin5";
             this.mFireMin5.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin5.TabIndex = 61;
+            this.mFireMin5.TabIndex = 13;
             this.mFireMin5.ValueChanged += new System.EventHandler(this.mFireMin5_ValueChanged);
             // 
             // mFireMax4
@@ -26003,7 +26004,7 @@
             0});
             this.mFireMax4.Name = "mFireMax4";
             this.mFireMax4.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax4.TabIndex = 60;
+            this.mFireMax4.TabIndex = 11;
             this.mFireMax4.Value = new decimal(new int[] {
             1000,
             0,
@@ -26021,7 +26022,7 @@
             0});
             this.mFireMin4.Name = "mFireMin4";
             this.mFireMin4.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin4.TabIndex = 59;
+            this.mFireMin4.TabIndex = 10;
             this.mFireMin4.ValueChanged += new System.EventHandler(this.mFireMin4_ValueChanged);
             // 
             // mFireMax3
@@ -26034,7 +26035,7 @@
             0});
             this.mFireMax3.Name = "mFireMax3";
             this.mFireMax3.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax3.TabIndex = 58;
+            this.mFireMax3.TabIndex = 8;
             this.mFireMax3.Value = new decimal(new int[] {
             1000,
             0,
@@ -26052,7 +26053,7 @@
             0});
             this.mFireMin3.Name = "mFireMin3";
             this.mFireMin3.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin3.TabIndex = 57;
+            this.mFireMin3.TabIndex = 7;
             this.mFireMin3.ValueChanged += new System.EventHandler(this.mFireMin3_ValueChanged);
             // 
             // mFireMax2
@@ -26065,7 +26066,7 @@
             0});
             this.mFireMax2.Name = "mFireMax2";
             this.mFireMax2.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax2.TabIndex = 56;
+            this.mFireMax2.TabIndex = 5;
             this.mFireMax2.Value = new decimal(new int[] {
             2000,
             0,
@@ -26083,7 +26084,7 @@
             0});
             this.mFireMin2.Name = "mFireMin2";
             this.mFireMin2.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin2.TabIndex = 55;
+            this.mFireMin2.TabIndex = 4;
             this.mFireMin2.ValueChanged += new System.EventHandler(this.mFireMin2_ValueChanged);
             // 
             // mFireMax1
@@ -26096,7 +26097,7 @@
             0});
             this.mFireMax1.Name = "mFireMax1";
             this.mFireMax1.Size = new System.Drawing.Size(55, 20);
-            this.mFireMax1.TabIndex = 54;
+            this.mFireMax1.TabIndex = 2;
             this.mFireMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -26114,7 +26115,7 @@
             0});
             this.mFireMin1.Name = "mFireMin1";
             this.mFireMin1.Size = new System.Drawing.Size(55, 20);
-            this.mFireMin1.TabIndex = 53;
+            this.mFireMin1.TabIndex = 1;
             this.mFireMin1.ValueChanged += new System.EventHandler(this.mFireMin1_ValueChanged);
             // 
             // label401
@@ -26200,7 +26201,7 @@
             this.mFireCheck5.Location = new System.Drawing.Point(8, 127);
             this.mFireCheck5.Name = "mFireCheck5";
             this.mFireCheck5.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck5.TabIndex = 45;
+            this.mFireCheck5.TabIndex = 12;
             this.mFireCheck5.UseVisualStyleBackColor = true;
             this.mFireCheck5.CheckedChanged += new System.EventHandler(this.mFireCheck5_CheckedChanged);
             // 
@@ -26212,7 +26213,7 @@
             this.mFireCheck4.Location = new System.Drawing.Point(8, 101);
             this.mFireCheck4.Name = "mFireCheck4";
             this.mFireCheck4.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck4.TabIndex = 44;
+            this.mFireCheck4.TabIndex = 9;
             this.mFireCheck4.UseVisualStyleBackColor = true;
             this.mFireCheck4.CheckedChanged += new System.EventHandler(this.mFireCheck4_CheckedChanged);
             // 
@@ -26224,7 +26225,7 @@
             this.mFireCheck3.Location = new System.Drawing.Point(8, 75);
             this.mFireCheck3.Name = "mFireCheck3";
             this.mFireCheck3.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck3.TabIndex = 43;
+            this.mFireCheck3.TabIndex = 6;
             this.mFireCheck3.UseVisualStyleBackColor = true;
             this.mFireCheck3.CheckedChanged += new System.EventHandler(this.mFireCheck3_CheckedChanged);
             // 
@@ -26236,7 +26237,7 @@
             this.mFireCheck2.Location = new System.Drawing.Point(8, 49);
             this.mFireCheck2.Name = "mFireCheck2";
             this.mFireCheck2.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck2.TabIndex = 42;
+            this.mFireCheck2.TabIndex = 3;
             this.mFireCheck2.UseVisualStyleBackColor = true;
             this.mFireCheck2.CheckedChanged += new System.EventHandler(this.mFireCheck2_CheckedChanged);
             // 
@@ -26248,7 +26249,7 @@
             this.mFireCheck1.Location = new System.Drawing.Point(8, 24);
             this.mFireCheck1.Name = "mFireCheck1";
             this.mFireCheck1.Size = new System.Drawing.Size(15, 14);
-            this.mFireCheck1.TabIndex = 41;
+            this.mFireCheck1.TabIndex = 0;
             this.mFireCheck1.UseVisualStyleBackColor = true;
             this.mFireCheck1.CheckedChanged += new System.EventHandler(this.mFireCheck1_CheckedChanged);
             // 
@@ -26281,7 +26282,7 @@
             0});
             this.crimeMax2.Name = "crimeMax2";
             this.crimeMax2.Size = new System.Drawing.Size(55, 20);
-            this.crimeMax2.TabIndex = 66;
+            this.crimeMax2.TabIndex = 5;
             this.crimeMax2.Value = new decimal(new int[] {
             2000,
             0,
@@ -26299,7 +26300,7 @@
             0});
             this.crimeMin2.Name = "crimeMin2";
             this.crimeMin2.Size = new System.Drawing.Size(55, 20);
-            this.crimeMin2.TabIndex = 65;
+            this.crimeMin2.TabIndex = 4;
             this.crimeMin2.ValueChanged += new System.EventHandler(this.crimeMin2_ValueChanged);
             // 
             // crimeMax1
@@ -26312,7 +26313,7 @@
             0});
             this.crimeMax1.Name = "crimeMax1";
             this.crimeMax1.Size = new System.Drawing.Size(55, 20);
-            this.crimeMax1.TabIndex = 64;
+            this.crimeMax1.TabIndex = 2;
             this.crimeMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -26330,7 +26331,7 @@
             0});
             this.crimeMin1.Name = "crimeMin1";
             this.crimeMin1.Size = new System.Drawing.Size(55, 20);
-            this.crimeMin1.TabIndex = 63;
+            this.crimeMin1.TabIndex = 1;
             this.crimeMin1.ValueChanged += new System.EventHandler(this.crimeMin1_ValueChanged);
             // 
             // label425
@@ -26383,7 +26384,7 @@
             this.crimeCheck2.Location = new System.Drawing.Point(8, 49);
             this.crimeCheck2.Name = "crimeCheck2";
             this.crimeCheck2.Size = new System.Drawing.Size(15, 14);
-            this.crimeCheck2.TabIndex = 58;
+            this.crimeCheck2.TabIndex = 3;
             this.crimeCheck2.UseVisualStyleBackColor = true;
             this.crimeCheck2.CheckedChanged += new System.EventHandler(this.crimeCheck2_CheckedChanged);
             // 
@@ -26395,7 +26396,7 @@
             this.crimeCheck1.Location = new System.Drawing.Point(8, 24);
             this.crimeCheck1.Name = "crimeCheck1";
             this.crimeCheck1.Size = new System.Drawing.Size(15, 14);
-            this.crimeCheck1.TabIndex = 57;
+            this.crimeCheck1.TabIndex = 0;
             this.crimeCheck1.UseVisualStyleBackColor = true;
             this.crimeCheck1.CheckedChanged += new System.EventHandler(this.crimeCheck1_CheckedChanged);
             // 
@@ -26432,7 +26433,7 @@
             0});
             this.rescueMax3.Name = "rescueMax3";
             this.rescueMax3.Size = new System.Drawing.Size(55, 20);
-            this.rescueMax3.TabIndex = 72;
+            this.rescueMax3.TabIndex = 8;
             this.rescueMax3.Value = new decimal(new int[] {
             2000,
             0,
@@ -26450,7 +26451,7 @@
             0});
             this.rescueMin3.Name = "rescueMin3";
             this.rescueMin3.Size = new System.Drawing.Size(55, 20);
-            this.rescueMin3.TabIndex = 71;
+            this.rescueMin3.TabIndex = 7;
             this.rescueMin3.ValueChanged += new System.EventHandler(this.rescueMin3_ValueChanged);
             // 
             // rescueMax2
@@ -26463,7 +26464,7 @@
             0});
             this.rescueMax2.Name = "rescueMax2";
             this.rescueMax2.Size = new System.Drawing.Size(55, 20);
-            this.rescueMax2.TabIndex = 70;
+            this.rescueMax2.TabIndex = 5;
             this.rescueMax2.Value = new decimal(new int[] {
             2000,
             0,
@@ -26481,7 +26482,7 @@
             0});
             this.rescueMin2.Name = "rescueMin2";
             this.rescueMin2.Size = new System.Drawing.Size(55, 20);
-            this.rescueMin2.TabIndex = 69;
+            this.rescueMin2.TabIndex = 4;
             this.rescueMin2.ValueChanged += new System.EventHandler(this.rescueMin2_ValueChanged);
             // 
             // rescueMax1
@@ -26494,7 +26495,7 @@
             0});
             this.rescueMax1.Name = "rescueMax1";
             this.rescueMax1.Size = new System.Drawing.Size(55, 20);
-            this.rescueMax1.TabIndex = 68;
+            this.rescueMax1.TabIndex = 2;
             this.rescueMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -26512,7 +26513,7 @@
             0});
             this.rescueMin1.Name = "rescueMin1";
             this.rescueMin1.Size = new System.Drawing.Size(55, 20);
-            this.rescueMin1.TabIndex = 67;
+            this.rescueMin1.TabIndex = 1;
             this.rescueMin1.ValueChanged += new System.EventHandler(this.rescueMin1_ValueChanged);
             // 
             // label429
@@ -26576,7 +26577,7 @@
             this.rescueCheck3.Location = new System.Drawing.Point(8, 75);
             this.rescueCheck3.Name = "rescueCheck3";
             this.rescueCheck3.Size = new System.Drawing.Size(15, 14);
-            this.rescueCheck3.TabIndex = 61;
+            this.rescueCheck3.TabIndex = 6;
             this.rescueCheck3.UseVisualStyleBackColor = true;
             this.rescueCheck3.CheckedChanged += new System.EventHandler(this.rescueCheck3_CheckedChanged);
             // 
@@ -26588,7 +26589,7 @@
             this.rescueCheck2.Location = new System.Drawing.Point(8, 49);
             this.rescueCheck2.Name = "rescueCheck2";
             this.rescueCheck2.Size = new System.Drawing.Size(15, 14);
-            this.rescueCheck2.TabIndex = 60;
+            this.rescueCheck2.TabIndex = 3;
             this.rescueCheck2.UseVisualStyleBackColor = true;
             this.rescueCheck2.CheckedChanged += new System.EventHandler(this.rescueCheck2_CheckedChanged);
             // 
@@ -26600,7 +26601,7 @@
             this.rescueCheck1.Location = new System.Drawing.Point(8, 24);
             this.rescueCheck1.Name = "rescueCheck1";
             this.rescueCheck1.Size = new System.Drawing.Size(15, 14);
-            this.rescueCheck1.TabIndex = 59;
+            this.rescueCheck1.TabIndex = 0;
             this.rescueCheck1.UseVisualStyleBackColor = true;
             this.rescueCheck1.CheckedChanged += new System.EventHandler(this.rescueCheck1_CheckedChanged);
             // 
@@ -26646,7 +26647,7 @@
             0});
             this.riotMax5.Name = "riotMax5";
             this.riotMax5.Size = new System.Drawing.Size(55, 20);
-            this.riotMax5.TabIndex = 84;
+            this.riotMax5.TabIndex = 14;
             this.riotMax5.Value = new decimal(new int[] {
             1000,
             0,
@@ -26665,7 +26666,7 @@
             0});
             this.riotMin5.Name = "riotMin5";
             this.riotMin5.Size = new System.Drawing.Size(55, 20);
-            this.riotMin5.TabIndex = 83;
+            this.riotMin5.TabIndex = 13;
             this.riotMin5.ValueChanged += new System.EventHandler(this.riotMin5_ValueChanged);
             // 
             // riotMax4
@@ -26678,7 +26679,7 @@
             0});
             this.riotMax4.Name = "riotMax4";
             this.riotMax4.Size = new System.Drawing.Size(55, 20);
-            this.riotMax4.TabIndex = 82;
+            this.riotMax4.TabIndex = 11;
             this.riotMax4.Value = new decimal(new int[] {
             1000,
             0,
@@ -26696,7 +26697,7 @@
             0});
             this.riotMin4.Name = "riotMin4";
             this.riotMin4.Size = new System.Drawing.Size(55, 20);
-            this.riotMin4.TabIndex = 81;
+            this.riotMin4.TabIndex = 10;
             this.riotMin4.ValueChanged += new System.EventHandler(this.riotMin4_ValueChanged);
             // 
             // riotMax3
@@ -26709,7 +26710,7 @@
             0});
             this.riotMax3.Name = "riotMax3";
             this.riotMax3.Size = new System.Drawing.Size(55, 20);
-            this.riotMax3.TabIndex = 80;
+            this.riotMax3.TabIndex = 8;
             this.riotMax3.Value = new decimal(new int[] {
             1000,
             0,
@@ -26727,7 +26728,7 @@
             0});
             this.riotMin3.Name = "riotMin3";
             this.riotMin3.Size = new System.Drawing.Size(55, 20);
-            this.riotMin3.TabIndex = 79;
+            this.riotMin3.TabIndex = 7;
             this.riotMin3.ValueChanged += new System.EventHandler(this.riotMin3_ValueChanged);
             // 
             // riotMax2
@@ -26740,7 +26741,7 @@
             0});
             this.riotMax2.Name = "riotMax2";
             this.riotMax2.Size = new System.Drawing.Size(55, 20);
-            this.riotMax2.TabIndex = 78;
+            this.riotMax2.TabIndex = 5;
             this.riotMax2.Value = new decimal(new int[] {
             2000,
             0,
@@ -26758,7 +26759,7 @@
             0});
             this.riotMin2.Name = "riotMin2";
             this.riotMin2.Size = new System.Drawing.Size(55, 20);
-            this.riotMin2.TabIndex = 77;
+            this.riotMin2.TabIndex = 4;
             this.riotMin2.ValueChanged += new System.EventHandler(this.riotMin2_ValueChanged);
             // 
             // riotMax1
@@ -26771,7 +26772,7 @@
             0});
             this.riotMax1.Name = "riotMax1";
             this.riotMax1.Size = new System.Drawing.Size(55, 20);
-            this.riotMax1.TabIndex = 76;
+            this.riotMax1.TabIndex = 2;
             this.riotMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -26789,7 +26790,7 @@
             0});
             this.riotMin1.Name = "riotMin1";
             this.riotMin1.Size = new System.Drawing.Size(55, 20);
-            this.riotMin1.TabIndex = 75;
+            this.riotMin1.TabIndex = 1;
             this.riotMin1.ValueChanged += new System.EventHandler(this.riotMin1_ValueChanged);
             // 
             // label434
@@ -26821,7 +26822,7 @@
             this.label436.Size = new System.Drawing.Size(87, 13);
             this.label436.TabIndex = 72;
             this.label436.Text = "Riot Timer";
-            this.toolTip.SetToolTip(this.label436, "Unknown");
+            this.toolTip.SetToolTip(this.label436, "Unknown.");
             // 
             // label437
             // 
@@ -26832,7 +26833,7 @@
             this.label437.Size = new System.Drawing.Size(119, 13);
             this.label437.TabIndex = 71;
             this.label437.Text = "End Points Pen";
-            this.toolTip.SetToolTip(this.label437, "Unknown");
+            this.toolTip.SetToolTip(this.label437, "Unknown.");
             // 
             // label438
             // 
@@ -26843,7 +26844,7 @@
             this.label438.Size = new System.Drawing.Size(111, 13);
             this.label438.TabIndex = 70;
             this.label438.Text = "End Money Pen";
-            this.toolTip.SetToolTip(this.label438, "Unknown");
+            this.toolTip.SetToolTip(this.label438, "Unknown.");
             // 
             // label439
             // 
@@ -26875,7 +26876,7 @@
             this.riotCheck5.Location = new System.Drawing.Point(8, 127);
             this.riotCheck5.Name = "riotCheck5";
             this.riotCheck5.Size = new System.Drawing.Size(15, 14);
-            this.riotCheck5.TabIndex = 67;
+            this.riotCheck5.TabIndex = 12;
             this.riotCheck5.UseVisualStyleBackColor = true;
             this.riotCheck5.CheckedChanged += new System.EventHandler(this.riotCheck5_CheckedChanged);
             // 
@@ -26887,7 +26888,7 @@
             this.riotCheck4.Location = new System.Drawing.Point(8, 101);
             this.riotCheck4.Name = "riotCheck4";
             this.riotCheck4.Size = new System.Drawing.Size(15, 14);
-            this.riotCheck4.TabIndex = 66;
+            this.riotCheck4.TabIndex = 9;
             this.riotCheck4.UseVisualStyleBackColor = true;
             this.riotCheck4.CheckedChanged += new System.EventHandler(this.riotCheck4_CheckedChanged);
             // 
@@ -26899,7 +26900,7 @@
             this.riotCheck3.Location = new System.Drawing.Point(8, 75);
             this.riotCheck3.Name = "riotCheck3";
             this.riotCheck3.Size = new System.Drawing.Size(15, 14);
-            this.riotCheck3.TabIndex = 65;
+            this.riotCheck3.TabIndex = 6;
             this.riotCheck3.UseVisualStyleBackColor = true;
             this.riotCheck3.CheckedChanged += new System.EventHandler(this.riotCheck3_CheckedChanged);
             // 
@@ -26911,7 +26912,7 @@
             this.riotCheck2.Location = new System.Drawing.Point(8, 49);
             this.riotCheck2.Name = "riotCheck2";
             this.riotCheck2.Size = new System.Drawing.Size(15, 14);
-            this.riotCheck2.TabIndex = 64;
+            this.riotCheck2.TabIndex = 3;
             this.riotCheck2.UseVisualStyleBackColor = true;
             this.riotCheck2.CheckedChanged += new System.EventHandler(this.riotCheck2_CheckedChanged);
             // 
@@ -26923,7 +26924,7 @@
             this.riotCheck1.Location = new System.Drawing.Point(8, 24);
             this.riotCheck1.Name = "riotCheck1";
             this.riotCheck1.Size = new System.Drawing.Size(15, 14);
-            this.riotCheck1.TabIndex = 63;
+            this.riotCheck1.TabIndex = 0;
             this.riotCheck1.UseVisualStyleBackColor = true;
             this.riotCheck1.CheckedChanged += new System.EventHandler(this.riotCheck1_CheckedChanged);
             // 
@@ -26961,7 +26962,7 @@
             0});
             this.trafficMax3.Name = "trafficMax3";
             this.trafficMax3.Size = new System.Drawing.Size(55, 20);
-            this.trafficMax3.TabIndex = 94;
+            this.trafficMax3.TabIndex = 8;
             this.trafficMax3.Value = new decimal(new int[] {
             500,
             0,
@@ -26980,7 +26981,7 @@
             0});
             this.trafficMin3.Name = "trafficMin3";
             this.trafficMin3.Size = new System.Drawing.Size(55, 20);
-            this.trafficMin3.TabIndex = 93;
+            this.trafficMin3.TabIndex = 7;
             this.trafficMin3.ValueChanged += new System.EventHandler(this.trafficMin3_ValueChanged);
             // 
             // trafficMax2
@@ -26993,7 +26994,7 @@
             0});
             this.trafficMax2.Name = "trafficMax2";
             this.trafficMax2.Size = new System.Drawing.Size(55, 20);
-            this.trafficMax2.TabIndex = 92;
+            this.trafficMax2.TabIndex = 5;
             this.trafficMax2.Value = new decimal(new int[] {
             500,
             0,
@@ -27011,7 +27012,7 @@
             0});
             this.trafficMin2.Name = "trafficMin2";
             this.trafficMin2.Size = new System.Drawing.Size(55, 20);
-            this.trafficMin2.TabIndex = 91;
+            this.trafficMin2.TabIndex = 4;
             this.trafficMin2.ValueChanged += new System.EventHandler(this.trafficMin2_ValueChanged);
             // 
             // trafficMax1
@@ -27024,7 +27025,7 @@
             0});
             this.trafficMax1.Name = "trafficMax1";
             this.trafficMax1.Size = new System.Drawing.Size(55, 20);
-            this.trafficMax1.TabIndex = 90;
+            this.trafficMax1.TabIndex = 2;
             this.trafficMax1.Value = new decimal(new int[] {
             1000,
             0,
@@ -27042,7 +27043,7 @@
             0});
             this.trafficMin1.Name = "trafficMin1";
             this.trafficMin1.Size = new System.Drawing.Size(55, 20);
-            this.trafficMin1.TabIndex = 89;
+            this.trafficMin1.TabIndex = 1;
             this.trafficMin1.ValueChanged += new System.EventHandler(this.trafficMin1_ValueChanged);
             // 
             // label441
@@ -27074,7 +27075,7 @@
             this.label443.Size = new System.Drawing.Size(79, 13);
             this.label443.TabIndex = 86;
             this.label443.Text = "Jam Timer";
-            this.toolTip.SetToolTip(this.label443, "Unknown");
+            this.toolTip.SetToolTip(this.label443, "Unknown.");
             // 
             // label444
             // 
@@ -27106,7 +27107,7 @@
             this.trafficCheck3.Location = new System.Drawing.Point(8, 75);
             this.trafficCheck3.Name = "trafficCheck3";
             this.trafficCheck3.Size = new System.Drawing.Size(15, 14);
-            this.trafficCheck3.TabIndex = 83;
+            this.trafficCheck3.TabIndex = 6;
             this.trafficCheck3.UseVisualStyleBackColor = true;
             this.trafficCheck3.CheckedChanged += new System.EventHandler(this.trafficCheck3_CheckedChanged);
             // 
@@ -27118,7 +27119,7 @@
             this.trafficCheck2.Location = new System.Drawing.Point(8, 49);
             this.trafficCheck2.Name = "trafficCheck2";
             this.trafficCheck2.Size = new System.Drawing.Size(15, 14);
-            this.trafficCheck2.TabIndex = 82;
+            this.trafficCheck2.TabIndex = 3;
             this.trafficCheck2.UseVisualStyleBackColor = true;
             this.trafficCheck2.CheckedChanged += new System.EventHandler(this.trafficCheck2_CheckedChanged);
             // 
@@ -27130,7 +27131,7 @@
             this.trafficCheck1.Location = new System.Drawing.Point(8, 24);
             this.trafficCheck1.Name = "trafficCheck1";
             this.trafficCheck1.Size = new System.Drawing.Size(15, 14);
-            this.trafficCheck1.TabIndex = 81;
+            this.trafficCheck1.TabIndex = 0;
             this.trafficCheck1.UseVisualStyleBackColor = true;
             this.trafficCheck1.CheckedChanged += new System.EventHandler(this.trafficCheck1_CheckedChanged);
             // 
@@ -27162,7 +27163,7 @@
             this.medevacMax3.Location = new System.Drawing.Point(233, 74);
             this.medevacMax3.Name = "medevacMax3";
             this.medevacMax3.Size = new System.Drawing.Size(55, 20);
-            this.medevacMax3.TabIndex = 108;
+            this.medevacMax3.TabIndex = 8;
             this.medevacMax3.Value = new decimal(new int[] {
             100,
             0,
@@ -27174,7 +27175,7 @@
             this.medevacMin3.Location = new System.Drawing.Point(158, 74);
             this.medevacMin3.Name = "medevacMin3";
             this.medevacMin3.Size = new System.Drawing.Size(55, 20);
-            this.medevacMin3.TabIndex = 107;
+            this.medevacMin3.TabIndex = 7;
             this.medevacMin3.ValueChanged += new System.EventHandler(this.medevacMin3_ValueChanged);
             // 
             // medevacMax2
@@ -27187,7 +27188,7 @@
             0});
             this.medevacMax2.Name = "medevacMax2";
             this.medevacMax2.Size = new System.Drawing.Size(55, 20);
-            this.medevacMax2.TabIndex = 106;
+            this.medevacMax2.TabIndex = 5;
             this.medevacMax2.Value = new decimal(new int[] {
             2000,
             0,
@@ -27205,7 +27206,7 @@
             0});
             this.medevacMin2.Name = "medevacMin2";
             this.medevacMin2.Size = new System.Drawing.Size(55, 20);
-            this.medevacMin2.TabIndex = 105;
+            this.medevacMin2.TabIndex = 4;
             this.medevacMin2.ValueChanged += new System.EventHandler(this.medevacMin2_ValueChanged);
             // 
             // medevacMax1
@@ -27218,7 +27219,7 @@
             0});
             this.medevacMax1.Name = "medevacMax1";
             this.medevacMax1.Size = new System.Drawing.Size(55, 20);
-            this.medevacMax1.TabIndex = 104;
+            this.medevacMax1.TabIndex = 2;
             this.medevacMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -27236,7 +27237,7 @@
             0});
             this.medevacMin1.Name = "medevacMin1";
             this.medevacMin1.Size = new System.Drawing.Size(55, 20);
-            this.medevacMin1.TabIndex = 103;
+            this.medevacMin1.TabIndex = 1;
             this.medevacMin1.ValueChanged += new System.EventHandler(this.medevacMin1_ValueChanged);
             // 
             // label446
@@ -27300,7 +27301,7 @@
             this.medevacCheck3.Location = new System.Drawing.Point(8, 75);
             this.medevacCheck3.Name = "medevacCheck3";
             this.medevacCheck3.Size = new System.Drawing.Size(15, 14);
-            this.medevacCheck3.TabIndex = 97;
+            this.medevacCheck3.TabIndex = 6;
             this.medevacCheck3.UseVisualStyleBackColor = true;
             this.medevacCheck3.CheckedChanged += new System.EventHandler(this.medevacCheck3_CheckedChanged);
             // 
@@ -27312,7 +27313,7 @@
             this.medevacCheck2.Location = new System.Drawing.Point(8, 49);
             this.medevacCheck2.Name = "medevacCheck2";
             this.medevacCheck2.Size = new System.Drawing.Size(15, 14);
-            this.medevacCheck2.TabIndex = 96;
+            this.medevacCheck2.TabIndex = 3;
             this.medevacCheck2.UseVisualStyleBackColor = true;
             this.medevacCheck2.CheckedChanged += new System.EventHandler(this.medevacCheck2_CheckedChanged);
             // 
@@ -27324,7 +27325,7 @@
             this.medevacCheck1.Location = new System.Drawing.Point(8, 24);
             this.medevacCheck1.Name = "medevacCheck1";
             this.medevacCheck1.Size = new System.Drawing.Size(15, 14);
-            this.medevacCheck1.TabIndex = 95;
+            this.medevacCheck1.TabIndex = 0;
             this.medevacCheck1.UseVisualStyleBackColor = true;
             this.medevacCheck1.CheckedChanged += new System.EventHandler(this.medevacCheck1_CheckedChanged);
             // 
@@ -27360,7 +27361,7 @@
             this.transportMax4.Location = new System.Drawing.Point(233, 100);
             this.transportMax4.Name = "transportMax4";
             this.transportMax4.Size = new System.Drawing.Size(55, 20);
-            this.transportMax4.TabIndex = 100;
+            this.transportMax4.TabIndex = 11;
             this.transportMax4.Value = new decimal(new int[] {
             100,
             0,
@@ -27373,7 +27374,7 @@
             this.transportMin4.Location = new System.Drawing.Point(158, 100);
             this.transportMin4.Name = "transportMin4";
             this.transportMin4.Size = new System.Drawing.Size(55, 20);
-            this.transportMin4.TabIndex = 99;
+            this.transportMin4.TabIndex = 10;
             this.transportMin4.ValueChanged += new System.EventHandler(this.transportMin4_ValueChanged);
             // 
             // transportMax3
@@ -27381,7 +27382,7 @@
             this.transportMax3.Location = new System.Drawing.Point(233, 74);
             this.transportMax3.Name = "transportMax3";
             this.transportMax3.Size = new System.Drawing.Size(55, 20);
-            this.transportMax3.TabIndex = 98;
+            this.transportMax3.TabIndex = 8;
             this.transportMax3.Value = new decimal(new int[] {
             100,
             0,
@@ -27394,7 +27395,7 @@
             this.transportMin3.Location = new System.Drawing.Point(158, 74);
             this.transportMin3.Name = "transportMin3";
             this.transportMin3.Size = new System.Drawing.Size(55, 20);
-            this.transportMin3.TabIndex = 97;
+            this.transportMin3.TabIndex = 7;
             this.transportMin3.ValueChanged += new System.EventHandler(this.transportMin3_ValueChanged);
             // 
             // transportMax2
@@ -27407,7 +27408,7 @@
             0});
             this.transportMax2.Name = "transportMax2";
             this.transportMax2.Size = new System.Drawing.Size(55, 20);
-            this.transportMax2.TabIndex = 96;
+            this.transportMax2.TabIndex = 5;
             this.transportMax2.Value = new decimal(new int[] {
             200,
             0,
@@ -27425,7 +27426,7 @@
             0});
             this.transportMin2.Name = "transportMin2";
             this.transportMin2.Size = new System.Drawing.Size(55, 20);
-            this.transportMin2.TabIndex = 95;
+            this.transportMin2.TabIndex = 4;
             this.transportMin2.ValueChanged += new System.EventHandler(this.transportMin2_ValueChanged);
             // 
             // transportMax1
@@ -27438,7 +27439,7 @@
             0});
             this.transportMax1.Name = "transportMax1";
             this.transportMax1.Size = new System.Drawing.Size(55, 20);
-            this.transportMax1.TabIndex = 94;
+            this.transportMax1.TabIndex = 2;
             this.transportMax1.Value = new decimal(new int[] {
             200,
             0,
@@ -27456,7 +27457,7 @@
             0});
             this.transportMin1.Name = "transportMin1";
             this.transportMin1.Size = new System.Drawing.Size(55, 20);
-            this.transportMin1.TabIndex = 93;
+            this.transportMin1.TabIndex = 1;
             this.transportMin1.ValueChanged += new System.EventHandler(this.transportMin1_ValueChanged);
             // 
             // label451
@@ -27531,7 +27532,7 @@
             this.transportCheck4.Location = new System.Drawing.Point(8, 101);
             this.transportCheck4.Name = "transportCheck4";
             this.transportCheck4.Size = new System.Drawing.Size(15, 14);
-            this.transportCheck4.TabIndex = 86;
+            this.transportCheck4.TabIndex = 9;
             this.transportCheck4.UseVisualStyleBackColor = true;
             this.transportCheck4.CheckedChanged += new System.EventHandler(this.transportCheck4_CheckedChanged);
             // 
@@ -27543,7 +27544,7 @@
             this.transportCheck3.Location = new System.Drawing.Point(8, 75);
             this.transportCheck3.Name = "transportCheck3";
             this.transportCheck3.Size = new System.Drawing.Size(15, 14);
-            this.transportCheck3.TabIndex = 85;
+            this.transportCheck3.TabIndex = 6;
             this.transportCheck3.UseVisualStyleBackColor = true;
             this.transportCheck3.CheckedChanged += new System.EventHandler(this.transportCheck3_CheckedChanged);
             // 
@@ -27555,7 +27556,7 @@
             this.transportCheck2.Location = new System.Drawing.Point(8, 49);
             this.transportCheck2.Name = "transportCheck2";
             this.transportCheck2.Size = new System.Drawing.Size(15, 14);
-            this.transportCheck2.TabIndex = 84;
+            this.transportCheck2.TabIndex = 3;
             this.transportCheck2.UseVisualStyleBackColor = true;
             this.transportCheck2.CheckedChanged += new System.EventHandler(this.transportCheck2_CheckedChanged);
             // 
@@ -27567,7 +27568,7 @@
             this.transportCheck1.Location = new System.Drawing.Point(8, 24);
             this.transportCheck1.Name = "transportCheck1";
             this.transportCheck1.Size = new System.Drawing.Size(15, 14);
-            this.transportCheck1.TabIndex = 83;
+            this.transportCheck1.TabIndex = 0;
             this.transportCheck1.UseVisualStyleBackColor = true;
             this.transportCheck1.CheckedChanged += new System.EventHandler(this.transportCheck1_CheckedChanged);
             // 
@@ -27604,7 +27605,7 @@
             0});
             this.speedMax3.Name = "speedMax3";
             this.speedMax3.Size = new System.Drawing.Size(55, 20);
-            this.speedMax3.TabIndex = 112;
+            this.speedMax3.TabIndex = 8;
             this.speedMax3.Value = new decimal(new int[] {
             20,
             0,
@@ -27622,7 +27623,7 @@
             0});
             this.speedMin3.Name = "speedMin3";
             this.speedMin3.Size = new System.Drawing.Size(55, 20);
-            this.speedMin3.TabIndex = 111;
+            this.speedMin3.TabIndex = 7;
             this.speedMin3.ValueChanged += new System.EventHandler(this.speedMin3_ValueChanged);
             // 
             // speedMax2
@@ -27635,7 +27636,7 @@
             0});
             this.speedMax2.Name = "speedMax2";
             this.speedMax2.Size = new System.Drawing.Size(55, 20);
-            this.speedMax2.TabIndex = 110;
+            this.speedMax2.TabIndex = 5;
             this.speedMax2.Value = new decimal(new int[] {
             2000,
             0,
@@ -27653,7 +27654,7 @@
             0});
             this.speedMin2.Name = "speedMin2";
             this.speedMin2.Size = new System.Drawing.Size(55, 20);
-            this.speedMin2.TabIndex = 109;
+            this.speedMin2.TabIndex = 4;
             this.speedMin2.ValueChanged += new System.EventHandler(this.speedMin2_ValueChanged);
             // 
             // speedMax1
@@ -27666,7 +27667,7 @@
             0});
             this.speedMax1.Name = "speedMax1";
             this.speedMax1.Size = new System.Drawing.Size(55, 20);
-            this.speedMax1.TabIndex = 108;
+            this.speedMax1.TabIndex = 2;
             this.speedMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -27684,7 +27685,7 @@
             0});
             this.speedMin1.Name = "speedMin1";
             this.speedMin1.Size = new System.Drawing.Size(55, 20);
-            this.speedMin1.TabIndex = 107;
+            this.speedMin1.TabIndex = 1;
             this.speedMin1.ValueChanged += new System.EventHandler(this.speedMin1_ValueChanged);
             // 
             // label457
@@ -27748,7 +27749,7 @@
             this.speedCheck3.Location = new System.Drawing.Point(8, 75);
             this.speedCheck3.Name = "speedCheck3";
             this.speedCheck3.Size = new System.Drawing.Size(15, 14);
-            this.speedCheck3.TabIndex = 101;
+            this.speedCheck3.TabIndex = 6;
             this.speedCheck3.UseVisualStyleBackColor = true;
             // 
             // speedCheck2
@@ -27759,7 +27760,7 @@
             this.speedCheck2.Location = new System.Drawing.Point(8, 49);
             this.speedCheck2.Name = "speedCheck2";
             this.speedCheck2.Size = new System.Drawing.Size(15, 14);
-            this.speedCheck2.TabIndex = 100;
+            this.speedCheck2.TabIndex = 3;
             this.speedCheck2.UseVisualStyleBackColor = true;
             this.speedCheck2.CheckedChanged += new System.EventHandler(this.speedCheck2_CheckedChanged);
             // 
@@ -27771,7 +27772,7 @@
             this.speedCheck1.Location = new System.Drawing.Point(8, 24);
             this.speedCheck1.Name = "speedCheck1";
             this.speedCheck1.Size = new System.Drawing.Size(15, 14);
-            this.speedCheck1.TabIndex = 99;
+            this.speedCheck1.TabIndex = 0;
             this.speedCheck1.UseVisualStyleBackColor = true;
             this.speedCheck1.CheckedChanged += new System.EventHandler(this.speedCheck1_CheckedChanged);
             // 
@@ -27827,7 +27828,7 @@
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(351, 474);
-            this.Tabs.TabIndex = 3;
+            this.Tabs.TabIndex = 1;
             // 
             // Career
             // 
@@ -28019,7 +28020,7 @@
             0});
             this.fuelCostMax4.Name = "fuelCostMax4";
             this.fuelCostMax4.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax4.TabIndex = 144;
+            this.fuelCostMax4.TabIndex = 47;
             this.fuelCostMax4.Value = new decimal(new int[] {
             10,
             0,
@@ -28038,7 +28039,7 @@
             0});
             this.fuelCostMin4.Name = "fuelCostMin4";
             this.fuelCostMin4.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin4.TabIndex = 143;
+            this.fuelCostMin4.TabIndex = 46;
             this.fuelCostMin4.ValueChanged += new System.EventHandler(this.fuelCostMin4_ValueChanged);
             // 
             // label471
@@ -28050,7 +28051,7 @@
             this.label471.Size = new System.Drawing.Size(79, 13);
             this.label471.TabIndex = 142;
             this.label471.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label471, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label471, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck4
             // 
@@ -28060,7 +28061,7 @@
             this.fuelCostCheck4.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck4.Name = "fuelCostCheck4";
             this.fuelCostCheck4.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck4.TabIndex = 141;
+            this.fuelCostCheck4.TabIndex = 45;
             this.fuelCostCheck4.UseVisualStyleBackColor = true;
             this.fuelCostCheck4.CheckedChanged += new System.EventHandler(this.fuelCostCheck4_CheckedChanged);
             // 
@@ -28075,7 +28076,7 @@
             0});
             this.repairMax4.Name = "repairMax4";
             this.repairMax4.Size = new System.Drawing.Size(55, 20);
-            this.repairMax4.TabIndex = 140;
+            this.repairMax4.TabIndex = 44;
             this.repairMax4.Value = new decimal(new int[] {
             10,
             0,
@@ -28093,7 +28094,7 @@
             0});
             this.repairMin4.Name = "repairMin4";
             this.repairMin4.Size = new System.Drawing.Size(55, 20);
-            this.repairMin4.TabIndex = 139;
+            this.repairMin4.TabIndex = 43;
             this.repairMin4.ValueChanged += new System.EventHandler(this.repairMin4_ValueChanged);
             // 
             // label472
@@ -28115,7 +28116,7 @@
             this.repairCheck4.Location = new System.Drawing.Point(8, 387);
             this.repairCheck4.Name = "repairCheck4";
             this.repairCheck4.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck4.TabIndex = 137;
+            this.repairCheck4.TabIndex = 42;
             this.repairCheck4.UseVisualStyleBackColor = true;
             this.repairCheck4.CheckedChanged += new System.EventHandler(this.repairCheck4_CheckedChanged);
             // 
@@ -28130,7 +28131,7 @@
             0});
             this.fuelMax4.Name = "fuelMax4";
             this.fuelMax4.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax4.TabIndex = 136;
+            this.fuelMax4.TabIndex = 41;
             this.fuelMax4.Value = new decimal(new int[] {
             500,
             0,
@@ -28149,7 +28150,7 @@
             0});
             this.fuelMin4.Name = "fuelMin4";
             this.fuelMin4.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin4.TabIndex = 135;
+            this.fuelMin4.TabIndex = 40;
             this.fuelMin4.ValueChanged += new System.EventHandler(this.fuelMin4_ValueChanged);
             // 
             // label473
@@ -28171,7 +28172,7 @@
             this.fuelCheck4.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck4.Name = "fuelCheck4";
             this.fuelCheck4.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck4.TabIndex = 133;
+            this.fuelCheck4.TabIndex = 39;
             this.fuelCheck4.UseVisualStyleBackColor = true;
             this.fuelCheck4.CheckedChanged += new System.EventHandler(this.fuelCheck4_CheckedChanged);
             // 
@@ -28190,7 +28191,7 @@
             0});
             this.damageMax4.Name = "damageMax4";
             this.damageMax4.Size = new System.Drawing.Size(55, 20);
-            this.damageMax4.TabIndex = 132;
+            this.damageMax4.TabIndex = 38;
             this.damageMax4.Value = new decimal(new int[] {
             5000,
             0,
@@ -28213,7 +28214,7 @@
             0});
             this.damageMin4.Name = "damageMin4";
             this.damageMin4.Size = new System.Drawing.Size(55, 20);
-            this.damageMin4.TabIndex = 131;
+            this.damageMin4.TabIndex = 37;
             this.damageMin4.Value = new decimal(new int[] {
             1,
             0,
@@ -28230,7 +28231,7 @@
             this.label474.Size = new System.Drawing.Size(87, 13);
             this.label474.TabIndex = 130;
             this.label474.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label474, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label474, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck4
             // 
@@ -28240,7 +28241,7 @@
             this.damageCheck4.Location = new System.Drawing.Point(8, 335);
             this.damageCheck4.Name = "damageCheck4";
             this.damageCheck4.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck4.TabIndex = 129;
+            this.damageCheck4.TabIndex = 36;
             this.damageCheck4.UseVisualStyleBackColor = true;
             this.damageCheck4.CheckedChanged += new System.EventHandler(this.damageCheck4_CheckedChanged);
             // 
@@ -28254,7 +28255,7 @@
             0});
             this.costMax4.Name = "costMax4";
             this.costMax4.Size = new System.Drawing.Size(55, 20);
-            this.costMax4.TabIndex = 128;
+            this.costMax4.TabIndex = 35;
             this.costMax4.Value = new decimal(new int[] {
             100000,
             0,
@@ -28272,7 +28273,7 @@
             0});
             this.costMin4.Name = "costMin4";
             this.costMin4.Size = new System.Drawing.Size(55, 20);
-            this.costMin4.TabIndex = 127;
+            this.costMin4.TabIndex = 34;
             this.costMin4.ValueChanged += new System.EventHandler(this.costMin4_ValueChanged);
             // 
             // fuelRateMax4
@@ -28286,7 +28287,7 @@
             0});
             this.fuelRateMax4.Name = "fuelRateMax4";
             this.fuelRateMax4.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax4.TabIndex = 126;
+            this.fuelRateMax4.TabIndex = 32;
             this.fuelRateMax4.Value = new decimal(new int[] {
             2000,
             0,
@@ -28305,7 +28306,7 @@
             0});
             this.fuelRateMin4.Name = "fuelRateMin4";
             this.fuelRateMin4.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin4.TabIndex = 125;
+            this.fuelRateMin4.TabIndex = 31;
             this.fuelRateMin4.ValueChanged += new System.EventHandler(this.fuelRateMin4_ValueChanged);
             // 
             // mYawRateMax4
@@ -28319,7 +28320,7 @@
             0});
             this.mYawRateMax4.Name = "mYawRateMax4";
             this.mYawRateMax4.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax4.TabIndex = 124;
+            this.mYawRateMax4.TabIndex = 29;
             this.mYawRateMax4.Value = new decimal(new int[] {
             900,
             0,
@@ -28338,7 +28339,7 @@
             0});
             this.mYawRateMin4.Name = "mYawRateMin4";
             this.mYawRateMin4.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin4.TabIndex = 123;
+            this.mYawRateMin4.TabIndex = 28;
             this.mYawRateMin4.ValueChanged += new System.EventHandler(this.mYawRateMin4_ValueChanged);
             // 
             // label475
@@ -28361,7 +28362,7 @@
             this.label476.Size = new System.Drawing.Size(79, 13);
             this.label476.TabIndex = 121;
             this.label476.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label476, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label476, "Galons of gas used per hour.");
             // 
             // label477
             // 
@@ -28382,7 +28383,7 @@
             this.costCheck4.Location = new System.Drawing.Point(8, 309);
             this.costCheck4.Name = "costCheck4";
             this.costCheck4.Size = new System.Drawing.Size(15, 14);
-            this.costCheck4.TabIndex = 119;
+            this.costCheck4.TabIndex = 33;
             this.costCheck4.UseVisualStyleBackColor = true;
             this.costCheck4.CheckedChanged += new System.EventHandler(this.costCheck4_CheckedChanged);
             // 
@@ -28394,7 +28395,7 @@
             this.fuelRateCheck4.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck4.Name = "fuelRateCheck4";
             this.fuelRateCheck4.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck4.TabIndex = 118;
+            this.fuelRateCheck4.TabIndex = 30;
             this.fuelRateCheck4.UseVisualStyleBackColor = true;
             this.fuelRateCheck4.CheckedChanged += new System.EventHandler(this.fuelRateCheck4_CheckedChanged);
             // 
@@ -28406,7 +28407,7 @@
             this.mYawRateCheck4.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck4.Name = "mYawRateCheck4";
             this.mYawRateCheck4.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck4.TabIndex = 117;
+            this.mYawRateCheck4.TabIndex = 27;
             this.mYawRateCheck4.UseVisualStyleBackColor = true;
             this.mYawRateCheck4.CheckedChanged += new System.EventHandler(this.mYawRateCheck4_CheckedChanged);
             // 
@@ -28425,7 +28426,7 @@
             0});
             this.mLoadMax4.Name = "mLoadMax4";
             this.mLoadMax4.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax4.TabIndex = 116;
+            this.mLoadMax4.TabIndex = 26;
             this.mLoadMax4.Value = new decimal(new int[] {
             20000,
             0,
@@ -28448,7 +28449,7 @@
             0});
             this.mLoadMin4.Name = "mLoadMin4";
             this.mLoadMin4.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin4.TabIndex = 115;
+            this.mLoadMin4.TabIndex = 25;
             this.mLoadMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -28465,7 +28466,7 @@
             this.label413.Size = new System.Drawing.Size(71, 13);
             this.label413.TabIndex = 114;
             this.label413.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label413, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label413, "Amount of water that can be carried.");
             // 
             // mLoadCheck4
             // 
@@ -28475,7 +28476,7 @@
             this.mLoadCheck4.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck4.Name = "mLoadCheck4";
             this.mLoadCheck4.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck4.TabIndex = 113;
+            this.mLoadCheck4.TabIndex = 24;
             this.mLoadCheck4.UseVisualStyleBackColor = true;
             this.mLoadCheck4.CheckedChanged += new System.EventHandler(this.mLoadCheck4_CheckedChanged);
             // 
@@ -28490,7 +28491,7 @@
             0});
             this.climbMax4.Name = "climbMax4";
             this.climbMax4.Size = new System.Drawing.Size(55, 20);
-            this.climbMax4.TabIndex = 112;
+            this.climbMax4.TabIndex = 23;
             this.climbMax4.Value = new decimal(new int[] {
             50,
             0,
@@ -28509,7 +28510,7 @@
             0});
             this.climbMin4.Name = "climbMin4";
             this.climbMin4.Size = new System.Drawing.Size(55, 20);
-            this.climbMin4.TabIndex = 111;
+            this.climbMin4.TabIndex = 22;
             this.climbMin4.ValueChanged += new System.EventHandler(this.climbMin4_ValueChanged);
             // 
             // label414
@@ -28531,7 +28532,7 @@
             this.climbCheck4.Location = new System.Drawing.Point(8, 205);
             this.climbCheck4.Name = "climbCheck4";
             this.climbCheck4.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck4.TabIndex = 109;
+            this.climbCheck4.TabIndex = 21;
             this.climbCheck4.UseVisualStyleBackColor = true;
             this.climbCheck4.CheckedChanged += new System.EventHandler(this.climbCheck4_CheckedChanged);
             // 
@@ -28551,7 +28552,7 @@
             0});
             this.slideRateMax4.Name = "slideRateMax4";
             this.slideRateMax4.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax4.TabIndex = 108;
+            this.slideRateMax4.TabIndex = 20;
             this.slideRateMax4.Value = new decimal(new int[] {
             800,
             0,
@@ -28575,7 +28576,7 @@
             0});
             this.slideRateMin4.Name = "slideRateMin4";
             this.slideRateMin4.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin4.TabIndex = 107;
+            this.slideRateMin4.TabIndex = 19;
             this.slideRateMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -28602,7 +28603,7 @@
             this.slideRateCheck4.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck4.Name = "slideRateCheck4";
             this.slideRateCheck4.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck4.TabIndex = 105;
+            this.slideRateCheck4.TabIndex = 18;
             this.slideRateCheck4.UseVisualStyleBackColor = true;
             this.slideRateCheck4.CheckedChanged += new System.EventHandler(this.slideRateCheck4_CheckedChanged);
             // 
@@ -28622,7 +28623,7 @@
             0});
             this.rollRateMax4.Name = "rollRateMax4";
             this.rollRateMax4.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax4.TabIndex = 104;
+            this.rollRateMax4.TabIndex = 17;
             this.rollRateMax4.Value = new decimal(new int[] {
             800,
             0,
@@ -28646,7 +28647,7 @@
             0});
             this.rollRateMin4.Name = "rollRateMin4";
             this.rollRateMin4.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin4.TabIndex = 103;
+            this.rollRateMin4.TabIndex = 16;
             this.rollRateMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -28663,7 +28664,7 @@
             this.label463.Size = new System.Drawing.Size(79, 13);
             this.label463.TabIndex = 102;
             this.label463.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label463, "Unknown");
+            this.toolTip.SetToolTip(this.label463, "Unknown.");
             // 
             // rollRateCheck4
             // 
@@ -28673,7 +28674,7 @@
             this.rollRateCheck4.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck4.Name = "rollRateCheck4";
             this.rollRateCheck4.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck4.TabIndex = 101;
+            this.rollRateCheck4.TabIndex = 15;
             this.rollRateCheck4.UseVisualStyleBackColor = true;
             this.rollRateCheck4.CheckedChanged += new System.EventHandler(this.rollRateCheck4_CheckedChanged);
             // 
@@ -28693,7 +28694,7 @@
             0});
             this.yawRateMax4.Name = "yawRateMax4";
             this.yawRateMax4.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax4.TabIndex = 100;
+            this.yawRateMax4.TabIndex = 14;
             this.yawRateMax4.Value = new decimal(new int[] {
             800,
             0,
@@ -28717,7 +28718,7 @@
             0});
             this.yawRateMin4.Name = "yawRateMin4";
             this.yawRateMin4.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin4.TabIndex = 99;
+            this.yawRateMin4.TabIndex = 13;
             this.yawRateMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -28741,7 +28742,7 @@
             0});
             this.pitchRateMax4.Name = "pitchRateMax4";
             this.pitchRateMax4.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax4.TabIndex = 98;
+            this.pitchRateMax4.TabIndex = 11;
             this.pitchRateMax4.Value = new decimal(new int[] {
             800,
             0,
@@ -28765,7 +28766,7 @@
             0});
             this.pitchRateMin4.Name = "pitchRateMin4";
             this.pitchRateMin4.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin4.TabIndex = 97;
+            this.pitchRateMin4.TabIndex = 10;
             this.pitchRateMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -28789,7 +28790,7 @@
             0});
             this.mPitchMax4.Name = "mPitchMax4";
             this.mPitchMax4.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax4.TabIndex = 96;
+            this.mPitchMax4.TabIndex = 8;
             this.mPitchMax4.Value = new decimal(new int[] {
             800,
             0,
@@ -28813,7 +28814,7 @@
             0});
             this.mPitchMin4.Name = "mPitchMin4";
             this.mPitchMin4.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin4.TabIndex = 95;
+            this.mPitchMin4.TabIndex = 7;
             this.mPitchMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -28837,7 +28838,7 @@
             0});
             this.mSlideMax4.Name = "mSlideMax4";
             this.mSlideMax4.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax4.TabIndex = 94;
+            this.mSlideMax4.TabIndex = 5;
             this.mSlideMax4.Value = new decimal(new int[] {
             800,
             0,
@@ -28861,7 +28862,7 @@
             0});
             this.mSlideMin4.Name = "mSlideMin4";
             this.mSlideMin4.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin4.TabIndex = 93;
+            this.mSlideMin4.TabIndex = 4;
             this.mSlideMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -28885,7 +28886,7 @@
             0});
             this.mBankMax4.Name = "mBankMax4";
             this.mBankMax4.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax4.TabIndex = 92;
+            this.mBankMax4.TabIndex = 2;
             this.mBankMax4.Value = new decimal(new int[] {
             800,
             0,
@@ -28909,7 +28910,7 @@
             0});
             this.mBankMin4.Name = "mBankMin4";
             this.mBankMin4.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin4.TabIndex = 91;
+            this.mBankMin4.TabIndex = 1;
             this.mBankMin4.Value = new decimal(new int[] {
             10,
             0,
@@ -29000,7 +29001,7 @@
             this.yawRateCheck4.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck4.Name = "yawRateCheck4";
             this.yawRateCheck4.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck4.TabIndex = 83;
+            this.yawRateCheck4.TabIndex = 12;
             this.yawRateCheck4.UseVisualStyleBackColor = true;
             this.yawRateCheck4.CheckedChanged += new System.EventHandler(this.yawRateCheck4_CheckedChanged);
             // 
@@ -29012,7 +29013,7 @@
             this.pitchRateCheck4.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck4.Name = "pitchRateCheck4";
             this.pitchRateCheck4.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck4.TabIndex = 82;
+            this.pitchRateCheck4.TabIndex = 9;
             this.pitchRateCheck4.UseVisualStyleBackColor = true;
             this.pitchRateCheck4.CheckedChanged += new System.EventHandler(this.pitchRateCheck4_CheckedChanged);
             // 
@@ -29024,7 +29025,7 @@
             this.mPitchCheck4.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck4.Name = "mPitchCheck4";
             this.mPitchCheck4.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck4.TabIndex = 81;
+            this.mPitchCheck4.TabIndex = 6;
             this.mPitchCheck4.UseVisualStyleBackColor = true;
             this.mPitchCheck4.CheckedChanged += new System.EventHandler(this.mPitchCheck4_CheckedChanged);
             // 
@@ -29036,7 +29037,7 @@
             this.mSlideCheck4.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck4.Name = "mSlideCheck4";
             this.mSlideCheck4.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck4.TabIndex = 80;
+            this.mSlideCheck4.TabIndex = 3;
             this.mSlideCheck4.UseVisualStyleBackColor = true;
             this.mSlideCheck4.CheckedChanged += new System.EventHandler(this.mSlideCheck4_CheckedChanged);
             // 
@@ -29048,7 +29049,7 @@
             this.mBankCheck4.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck4.Name = "mBankCheck4";
             this.mBankCheck4.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck4.TabIndex = 79;
+            this.mBankCheck4.TabIndex = 0;
             this.mBankCheck4.UseVisualStyleBackColor = true;
             this.mBankCheck4.CheckedChanged += new System.EventHandler(this.mBankCheck4_CheckedChanged);
             // 
@@ -29140,7 +29141,7 @@
             0});
             this.fuelCostMax0.Name = "fuelCostMax0";
             this.fuelCostMax0.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax0.TabIndex = 210;
+            this.fuelCostMax0.TabIndex = 47;
             this.fuelCostMax0.Value = new decimal(new int[] {
             10,
             0,
@@ -29159,7 +29160,7 @@
             0});
             this.fuelCostMin0.Name = "fuelCostMin0";
             this.fuelCostMin0.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin0.TabIndex = 209;
+            this.fuelCostMin0.TabIndex = 46;
             this.fuelCostMin0.ValueChanged += new System.EventHandler(this.fuelCostMin0_ValueChanged);
             // 
             // label478
@@ -29171,7 +29172,7 @@
             this.label478.Size = new System.Drawing.Size(79, 13);
             this.label478.TabIndex = 208;
             this.label478.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label478, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label478, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck0
             // 
@@ -29181,7 +29182,7 @@
             this.fuelCostCheck0.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck0.Name = "fuelCostCheck0";
             this.fuelCostCheck0.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck0.TabIndex = 207;
+            this.fuelCostCheck0.TabIndex = 45;
             this.fuelCostCheck0.UseVisualStyleBackColor = true;
             this.fuelCostCheck0.CheckedChanged += new System.EventHandler(this.fuelCostCheck0_CheckedChanged);
             // 
@@ -29196,7 +29197,7 @@
             0});
             this.repairMax0.Name = "repairMax0";
             this.repairMax0.Size = new System.Drawing.Size(55, 20);
-            this.repairMax0.TabIndex = 206;
+            this.repairMax0.TabIndex = 44;
             this.repairMax0.Value = new decimal(new int[] {
             10,
             0,
@@ -29214,7 +29215,7 @@
             0});
             this.repairMin0.Name = "repairMin0";
             this.repairMin0.Size = new System.Drawing.Size(55, 20);
-            this.repairMin0.TabIndex = 205;
+            this.repairMin0.TabIndex = 43;
             this.repairMin0.ValueChanged += new System.EventHandler(this.repairMin0_ValueChanged);
             // 
             // label479
@@ -29236,7 +29237,7 @@
             this.repairCheck0.Location = new System.Drawing.Point(8, 387);
             this.repairCheck0.Name = "repairCheck0";
             this.repairCheck0.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck0.TabIndex = 203;
+            this.repairCheck0.TabIndex = 42;
             this.repairCheck0.UseVisualStyleBackColor = true;
             this.repairCheck0.CheckedChanged += new System.EventHandler(this.repairCheck0_CheckedChanged);
             // 
@@ -29251,7 +29252,7 @@
             0});
             this.fuelMax0.Name = "fuelMax0";
             this.fuelMax0.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax0.TabIndex = 202;
+            this.fuelMax0.TabIndex = 41;
             this.fuelMax0.Value = new decimal(new int[] {
             500,
             0,
@@ -29270,7 +29271,7 @@
             0});
             this.fuelMin0.Name = "fuelMin0";
             this.fuelMin0.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin0.TabIndex = 201;
+            this.fuelMin0.TabIndex = 40;
             this.fuelMin0.ValueChanged += new System.EventHandler(this.fuelMin0_ValueChanged);
             // 
             // label480
@@ -29292,7 +29293,7 @@
             this.fuelCheck0.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck0.Name = "fuelCheck0";
             this.fuelCheck0.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck0.TabIndex = 199;
+            this.fuelCheck0.TabIndex = 39;
             this.fuelCheck0.UseVisualStyleBackColor = true;
             this.fuelCheck0.CheckedChanged += new System.EventHandler(this.fuelCheck0_CheckedChanged);
             // 
@@ -29311,7 +29312,7 @@
             0});
             this.damageMax0.Name = "damageMax0";
             this.damageMax0.Size = new System.Drawing.Size(55, 20);
-            this.damageMax0.TabIndex = 198;
+            this.damageMax0.TabIndex = 38;
             this.damageMax0.Value = new decimal(new int[] {
             5000,
             0,
@@ -29334,7 +29335,7 @@
             0});
             this.damageMin0.Name = "damageMin0";
             this.damageMin0.Size = new System.Drawing.Size(55, 20);
-            this.damageMin0.TabIndex = 197;
+            this.damageMin0.TabIndex = 37;
             this.damageMin0.Value = new decimal(new int[] {
             1,
             0,
@@ -29351,7 +29352,7 @@
             this.label481.Size = new System.Drawing.Size(87, 13);
             this.label481.TabIndex = 196;
             this.label481.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label481, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label481, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck0
             // 
@@ -29361,7 +29362,7 @@
             this.damageCheck0.Location = new System.Drawing.Point(8, 335);
             this.damageCheck0.Name = "damageCheck0";
             this.damageCheck0.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck0.TabIndex = 195;
+            this.damageCheck0.TabIndex = 36;
             this.damageCheck0.UseVisualStyleBackColor = true;
             this.damageCheck0.CheckedChanged += new System.EventHandler(this.damageCheck0_CheckedChanged);
             // 
@@ -29375,7 +29376,7 @@
             0});
             this.costMax0.Name = "costMax0";
             this.costMax0.Size = new System.Drawing.Size(55, 20);
-            this.costMax0.TabIndex = 194;
+            this.costMax0.TabIndex = 35;
             this.costMax0.Value = new decimal(new int[] {
             100000,
             0,
@@ -29393,7 +29394,7 @@
             0});
             this.costMin0.Name = "costMin0";
             this.costMin0.Size = new System.Drawing.Size(55, 20);
-            this.costMin0.TabIndex = 193;
+            this.costMin0.TabIndex = 34;
             this.costMin0.ValueChanged += new System.EventHandler(this.costMin0_ValueChanged);
             // 
             // fuelRateMax0
@@ -29407,7 +29408,7 @@
             0});
             this.fuelRateMax0.Name = "fuelRateMax0";
             this.fuelRateMax0.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax0.TabIndex = 192;
+            this.fuelRateMax0.TabIndex = 32;
             this.fuelRateMax0.Value = new decimal(new int[] {
             2000,
             0,
@@ -29426,7 +29427,7 @@
             0});
             this.fuelRateMin0.Name = "fuelRateMin0";
             this.fuelRateMin0.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin0.TabIndex = 191;
+            this.fuelRateMin0.TabIndex = 31;
             this.fuelRateMin0.ValueChanged += new System.EventHandler(this.fuelRateMin0_ValueChanged);
             // 
             // mYawRateMax0
@@ -29440,7 +29441,7 @@
             0});
             this.mYawRateMax0.Name = "mYawRateMax0";
             this.mYawRateMax0.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax0.TabIndex = 190;
+            this.mYawRateMax0.TabIndex = 29;
             this.mYawRateMax0.Value = new decimal(new int[] {
             900,
             0,
@@ -29459,7 +29460,7 @@
             0});
             this.mYawRateMin0.Name = "mYawRateMin0";
             this.mYawRateMin0.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin0.TabIndex = 189;
+            this.mYawRateMin0.TabIndex = 28;
             this.mYawRateMin0.ValueChanged += new System.EventHandler(this.mYawRateMin0_ValueChanged);
             // 
             // label482
@@ -29482,7 +29483,7 @@
             this.label483.Size = new System.Drawing.Size(79, 13);
             this.label483.TabIndex = 187;
             this.label483.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label483, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label483, "Galons of gas used per hour.");
             // 
             // label484
             // 
@@ -29503,7 +29504,7 @@
             this.costCheck0.Location = new System.Drawing.Point(8, 309);
             this.costCheck0.Name = "costCheck0";
             this.costCheck0.Size = new System.Drawing.Size(15, 14);
-            this.costCheck0.TabIndex = 185;
+            this.costCheck0.TabIndex = 33;
             this.costCheck0.UseVisualStyleBackColor = true;
             this.costCheck0.CheckedChanged += new System.EventHandler(this.costCheck0_CheckedChanged);
             // 
@@ -29515,7 +29516,7 @@
             this.fuelRateCheck0.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck0.Name = "fuelRateCheck0";
             this.fuelRateCheck0.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck0.TabIndex = 184;
+            this.fuelRateCheck0.TabIndex = 30;
             this.fuelRateCheck0.UseVisualStyleBackColor = true;
             this.fuelRateCheck0.CheckedChanged += new System.EventHandler(this.fuelRateCheck0_CheckedChanged);
             // 
@@ -29527,7 +29528,7 @@
             this.mYawRateCheck0.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck0.Name = "mYawRateCheck0";
             this.mYawRateCheck0.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck0.TabIndex = 183;
+            this.mYawRateCheck0.TabIndex = 27;
             this.mYawRateCheck0.UseVisualStyleBackColor = true;
             this.mYawRateCheck0.CheckedChanged += new System.EventHandler(this.mYawRateCheck0_CheckedChanged);
             // 
@@ -29546,7 +29547,7 @@
             0});
             this.mLoadMax0.Name = "mLoadMax0";
             this.mLoadMax0.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax0.TabIndex = 182;
+            this.mLoadMax0.TabIndex = 26;
             this.mLoadMax0.Value = new decimal(new int[] {
             20000,
             0,
@@ -29569,7 +29570,7 @@
             0});
             this.mLoadMin0.Name = "mLoadMin0";
             this.mLoadMin0.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin0.TabIndex = 181;
+            this.mLoadMin0.TabIndex = 25;
             this.mLoadMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -29586,7 +29587,7 @@
             this.label485.Size = new System.Drawing.Size(71, 13);
             this.label485.TabIndex = 180;
             this.label485.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label485, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label485, "Amount of water that can be carried.");
             // 
             // mLoadCheck0
             // 
@@ -29596,7 +29597,7 @@
             this.mLoadCheck0.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck0.Name = "mLoadCheck0";
             this.mLoadCheck0.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck0.TabIndex = 179;
+            this.mLoadCheck0.TabIndex = 24;
             this.mLoadCheck0.UseVisualStyleBackColor = true;
             this.mLoadCheck0.CheckedChanged += new System.EventHandler(this.mLoadCheck0_CheckedChanged);
             // 
@@ -29611,7 +29612,7 @@
             0});
             this.climbMax0.Name = "climbMax0";
             this.climbMax0.Size = new System.Drawing.Size(55, 20);
-            this.climbMax0.TabIndex = 178;
+            this.climbMax0.TabIndex = 23;
             this.climbMax0.Value = new decimal(new int[] {
             50,
             0,
@@ -29630,7 +29631,7 @@
             0});
             this.climbMin0.Name = "climbMin0";
             this.climbMin0.Size = new System.Drawing.Size(55, 20);
-            this.climbMin0.TabIndex = 177;
+            this.climbMin0.TabIndex = 22;
             this.climbMin0.ValueChanged += new System.EventHandler(this.climbMin0_ValueChanged);
             // 
             // label486
@@ -29652,7 +29653,7 @@
             this.climbCheck0.Location = new System.Drawing.Point(8, 205);
             this.climbCheck0.Name = "climbCheck0";
             this.climbCheck0.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck0.TabIndex = 175;
+            this.climbCheck0.TabIndex = 21;
             this.climbCheck0.UseVisualStyleBackColor = true;
             this.climbCheck0.CheckedChanged += new System.EventHandler(this.climbCheck0_CheckedChanged);
             // 
@@ -29672,7 +29673,7 @@
             0});
             this.slideRateMax0.Name = "slideRateMax0";
             this.slideRateMax0.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax0.TabIndex = 174;
+            this.slideRateMax0.TabIndex = 20;
             this.slideRateMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -29696,7 +29697,7 @@
             0});
             this.slideRateMin0.Name = "slideRateMin0";
             this.slideRateMin0.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin0.TabIndex = 173;
+            this.slideRateMin0.TabIndex = 19;
             this.slideRateMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -29723,7 +29724,7 @@
             this.slideRateCheck0.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck0.Name = "slideRateCheck0";
             this.slideRateCheck0.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck0.TabIndex = 171;
+            this.slideRateCheck0.TabIndex = 18;
             this.slideRateCheck0.UseVisualStyleBackColor = true;
             this.slideRateCheck0.CheckedChanged += new System.EventHandler(this.slideRateCheck0_CheckedChanged);
             // 
@@ -29743,7 +29744,7 @@
             0});
             this.rollRateMax0.Name = "rollRateMax0";
             this.rollRateMax0.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax0.TabIndex = 170;
+            this.rollRateMax0.TabIndex = 17;
             this.rollRateMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -29767,7 +29768,7 @@
             0});
             this.rollRateMin0.Name = "rollRateMin0";
             this.rollRateMin0.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin0.TabIndex = 169;
+            this.rollRateMin0.TabIndex = 16;
             this.rollRateMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -29784,7 +29785,7 @@
             this.label488.Size = new System.Drawing.Size(79, 13);
             this.label488.TabIndex = 168;
             this.label488.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label488, "Unknown");
+            this.toolTip.SetToolTip(this.label488, "Unknown.");
             // 
             // rollRateCheck0
             // 
@@ -29794,7 +29795,7 @@
             this.rollRateCheck0.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck0.Name = "rollRateCheck0";
             this.rollRateCheck0.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck0.TabIndex = 167;
+            this.rollRateCheck0.TabIndex = 15;
             this.rollRateCheck0.UseVisualStyleBackColor = true;
             this.rollRateCheck0.CheckedChanged += new System.EventHandler(this.rollRateCheck0_CheckedChanged);
             // 
@@ -29814,7 +29815,7 @@
             0});
             this.yawRateMax0.Name = "yawRateMax0";
             this.yawRateMax0.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax0.TabIndex = 166;
+            this.yawRateMax0.TabIndex = 14;
             this.yawRateMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -29838,7 +29839,7 @@
             0});
             this.yawRateMin0.Name = "yawRateMin0";
             this.yawRateMin0.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin0.TabIndex = 165;
+            this.yawRateMin0.TabIndex = 13;
             this.yawRateMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -29862,7 +29863,7 @@
             0});
             this.pitchRateMax0.Name = "pitchRateMax0";
             this.pitchRateMax0.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax0.TabIndex = 164;
+            this.pitchRateMax0.TabIndex = 11;
             this.pitchRateMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -29886,7 +29887,7 @@
             0});
             this.pitchRateMin0.Name = "pitchRateMin0";
             this.pitchRateMin0.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin0.TabIndex = 163;
+            this.pitchRateMin0.TabIndex = 10;
             this.pitchRateMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -29910,7 +29911,7 @@
             0});
             this.mPitchMax0.Name = "mPitchMax0";
             this.mPitchMax0.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax0.TabIndex = 162;
+            this.mPitchMax0.TabIndex = 8;
             this.mPitchMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -29934,7 +29935,7 @@
             0});
             this.mPitchMin0.Name = "mPitchMin0";
             this.mPitchMin0.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin0.TabIndex = 161;
+            this.mPitchMin0.TabIndex = 7;
             this.mPitchMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -29958,7 +29959,7 @@
             0});
             this.mSlideMax0.Name = "mSlideMax0";
             this.mSlideMax0.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax0.TabIndex = 160;
+            this.mSlideMax0.TabIndex = 5;
             this.mSlideMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -29982,7 +29983,7 @@
             0});
             this.mSlideMin0.Name = "mSlideMin0";
             this.mSlideMin0.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin0.TabIndex = 159;
+            this.mSlideMin0.TabIndex = 4;
             this.mSlideMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -30006,7 +30007,7 @@
             0});
             this.mBankMax0.Name = "mBankMax0";
             this.mBankMax0.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax0.TabIndex = 158;
+            this.mBankMax0.TabIndex = 2;
             this.mBankMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -30030,7 +30031,7 @@
             0});
             this.mBankMin0.Name = "mBankMin0";
             this.mBankMin0.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin0.TabIndex = 157;
+            this.mBankMin0.TabIndex = 1;
             this.mBankMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -30121,7 +30122,7 @@
             this.yawRateCheck0.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck0.Name = "yawRateCheck0";
             this.yawRateCheck0.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck0.TabIndex = 149;
+            this.yawRateCheck0.TabIndex = 12;
             this.yawRateCheck0.UseVisualStyleBackColor = true;
             this.yawRateCheck0.CheckedChanged += new System.EventHandler(this.yawRateCheck0_CheckedChanged);
             // 
@@ -30133,7 +30134,7 @@
             this.pitchRateCheck0.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck0.Name = "pitchRateCheck0";
             this.pitchRateCheck0.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck0.TabIndex = 148;
+            this.pitchRateCheck0.TabIndex = 9;
             this.pitchRateCheck0.UseVisualStyleBackColor = true;
             this.pitchRateCheck0.CheckedChanged += new System.EventHandler(this.pitchRateCheck0_CheckedChanged);
             // 
@@ -30145,7 +30146,7 @@
             this.mPitchCheck0.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck0.Name = "mPitchCheck0";
             this.mPitchCheck0.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck0.TabIndex = 147;
+            this.mPitchCheck0.TabIndex = 6;
             this.mPitchCheck0.UseVisualStyleBackColor = true;
             this.mPitchCheck0.CheckedChanged += new System.EventHandler(this.mPitchCheck0_CheckedChanged);
             // 
@@ -30157,7 +30158,7 @@
             this.mSlideCheck0.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck0.Name = "mSlideCheck0";
             this.mSlideCheck0.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck0.TabIndex = 146;
+            this.mSlideCheck0.TabIndex = 3;
             this.mSlideCheck0.UseVisualStyleBackColor = true;
             this.mSlideCheck0.CheckedChanged += new System.EventHandler(this.mSlideCheck0_CheckedChanged);
             // 
@@ -30169,7 +30170,7 @@
             this.mBankCheck0.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck0.Name = "mBankCheck0";
             this.mBankCheck0.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck0.TabIndex = 145;
+            this.mBankCheck0.TabIndex = 0;
             this.mBankCheck0.UseVisualStyleBackColor = true;
             this.mBankCheck0.CheckedChanged += new System.EventHandler(this.mBankCheck0_CheckedChanged);
             // 
@@ -30260,7 +30261,7 @@
             0});
             this.fuelCostMax1.Name = "fuelCostMax1";
             this.fuelCostMax1.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax1.TabIndex = 210;
+            this.fuelCostMax1.TabIndex = 47;
             this.fuelCostMax1.Value = new decimal(new int[] {
             10,
             0,
@@ -30279,7 +30280,7 @@
             0});
             this.fuelCostMin1.Name = "fuelCostMin1";
             this.fuelCostMin1.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin1.TabIndex = 209;
+            this.fuelCostMin1.TabIndex = 46;
             this.fuelCostMin1.ValueChanged += new System.EventHandler(this.fuelCostMin1_ValueChanged);
             // 
             // label496
@@ -30291,7 +30292,7 @@
             this.label496.Size = new System.Drawing.Size(79, 13);
             this.label496.TabIndex = 208;
             this.label496.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label496, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label496, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck1
             // 
@@ -30301,7 +30302,7 @@
             this.fuelCostCheck1.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck1.Name = "fuelCostCheck1";
             this.fuelCostCheck1.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck1.TabIndex = 207;
+            this.fuelCostCheck1.TabIndex = 45;
             this.fuelCostCheck1.UseVisualStyleBackColor = true;
             this.fuelCostCheck1.CheckedChanged += new System.EventHandler(this.fuelCostCheck1_CheckedChanged);
             // 
@@ -30316,7 +30317,7 @@
             0});
             this.repairMax1.Name = "repairMax1";
             this.repairMax1.Size = new System.Drawing.Size(55, 20);
-            this.repairMax1.TabIndex = 206;
+            this.repairMax1.TabIndex = 44;
             this.repairMax1.Value = new decimal(new int[] {
             10,
             0,
@@ -30334,7 +30335,7 @@
             0});
             this.repairMin1.Name = "repairMin1";
             this.repairMin1.Size = new System.Drawing.Size(55, 20);
-            this.repairMin1.TabIndex = 205;
+            this.repairMin1.TabIndex = 43;
             this.repairMin1.ValueChanged += new System.EventHandler(this.repairMin1_ValueChanged);
             // 
             // label497
@@ -30356,7 +30357,7 @@
             this.repairCheck1.Location = new System.Drawing.Point(8, 387);
             this.repairCheck1.Name = "repairCheck1";
             this.repairCheck1.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck1.TabIndex = 203;
+            this.repairCheck1.TabIndex = 42;
             this.repairCheck1.UseVisualStyleBackColor = true;
             this.repairCheck1.CheckedChanged += new System.EventHandler(this.repairCheck1_CheckedChanged);
             // 
@@ -30371,7 +30372,7 @@
             0});
             this.fuelMax1.Name = "fuelMax1";
             this.fuelMax1.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax1.TabIndex = 202;
+            this.fuelMax1.TabIndex = 41;
             this.fuelMax1.Value = new decimal(new int[] {
             500,
             0,
@@ -30390,7 +30391,7 @@
             0});
             this.fuelMin1.Name = "fuelMin1";
             this.fuelMin1.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin1.TabIndex = 201;
+            this.fuelMin1.TabIndex = 40;
             this.fuelMin1.ValueChanged += new System.EventHandler(this.fuelMin1_ValueChanged);
             // 
             // label498
@@ -30412,7 +30413,7 @@
             this.fuelCheck1.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck1.Name = "fuelCheck1";
             this.fuelCheck1.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck1.TabIndex = 199;
+            this.fuelCheck1.TabIndex = 39;
             this.fuelCheck1.UseVisualStyleBackColor = true;
             this.fuelCheck1.CheckedChanged += new System.EventHandler(this.fuelCheck1_CheckedChanged);
             // 
@@ -30431,7 +30432,7 @@
             0});
             this.damageMax1.Name = "damageMax1";
             this.damageMax1.Size = new System.Drawing.Size(55, 20);
-            this.damageMax1.TabIndex = 198;
+            this.damageMax1.TabIndex = 38;
             this.damageMax1.Value = new decimal(new int[] {
             5000,
             0,
@@ -30454,7 +30455,7 @@
             0});
             this.damageMin1.Name = "damageMin1";
             this.damageMin1.Size = new System.Drawing.Size(55, 20);
-            this.damageMin1.TabIndex = 197;
+            this.damageMin1.TabIndex = 37;
             this.damageMin1.Value = new decimal(new int[] {
             1,
             0,
@@ -30471,7 +30472,7 @@
             this.label499.Size = new System.Drawing.Size(87, 13);
             this.label499.TabIndex = 196;
             this.label499.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label499, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label499, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck1
             // 
@@ -30481,7 +30482,7 @@
             this.damageCheck1.Location = new System.Drawing.Point(8, 335);
             this.damageCheck1.Name = "damageCheck1";
             this.damageCheck1.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck1.TabIndex = 195;
+            this.damageCheck1.TabIndex = 36;
             this.damageCheck1.UseVisualStyleBackColor = true;
             this.damageCheck1.CheckedChanged += new System.EventHandler(this.damageCheck1_CheckedChanged);
             // 
@@ -30495,7 +30496,7 @@
             0});
             this.costMax1.Name = "costMax1";
             this.costMax1.Size = new System.Drawing.Size(55, 20);
-            this.costMax1.TabIndex = 194;
+            this.costMax1.TabIndex = 35;
             this.costMax1.Value = new decimal(new int[] {
             100000,
             0,
@@ -30513,7 +30514,7 @@
             0});
             this.costMin1.Name = "costMin1";
             this.costMin1.Size = new System.Drawing.Size(55, 20);
-            this.costMin1.TabIndex = 193;
+            this.costMin1.TabIndex = 34;
             this.costMin1.ValueChanged += new System.EventHandler(this.costMin1_ValueChanged);
             // 
             // fuelRateMax1
@@ -30527,7 +30528,7 @@
             0});
             this.fuelRateMax1.Name = "fuelRateMax1";
             this.fuelRateMax1.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax1.TabIndex = 192;
+            this.fuelRateMax1.TabIndex = 32;
             this.fuelRateMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -30546,7 +30547,7 @@
             0});
             this.fuelRateMin1.Name = "fuelRateMin1";
             this.fuelRateMin1.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin1.TabIndex = 191;
+            this.fuelRateMin1.TabIndex = 31;
             this.fuelRateMin1.ValueChanged += new System.EventHandler(this.fuelRateMin1_ValueChanged);
             // 
             // mYawRateMax1
@@ -30560,7 +30561,7 @@
             0});
             this.mYawRateMax1.Name = "mYawRateMax1";
             this.mYawRateMax1.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax1.TabIndex = 190;
+            this.mYawRateMax1.TabIndex = 29;
             this.mYawRateMax1.Value = new decimal(new int[] {
             900,
             0,
@@ -30579,7 +30580,7 @@
             0});
             this.mYawRateMin1.Name = "mYawRateMin1";
             this.mYawRateMin1.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin1.TabIndex = 189;
+            this.mYawRateMin1.TabIndex = 28;
             this.mYawRateMin1.ValueChanged += new System.EventHandler(this.mYawRateMin1_ValueChanged);
             // 
             // label500
@@ -30602,7 +30603,7 @@
             this.label501.Size = new System.Drawing.Size(79, 13);
             this.label501.TabIndex = 187;
             this.label501.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label501, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label501, "Galons of gas used per hour.");
             // 
             // label502
             // 
@@ -30623,7 +30624,7 @@
             this.costCheck1.Location = new System.Drawing.Point(8, 309);
             this.costCheck1.Name = "costCheck1";
             this.costCheck1.Size = new System.Drawing.Size(15, 14);
-            this.costCheck1.TabIndex = 185;
+            this.costCheck1.TabIndex = 33;
             this.costCheck1.UseVisualStyleBackColor = true;
             this.costCheck1.CheckedChanged += new System.EventHandler(this.costCheck1_CheckedChanged);
             // 
@@ -30635,7 +30636,7 @@
             this.fuelRateCheck1.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck1.Name = "fuelRateCheck1";
             this.fuelRateCheck1.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck1.TabIndex = 184;
+            this.fuelRateCheck1.TabIndex = 30;
             this.fuelRateCheck1.UseVisualStyleBackColor = true;
             this.fuelRateCheck1.CheckedChanged += new System.EventHandler(this.fuelRateCheck1_CheckedChanged);
             // 
@@ -30647,7 +30648,7 @@
             this.mYawRateCheck1.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck1.Name = "mYawRateCheck1";
             this.mYawRateCheck1.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck1.TabIndex = 183;
+            this.mYawRateCheck1.TabIndex = 27;
             this.mYawRateCheck1.UseVisualStyleBackColor = true;
             this.mYawRateCheck1.CheckedChanged += new System.EventHandler(this.mYawRateCheck1_CheckedChanged);
             // 
@@ -30666,7 +30667,7 @@
             0});
             this.mLoadMax1.Name = "mLoadMax1";
             this.mLoadMax1.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax1.TabIndex = 182;
+            this.mLoadMax1.TabIndex = 26;
             this.mLoadMax1.Value = new decimal(new int[] {
             20000,
             0,
@@ -30689,7 +30690,7 @@
             0});
             this.mLoadMin1.Name = "mLoadMin1";
             this.mLoadMin1.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin1.TabIndex = 181;
+            this.mLoadMin1.TabIndex = 25;
             this.mLoadMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -30706,7 +30707,7 @@
             this.label503.Size = new System.Drawing.Size(71, 13);
             this.label503.TabIndex = 180;
             this.label503.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label503, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label503, "Amount of water that can be carried.");
             // 
             // mLoadCheck1
             // 
@@ -30716,7 +30717,7 @@
             this.mLoadCheck1.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck1.Name = "mLoadCheck1";
             this.mLoadCheck1.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck1.TabIndex = 179;
+            this.mLoadCheck1.TabIndex = 24;
             this.mLoadCheck1.UseVisualStyleBackColor = true;
             this.mLoadCheck1.CheckedChanged += new System.EventHandler(this.mLoadCheck1_CheckedChanged);
             // 
@@ -30731,7 +30732,7 @@
             0});
             this.climbMax1.Name = "climbMax1";
             this.climbMax1.Size = new System.Drawing.Size(55, 20);
-            this.climbMax1.TabIndex = 178;
+            this.climbMax1.TabIndex = 23;
             this.climbMax1.Value = new decimal(new int[] {
             50,
             0,
@@ -30750,7 +30751,7 @@
             0});
             this.climbMin1.Name = "climbMin1";
             this.climbMin1.Size = new System.Drawing.Size(55, 20);
-            this.climbMin1.TabIndex = 177;
+            this.climbMin1.TabIndex = 22;
             this.climbMin1.ValueChanged += new System.EventHandler(this.climbMin1_ValueChanged);
             // 
             // label504
@@ -30772,7 +30773,7 @@
             this.climbCheck1.Location = new System.Drawing.Point(8, 205);
             this.climbCheck1.Name = "climbCheck1";
             this.climbCheck1.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck1.TabIndex = 175;
+            this.climbCheck1.TabIndex = 21;
             this.climbCheck1.UseVisualStyleBackColor = true;
             this.climbCheck1.CheckedChanged += new System.EventHandler(this.climbCheck1_CheckedChanged);
             // 
@@ -30792,7 +30793,7 @@
             0});
             this.slideRateMax1.Name = "slideRateMax1";
             this.slideRateMax1.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax1.TabIndex = 174;
+            this.slideRateMax1.TabIndex = 20;
             this.slideRateMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -30816,7 +30817,7 @@
             0});
             this.slideRateMin1.Name = "slideRateMin1";
             this.slideRateMin1.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin1.TabIndex = 173;
+            this.slideRateMin1.TabIndex = 19;
             this.slideRateMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -30843,7 +30844,7 @@
             this.slideRateCheck1.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck1.Name = "slideRateCheck1";
             this.slideRateCheck1.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck1.TabIndex = 171;
+            this.slideRateCheck1.TabIndex = 18;
             this.slideRateCheck1.UseVisualStyleBackColor = true;
             this.slideRateCheck1.CheckedChanged += new System.EventHandler(this.slideRateCheck1_CheckedChanged);
             // 
@@ -30863,7 +30864,7 @@
             0});
             this.rollRateMax1.Name = "rollRateMax1";
             this.rollRateMax1.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax1.TabIndex = 170;
+            this.rollRateMax1.TabIndex = 17;
             this.rollRateMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -30887,7 +30888,7 @@
             0});
             this.rollRateMin1.Name = "rollRateMin1";
             this.rollRateMin1.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin1.TabIndex = 169;
+            this.rollRateMin1.TabIndex = 16;
             this.rollRateMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -30904,7 +30905,7 @@
             this.label506.Size = new System.Drawing.Size(79, 13);
             this.label506.TabIndex = 168;
             this.label506.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label506, "Unknown");
+            this.toolTip.SetToolTip(this.label506, "Unknown.");
             // 
             // rollRateCheck1
             // 
@@ -30914,7 +30915,7 @@
             this.rollRateCheck1.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck1.Name = "rollRateCheck1";
             this.rollRateCheck1.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck1.TabIndex = 167;
+            this.rollRateCheck1.TabIndex = 15;
             this.rollRateCheck1.UseVisualStyleBackColor = true;
             this.rollRateCheck1.CheckedChanged += new System.EventHandler(this.rollRateCheck1_CheckedChanged);
             // 
@@ -30934,7 +30935,7 @@
             0});
             this.yawRateMax1.Name = "yawRateMax1";
             this.yawRateMax1.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax1.TabIndex = 166;
+            this.yawRateMax1.TabIndex = 14;
             this.yawRateMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -30958,7 +30959,7 @@
             0});
             this.yawRateMin1.Name = "yawRateMin1";
             this.yawRateMin1.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin1.TabIndex = 165;
+            this.yawRateMin1.TabIndex = 13;
             this.yawRateMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -30982,7 +30983,7 @@
             0});
             this.pitchRateMax1.Name = "pitchRateMax1";
             this.pitchRateMax1.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax1.TabIndex = 164;
+            this.pitchRateMax1.TabIndex = 11;
             this.pitchRateMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -31006,7 +31007,7 @@
             0});
             this.pitchRateMin1.Name = "pitchRateMin1";
             this.pitchRateMin1.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin1.TabIndex = 163;
+            this.pitchRateMin1.TabIndex = 10;
             this.pitchRateMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -31030,7 +31031,7 @@
             0});
             this.mPitchMax1.Name = "mPitchMax1";
             this.mPitchMax1.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax1.TabIndex = 162;
+            this.mPitchMax1.TabIndex = 8;
             this.mPitchMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -31054,7 +31055,7 @@
             0});
             this.mPitchMin1.Name = "mPitchMin1";
             this.mPitchMin1.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin1.TabIndex = 161;
+            this.mPitchMin1.TabIndex = 7;
             this.mPitchMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -31078,7 +31079,7 @@
             0});
             this.mSlideMax1.Name = "mSlideMax1";
             this.mSlideMax1.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax1.TabIndex = 160;
+            this.mSlideMax1.TabIndex = 5;
             this.mSlideMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -31102,7 +31103,7 @@
             0});
             this.mSlideMin1.Name = "mSlideMin1";
             this.mSlideMin1.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin1.TabIndex = 159;
+            this.mSlideMin1.TabIndex = 4;
             this.mSlideMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -31126,7 +31127,7 @@
             0});
             this.mBankMax1.Name = "mBankMax1";
             this.mBankMax1.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax1.TabIndex = 158;
+            this.mBankMax1.TabIndex = 2;
             this.mBankMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -31150,7 +31151,7 @@
             0});
             this.mBankMin1.Name = "mBankMin1";
             this.mBankMin1.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin1.TabIndex = 157;
+            this.mBankMin1.TabIndex = 1;
             this.mBankMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -31241,7 +31242,7 @@
             this.yawRateCheck1.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck1.Name = "yawRateCheck1";
             this.yawRateCheck1.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck1.TabIndex = 149;
+            this.yawRateCheck1.TabIndex = 12;
             this.yawRateCheck1.UseVisualStyleBackColor = true;
             this.yawRateCheck1.CheckedChanged += new System.EventHandler(this.yawRateCheck1_CheckedChanged);
             // 
@@ -31253,7 +31254,7 @@
             this.pitchRateCheck1.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck1.Name = "pitchRateCheck1";
             this.pitchRateCheck1.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck1.TabIndex = 148;
+            this.pitchRateCheck1.TabIndex = 9;
             this.pitchRateCheck1.UseVisualStyleBackColor = true;
             this.pitchRateCheck1.CheckedChanged += new System.EventHandler(this.pitchRateCheck1_CheckedChanged);
             // 
@@ -31265,7 +31266,7 @@
             this.mPitchCheck1.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck1.Name = "mPitchCheck1";
             this.mPitchCheck1.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck1.TabIndex = 147;
+            this.mPitchCheck1.TabIndex = 6;
             this.mPitchCheck1.UseVisualStyleBackColor = true;
             this.mPitchCheck1.CheckedChanged += new System.EventHandler(this.mPitchCheck1_CheckedChanged);
             // 
@@ -31277,7 +31278,7 @@
             this.mSlideCheck1.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck1.Name = "mSlideCheck1";
             this.mSlideCheck1.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck1.TabIndex = 146;
+            this.mSlideCheck1.TabIndex = 3;
             this.mSlideCheck1.UseVisualStyleBackColor = true;
             this.mSlideCheck1.CheckedChanged += new System.EventHandler(this.mSlideCheck1_CheckedChanged);
             // 
@@ -31289,7 +31290,7 @@
             this.mBankCheck1.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck1.Name = "mBankCheck1";
             this.mBankCheck1.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck1.TabIndex = 145;
+            this.mBankCheck1.TabIndex = 0;
             this.mBankCheck1.UseVisualStyleBackColor = true;
             this.mBankCheck1.CheckedChanged += new System.EventHandler(this.mBankCheck1_CheckedChanged);
             // 
@@ -31380,7 +31381,7 @@
             0});
             this.fuelCostMax8.Name = "fuelCostMax8";
             this.fuelCostMax8.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax8.TabIndex = 210;
+            this.fuelCostMax8.TabIndex = 47;
             this.fuelCostMax8.Value = new decimal(new int[] {
             10,
             0,
@@ -31399,7 +31400,7 @@
             0});
             this.fuelCostMin8.Name = "fuelCostMin8";
             this.fuelCostMin8.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin8.TabIndex = 209;
+            this.fuelCostMin8.TabIndex = 46;
             this.fuelCostMin8.ValueChanged += new System.EventHandler(this.fuelCostMin8_ValueChanged);
             // 
             // label514
@@ -31411,7 +31412,7 @@
             this.label514.Size = new System.Drawing.Size(79, 13);
             this.label514.TabIndex = 208;
             this.label514.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label514, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label514, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck8
             // 
@@ -31421,7 +31422,7 @@
             this.fuelCostCheck8.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck8.Name = "fuelCostCheck8";
             this.fuelCostCheck8.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck8.TabIndex = 207;
+            this.fuelCostCheck8.TabIndex = 45;
             this.fuelCostCheck8.UseVisualStyleBackColor = true;
             this.fuelCostCheck8.CheckedChanged += new System.EventHandler(this.fuelCostCheck8_CheckedChanged);
             // 
@@ -31436,7 +31437,7 @@
             0});
             this.repairMax8.Name = "repairMax8";
             this.repairMax8.Size = new System.Drawing.Size(55, 20);
-            this.repairMax8.TabIndex = 206;
+            this.repairMax8.TabIndex = 44;
             this.repairMax8.Value = new decimal(new int[] {
             10,
             0,
@@ -31454,7 +31455,7 @@
             0});
             this.repairMin8.Name = "repairMin8";
             this.repairMin8.Size = new System.Drawing.Size(55, 20);
-            this.repairMin8.TabIndex = 205;
+            this.repairMin8.TabIndex = 43;
             this.repairMin8.ValueChanged += new System.EventHandler(this.repairMin8_ValueChanged);
             // 
             // label515
@@ -31476,7 +31477,7 @@
             this.repairCheck8.Location = new System.Drawing.Point(8, 387);
             this.repairCheck8.Name = "repairCheck8";
             this.repairCheck8.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck8.TabIndex = 203;
+            this.repairCheck8.TabIndex = 42;
             this.repairCheck8.UseVisualStyleBackColor = true;
             this.repairCheck8.CheckedChanged += new System.EventHandler(this.repairCheck8_CheckedChanged);
             // 
@@ -31491,7 +31492,7 @@
             0});
             this.fuelMax8.Name = "fuelMax8";
             this.fuelMax8.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax8.TabIndex = 202;
+            this.fuelMax8.TabIndex = 41;
             this.fuelMax8.Value = new decimal(new int[] {
             500,
             0,
@@ -31510,7 +31511,7 @@
             0});
             this.fuelMin8.Name = "fuelMin8";
             this.fuelMin8.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin8.TabIndex = 201;
+            this.fuelMin8.TabIndex = 40;
             this.fuelMin8.ValueChanged += new System.EventHandler(this.fuelMin8_ValueChanged);
             // 
             // label516
@@ -31532,7 +31533,7 @@
             this.fuelCheck8.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck8.Name = "fuelCheck8";
             this.fuelCheck8.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck8.TabIndex = 199;
+            this.fuelCheck8.TabIndex = 39;
             this.fuelCheck8.UseVisualStyleBackColor = true;
             this.fuelCheck8.CheckedChanged += new System.EventHandler(this.fuelCheck8_CheckedChanged);
             // 
@@ -31551,7 +31552,7 @@
             0});
             this.damageMax8.Name = "damageMax8";
             this.damageMax8.Size = new System.Drawing.Size(55, 20);
-            this.damageMax8.TabIndex = 198;
+            this.damageMax8.TabIndex = 38;
             this.damageMax8.Value = new decimal(new int[] {
             5000,
             0,
@@ -31574,7 +31575,7 @@
             0});
             this.damageMin8.Name = "damageMin8";
             this.damageMin8.Size = new System.Drawing.Size(55, 20);
-            this.damageMin8.TabIndex = 197;
+            this.damageMin8.TabIndex = 37;
             this.damageMin8.Value = new decimal(new int[] {
             1,
             0,
@@ -31591,7 +31592,7 @@
             this.label517.Size = new System.Drawing.Size(87, 13);
             this.label517.TabIndex = 196;
             this.label517.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label517, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label517, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck8
             // 
@@ -31601,7 +31602,7 @@
             this.damageCheck8.Location = new System.Drawing.Point(8, 335);
             this.damageCheck8.Name = "damageCheck8";
             this.damageCheck8.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck8.TabIndex = 195;
+            this.damageCheck8.TabIndex = 36;
             this.damageCheck8.UseVisualStyleBackColor = true;
             this.damageCheck8.CheckedChanged += new System.EventHandler(this.damageCheck8_CheckedChanged);
             // 
@@ -31615,7 +31616,7 @@
             0});
             this.costMax8.Name = "costMax8";
             this.costMax8.Size = new System.Drawing.Size(55, 20);
-            this.costMax8.TabIndex = 194;
+            this.costMax8.TabIndex = 35;
             this.costMax8.Value = new decimal(new int[] {
             100000,
             0,
@@ -31633,7 +31634,7 @@
             0});
             this.costMin8.Name = "costMin8";
             this.costMin8.Size = new System.Drawing.Size(55, 20);
-            this.costMin8.TabIndex = 193;
+            this.costMin8.TabIndex = 34;
             this.costMin8.ValueChanged += new System.EventHandler(this.costMin8_ValueChanged);
             // 
             // fuelRateMax8
@@ -31647,7 +31648,7 @@
             0});
             this.fuelRateMax8.Name = "fuelRateMax8";
             this.fuelRateMax8.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax8.TabIndex = 192;
+            this.fuelRateMax8.TabIndex = 32;
             this.fuelRateMax8.Value = new decimal(new int[] {
             2000,
             0,
@@ -31666,7 +31667,7 @@
             0});
             this.fuelRateMin8.Name = "fuelRateMin8";
             this.fuelRateMin8.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin8.TabIndex = 191;
+            this.fuelRateMin8.TabIndex = 31;
             this.fuelRateMin8.ValueChanged += new System.EventHandler(this.fuelRateMin8_ValueChanged);
             // 
             // mYawRateMax8
@@ -31680,7 +31681,7 @@
             0});
             this.mYawRateMax8.Name = "mYawRateMax8";
             this.mYawRateMax8.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax8.TabIndex = 190;
+            this.mYawRateMax8.TabIndex = 29;
             this.mYawRateMax8.Value = new decimal(new int[] {
             900,
             0,
@@ -31699,7 +31700,7 @@
             0});
             this.mYawRateMin8.Name = "mYawRateMin8";
             this.mYawRateMin8.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin8.TabIndex = 189;
+            this.mYawRateMin8.TabIndex = 28;
             this.mYawRateMin8.ValueChanged += new System.EventHandler(this.mYawRateMin8_ValueChanged);
             // 
             // label518
@@ -31722,7 +31723,7 @@
             this.label519.Size = new System.Drawing.Size(79, 13);
             this.label519.TabIndex = 187;
             this.label519.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label519, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label519, "Galons of gas used per hour.");
             // 
             // label520
             // 
@@ -31743,7 +31744,7 @@
             this.costCheck8.Location = new System.Drawing.Point(8, 309);
             this.costCheck8.Name = "costCheck8";
             this.costCheck8.Size = new System.Drawing.Size(15, 14);
-            this.costCheck8.TabIndex = 185;
+            this.costCheck8.TabIndex = 33;
             this.costCheck8.UseVisualStyleBackColor = true;
             this.costCheck8.CheckedChanged += new System.EventHandler(this.costCheck8_CheckedChanged);
             // 
@@ -31755,7 +31756,7 @@
             this.fuelRateCheck8.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck8.Name = "fuelRateCheck8";
             this.fuelRateCheck8.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck8.TabIndex = 184;
+            this.fuelRateCheck8.TabIndex = 30;
             this.fuelRateCheck8.UseVisualStyleBackColor = true;
             this.fuelRateCheck8.CheckedChanged += new System.EventHandler(this.fuelRateCheck8_CheckedChanged);
             // 
@@ -31767,7 +31768,7 @@
             this.mYawRateCheck8.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck8.Name = "mYawRateCheck8";
             this.mYawRateCheck8.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck8.TabIndex = 183;
+            this.mYawRateCheck8.TabIndex = 27;
             this.mYawRateCheck8.UseVisualStyleBackColor = true;
             this.mYawRateCheck8.CheckedChanged += new System.EventHandler(this.mYawRateCheck8_CheckedChanged);
             // 
@@ -31786,7 +31787,7 @@
             0});
             this.mLoadMax8.Name = "mLoadMax8";
             this.mLoadMax8.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax8.TabIndex = 182;
+            this.mLoadMax8.TabIndex = 26;
             this.mLoadMax8.Value = new decimal(new int[] {
             20000,
             0,
@@ -31809,7 +31810,7 @@
             0});
             this.mLoadMin8.Name = "mLoadMin8";
             this.mLoadMin8.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin8.TabIndex = 181;
+            this.mLoadMin8.TabIndex = 25;
             this.mLoadMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -31826,7 +31827,7 @@
             this.label521.Size = new System.Drawing.Size(71, 13);
             this.label521.TabIndex = 180;
             this.label521.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label521, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label521, "Amount of water that can be carried.");
             // 
             // mLoadCheck8
             // 
@@ -31836,7 +31837,7 @@
             this.mLoadCheck8.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck8.Name = "mLoadCheck8";
             this.mLoadCheck8.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck8.TabIndex = 179;
+            this.mLoadCheck8.TabIndex = 24;
             this.mLoadCheck8.UseVisualStyleBackColor = true;
             this.mLoadCheck8.CheckedChanged += new System.EventHandler(this.mLoadCheck8_CheckedChanged);
             // 
@@ -31851,7 +31852,7 @@
             0});
             this.climbMax8.Name = "climbMax8";
             this.climbMax8.Size = new System.Drawing.Size(55, 20);
-            this.climbMax8.TabIndex = 178;
+            this.climbMax8.TabIndex = 23;
             this.climbMax8.Value = new decimal(new int[] {
             50,
             0,
@@ -31870,7 +31871,7 @@
             0});
             this.climbMin8.Name = "climbMin8";
             this.climbMin8.Size = new System.Drawing.Size(55, 20);
-            this.climbMin8.TabIndex = 177;
+            this.climbMin8.TabIndex = 22;
             this.climbMin8.ValueChanged += new System.EventHandler(this.climbMin8_ValueChanged);
             // 
             // label522
@@ -31892,7 +31893,7 @@
             this.climbCheck8.Location = new System.Drawing.Point(8, 205);
             this.climbCheck8.Name = "climbCheck8";
             this.climbCheck8.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck8.TabIndex = 175;
+            this.climbCheck8.TabIndex = 21;
             this.climbCheck8.UseVisualStyleBackColor = true;
             this.climbCheck8.CheckedChanged += new System.EventHandler(this.climbCheck8_CheckedChanged);
             // 
@@ -31912,7 +31913,7 @@
             0});
             this.slideRateMax8.Name = "slideRateMax8";
             this.slideRateMax8.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax8.TabIndex = 174;
+            this.slideRateMax8.TabIndex = 20;
             this.slideRateMax8.Value = new decimal(new int[] {
             800,
             0,
@@ -31936,7 +31937,7 @@
             0});
             this.slideRateMin8.Name = "slideRateMin8";
             this.slideRateMin8.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin8.TabIndex = 173;
+            this.slideRateMin8.TabIndex = 19;
             this.slideRateMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -31963,7 +31964,7 @@
             this.slideRateCheck8.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck8.Name = "slideRateCheck8";
             this.slideRateCheck8.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck8.TabIndex = 171;
+            this.slideRateCheck8.TabIndex = 18;
             this.slideRateCheck8.UseVisualStyleBackColor = true;
             this.slideRateCheck8.CheckedChanged += new System.EventHandler(this.slideRateCheck8_CheckedChanged);
             // 
@@ -31983,7 +31984,7 @@
             0});
             this.rollRateMax8.Name = "rollRateMax8";
             this.rollRateMax8.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax8.TabIndex = 170;
+            this.rollRateMax8.TabIndex = 17;
             this.rollRateMax8.Value = new decimal(new int[] {
             800,
             0,
@@ -32007,7 +32008,7 @@
             0});
             this.rollRateMin8.Name = "rollRateMin8";
             this.rollRateMin8.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin8.TabIndex = 169;
+            this.rollRateMin8.TabIndex = 16;
             this.rollRateMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -32024,7 +32025,7 @@
             this.label524.Size = new System.Drawing.Size(79, 13);
             this.label524.TabIndex = 168;
             this.label524.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label524, "Unknown");
+            this.toolTip.SetToolTip(this.label524, "Unknown.");
             // 
             // rollRateCheck8
             // 
@@ -32034,7 +32035,7 @@
             this.rollRateCheck8.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck8.Name = "rollRateCheck8";
             this.rollRateCheck8.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck8.TabIndex = 167;
+            this.rollRateCheck8.TabIndex = 15;
             this.rollRateCheck8.UseVisualStyleBackColor = true;
             this.rollRateCheck8.CheckedChanged += new System.EventHandler(this.rollRateCheck8_CheckedChanged);
             // 
@@ -32054,7 +32055,7 @@
             0});
             this.yawRateMax8.Name = "yawRateMax8";
             this.yawRateMax8.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax8.TabIndex = 166;
+            this.yawRateMax8.TabIndex = 14;
             this.yawRateMax8.Value = new decimal(new int[] {
             800,
             0,
@@ -32078,7 +32079,7 @@
             0});
             this.yawRateMin8.Name = "yawRateMin8";
             this.yawRateMin8.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin8.TabIndex = 165;
+            this.yawRateMin8.TabIndex = 13;
             this.yawRateMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -32102,7 +32103,7 @@
             0});
             this.pitchRateMax8.Name = "pitchRateMax8";
             this.pitchRateMax8.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax8.TabIndex = 164;
+            this.pitchRateMax8.TabIndex = 11;
             this.pitchRateMax8.Value = new decimal(new int[] {
             800,
             0,
@@ -32126,7 +32127,7 @@
             0});
             this.pitchRateMin8.Name = "pitchRateMin8";
             this.pitchRateMin8.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin8.TabIndex = 163;
+            this.pitchRateMin8.TabIndex = 10;
             this.pitchRateMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -32150,7 +32151,7 @@
             0});
             this.mPitchMax8.Name = "mPitchMax8";
             this.mPitchMax8.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax8.TabIndex = 162;
+            this.mPitchMax8.TabIndex = 8;
             this.mPitchMax8.Value = new decimal(new int[] {
             800,
             0,
@@ -32174,7 +32175,7 @@
             0});
             this.mPitchMin8.Name = "mPitchMin8";
             this.mPitchMin8.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin8.TabIndex = 161;
+            this.mPitchMin8.TabIndex = 7;
             this.mPitchMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -32198,7 +32199,7 @@
             0});
             this.mSlideMax8.Name = "mSlideMax8";
             this.mSlideMax8.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax8.TabIndex = 160;
+            this.mSlideMax8.TabIndex = 5;
             this.mSlideMax8.Value = new decimal(new int[] {
             800,
             0,
@@ -32222,7 +32223,7 @@
             0});
             this.mSlideMin8.Name = "mSlideMin8";
             this.mSlideMin8.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin8.TabIndex = 159;
+            this.mSlideMin8.TabIndex = 4;
             this.mSlideMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -32246,7 +32247,7 @@
             0});
             this.mBankMax8.Name = "mBankMax8";
             this.mBankMax8.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax8.TabIndex = 158;
+            this.mBankMax8.TabIndex = 2;
             this.mBankMax8.Value = new decimal(new int[] {
             800,
             0,
@@ -32270,7 +32271,7 @@
             0});
             this.mBankMin8.Name = "mBankMin8";
             this.mBankMin8.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin8.TabIndex = 157;
+            this.mBankMin8.TabIndex = 1;
             this.mBankMin8.Value = new decimal(new int[] {
             10,
             0,
@@ -32361,7 +32362,7 @@
             this.yawRateCheck8.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck8.Name = "yawRateCheck8";
             this.yawRateCheck8.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck8.TabIndex = 149;
+            this.yawRateCheck8.TabIndex = 12;
             this.yawRateCheck8.UseVisualStyleBackColor = true;
             this.yawRateCheck8.CheckedChanged += new System.EventHandler(this.yawRateCheck8_CheckedChanged);
             // 
@@ -32373,7 +32374,7 @@
             this.pitchRateCheck8.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck8.Name = "pitchRateCheck8";
             this.pitchRateCheck8.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck8.TabIndex = 148;
+            this.pitchRateCheck8.TabIndex = 9;
             this.pitchRateCheck8.UseVisualStyleBackColor = true;
             this.pitchRateCheck8.CheckedChanged += new System.EventHandler(this.pitchRateCheck8_CheckedChanged);
             // 
@@ -32385,7 +32386,7 @@
             this.mPitchCheck8.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck8.Name = "mPitchCheck8";
             this.mPitchCheck8.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck8.TabIndex = 147;
+            this.mPitchCheck8.TabIndex = 6;
             this.mPitchCheck8.UseVisualStyleBackColor = true;
             this.mPitchCheck8.CheckedChanged += new System.EventHandler(this.mPitchCheck8_CheckedChanged);
             // 
@@ -32397,7 +32398,7 @@
             this.mSlideCheck8.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck8.Name = "mSlideCheck8";
             this.mSlideCheck8.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck8.TabIndex = 146;
+            this.mSlideCheck8.TabIndex = 3;
             this.mSlideCheck8.UseVisualStyleBackColor = true;
             this.mSlideCheck8.CheckedChanged += new System.EventHandler(this.mSlideCheck8_CheckedChanged);
             // 
@@ -32409,7 +32410,7 @@
             this.mBankCheck8.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck8.Name = "mBankCheck8";
             this.mBankCheck8.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck8.TabIndex = 145;
+            this.mBankCheck8.TabIndex = 0;
             this.mBankCheck8.UseVisualStyleBackColor = true;
             this.mBankCheck8.CheckedChanged += new System.EventHandler(this.mBankCheck8_CheckedChanged);
             // 
@@ -32500,7 +32501,7 @@
             0});
             this.fuelCostMax3.Name = "fuelCostMax3";
             this.fuelCostMax3.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax3.TabIndex = 210;
+            this.fuelCostMax3.TabIndex = 47;
             this.fuelCostMax3.Value = new decimal(new int[] {
             10,
             0,
@@ -32519,7 +32520,7 @@
             0});
             this.fuelCostMin3.Name = "fuelCostMin3";
             this.fuelCostMin3.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin3.TabIndex = 209;
+            this.fuelCostMin3.TabIndex = 46;
             this.fuelCostMin3.ValueChanged += new System.EventHandler(this.fuelCostMin3_ValueChanged);
             // 
             // label532
@@ -32531,7 +32532,7 @@
             this.label532.Size = new System.Drawing.Size(79, 13);
             this.label532.TabIndex = 208;
             this.label532.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label532, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label532, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck3
             // 
@@ -32541,7 +32542,7 @@
             this.fuelCostCheck3.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck3.Name = "fuelCostCheck3";
             this.fuelCostCheck3.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck3.TabIndex = 207;
+            this.fuelCostCheck3.TabIndex = 45;
             this.fuelCostCheck3.UseVisualStyleBackColor = true;
             this.fuelCostCheck3.CheckedChanged += new System.EventHandler(this.fuelCostCheck3_CheckedChanged);
             // 
@@ -32556,7 +32557,7 @@
             0});
             this.repairMax3.Name = "repairMax3";
             this.repairMax3.Size = new System.Drawing.Size(55, 20);
-            this.repairMax3.TabIndex = 206;
+            this.repairMax3.TabIndex = 44;
             this.repairMax3.Value = new decimal(new int[] {
             10,
             0,
@@ -32574,7 +32575,7 @@
             0});
             this.repairMin3.Name = "repairMin3";
             this.repairMin3.Size = new System.Drawing.Size(55, 20);
-            this.repairMin3.TabIndex = 205;
+            this.repairMin3.TabIndex = 43;
             this.repairMin3.ValueChanged += new System.EventHandler(this.repairMin3_ValueChanged);
             // 
             // label533
@@ -32596,7 +32597,7 @@
             this.repairCheck3.Location = new System.Drawing.Point(8, 387);
             this.repairCheck3.Name = "repairCheck3";
             this.repairCheck3.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck3.TabIndex = 203;
+            this.repairCheck3.TabIndex = 42;
             this.repairCheck3.UseVisualStyleBackColor = true;
             this.repairCheck3.CheckedChanged += new System.EventHandler(this.repairCheck3_CheckedChanged);
             // 
@@ -32611,7 +32612,7 @@
             0});
             this.fuelMax3.Name = "fuelMax3";
             this.fuelMax3.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax3.TabIndex = 202;
+            this.fuelMax3.TabIndex = 41;
             this.fuelMax3.Value = new decimal(new int[] {
             500,
             0,
@@ -32630,7 +32631,7 @@
             0});
             this.fuelMin3.Name = "fuelMin3";
             this.fuelMin3.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin3.TabIndex = 201;
+            this.fuelMin3.TabIndex = 40;
             this.fuelMin3.ValueChanged += new System.EventHandler(this.fuelMin3_ValueChanged);
             // 
             // label534
@@ -32652,7 +32653,7 @@
             this.fuelCheck3.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck3.Name = "fuelCheck3";
             this.fuelCheck3.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck3.TabIndex = 199;
+            this.fuelCheck3.TabIndex = 39;
             this.fuelCheck3.UseVisualStyleBackColor = true;
             this.fuelCheck3.CheckedChanged += new System.EventHandler(this.fuelCheck3_CheckedChanged);
             // 
@@ -32671,7 +32672,7 @@
             0});
             this.damageMax3.Name = "damageMax3";
             this.damageMax3.Size = new System.Drawing.Size(55, 20);
-            this.damageMax3.TabIndex = 198;
+            this.damageMax3.TabIndex = 38;
             this.damageMax3.Value = new decimal(new int[] {
             5000,
             0,
@@ -32694,7 +32695,7 @@
             0});
             this.damageMin3.Name = "damageMin3";
             this.damageMin3.Size = new System.Drawing.Size(55, 20);
-            this.damageMin3.TabIndex = 197;
+            this.damageMin3.TabIndex = 37;
             this.damageMin3.Value = new decimal(new int[] {
             1,
             0,
@@ -32711,7 +32712,7 @@
             this.label535.Size = new System.Drawing.Size(87, 13);
             this.label535.TabIndex = 196;
             this.label535.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label535, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label535, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck3
             // 
@@ -32721,7 +32722,7 @@
             this.damageCheck3.Location = new System.Drawing.Point(8, 335);
             this.damageCheck3.Name = "damageCheck3";
             this.damageCheck3.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck3.TabIndex = 195;
+            this.damageCheck3.TabIndex = 36;
             this.damageCheck3.UseVisualStyleBackColor = true;
             this.damageCheck3.CheckedChanged += new System.EventHandler(this.damageCheck3_CheckedChanged);
             // 
@@ -32735,7 +32736,7 @@
             0});
             this.costMax3.Name = "costMax3";
             this.costMax3.Size = new System.Drawing.Size(55, 20);
-            this.costMax3.TabIndex = 194;
+            this.costMax3.TabIndex = 35;
             this.costMax3.Value = new decimal(new int[] {
             100000,
             0,
@@ -32753,7 +32754,7 @@
             0});
             this.costMin3.Name = "costMin3";
             this.costMin3.Size = new System.Drawing.Size(55, 20);
-            this.costMin3.TabIndex = 193;
+            this.costMin3.TabIndex = 34;
             this.costMin3.ValueChanged += new System.EventHandler(this.costMin3_ValueChanged);
             // 
             // fuelRateMax3
@@ -32767,7 +32768,7 @@
             0});
             this.fuelRateMax3.Name = "fuelRateMax3";
             this.fuelRateMax3.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax3.TabIndex = 192;
+            this.fuelRateMax3.TabIndex = 32;
             this.fuelRateMax3.Value = new decimal(new int[] {
             2000,
             0,
@@ -32786,7 +32787,7 @@
             0});
             this.fuelRateMin3.Name = "fuelRateMin3";
             this.fuelRateMin3.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin3.TabIndex = 191;
+            this.fuelRateMin3.TabIndex = 31;
             this.fuelRateMin3.ValueChanged += new System.EventHandler(this.fuelRateMin3_ValueChanged);
             // 
             // mYawRateMax3
@@ -32800,7 +32801,7 @@
             0});
             this.mYawRateMax3.Name = "mYawRateMax3";
             this.mYawRateMax3.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax3.TabIndex = 190;
+            this.mYawRateMax3.TabIndex = 29;
             this.mYawRateMax3.Value = new decimal(new int[] {
             900,
             0,
@@ -32819,7 +32820,7 @@
             0});
             this.mYawRateMin3.Name = "mYawRateMin3";
             this.mYawRateMin3.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin3.TabIndex = 189;
+            this.mYawRateMin3.TabIndex = 28;
             this.mYawRateMin3.ValueChanged += new System.EventHandler(this.mYawRateMin3_ValueChanged);
             // 
             // label536
@@ -32842,7 +32843,7 @@
             this.label537.Size = new System.Drawing.Size(79, 13);
             this.label537.TabIndex = 187;
             this.label537.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label537, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label537, "Galons of gas used per hour.");
             // 
             // label538
             // 
@@ -32863,7 +32864,7 @@
             this.costCheck3.Location = new System.Drawing.Point(8, 309);
             this.costCheck3.Name = "costCheck3";
             this.costCheck3.Size = new System.Drawing.Size(15, 14);
-            this.costCheck3.TabIndex = 185;
+            this.costCheck3.TabIndex = 33;
             this.costCheck3.UseVisualStyleBackColor = true;
             this.costCheck3.CheckedChanged += new System.EventHandler(this.costCheck3_CheckedChanged);
             // 
@@ -32875,7 +32876,7 @@
             this.fuelRateCheck3.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck3.Name = "fuelRateCheck3";
             this.fuelRateCheck3.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck3.TabIndex = 184;
+            this.fuelRateCheck3.TabIndex = 30;
             this.fuelRateCheck3.UseVisualStyleBackColor = true;
             this.fuelRateCheck3.CheckedChanged += new System.EventHandler(this.fuelRateCheck3_CheckedChanged);
             // 
@@ -32887,7 +32888,7 @@
             this.mYawRateCheck3.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck3.Name = "mYawRateCheck3";
             this.mYawRateCheck3.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck3.TabIndex = 183;
+            this.mYawRateCheck3.TabIndex = 27;
             this.mYawRateCheck3.UseVisualStyleBackColor = true;
             this.mYawRateCheck3.CheckedChanged += new System.EventHandler(this.mYawRateCheck3_CheckedChanged);
             // 
@@ -32906,7 +32907,7 @@
             0});
             this.mLoadMax3.Name = "mLoadMax3";
             this.mLoadMax3.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax3.TabIndex = 182;
+            this.mLoadMax3.TabIndex = 26;
             this.mLoadMax3.Value = new decimal(new int[] {
             20000,
             0,
@@ -32929,7 +32930,7 @@
             0});
             this.mLoadMin3.Name = "mLoadMin3";
             this.mLoadMin3.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin3.TabIndex = 181;
+            this.mLoadMin3.TabIndex = 25;
             this.mLoadMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -32946,7 +32947,7 @@
             this.label539.Size = new System.Drawing.Size(71, 13);
             this.label539.TabIndex = 180;
             this.label539.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label539, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label539, "Amount of water that can be carried.");
             // 
             // mLoadCheck3
             // 
@@ -32956,7 +32957,7 @@
             this.mLoadCheck3.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck3.Name = "mLoadCheck3";
             this.mLoadCheck3.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck3.TabIndex = 179;
+            this.mLoadCheck3.TabIndex = 24;
             this.mLoadCheck3.UseVisualStyleBackColor = true;
             this.mLoadCheck3.CheckedChanged += new System.EventHandler(this.mLoadCheck3_CheckedChanged);
             // 
@@ -32971,7 +32972,7 @@
             0});
             this.climbMax3.Name = "climbMax3";
             this.climbMax3.Size = new System.Drawing.Size(55, 20);
-            this.climbMax3.TabIndex = 178;
+            this.climbMax3.TabIndex = 23;
             this.climbMax3.Value = new decimal(new int[] {
             50,
             0,
@@ -32990,7 +32991,7 @@
             0});
             this.climbMin3.Name = "climbMin3";
             this.climbMin3.Size = new System.Drawing.Size(55, 20);
-            this.climbMin3.TabIndex = 177;
+            this.climbMin3.TabIndex = 22;
             this.climbMin3.ValueChanged += new System.EventHandler(this.climbMin3_ValueChanged);
             // 
             // label540
@@ -33012,7 +33013,7 @@
             this.climbCheck3.Location = new System.Drawing.Point(8, 205);
             this.climbCheck3.Name = "climbCheck3";
             this.climbCheck3.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck3.TabIndex = 175;
+            this.climbCheck3.TabIndex = 21;
             this.climbCheck3.UseVisualStyleBackColor = true;
             this.climbCheck3.CheckedChanged += new System.EventHandler(this.climbCheck3_CheckedChanged);
             // 
@@ -33032,7 +33033,7 @@
             0});
             this.slideRateMax3.Name = "slideRateMax3";
             this.slideRateMax3.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax3.TabIndex = 174;
+            this.slideRateMax3.TabIndex = 20;
             this.slideRateMax3.Value = new decimal(new int[] {
             800,
             0,
@@ -33056,7 +33057,7 @@
             0});
             this.slideRateMin3.Name = "slideRateMin3";
             this.slideRateMin3.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin3.TabIndex = 173;
+            this.slideRateMin3.TabIndex = 19;
             this.slideRateMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -33083,7 +33084,7 @@
             this.slideRateCheck3.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck3.Name = "slideRateCheck3";
             this.slideRateCheck3.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck3.TabIndex = 171;
+            this.slideRateCheck3.TabIndex = 18;
             this.slideRateCheck3.UseVisualStyleBackColor = true;
             this.slideRateCheck3.CheckedChanged += new System.EventHandler(this.slideRateCheck3_CheckedChanged);
             // 
@@ -33103,7 +33104,7 @@
             0});
             this.rollRateMax3.Name = "rollRateMax3";
             this.rollRateMax3.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax3.TabIndex = 170;
+            this.rollRateMax3.TabIndex = 17;
             this.rollRateMax3.Value = new decimal(new int[] {
             800,
             0,
@@ -33127,7 +33128,7 @@
             0});
             this.rollRateMin3.Name = "rollRateMin3";
             this.rollRateMin3.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin3.TabIndex = 169;
+            this.rollRateMin3.TabIndex = 16;
             this.rollRateMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -33144,7 +33145,7 @@
             this.label542.Size = new System.Drawing.Size(79, 13);
             this.label542.TabIndex = 168;
             this.label542.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label542, "Unknown");
+            this.toolTip.SetToolTip(this.label542, "Unknown.");
             // 
             // rollRateCheck3
             // 
@@ -33154,7 +33155,7 @@
             this.rollRateCheck3.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck3.Name = "rollRateCheck3";
             this.rollRateCheck3.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck3.TabIndex = 167;
+            this.rollRateCheck3.TabIndex = 15;
             this.rollRateCheck3.UseVisualStyleBackColor = true;
             this.rollRateCheck3.CheckedChanged += new System.EventHandler(this.rollRateCheck3_CheckedChanged);
             // 
@@ -33174,7 +33175,7 @@
             0});
             this.yawRateMax3.Name = "yawRateMax3";
             this.yawRateMax3.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax3.TabIndex = 166;
+            this.yawRateMax3.TabIndex = 14;
             this.yawRateMax3.Value = new decimal(new int[] {
             800,
             0,
@@ -33198,7 +33199,7 @@
             0});
             this.yawRateMin3.Name = "yawRateMin3";
             this.yawRateMin3.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin3.TabIndex = 165;
+            this.yawRateMin3.TabIndex = 13;
             this.yawRateMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -33222,7 +33223,7 @@
             0});
             this.pitchRateMax3.Name = "pitchRateMax3";
             this.pitchRateMax3.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax3.TabIndex = 164;
+            this.pitchRateMax3.TabIndex = 11;
             this.pitchRateMax3.Value = new decimal(new int[] {
             800,
             0,
@@ -33246,7 +33247,7 @@
             0});
             this.pitchRateMin3.Name = "pitchRateMin3";
             this.pitchRateMin3.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin3.TabIndex = 163;
+            this.pitchRateMin3.TabIndex = 10;
             this.pitchRateMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -33270,7 +33271,7 @@
             0});
             this.mPitchMax3.Name = "mPitchMax3";
             this.mPitchMax3.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax3.TabIndex = 162;
+            this.mPitchMax3.TabIndex = 8;
             this.mPitchMax3.Value = new decimal(new int[] {
             800,
             0,
@@ -33294,7 +33295,7 @@
             0});
             this.mPitchMin3.Name = "mPitchMin3";
             this.mPitchMin3.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin3.TabIndex = 161;
+            this.mPitchMin3.TabIndex = 7;
             this.mPitchMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -33318,7 +33319,7 @@
             0});
             this.mSlideMax3.Name = "mSlideMax3";
             this.mSlideMax3.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax3.TabIndex = 160;
+            this.mSlideMax3.TabIndex = 5;
             this.mSlideMax3.Value = new decimal(new int[] {
             800,
             0,
@@ -33342,7 +33343,7 @@
             0});
             this.mSlideMin3.Name = "mSlideMin3";
             this.mSlideMin3.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin3.TabIndex = 159;
+            this.mSlideMin3.TabIndex = 4;
             this.mSlideMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -33366,7 +33367,7 @@
             0});
             this.mBankMax3.Name = "mBankMax3";
             this.mBankMax3.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax3.TabIndex = 158;
+            this.mBankMax3.TabIndex = 2;
             this.mBankMax3.Value = new decimal(new int[] {
             800,
             0,
@@ -33390,7 +33391,7 @@
             0});
             this.mBankMin3.Name = "mBankMin3";
             this.mBankMin3.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin3.TabIndex = 157;
+            this.mBankMin3.TabIndex = 1;
             this.mBankMin3.Value = new decimal(new int[] {
             10,
             0,
@@ -33481,7 +33482,7 @@
             this.yawRateCheck3.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck3.Name = "yawRateCheck3";
             this.yawRateCheck3.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck3.TabIndex = 149;
+            this.yawRateCheck3.TabIndex = 12;
             this.yawRateCheck3.UseVisualStyleBackColor = true;
             this.yawRateCheck3.CheckedChanged += new System.EventHandler(this.yawRateCheck3_CheckedChanged);
             // 
@@ -33493,7 +33494,7 @@
             this.pitchRateCheck3.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck3.Name = "pitchRateCheck3";
             this.pitchRateCheck3.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck3.TabIndex = 148;
+            this.pitchRateCheck3.TabIndex = 9;
             this.pitchRateCheck3.UseVisualStyleBackColor = true;
             this.pitchRateCheck3.CheckedChanged += new System.EventHandler(this.pitchRateCheck3_CheckedChanged);
             // 
@@ -33505,7 +33506,7 @@
             this.mPitchCheck3.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck3.Name = "mPitchCheck3";
             this.mPitchCheck3.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck3.TabIndex = 147;
+            this.mPitchCheck3.TabIndex = 6;
             this.mPitchCheck3.UseVisualStyleBackColor = true;
             this.mPitchCheck3.CheckedChanged += new System.EventHandler(this.mPitchCheck3_CheckedChanged);
             // 
@@ -33517,7 +33518,7 @@
             this.mSlideCheck3.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck3.Name = "mSlideCheck3";
             this.mSlideCheck3.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck3.TabIndex = 146;
+            this.mSlideCheck3.TabIndex = 3;
             this.mSlideCheck3.UseVisualStyleBackColor = true;
             this.mSlideCheck3.CheckedChanged += new System.EventHandler(this.mSlideCheck3_CheckedChanged);
             // 
@@ -33529,7 +33530,7 @@
             this.mBankCheck3.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck3.Name = "mBankCheck3";
             this.mBankCheck3.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck3.TabIndex = 145;
+            this.mBankCheck3.TabIndex = 0;
             this.mBankCheck3.UseVisualStyleBackColor = true;
             this.mBankCheck3.CheckedChanged += new System.EventHandler(this.mBankCheck3_CheckedChanged);
             // 
@@ -33620,7 +33621,7 @@
             0});
             this.fuelCostMax5.Name = "fuelCostMax5";
             this.fuelCostMax5.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax5.TabIndex = 210;
+            this.fuelCostMax5.TabIndex = 47;
             this.fuelCostMax5.Value = new decimal(new int[] {
             10,
             0,
@@ -33639,7 +33640,7 @@
             0});
             this.fuelCostMin5.Name = "fuelCostMin5";
             this.fuelCostMin5.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin5.TabIndex = 209;
+            this.fuelCostMin5.TabIndex = 46;
             this.fuelCostMin5.ValueChanged += new System.EventHandler(this.fuelCostMin5_ValueChanged);
             // 
             // label550
@@ -33651,7 +33652,7 @@
             this.label550.Size = new System.Drawing.Size(79, 13);
             this.label550.TabIndex = 208;
             this.label550.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label550, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label550, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck5
             // 
@@ -33661,7 +33662,7 @@
             this.fuelCostCheck5.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck5.Name = "fuelCostCheck5";
             this.fuelCostCheck5.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck5.TabIndex = 207;
+            this.fuelCostCheck5.TabIndex = 45;
             this.fuelCostCheck5.UseVisualStyleBackColor = true;
             this.fuelCostCheck5.CheckedChanged += new System.EventHandler(this.fuelCostCheck5_CheckedChanged);
             // 
@@ -33676,7 +33677,7 @@
             0});
             this.repairMax5.Name = "repairMax5";
             this.repairMax5.Size = new System.Drawing.Size(55, 20);
-            this.repairMax5.TabIndex = 206;
+            this.repairMax5.TabIndex = 44;
             this.repairMax5.Value = new decimal(new int[] {
             10,
             0,
@@ -33694,7 +33695,7 @@
             0});
             this.repairMin5.Name = "repairMin5";
             this.repairMin5.Size = new System.Drawing.Size(55, 20);
-            this.repairMin5.TabIndex = 205;
+            this.repairMin5.TabIndex = 43;
             this.repairMin5.ValueChanged += new System.EventHandler(this.repairMin5_ValueChanged);
             // 
             // label551
@@ -33716,7 +33717,7 @@
             this.repairCheck5.Location = new System.Drawing.Point(8, 387);
             this.repairCheck5.Name = "repairCheck5";
             this.repairCheck5.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck5.TabIndex = 203;
+            this.repairCheck5.TabIndex = 42;
             this.repairCheck5.UseVisualStyleBackColor = true;
             this.repairCheck5.CheckedChanged += new System.EventHandler(this.repairCheck5_CheckedChanged);
             // 
@@ -33731,7 +33732,7 @@
             0});
             this.fuelMax5.Name = "fuelMax5";
             this.fuelMax5.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax5.TabIndex = 202;
+            this.fuelMax5.TabIndex = 41;
             this.fuelMax5.Value = new decimal(new int[] {
             500,
             0,
@@ -33750,7 +33751,7 @@
             0});
             this.fuelMin5.Name = "fuelMin5";
             this.fuelMin5.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin5.TabIndex = 201;
+            this.fuelMin5.TabIndex = 40;
             this.fuelMin5.ValueChanged += new System.EventHandler(this.fuelMin5_ValueChanged);
             // 
             // label552
@@ -33772,7 +33773,7 @@
             this.fuelCheck5.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck5.Name = "fuelCheck5";
             this.fuelCheck5.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck5.TabIndex = 199;
+            this.fuelCheck5.TabIndex = 39;
             this.fuelCheck5.UseVisualStyleBackColor = true;
             this.fuelCheck5.CheckedChanged += new System.EventHandler(this.fuelCheck5_CheckedChanged);
             // 
@@ -33791,7 +33792,7 @@
             0});
             this.damageMax5.Name = "damageMax5";
             this.damageMax5.Size = new System.Drawing.Size(55, 20);
-            this.damageMax5.TabIndex = 198;
+            this.damageMax5.TabIndex = 38;
             this.damageMax5.Value = new decimal(new int[] {
             5000,
             0,
@@ -33814,7 +33815,7 @@
             0});
             this.damageMin5.Name = "damageMin5";
             this.damageMin5.Size = new System.Drawing.Size(55, 20);
-            this.damageMin5.TabIndex = 197;
+            this.damageMin5.TabIndex = 37;
             this.damageMin5.Value = new decimal(new int[] {
             1,
             0,
@@ -33831,7 +33832,7 @@
             this.label553.Size = new System.Drawing.Size(87, 13);
             this.label553.TabIndex = 196;
             this.label553.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label553, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label553, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck5
             // 
@@ -33841,7 +33842,7 @@
             this.damageCheck5.Location = new System.Drawing.Point(8, 335);
             this.damageCheck5.Name = "damageCheck5";
             this.damageCheck5.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck5.TabIndex = 195;
+            this.damageCheck5.TabIndex = 36;
             this.damageCheck5.UseVisualStyleBackColor = true;
             this.damageCheck5.CheckedChanged += new System.EventHandler(this.damageCheck5_CheckedChanged);
             // 
@@ -33855,7 +33856,7 @@
             0});
             this.costMax5.Name = "costMax5";
             this.costMax5.Size = new System.Drawing.Size(55, 20);
-            this.costMax5.TabIndex = 194;
+            this.costMax5.TabIndex = 35;
             this.costMax5.Value = new decimal(new int[] {
             100000,
             0,
@@ -33873,7 +33874,7 @@
             0});
             this.costMin5.Name = "costMin5";
             this.costMin5.Size = new System.Drawing.Size(55, 20);
-            this.costMin5.TabIndex = 193;
+            this.costMin5.TabIndex = 34;
             this.costMin5.ValueChanged += new System.EventHandler(this.costMin5_ValueChanged);
             // 
             // fuelRateMax5
@@ -33887,7 +33888,7 @@
             0});
             this.fuelRateMax5.Name = "fuelRateMax5";
             this.fuelRateMax5.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax5.TabIndex = 192;
+            this.fuelRateMax5.TabIndex = 32;
             this.fuelRateMax5.Value = new decimal(new int[] {
             2000,
             0,
@@ -33906,7 +33907,7 @@
             0});
             this.fuelRateMin5.Name = "fuelRateMin5";
             this.fuelRateMin5.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin5.TabIndex = 191;
+            this.fuelRateMin5.TabIndex = 31;
             this.fuelRateMin5.ValueChanged += new System.EventHandler(this.fuelRateMin5_ValueChanged);
             // 
             // mYawRateMax5
@@ -33920,7 +33921,7 @@
             0});
             this.mYawRateMax5.Name = "mYawRateMax5";
             this.mYawRateMax5.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax5.TabIndex = 190;
+            this.mYawRateMax5.TabIndex = 29;
             this.mYawRateMax5.Value = new decimal(new int[] {
             900,
             0,
@@ -33939,7 +33940,7 @@
             0});
             this.mYawRateMin5.Name = "mYawRateMin5";
             this.mYawRateMin5.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin5.TabIndex = 189;
+            this.mYawRateMin5.TabIndex = 28;
             this.mYawRateMin5.ValueChanged += new System.EventHandler(this.mYawRateMin5_ValueChanged);
             // 
             // label554
@@ -33962,7 +33963,7 @@
             this.label555.Size = new System.Drawing.Size(79, 13);
             this.label555.TabIndex = 187;
             this.label555.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label555, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label555, "Galons of gas used per hour.");
             // 
             // label556
             // 
@@ -33983,7 +33984,7 @@
             this.costCheck5.Location = new System.Drawing.Point(8, 309);
             this.costCheck5.Name = "costCheck5";
             this.costCheck5.Size = new System.Drawing.Size(15, 14);
-            this.costCheck5.TabIndex = 185;
+            this.costCheck5.TabIndex = 33;
             this.costCheck5.UseVisualStyleBackColor = true;
             this.costCheck5.CheckedChanged += new System.EventHandler(this.costCheck5_CheckedChanged);
             // 
@@ -33995,7 +33996,7 @@
             this.fuelRateCheck5.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck5.Name = "fuelRateCheck5";
             this.fuelRateCheck5.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck5.TabIndex = 184;
+            this.fuelRateCheck5.TabIndex = 30;
             this.fuelRateCheck5.UseVisualStyleBackColor = true;
             this.fuelRateCheck5.CheckedChanged += new System.EventHandler(this.fuelRateCheck5_CheckedChanged);
             // 
@@ -34007,7 +34008,7 @@
             this.mYawRateCheck5.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck5.Name = "mYawRateCheck5";
             this.mYawRateCheck5.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck5.TabIndex = 183;
+            this.mYawRateCheck5.TabIndex = 27;
             this.mYawRateCheck5.UseVisualStyleBackColor = true;
             this.mYawRateCheck5.CheckedChanged += new System.EventHandler(this.mYawRateCheck5_CheckedChanged);
             // 
@@ -34026,7 +34027,7 @@
             0});
             this.mLoadMax5.Name = "mLoadMax5";
             this.mLoadMax5.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax5.TabIndex = 182;
+            this.mLoadMax5.TabIndex = 26;
             this.mLoadMax5.Value = new decimal(new int[] {
             20000,
             0,
@@ -34049,7 +34050,7 @@
             0});
             this.mLoadMin5.Name = "mLoadMin5";
             this.mLoadMin5.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin5.TabIndex = 181;
+            this.mLoadMin5.TabIndex = 25;
             this.mLoadMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34066,7 +34067,7 @@
             this.label557.Size = new System.Drawing.Size(71, 13);
             this.label557.TabIndex = 180;
             this.label557.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label557, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label557, "Amount of water that can be carried.");
             // 
             // mLoadCheck5
             // 
@@ -34076,7 +34077,7 @@
             this.mLoadCheck5.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck5.Name = "mLoadCheck5";
             this.mLoadCheck5.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck5.TabIndex = 179;
+            this.mLoadCheck5.TabIndex = 24;
             this.mLoadCheck5.UseVisualStyleBackColor = true;
             this.mLoadCheck5.CheckedChanged += new System.EventHandler(this.mLoadCheck5_CheckedChanged);
             // 
@@ -34091,7 +34092,7 @@
             0});
             this.climbMax5.Name = "climbMax5";
             this.climbMax5.Size = new System.Drawing.Size(55, 20);
-            this.climbMax5.TabIndex = 178;
+            this.climbMax5.TabIndex = 23;
             this.climbMax5.Value = new decimal(new int[] {
             50,
             0,
@@ -34110,7 +34111,7 @@
             0});
             this.climbMin5.Name = "climbMin5";
             this.climbMin5.Size = new System.Drawing.Size(55, 20);
-            this.climbMin5.TabIndex = 177;
+            this.climbMin5.TabIndex = 22;
             this.climbMin5.ValueChanged += new System.EventHandler(this.climbMin5_ValueChanged);
             // 
             // label558
@@ -34132,7 +34133,7 @@
             this.climbCheck5.Location = new System.Drawing.Point(8, 205);
             this.climbCheck5.Name = "climbCheck5";
             this.climbCheck5.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck5.TabIndex = 175;
+            this.climbCheck5.TabIndex = 21;
             this.climbCheck5.UseVisualStyleBackColor = true;
             this.climbCheck5.CheckedChanged += new System.EventHandler(this.climbCheck5_CheckedChanged);
             // 
@@ -34152,7 +34153,7 @@
             0});
             this.slideRateMax5.Name = "slideRateMax5";
             this.slideRateMax5.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax5.TabIndex = 174;
+            this.slideRateMax5.TabIndex = 20;
             this.slideRateMax5.Value = new decimal(new int[] {
             800,
             0,
@@ -34176,7 +34177,7 @@
             0});
             this.slideRateMin5.Name = "slideRateMin5";
             this.slideRateMin5.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin5.TabIndex = 173;
+            this.slideRateMin5.TabIndex = 19;
             this.slideRateMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34203,7 +34204,7 @@
             this.slideRateCheck5.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck5.Name = "slideRateCheck5";
             this.slideRateCheck5.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck5.TabIndex = 171;
+            this.slideRateCheck5.TabIndex = 18;
             this.slideRateCheck5.UseVisualStyleBackColor = true;
             this.slideRateCheck5.CheckedChanged += new System.EventHandler(this.slideRateCheck5_CheckedChanged);
             // 
@@ -34223,7 +34224,7 @@
             0});
             this.rollRateMax5.Name = "rollRateMax5";
             this.rollRateMax5.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax5.TabIndex = 170;
+            this.rollRateMax5.TabIndex = 17;
             this.rollRateMax5.Value = new decimal(new int[] {
             800,
             0,
@@ -34247,7 +34248,7 @@
             0});
             this.rollRateMin5.Name = "rollRateMin5";
             this.rollRateMin5.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin5.TabIndex = 169;
+            this.rollRateMin5.TabIndex = 16;
             this.rollRateMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34264,7 +34265,7 @@
             this.label560.Size = new System.Drawing.Size(79, 13);
             this.label560.TabIndex = 168;
             this.label560.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label560, "Unknown");
+            this.toolTip.SetToolTip(this.label560, "Unknown.");
             // 
             // rollRateCheck5
             // 
@@ -34274,7 +34275,7 @@
             this.rollRateCheck5.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck5.Name = "rollRateCheck5";
             this.rollRateCheck5.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck5.TabIndex = 167;
+            this.rollRateCheck5.TabIndex = 15;
             this.rollRateCheck5.UseVisualStyleBackColor = true;
             this.rollRateCheck5.CheckedChanged += new System.EventHandler(this.rollRateCheck5_CheckedChanged);
             // 
@@ -34294,7 +34295,7 @@
             0});
             this.yawRateMax5.Name = "yawRateMax5";
             this.yawRateMax5.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax5.TabIndex = 166;
+            this.yawRateMax5.TabIndex = 14;
             this.yawRateMax5.Value = new decimal(new int[] {
             800,
             0,
@@ -34318,7 +34319,7 @@
             0});
             this.yawRateMin5.Name = "yawRateMin5";
             this.yawRateMin5.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin5.TabIndex = 165;
+            this.yawRateMin5.TabIndex = 13;
             this.yawRateMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34342,7 +34343,7 @@
             0});
             this.pitchRateMax5.Name = "pitchRateMax5";
             this.pitchRateMax5.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax5.TabIndex = 164;
+            this.pitchRateMax5.TabIndex = 11;
             this.pitchRateMax5.Value = new decimal(new int[] {
             800,
             0,
@@ -34366,7 +34367,7 @@
             0});
             this.pitchRateMin5.Name = "pitchRateMin5";
             this.pitchRateMin5.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin5.TabIndex = 163;
+            this.pitchRateMin5.TabIndex = 10;
             this.pitchRateMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34390,7 +34391,7 @@
             0});
             this.mPitchMax5.Name = "mPitchMax5";
             this.mPitchMax5.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax5.TabIndex = 162;
+            this.mPitchMax5.TabIndex = 8;
             this.mPitchMax5.Value = new decimal(new int[] {
             800,
             0,
@@ -34414,7 +34415,7 @@
             0});
             this.mPitchMin5.Name = "mPitchMin5";
             this.mPitchMin5.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin5.TabIndex = 161;
+            this.mPitchMin5.TabIndex = 7;
             this.mPitchMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34438,7 +34439,7 @@
             0});
             this.mSlideMax5.Name = "mSlideMax5";
             this.mSlideMax5.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax5.TabIndex = 160;
+            this.mSlideMax5.TabIndex = 5;
             this.mSlideMax5.Value = new decimal(new int[] {
             800,
             0,
@@ -34462,7 +34463,7 @@
             0});
             this.mSlideMin5.Name = "mSlideMin5";
             this.mSlideMin5.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin5.TabIndex = 159;
+            this.mSlideMin5.TabIndex = 4;
             this.mSlideMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34486,7 +34487,7 @@
             0});
             this.mBankMax5.Name = "mBankMax5";
             this.mBankMax5.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax5.TabIndex = 158;
+            this.mBankMax5.TabIndex = 2;
             this.mBankMax5.Value = new decimal(new int[] {
             800,
             0,
@@ -34510,7 +34511,7 @@
             0});
             this.mBankMin5.Name = "mBankMin5";
             this.mBankMin5.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin5.TabIndex = 157;
+            this.mBankMin5.TabIndex = 1;
             this.mBankMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -34601,7 +34602,7 @@
             this.yawRateCheck5.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck5.Name = "yawRateCheck5";
             this.yawRateCheck5.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck5.TabIndex = 149;
+            this.yawRateCheck5.TabIndex = 12;
             this.yawRateCheck5.UseVisualStyleBackColor = true;
             this.yawRateCheck5.CheckedChanged += new System.EventHandler(this.yawRateCheck5_CheckedChanged);
             // 
@@ -34613,7 +34614,7 @@
             this.pitchRateCheck5.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck5.Name = "pitchRateCheck5";
             this.pitchRateCheck5.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck5.TabIndex = 148;
+            this.pitchRateCheck5.TabIndex = 9;
             this.pitchRateCheck5.UseVisualStyleBackColor = true;
             this.pitchRateCheck5.CheckedChanged += new System.EventHandler(this.pitchRateCheck5_CheckedChanged);
             // 
@@ -34625,7 +34626,7 @@
             this.mPitchCheck5.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck5.Name = "mPitchCheck5";
             this.mPitchCheck5.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck5.TabIndex = 147;
+            this.mPitchCheck5.TabIndex = 6;
             this.mPitchCheck5.UseVisualStyleBackColor = true;
             this.mPitchCheck5.CheckedChanged += new System.EventHandler(this.mPitchCheck5_CheckedChanged);
             // 
@@ -34637,7 +34638,7 @@
             this.mSlideCheck5.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck5.Name = "mSlideCheck5";
             this.mSlideCheck5.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck5.TabIndex = 146;
+            this.mSlideCheck5.TabIndex = 3;
             this.mSlideCheck5.UseVisualStyleBackColor = true;
             this.mSlideCheck5.CheckedChanged += new System.EventHandler(this.mSlideCheck5_CheckedChanged);
             // 
@@ -34649,7 +34650,7 @@
             this.mBankCheck5.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck5.Name = "mBankCheck5";
             this.mBankCheck5.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck5.TabIndex = 145;
+            this.mBankCheck5.TabIndex = 0;
             this.mBankCheck5.UseVisualStyleBackColor = true;
             this.mBankCheck5.CheckedChanged += new System.EventHandler(this.mBankCheck5_CheckedChanged);
             // 
@@ -34740,7 +34741,7 @@
             0});
             this.fuelCostMax6.Name = "fuelCostMax6";
             this.fuelCostMax6.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax6.TabIndex = 210;
+            this.fuelCostMax6.TabIndex = 47;
             this.fuelCostMax6.Value = new decimal(new int[] {
             10,
             0,
@@ -34759,7 +34760,7 @@
             0});
             this.fuelCostMin6.Name = "fuelCostMin6";
             this.fuelCostMin6.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin6.TabIndex = 209;
+            this.fuelCostMin6.TabIndex = 46;
             this.fuelCostMin6.ValueChanged += new System.EventHandler(this.fuelCostMin6_ValueChanged);
             // 
             // label568
@@ -34771,7 +34772,7 @@
             this.label568.Size = new System.Drawing.Size(79, 13);
             this.label568.TabIndex = 208;
             this.label568.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label568, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label568, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck6
             // 
@@ -34781,7 +34782,7 @@
             this.fuelCostCheck6.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck6.Name = "fuelCostCheck6";
             this.fuelCostCheck6.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck6.TabIndex = 207;
+            this.fuelCostCheck6.TabIndex = 45;
             this.fuelCostCheck6.UseVisualStyleBackColor = true;
             this.fuelCostCheck6.CheckedChanged += new System.EventHandler(this.fuelCostCheck6_CheckedChanged);
             // 
@@ -34796,7 +34797,7 @@
             0});
             this.repairMax6.Name = "repairMax6";
             this.repairMax6.Size = new System.Drawing.Size(55, 20);
-            this.repairMax6.TabIndex = 206;
+            this.repairMax6.TabIndex = 44;
             this.repairMax6.Value = new decimal(new int[] {
             10,
             0,
@@ -34814,7 +34815,7 @@
             0});
             this.repairMin6.Name = "repairMin6";
             this.repairMin6.Size = new System.Drawing.Size(55, 20);
-            this.repairMin6.TabIndex = 205;
+            this.repairMin6.TabIndex = 43;
             this.repairMin6.ValueChanged += new System.EventHandler(this.repairMin6_ValueChanged);
             // 
             // label569
@@ -34836,7 +34837,7 @@
             this.repairCheck6.Location = new System.Drawing.Point(8, 387);
             this.repairCheck6.Name = "repairCheck6";
             this.repairCheck6.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck6.TabIndex = 203;
+            this.repairCheck6.TabIndex = 42;
             this.repairCheck6.UseVisualStyleBackColor = true;
             this.repairCheck6.CheckedChanged += new System.EventHandler(this.repairCheck6_CheckedChanged);
             // 
@@ -34851,7 +34852,7 @@
             0});
             this.fuelMax6.Name = "fuelMax6";
             this.fuelMax6.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax6.TabIndex = 202;
+            this.fuelMax6.TabIndex = 41;
             this.fuelMax6.Value = new decimal(new int[] {
             500,
             0,
@@ -34870,7 +34871,7 @@
             0});
             this.fuelMin6.Name = "fuelMin6";
             this.fuelMin6.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin6.TabIndex = 201;
+            this.fuelMin6.TabIndex = 40;
             this.fuelMin6.ValueChanged += new System.EventHandler(this.fuelMin6_ValueChanged);
             // 
             // label570
@@ -34892,7 +34893,7 @@
             this.fuelCheck6.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck6.Name = "fuelCheck6";
             this.fuelCheck6.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck6.TabIndex = 199;
+            this.fuelCheck6.TabIndex = 39;
             this.fuelCheck6.UseVisualStyleBackColor = true;
             this.fuelCheck6.CheckedChanged += new System.EventHandler(this.fuelCheck6_CheckedChanged);
             // 
@@ -34911,7 +34912,7 @@
             0});
             this.damageMax6.Name = "damageMax6";
             this.damageMax6.Size = new System.Drawing.Size(55, 20);
-            this.damageMax6.TabIndex = 198;
+            this.damageMax6.TabIndex = 38;
             this.damageMax6.Value = new decimal(new int[] {
             5000,
             0,
@@ -34934,7 +34935,7 @@
             0});
             this.damageMin6.Name = "damageMin6";
             this.damageMin6.Size = new System.Drawing.Size(55, 20);
-            this.damageMin6.TabIndex = 197;
+            this.damageMin6.TabIndex = 37;
             this.damageMin6.Value = new decimal(new int[] {
             1,
             0,
@@ -34951,7 +34952,7 @@
             this.label571.Size = new System.Drawing.Size(87, 13);
             this.label571.TabIndex = 196;
             this.label571.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label571, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label571, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck6
             // 
@@ -34961,7 +34962,7 @@
             this.damageCheck6.Location = new System.Drawing.Point(8, 335);
             this.damageCheck6.Name = "damageCheck6";
             this.damageCheck6.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck6.TabIndex = 195;
+            this.damageCheck6.TabIndex = 36;
             this.damageCheck6.UseVisualStyleBackColor = true;
             this.damageCheck6.CheckedChanged += new System.EventHandler(this.damageCheck6_CheckedChanged);
             // 
@@ -34975,7 +34976,7 @@
             0});
             this.costMax6.Name = "costMax6";
             this.costMax6.Size = new System.Drawing.Size(55, 20);
-            this.costMax6.TabIndex = 194;
+            this.costMax6.TabIndex = 35;
             this.costMax6.Value = new decimal(new int[] {
             100000,
             0,
@@ -34993,7 +34994,7 @@
             0});
             this.costMin6.Name = "costMin6";
             this.costMin6.Size = new System.Drawing.Size(55, 20);
-            this.costMin6.TabIndex = 193;
+            this.costMin6.TabIndex = 34;
             this.costMin6.ValueChanged += new System.EventHandler(this.costMin6_ValueChanged);
             // 
             // fuelRateMax6
@@ -35007,7 +35008,7 @@
             0});
             this.fuelRateMax6.Name = "fuelRateMax6";
             this.fuelRateMax6.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax6.TabIndex = 192;
+            this.fuelRateMax6.TabIndex = 32;
             this.fuelRateMax6.Value = new decimal(new int[] {
             2000,
             0,
@@ -35026,7 +35027,7 @@
             0});
             this.fuelRateMin6.Name = "fuelRateMin6";
             this.fuelRateMin6.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin6.TabIndex = 191;
+            this.fuelRateMin6.TabIndex = 31;
             this.fuelRateMin6.ValueChanged += new System.EventHandler(this.fuelRateMin6_ValueChanged);
             // 
             // mYawRateMax6
@@ -35040,7 +35041,7 @@
             0});
             this.mYawRateMax6.Name = "mYawRateMax6";
             this.mYawRateMax6.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax6.TabIndex = 190;
+            this.mYawRateMax6.TabIndex = 29;
             this.mYawRateMax6.Value = new decimal(new int[] {
             900,
             0,
@@ -35059,7 +35060,7 @@
             0});
             this.mYawRateMin6.Name = "mYawRateMin6";
             this.mYawRateMin6.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin6.TabIndex = 189;
+            this.mYawRateMin6.TabIndex = 28;
             this.mYawRateMin6.ValueChanged += new System.EventHandler(this.mYawRateMin6_ValueChanged);
             // 
             // label572
@@ -35082,7 +35083,7 @@
             this.label573.Size = new System.Drawing.Size(79, 13);
             this.label573.TabIndex = 187;
             this.label573.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label573, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label573, "Galons of gas used per hour.");
             // 
             // label574
             // 
@@ -35103,7 +35104,7 @@
             this.costCheck6.Location = new System.Drawing.Point(8, 309);
             this.costCheck6.Name = "costCheck6";
             this.costCheck6.Size = new System.Drawing.Size(15, 14);
-            this.costCheck6.TabIndex = 185;
+            this.costCheck6.TabIndex = 33;
             this.costCheck6.UseVisualStyleBackColor = true;
             this.costCheck6.CheckedChanged += new System.EventHandler(this.costCheck6_CheckedChanged);
             // 
@@ -35115,7 +35116,7 @@
             this.fuelRateCheck6.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck6.Name = "fuelRateCheck6";
             this.fuelRateCheck6.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck6.TabIndex = 184;
+            this.fuelRateCheck6.TabIndex = 30;
             this.fuelRateCheck6.UseVisualStyleBackColor = true;
             this.fuelRateCheck6.CheckedChanged += new System.EventHandler(this.fuelRateCheck6_CheckedChanged);
             // 
@@ -35127,7 +35128,7 @@
             this.mYawRateCheck6.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck6.Name = "mYawRateCheck6";
             this.mYawRateCheck6.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck6.TabIndex = 183;
+            this.mYawRateCheck6.TabIndex = 27;
             this.mYawRateCheck6.UseVisualStyleBackColor = true;
             this.mYawRateCheck6.CheckedChanged += new System.EventHandler(this.mYawRateCheck6_CheckedChanged);
             // 
@@ -35146,7 +35147,7 @@
             0});
             this.mLoadMax6.Name = "mLoadMax6";
             this.mLoadMax6.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax6.TabIndex = 182;
+            this.mLoadMax6.TabIndex = 26;
             this.mLoadMax6.Value = new decimal(new int[] {
             20000,
             0,
@@ -35169,7 +35170,7 @@
             0});
             this.mLoadMin6.Name = "mLoadMin6";
             this.mLoadMin6.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin6.TabIndex = 181;
+            this.mLoadMin6.TabIndex = 25;
             this.mLoadMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35186,7 +35187,7 @@
             this.label575.Size = new System.Drawing.Size(71, 13);
             this.label575.TabIndex = 180;
             this.label575.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label575, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label575, "Amount of water that can be carried.");
             // 
             // mLoadCheck6
             // 
@@ -35196,7 +35197,7 @@
             this.mLoadCheck6.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck6.Name = "mLoadCheck6";
             this.mLoadCheck6.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck6.TabIndex = 179;
+            this.mLoadCheck6.TabIndex = 24;
             this.mLoadCheck6.UseVisualStyleBackColor = true;
             this.mLoadCheck6.CheckedChanged += new System.EventHandler(this.mLoadCheck6_CheckedChanged);
             // 
@@ -35211,7 +35212,7 @@
             0});
             this.climbMax6.Name = "climbMax6";
             this.climbMax6.Size = new System.Drawing.Size(55, 20);
-            this.climbMax6.TabIndex = 178;
+            this.climbMax6.TabIndex = 23;
             this.climbMax6.Value = new decimal(new int[] {
             50,
             0,
@@ -35230,7 +35231,7 @@
             0});
             this.climbMin6.Name = "climbMin6";
             this.climbMin6.Size = new System.Drawing.Size(55, 20);
-            this.climbMin6.TabIndex = 177;
+            this.climbMin6.TabIndex = 22;
             this.climbMin6.ValueChanged += new System.EventHandler(this.climbMin6_ValueChanged);
             // 
             // label576
@@ -35252,7 +35253,7 @@
             this.climbCheck6.Location = new System.Drawing.Point(8, 205);
             this.climbCheck6.Name = "climbCheck6";
             this.climbCheck6.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck6.TabIndex = 175;
+            this.climbCheck6.TabIndex = 21;
             this.climbCheck6.UseVisualStyleBackColor = true;
             this.climbCheck6.CheckedChanged += new System.EventHandler(this.climbCheck6_CheckedChanged);
             // 
@@ -35272,7 +35273,7 @@
             0});
             this.slideRateMax6.Name = "slideRateMax6";
             this.slideRateMax6.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax6.TabIndex = 174;
+            this.slideRateMax6.TabIndex = 20;
             this.slideRateMax6.Value = new decimal(new int[] {
             800,
             0,
@@ -35296,7 +35297,7 @@
             0});
             this.slideRateMin6.Name = "slideRateMin6";
             this.slideRateMin6.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin6.TabIndex = 173;
+            this.slideRateMin6.TabIndex = 19;
             this.slideRateMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35323,7 +35324,7 @@
             this.slideRateCheck6.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck6.Name = "slideRateCheck6";
             this.slideRateCheck6.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck6.TabIndex = 171;
+            this.slideRateCheck6.TabIndex = 18;
             this.slideRateCheck6.UseVisualStyleBackColor = true;
             this.slideRateCheck6.CheckedChanged += new System.EventHandler(this.slideRateCheck6_CheckedChanged);
             // 
@@ -35343,7 +35344,7 @@
             0});
             this.rollRateMax6.Name = "rollRateMax6";
             this.rollRateMax6.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax6.TabIndex = 170;
+            this.rollRateMax6.TabIndex = 17;
             this.rollRateMax6.Value = new decimal(new int[] {
             800,
             0,
@@ -35367,7 +35368,7 @@
             0});
             this.rollRateMin6.Name = "rollRateMin6";
             this.rollRateMin6.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin6.TabIndex = 169;
+            this.rollRateMin6.TabIndex = 16;
             this.rollRateMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35384,7 +35385,7 @@
             this.label578.Size = new System.Drawing.Size(79, 13);
             this.label578.TabIndex = 168;
             this.label578.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label578, "Unknown");
+            this.toolTip.SetToolTip(this.label578, "Unknown.");
             // 
             // rollRateCheck6
             // 
@@ -35394,7 +35395,7 @@
             this.rollRateCheck6.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck6.Name = "rollRateCheck6";
             this.rollRateCheck6.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck6.TabIndex = 167;
+            this.rollRateCheck6.TabIndex = 15;
             this.rollRateCheck6.UseVisualStyleBackColor = true;
             this.rollRateCheck6.CheckedChanged += new System.EventHandler(this.rollRateCheck6_CheckedChanged);
             // 
@@ -35414,7 +35415,7 @@
             0});
             this.yawRateMax6.Name = "yawRateMax6";
             this.yawRateMax6.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax6.TabIndex = 166;
+            this.yawRateMax6.TabIndex = 14;
             this.yawRateMax6.Value = new decimal(new int[] {
             800,
             0,
@@ -35438,7 +35439,7 @@
             0});
             this.yawRateMin6.Name = "yawRateMin6";
             this.yawRateMin6.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin6.TabIndex = 165;
+            this.yawRateMin6.TabIndex = 13;
             this.yawRateMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35462,7 +35463,7 @@
             0});
             this.pitchRateMax6.Name = "pitchRateMax6";
             this.pitchRateMax6.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax6.TabIndex = 164;
+            this.pitchRateMax6.TabIndex = 11;
             this.pitchRateMax6.Value = new decimal(new int[] {
             800,
             0,
@@ -35486,7 +35487,7 @@
             0});
             this.pitchRateMin6.Name = "pitchRateMin6";
             this.pitchRateMin6.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin6.TabIndex = 163;
+            this.pitchRateMin6.TabIndex = 10;
             this.pitchRateMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35510,7 +35511,7 @@
             0});
             this.mPitchMax6.Name = "mPitchMax6";
             this.mPitchMax6.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax6.TabIndex = 162;
+            this.mPitchMax6.TabIndex = 8;
             this.mPitchMax6.Value = new decimal(new int[] {
             800,
             0,
@@ -35534,7 +35535,7 @@
             0});
             this.mPitchMin6.Name = "mPitchMin6";
             this.mPitchMin6.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin6.TabIndex = 161;
+            this.mPitchMin6.TabIndex = 7;
             this.mPitchMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35558,7 +35559,7 @@
             0});
             this.mSlideMax6.Name = "mSlideMax6";
             this.mSlideMax6.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax6.TabIndex = 160;
+            this.mSlideMax6.TabIndex = 5;
             this.mSlideMax6.Value = new decimal(new int[] {
             800,
             0,
@@ -35582,7 +35583,7 @@
             0});
             this.mSlideMin6.Name = "mSlideMin6";
             this.mSlideMin6.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin6.TabIndex = 159;
+            this.mSlideMin6.TabIndex = 4;
             this.mSlideMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35606,7 +35607,7 @@
             0});
             this.mBankMax6.Name = "mBankMax6";
             this.mBankMax6.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax6.TabIndex = 158;
+            this.mBankMax6.TabIndex = 2;
             this.mBankMax6.Value = new decimal(new int[] {
             800,
             0,
@@ -35630,7 +35631,7 @@
             0});
             this.mBankMin6.Name = "mBankMin6";
             this.mBankMin6.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin6.TabIndex = 157;
+            this.mBankMin6.TabIndex = 1;
             this.mBankMin6.Value = new decimal(new int[] {
             10,
             0,
@@ -35721,7 +35722,7 @@
             this.yawRateCheck6.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck6.Name = "yawRateCheck6";
             this.yawRateCheck6.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck6.TabIndex = 149;
+            this.yawRateCheck6.TabIndex = 12;
             this.yawRateCheck6.UseVisualStyleBackColor = true;
             this.yawRateCheck6.CheckedChanged += new System.EventHandler(this.yawRateCheck6_CheckedChanged);
             // 
@@ -35733,7 +35734,7 @@
             this.pitchRateCheck6.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck6.Name = "pitchRateCheck6";
             this.pitchRateCheck6.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck6.TabIndex = 148;
+            this.pitchRateCheck6.TabIndex = 9;
             this.pitchRateCheck6.UseVisualStyleBackColor = true;
             this.pitchRateCheck6.CheckedChanged += new System.EventHandler(this.pitchRateCheck6_CheckedChanged);
             // 
@@ -35745,7 +35746,7 @@
             this.mPitchCheck6.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck6.Name = "mPitchCheck6";
             this.mPitchCheck6.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck6.TabIndex = 147;
+            this.mPitchCheck6.TabIndex = 6;
             this.mPitchCheck6.UseVisualStyleBackColor = true;
             this.mPitchCheck6.CheckedChanged += new System.EventHandler(this.mPitchCheck6_CheckedChanged);
             // 
@@ -35757,7 +35758,7 @@
             this.mSlideCheck6.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck6.Name = "mSlideCheck6";
             this.mSlideCheck6.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck6.TabIndex = 146;
+            this.mSlideCheck6.TabIndex = 3;
             this.mSlideCheck6.UseVisualStyleBackColor = true;
             this.mSlideCheck6.CheckedChanged += new System.EventHandler(this.mSlideCheck6_CheckedChanged);
             // 
@@ -35769,7 +35770,7 @@
             this.mBankCheck6.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck6.Name = "mBankCheck6";
             this.mBankCheck6.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck6.TabIndex = 145;
+            this.mBankCheck6.TabIndex = 0;
             this.mBankCheck6.UseVisualStyleBackColor = true;
             this.mBankCheck6.CheckedChanged += new System.EventHandler(this.mBankCheck6_CheckedChanged);
             // 
@@ -35860,7 +35861,7 @@
             0});
             this.fuelCostMax7.Name = "fuelCostMax7";
             this.fuelCostMax7.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax7.TabIndex = 210;
+            this.fuelCostMax7.TabIndex = 47;
             this.fuelCostMax7.Value = new decimal(new int[] {
             10,
             0,
@@ -35879,7 +35880,7 @@
             0});
             this.fuelCostMin7.Name = "fuelCostMin7";
             this.fuelCostMin7.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin7.TabIndex = 209;
+            this.fuelCostMin7.TabIndex = 46;
             this.fuelCostMin7.ValueChanged += new System.EventHandler(this.fuelCostMin7_ValueChanged);
             // 
             // label586
@@ -35891,7 +35892,7 @@
             this.label586.Size = new System.Drawing.Size(79, 13);
             this.label586.TabIndex = 208;
             this.label586.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label586, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label586, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck7
             // 
@@ -35901,7 +35902,7 @@
             this.fuelCostCheck7.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck7.Name = "fuelCostCheck7";
             this.fuelCostCheck7.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck7.TabIndex = 207;
+            this.fuelCostCheck7.TabIndex = 45;
             this.fuelCostCheck7.UseVisualStyleBackColor = true;
             this.fuelCostCheck7.CheckedChanged += new System.EventHandler(this.fuelCostCheck7_CheckedChanged);
             // 
@@ -35916,7 +35917,7 @@
             0});
             this.repairMax7.Name = "repairMax7";
             this.repairMax7.Size = new System.Drawing.Size(55, 20);
-            this.repairMax7.TabIndex = 206;
+            this.repairMax7.TabIndex = 44;
             this.repairMax7.Value = new decimal(new int[] {
             10,
             0,
@@ -35934,7 +35935,7 @@
             0});
             this.repairMin7.Name = "repairMin7";
             this.repairMin7.Size = new System.Drawing.Size(55, 20);
-            this.repairMin7.TabIndex = 205;
+            this.repairMin7.TabIndex = 43;
             this.repairMin7.ValueChanged += new System.EventHandler(this.repairMin7_ValueChanged);
             // 
             // label587
@@ -35956,7 +35957,7 @@
             this.repairCheck7.Location = new System.Drawing.Point(8, 387);
             this.repairCheck7.Name = "repairCheck7";
             this.repairCheck7.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck7.TabIndex = 203;
+            this.repairCheck7.TabIndex = 42;
             this.repairCheck7.UseVisualStyleBackColor = true;
             this.repairCheck7.CheckedChanged += new System.EventHandler(this.repairCheck7_CheckedChanged);
             // 
@@ -35971,7 +35972,7 @@
             0});
             this.fuelMax7.Name = "fuelMax7";
             this.fuelMax7.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax7.TabIndex = 202;
+            this.fuelMax7.TabIndex = 41;
             this.fuelMax7.Value = new decimal(new int[] {
             500,
             0,
@@ -35990,7 +35991,7 @@
             0});
             this.fuelMin7.Name = "fuelMin7";
             this.fuelMin7.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin7.TabIndex = 201;
+            this.fuelMin7.TabIndex = 40;
             this.fuelMin7.ValueChanged += new System.EventHandler(this.fuelMin7_ValueChanged);
             // 
             // label588
@@ -36012,7 +36013,7 @@
             this.fuelCheck7.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck7.Name = "fuelCheck7";
             this.fuelCheck7.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck7.TabIndex = 199;
+            this.fuelCheck7.TabIndex = 39;
             this.fuelCheck7.UseVisualStyleBackColor = true;
             this.fuelCheck7.CheckedChanged += new System.EventHandler(this.fuelCheck7_CheckedChanged);
             // 
@@ -36031,7 +36032,7 @@
             0});
             this.damageMax7.Name = "damageMax7";
             this.damageMax7.Size = new System.Drawing.Size(55, 20);
-            this.damageMax7.TabIndex = 198;
+            this.damageMax7.TabIndex = 38;
             this.damageMax7.Value = new decimal(new int[] {
             5000,
             0,
@@ -36054,7 +36055,7 @@
             0});
             this.damageMin7.Name = "damageMin7";
             this.damageMin7.Size = new System.Drawing.Size(55, 20);
-            this.damageMin7.TabIndex = 197;
+            this.damageMin7.TabIndex = 37;
             this.damageMin7.Value = new decimal(new int[] {
             1,
             0,
@@ -36071,7 +36072,7 @@
             this.label589.Size = new System.Drawing.Size(87, 13);
             this.label589.TabIndex = 196;
             this.label589.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label589, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label589, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck7
             // 
@@ -36081,7 +36082,7 @@
             this.damageCheck7.Location = new System.Drawing.Point(8, 335);
             this.damageCheck7.Name = "damageCheck7";
             this.damageCheck7.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck7.TabIndex = 195;
+            this.damageCheck7.TabIndex = 36;
             this.damageCheck7.UseVisualStyleBackColor = true;
             this.damageCheck7.CheckedChanged += new System.EventHandler(this.damageCheck7_CheckedChanged);
             // 
@@ -36095,7 +36096,7 @@
             0});
             this.costMax7.Name = "costMax7";
             this.costMax7.Size = new System.Drawing.Size(55, 20);
-            this.costMax7.TabIndex = 194;
+            this.costMax7.TabIndex = 35;
             this.costMax7.Value = new decimal(new int[] {
             100000,
             0,
@@ -36113,7 +36114,7 @@
             0});
             this.costMin7.Name = "costMin7";
             this.costMin7.Size = new System.Drawing.Size(55, 20);
-            this.costMin7.TabIndex = 193;
+            this.costMin7.TabIndex = 34;
             this.costMin7.ValueChanged += new System.EventHandler(this.costMin7_ValueChanged);
             // 
             // fuelRateMax7
@@ -36127,7 +36128,7 @@
             0});
             this.fuelRateMax7.Name = "fuelRateMax7";
             this.fuelRateMax7.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax7.TabIndex = 192;
+            this.fuelRateMax7.TabIndex = 32;
             this.fuelRateMax7.Value = new decimal(new int[] {
             2000,
             0,
@@ -36146,7 +36147,7 @@
             0});
             this.fuelRateMin7.Name = "fuelRateMin7";
             this.fuelRateMin7.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin7.TabIndex = 191;
+            this.fuelRateMin7.TabIndex = 31;
             this.fuelRateMin7.ValueChanged += new System.EventHandler(this.fuelRateMin7_ValueChanged);
             // 
             // mYawRateMax7
@@ -36160,7 +36161,7 @@
             0});
             this.mYawRateMax7.Name = "mYawRateMax7";
             this.mYawRateMax7.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax7.TabIndex = 190;
+            this.mYawRateMax7.TabIndex = 29;
             this.mYawRateMax7.Value = new decimal(new int[] {
             900,
             0,
@@ -36179,7 +36180,7 @@
             0});
             this.mYawRateMin7.Name = "mYawRateMin7";
             this.mYawRateMin7.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin7.TabIndex = 189;
+            this.mYawRateMin7.TabIndex = 28;
             this.mYawRateMin7.ValueChanged += new System.EventHandler(this.mYawRateMin7_ValueChanged);
             // 
             // label590
@@ -36202,7 +36203,7 @@
             this.label591.Size = new System.Drawing.Size(79, 13);
             this.label591.TabIndex = 187;
             this.label591.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label591, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label591, "Galons of gas used per hour.");
             // 
             // label592
             // 
@@ -36223,7 +36224,7 @@
             this.costCheck7.Location = new System.Drawing.Point(8, 309);
             this.costCheck7.Name = "costCheck7";
             this.costCheck7.Size = new System.Drawing.Size(15, 14);
-            this.costCheck7.TabIndex = 185;
+            this.costCheck7.TabIndex = 33;
             this.costCheck7.UseVisualStyleBackColor = true;
             this.costCheck7.CheckedChanged += new System.EventHandler(this.costCheck7_CheckedChanged);
             // 
@@ -36235,7 +36236,7 @@
             this.fuelRateCheck7.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck7.Name = "fuelRateCheck7";
             this.fuelRateCheck7.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck7.TabIndex = 184;
+            this.fuelRateCheck7.TabIndex = 30;
             this.fuelRateCheck7.UseVisualStyleBackColor = true;
             this.fuelRateCheck7.CheckedChanged += new System.EventHandler(this.fuelRateCheck7_CheckedChanged);
             // 
@@ -36247,7 +36248,7 @@
             this.mYawRateCheck7.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck7.Name = "mYawRateCheck7";
             this.mYawRateCheck7.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck7.TabIndex = 183;
+            this.mYawRateCheck7.TabIndex = 27;
             this.mYawRateCheck7.UseVisualStyleBackColor = true;
             this.mYawRateCheck7.CheckedChanged += new System.EventHandler(this.mYawRateCheck7_CheckedChanged);
             // 
@@ -36266,7 +36267,7 @@
             0});
             this.mLoadMax7.Name = "mLoadMax7";
             this.mLoadMax7.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax7.TabIndex = 182;
+            this.mLoadMax7.TabIndex = 26;
             this.mLoadMax7.Value = new decimal(new int[] {
             20000,
             0,
@@ -36289,7 +36290,7 @@
             0});
             this.mLoadMin7.Name = "mLoadMin7";
             this.mLoadMin7.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin7.TabIndex = 181;
+            this.mLoadMin7.TabIndex = 25;
             this.mLoadMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36306,7 +36307,7 @@
             this.label593.Size = new System.Drawing.Size(71, 13);
             this.label593.TabIndex = 180;
             this.label593.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label593, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label593, "Amount of water that can be carried.");
             // 
             // mLoadCheck7
             // 
@@ -36316,7 +36317,7 @@
             this.mLoadCheck7.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck7.Name = "mLoadCheck7";
             this.mLoadCheck7.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck7.TabIndex = 179;
+            this.mLoadCheck7.TabIndex = 24;
             this.mLoadCheck7.UseVisualStyleBackColor = true;
             this.mLoadCheck7.CheckedChanged += new System.EventHandler(this.mLoadCheck7_CheckedChanged);
             // 
@@ -36331,7 +36332,7 @@
             0});
             this.climbMax7.Name = "climbMax7";
             this.climbMax7.Size = new System.Drawing.Size(55, 20);
-            this.climbMax7.TabIndex = 178;
+            this.climbMax7.TabIndex = 23;
             this.climbMax7.Value = new decimal(new int[] {
             50,
             0,
@@ -36350,7 +36351,7 @@
             0});
             this.climbMin7.Name = "climbMin7";
             this.climbMin7.Size = new System.Drawing.Size(55, 20);
-            this.climbMin7.TabIndex = 177;
+            this.climbMin7.TabIndex = 22;
             this.climbMin7.ValueChanged += new System.EventHandler(this.climbMin7_ValueChanged);
             // 
             // label594
@@ -36372,7 +36373,7 @@
             this.climbCheck7.Location = new System.Drawing.Point(8, 205);
             this.climbCheck7.Name = "climbCheck7";
             this.climbCheck7.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck7.TabIndex = 175;
+            this.climbCheck7.TabIndex = 21;
             this.climbCheck7.UseVisualStyleBackColor = true;
             this.climbCheck7.CheckedChanged += new System.EventHandler(this.climbCheck7_CheckedChanged);
             // 
@@ -36392,7 +36393,7 @@
             0});
             this.slideRateMax7.Name = "slideRateMax7";
             this.slideRateMax7.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax7.TabIndex = 174;
+            this.slideRateMax7.TabIndex = 20;
             this.slideRateMax7.Value = new decimal(new int[] {
             800,
             0,
@@ -36416,7 +36417,7 @@
             0});
             this.slideRateMin7.Name = "slideRateMin7";
             this.slideRateMin7.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin7.TabIndex = 173;
+            this.slideRateMin7.TabIndex = 19;
             this.slideRateMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36443,7 +36444,7 @@
             this.slideRateCheck7.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck7.Name = "slideRateCheck7";
             this.slideRateCheck7.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck7.TabIndex = 171;
+            this.slideRateCheck7.TabIndex = 18;
             this.slideRateCheck7.UseVisualStyleBackColor = true;
             this.slideRateCheck7.CheckedChanged += new System.EventHandler(this.slideRateCheck7_CheckedChanged);
             // 
@@ -36463,7 +36464,7 @@
             0});
             this.rollRateMax7.Name = "rollRateMax7";
             this.rollRateMax7.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax7.TabIndex = 170;
+            this.rollRateMax7.TabIndex = 17;
             this.rollRateMax7.Value = new decimal(new int[] {
             800,
             0,
@@ -36487,7 +36488,7 @@
             0});
             this.rollRateMin7.Name = "rollRateMin7";
             this.rollRateMin7.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin7.TabIndex = 169;
+            this.rollRateMin7.TabIndex = 16;
             this.rollRateMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36504,7 +36505,7 @@
             this.label596.Size = new System.Drawing.Size(79, 13);
             this.label596.TabIndex = 168;
             this.label596.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label596, "Unknown");
+            this.toolTip.SetToolTip(this.label596, "Unknown.");
             // 
             // rollRateCheck7
             // 
@@ -36514,7 +36515,7 @@
             this.rollRateCheck7.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck7.Name = "rollRateCheck7";
             this.rollRateCheck7.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck7.TabIndex = 167;
+            this.rollRateCheck7.TabIndex = 15;
             this.rollRateCheck7.UseVisualStyleBackColor = true;
             this.rollRateCheck7.CheckedChanged += new System.EventHandler(this.rollRateCheck7_CheckedChanged);
             // 
@@ -36534,7 +36535,7 @@
             0});
             this.yawRateMax7.Name = "yawRateMax7";
             this.yawRateMax7.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax7.TabIndex = 166;
+            this.yawRateMax7.TabIndex = 14;
             this.yawRateMax7.Value = new decimal(new int[] {
             800,
             0,
@@ -36558,7 +36559,7 @@
             0});
             this.yawRateMin7.Name = "yawRateMin7";
             this.yawRateMin7.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin7.TabIndex = 165;
+            this.yawRateMin7.TabIndex = 13;
             this.yawRateMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36582,7 +36583,7 @@
             0});
             this.pitchRateMax7.Name = "pitchRateMax7";
             this.pitchRateMax7.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax7.TabIndex = 164;
+            this.pitchRateMax7.TabIndex = 11;
             this.pitchRateMax7.Value = new decimal(new int[] {
             800,
             0,
@@ -36606,7 +36607,7 @@
             0});
             this.pitchRateMin7.Name = "pitchRateMin7";
             this.pitchRateMin7.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin7.TabIndex = 163;
+            this.pitchRateMin7.TabIndex = 10;
             this.pitchRateMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36630,7 +36631,7 @@
             0});
             this.mPitchMax7.Name = "mPitchMax7";
             this.mPitchMax7.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax7.TabIndex = 162;
+            this.mPitchMax7.TabIndex = 8;
             this.mPitchMax7.Value = new decimal(new int[] {
             800,
             0,
@@ -36654,7 +36655,7 @@
             0});
             this.mPitchMin7.Name = "mPitchMin7";
             this.mPitchMin7.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin7.TabIndex = 161;
+            this.mPitchMin7.TabIndex = 7;
             this.mPitchMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36678,7 +36679,7 @@
             0});
             this.mSlideMax7.Name = "mSlideMax7";
             this.mSlideMax7.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax7.TabIndex = 160;
+            this.mSlideMax7.TabIndex = 5;
             this.mSlideMax7.Value = new decimal(new int[] {
             800,
             0,
@@ -36702,7 +36703,7 @@
             0});
             this.mSlideMin7.Name = "mSlideMin7";
             this.mSlideMin7.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin7.TabIndex = 159;
+            this.mSlideMin7.TabIndex = 4;
             this.mSlideMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36726,7 +36727,7 @@
             0});
             this.mBankMax7.Name = "mBankMax7";
             this.mBankMax7.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax7.TabIndex = 158;
+            this.mBankMax7.TabIndex = 2;
             this.mBankMax7.Value = new decimal(new int[] {
             800,
             0,
@@ -36750,7 +36751,7 @@
             0});
             this.mBankMin7.Name = "mBankMin7";
             this.mBankMin7.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin7.TabIndex = 157;
+            this.mBankMin7.TabIndex = 1;
             this.mBankMin7.Value = new decimal(new int[] {
             10,
             0,
@@ -36841,7 +36842,7 @@
             this.yawRateCheck7.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck7.Name = "yawRateCheck7";
             this.yawRateCheck7.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck7.TabIndex = 149;
+            this.yawRateCheck7.TabIndex = 12;
             this.yawRateCheck7.UseVisualStyleBackColor = true;
             this.yawRateCheck7.CheckedChanged += new System.EventHandler(this.yawRateCheck7_CheckedChanged);
             // 
@@ -36853,7 +36854,7 @@
             this.pitchRateCheck7.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck7.Name = "pitchRateCheck7";
             this.pitchRateCheck7.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck7.TabIndex = 148;
+            this.pitchRateCheck7.TabIndex = 9;
             this.pitchRateCheck7.UseVisualStyleBackColor = true;
             this.pitchRateCheck7.CheckedChanged += new System.EventHandler(this.pitchRateCheck7_CheckedChanged);
             // 
@@ -36865,7 +36866,7 @@
             this.mPitchCheck7.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck7.Name = "mPitchCheck7";
             this.mPitchCheck7.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck7.TabIndex = 147;
+            this.mPitchCheck7.TabIndex = 6;
             this.mPitchCheck7.UseVisualStyleBackColor = true;
             this.mPitchCheck7.CheckedChanged += new System.EventHandler(this.mPitchCheck7_CheckedChanged);
             // 
@@ -36877,7 +36878,7 @@
             this.mSlideCheck7.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck7.Name = "mSlideCheck7";
             this.mSlideCheck7.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck7.TabIndex = 146;
+            this.mSlideCheck7.TabIndex = 3;
             this.mSlideCheck7.UseVisualStyleBackColor = true;
             this.mSlideCheck7.CheckedChanged += new System.EventHandler(this.mSlideCheck7_CheckedChanged);
             // 
@@ -36889,7 +36890,7 @@
             this.mBankCheck7.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck7.Name = "mBankCheck7";
             this.mBankCheck7.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck7.TabIndex = 145;
+            this.mBankCheck7.TabIndex = 0;
             this.mBankCheck7.UseVisualStyleBackColor = true;
             this.mBankCheck7.CheckedChanged += new System.EventHandler(this.mBankCheck7_CheckedChanged);
             // 
@@ -36980,7 +36981,7 @@
             0});
             this.fuelCostMax2.Name = "fuelCostMax2";
             this.fuelCostMax2.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMax2.TabIndex = 210;
+            this.fuelCostMax2.TabIndex = 47;
             this.fuelCostMax2.Value = new decimal(new int[] {
             10,
             0,
@@ -36999,7 +37000,7 @@
             0});
             this.fuelCostMin2.Name = "fuelCostMin2";
             this.fuelCostMin2.Size = new System.Drawing.Size(55, 20);
-            this.fuelCostMin2.TabIndex = 209;
+            this.fuelCostMin2.TabIndex = 46;
             this.fuelCostMin2.ValueChanged += new System.EventHandler(this.fuelCostMin2_ValueChanged);
             // 
             // label604
@@ -37011,7 +37012,7 @@
             this.label604.Size = new System.Drawing.Size(79, 13);
             this.label604.TabIndex = 208;
             this.label604.Text = "Fuel Cost";
-            this.toolTip.SetToolTip(this.label604, "Baseee cost to buy one galon of gas.");
+            this.toolTip.SetToolTip(this.label604, "Base cost to buy one galon of gas.");
             // 
             // fuelCostCheck2
             // 
@@ -37021,7 +37022,7 @@
             this.fuelCostCheck2.Location = new System.Drawing.Point(8, 413);
             this.fuelCostCheck2.Name = "fuelCostCheck2";
             this.fuelCostCheck2.Size = new System.Drawing.Size(15, 14);
-            this.fuelCostCheck2.TabIndex = 207;
+            this.fuelCostCheck2.TabIndex = 45;
             this.fuelCostCheck2.UseVisualStyleBackColor = true;
             this.fuelCostCheck2.CheckedChanged += new System.EventHandler(this.fuelCostCheck2_CheckedChanged);
             // 
@@ -37036,7 +37037,7 @@
             0});
             this.repairMax2.Name = "repairMax2";
             this.repairMax2.Size = new System.Drawing.Size(55, 20);
-            this.repairMax2.TabIndex = 206;
+            this.repairMax2.TabIndex = 44;
             this.repairMax2.Value = new decimal(new int[] {
             10,
             0,
@@ -37054,7 +37055,7 @@
             0});
             this.repairMin2.Name = "repairMin2";
             this.repairMin2.Size = new System.Drawing.Size(55, 20);
-            this.repairMin2.TabIndex = 205;
+            this.repairMin2.TabIndex = 43;
             this.repairMin2.ValueChanged += new System.EventHandler(this.repairMin2_ValueChanged);
             // 
             // label605
@@ -37076,7 +37077,7 @@
             this.repairCheck2.Location = new System.Drawing.Point(8, 387);
             this.repairCheck2.Name = "repairCheck2";
             this.repairCheck2.Size = new System.Drawing.Size(15, 14);
-            this.repairCheck2.TabIndex = 203;
+            this.repairCheck2.TabIndex = 42;
             this.repairCheck2.UseVisualStyleBackColor = true;
             this.repairCheck2.CheckedChanged += new System.EventHandler(this.repairCheck2_CheckedChanged);
             // 
@@ -37091,7 +37092,7 @@
             0});
             this.fuelMax2.Name = "fuelMax2";
             this.fuelMax2.Size = new System.Drawing.Size(55, 20);
-            this.fuelMax2.TabIndex = 202;
+            this.fuelMax2.TabIndex = 41;
             this.fuelMax2.Value = new decimal(new int[] {
             500,
             0,
@@ -37110,7 +37111,7 @@
             0});
             this.fuelMin2.Name = "fuelMin2";
             this.fuelMin2.Size = new System.Drawing.Size(55, 20);
-            this.fuelMin2.TabIndex = 201;
+            this.fuelMin2.TabIndex = 40;
             this.fuelMin2.ValueChanged += new System.EventHandler(this.fuelMin2_ValueChanged);
             // 
             // label606
@@ -37132,7 +37133,7 @@
             this.fuelCheck2.Location = new System.Drawing.Point(8, 361);
             this.fuelCheck2.Name = "fuelCheck2";
             this.fuelCheck2.Size = new System.Drawing.Size(15, 14);
-            this.fuelCheck2.TabIndex = 199;
+            this.fuelCheck2.TabIndex = 39;
             this.fuelCheck2.UseVisualStyleBackColor = true;
             this.fuelCheck2.CheckedChanged += new System.EventHandler(this.fuelCheck2_CheckedChanged);
             // 
@@ -37151,7 +37152,7 @@
             0});
             this.damageMax2.Name = "damageMax2";
             this.damageMax2.Size = new System.Drawing.Size(55, 20);
-            this.damageMax2.TabIndex = 198;
+            this.damageMax2.TabIndex = 38;
             this.damageMax2.Value = new decimal(new int[] {
             5000,
             0,
@@ -37174,7 +37175,7 @@
             0});
             this.damageMin2.Name = "damageMin2";
             this.damageMin2.Size = new System.Drawing.Size(55, 20);
-            this.damageMin2.TabIndex = 197;
+            this.damageMin2.TabIndex = 37;
             this.damageMin2.Value = new decimal(new int[] {
             1,
             0,
@@ -37191,7 +37192,7 @@
             this.label607.Size = new System.Drawing.Size(87, 13);
             this.label607.TabIndex = 196;
             this.label607.Text = "Max Damage";
-            this.toolTip.SetToolTip(this.label607, "Amout of damage the heeelicopter  can take before exploding.");
+            this.toolTip.SetToolTip(this.label607, "Amount of damage the helicopter can take before exploding.");
             // 
             // damageCheck2
             // 
@@ -37201,7 +37202,7 @@
             this.damageCheck2.Location = new System.Drawing.Point(8, 335);
             this.damageCheck2.Name = "damageCheck2";
             this.damageCheck2.Size = new System.Drawing.Size(15, 14);
-            this.damageCheck2.TabIndex = 195;
+            this.damageCheck2.TabIndex = 36;
             this.damageCheck2.UseVisualStyleBackColor = true;
             this.damageCheck2.CheckedChanged += new System.EventHandler(this.damageCheck2_CheckedChanged);
             // 
@@ -37215,7 +37216,7 @@
             0});
             this.costMax2.Name = "costMax2";
             this.costMax2.Size = new System.Drawing.Size(55, 20);
-            this.costMax2.TabIndex = 194;
+            this.costMax2.TabIndex = 35;
             this.costMax2.Value = new decimal(new int[] {
             100000,
             0,
@@ -37233,7 +37234,7 @@
             0});
             this.costMin2.Name = "costMin2";
             this.costMin2.Size = new System.Drawing.Size(55, 20);
-            this.costMin2.TabIndex = 193;
+            this.costMin2.TabIndex = 34;
             this.costMin2.ValueChanged += new System.EventHandler(this.costMin2_ValueChanged);
             // 
             // fuelRateMax2
@@ -37247,7 +37248,7 @@
             0});
             this.fuelRateMax2.Name = "fuelRateMax2";
             this.fuelRateMax2.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMax2.TabIndex = 192;
+            this.fuelRateMax2.TabIndex = 32;
             this.fuelRateMax2.Value = new decimal(new int[] {
             2000,
             0,
@@ -37266,7 +37267,7 @@
             0});
             this.fuelRateMin2.Name = "fuelRateMin2";
             this.fuelRateMin2.Size = new System.Drawing.Size(55, 20);
-            this.fuelRateMin2.TabIndex = 191;
+            this.fuelRateMin2.TabIndex = 31;
             this.fuelRateMin2.ValueChanged += new System.EventHandler(this.fuelRateMin2_ValueChanged);
             // 
             // mYawRateMax2
@@ -37280,7 +37281,7 @@
             0});
             this.mYawRateMax2.Name = "mYawRateMax2";
             this.mYawRateMax2.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMax2.TabIndex = 190;
+            this.mYawRateMax2.TabIndex = 29;
             this.mYawRateMax2.Value = new decimal(new int[] {
             900,
             0,
@@ -37299,7 +37300,7 @@
             0});
             this.mYawRateMin2.Name = "mYawRateMin2";
             this.mYawRateMin2.Size = new System.Drawing.Size(55, 20);
-            this.mYawRateMin2.TabIndex = 189;
+            this.mYawRateMin2.TabIndex = 28;
             this.mYawRateMin2.ValueChanged += new System.EventHandler(this.mYawRateMin2_ValueChanged);
             // 
             // label608
@@ -37322,7 +37323,7 @@
             this.label609.Size = new System.Drawing.Size(79, 13);
             this.label609.TabIndex = 187;
             this.label609.Text = "Fuel Rate";
-            this.toolTip.SetToolTip(this.label609, "Galos of gas useed per hour.");
+            this.toolTip.SetToolTip(this.label609, "Galons of gas used per hour.");
             // 
             // label610
             // 
@@ -37343,7 +37344,7 @@
             this.costCheck2.Location = new System.Drawing.Point(8, 309);
             this.costCheck2.Name = "costCheck2";
             this.costCheck2.Size = new System.Drawing.Size(15, 14);
-            this.costCheck2.TabIndex = 185;
+            this.costCheck2.TabIndex = 33;
             this.costCheck2.UseVisualStyleBackColor = true;
             this.costCheck2.CheckedChanged += new System.EventHandler(this.costCheck2_CheckedChanged);
             // 
@@ -37355,7 +37356,7 @@
             this.fuelRateCheck2.Location = new System.Drawing.Point(8, 283);
             this.fuelRateCheck2.Name = "fuelRateCheck2";
             this.fuelRateCheck2.Size = new System.Drawing.Size(15, 14);
-            this.fuelRateCheck2.TabIndex = 184;
+            this.fuelRateCheck2.TabIndex = 30;
             this.fuelRateCheck2.UseVisualStyleBackColor = true;
             this.fuelRateCheck2.CheckedChanged += new System.EventHandler(this.fuelRateCheck2_CheckedChanged);
             // 
@@ -37367,7 +37368,7 @@
             this.mYawRateCheck2.Location = new System.Drawing.Point(8, 257);
             this.mYawRateCheck2.Name = "mYawRateCheck2";
             this.mYawRateCheck2.Size = new System.Drawing.Size(15, 14);
-            this.mYawRateCheck2.TabIndex = 183;
+            this.mYawRateCheck2.TabIndex = 27;
             this.mYawRateCheck2.UseVisualStyleBackColor = true;
             this.mYawRateCheck2.CheckedChanged += new System.EventHandler(this.mYawRateCheck2_CheckedChanged);
             // 
@@ -37386,7 +37387,7 @@
             0});
             this.mLoadMax2.Name = "mLoadMax2";
             this.mLoadMax2.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMax2.TabIndex = 182;
+            this.mLoadMax2.TabIndex = 26;
             this.mLoadMax2.Value = new decimal(new int[] {
             20000,
             0,
@@ -37409,7 +37410,7 @@
             0});
             this.mLoadMin2.Name = "mLoadMin2";
             this.mLoadMin2.Size = new System.Drawing.Size(55, 20);
-            this.mLoadMin2.TabIndex = 181;
+            this.mLoadMin2.TabIndex = 25;
             this.mLoadMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37426,7 +37427,7 @@
             this.label611.Size = new System.Drawing.Size(71, 13);
             this.label611.TabIndex = 180;
             this.label611.Text = "Max Load";
-            this.toolTip.SetToolTip(this.label611, "Amouunt of water that can be carried.");
+            this.toolTip.SetToolTip(this.label611, "Amount of water that can be carried.");
             // 
             // mLoadCheck2
             // 
@@ -37436,7 +37437,7 @@
             this.mLoadCheck2.Location = new System.Drawing.Point(8, 231);
             this.mLoadCheck2.Name = "mLoadCheck2";
             this.mLoadCheck2.Size = new System.Drawing.Size(15, 14);
-            this.mLoadCheck2.TabIndex = 179;
+            this.mLoadCheck2.TabIndex = 24;
             this.mLoadCheck2.UseVisualStyleBackColor = true;
             this.mLoadCheck2.CheckedChanged += new System.EventHandler(this.mLoadCheck2_CheckedChanged);
             // 
@@ -37451,7 +37452,7 @@
             0});
             this.climbMax2.Name = "climbMax2";
             this.climbMax2.Size = new System.Drawing.Size(55, 20);
-            this.climbMax2.TabIndex = 178;
+            this.climbMax2.TabIndex = 23;
             this.climbMax2.Value = new decimal(new int[] {
             50,
             0,
@@ -37470,7 +37471,7 @@
             0});
             this.climbMin2.Name = "climbMin2";
             this.climbMin2.Size = new System.Drawing.Size(55, 20);
-            this.climbMin2.TabIndex = 177;
+            this.climbMin2.TabIndex = 22;
             this.climbMin2.ValueChanged += new System.EventHandler(this.climbMin2_ValueChanged);
             // 
             // label612
@@ -37492,7 +37493,7 @@
             this.climbCheck2.Location = new System.Drawing.Point(8, 205);
             this.climbCheck2.Name = "climbCheck2";
             this.climbCheck2.Size = new System.Drawing.Size(15, 14);
-            this.climbCheck2.TabIndex = 175;
+            this.climbCheck2.TabIndex = 21;
             this.climbCheck2.UseVisualStyleBackColor = true;
             this.climbCheck2.CheckedChanged += new System.EventHandler(this.climbCheck2_CheckedChanged);
             // 
@@ -37512,7 +37513,7 @@
             0});
             this.slideRateMax2.Name = "slideRateMax2";
             this.slideRateMax2.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMax2.TabIndex = 174;
+            this.slideRateMax2.TabIndex = 20;
             this.slideRateMax2.Value = new decimal(new int[] {
             800,
             0,
@@ -37536,7 +37537,7 @@
             0});
             this.slideRateMin2.Name = "slideRateMin2";
             this.slideRateMin2.Size = new System.Drawing.Size(55, 20);
-            this.slideRateMin2.TabIndex = 173;
+            this.slideRateMin2.TabIndex = 19;
             this.slideRateMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37563,7 +37564,7 @@
             this.slideRateCheck2.Location = new System.Drawing.Point(8, 179);
             this.slideRateCheck2.Name = "slideRateCheck2";
             this.slideRateCheck2.Size = new System.Drawing.Size(15, 14);
-            this.slideRateCheck2.TabIndex = 171;
+            this.slideRateCheck2.TabIndex = 18;
             this.slideRateCheck2.UseVisualStyleBackColor = true;
             this.slideRateCheck2.CheckedChanged += new System.EventHandler(this.slideRateCheck2_CheckedChanged);
             // 
@@ -37583,7 +37584,7 @@
             0});
             this.rollRateMax2.Name = "rollRateMax2";
             this.rollRateMax2.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMax2.TabIndex = 170;
+            this.rollRateMax2.TabIndex = 17;
             this.rollRateMax2.Value = new decimal(new int[] {
             800,
             0,
@@ -37607,7 +37608,7 @@
             0});
             this.rollRateMin2.Name = "rollRateMin2";
             this.rollRateMin2.Size = new System.Drawing.Size(55, 20);
-            this.rollRateMin2.TabIndex = 169;
+            this.rollRateMin2.TabIndex = 16;
             this.rollRateMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37624,7 +37625,7 @@
             this.label614.Size = new System.Drawing.Size(79, 13);
             this.label614.TabIndex = 168;
             this.label614.Text = "Roll Rate";
-            this.toolTip.SetToolTip(this.label614, "Unknown");
+            this.toolTip.SetToolTip(this.label614, "Unknown.");
             // 
             // rollRateCheck2
             // 
@@ -37634,7 +37635,7 @@
             this.rollRateCheck2.Location = new System.Drawing.Point(8, 153);
             this.rollRateCheck2.Name = "rollRateCheck2";
             this.rollRateCheck2.Size = new System.Drawing.Size(15, 14);
-            this.rollRateCheck2.TabIndex = 167;
+            this.rollRateCheck2.TabIndex = 15;
             this.rollRateCheck2.UseVisualStyleBackColor = true;
             this.rollRateCheck2.CheckedChanged += new System.EventHandler(this.rollRateCheck2_CheckedChanged);
             // 
@@ -37654,7 +37655,7 @@
             0});
             this.yawRateMax2.Name = "yawRateMax2";
             this.yawRateMax2.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMax2.TabIndex = 166;
+            this.yawRateMax2.TabIndex = 14;
             this.yawRateMax2.Value = new decimal(new int[] {
             800,
             0,
@@ -37678,7 +37679,7 @@
             0});
             this.yawRateMin2.Name = "yawRateMin2";
             this.yawRateMin2.Size = new System.Drawing.Size(55, 20);
-            this.yawRateMin2.TabIndex = 165;
+            this.yawRateMin2.TabIndex = 13;
             this.yawRateMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37702,7 +37703,7 @@
             0});
             this.pitchRateMax2.Name = "pitchRateMax2";
             this.pitchRateMax2.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMax2.TabIndex = 164;
+            this.pitchRateMax2.TabIndex = 11;
             this.pitchRateMax2.Value = new decimal(new int[] {
             800,
             0,
@@ -37726,7 +37727,7 @@
             0});
             this.pitchRateMin2.Name = "pitchRateMin2";
             this.pitchRateMin2.Size = new System.Drawing.Size(55, 20);
-            this.pitchRateMin2.TabIndex = 163;
+            this.pitchRateMin2.TabIndex = 10;
             this.pitchRateMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37750,7 +37751,7 @@
             0});
             this.mPitchMax2.Name = "mPitchMax2";
             this.mPitchMax2.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMax2.TabIndex = 162;
+            this.mPitchMax2.TabIndex = 8;
             this.mPitchMax2.Value = new decimal(new int[] {
             800,
             0,
@@ -37774,7 +37775,7 @@
             0});
             this.mPitchMin2.Name = "mPitchMin2";
             this.mPitchMin2.Size = new System.Drawing.Size(55, 20);
-            this.mPitchMin2.TabIndex = 161;
+            this.mPitchMin2.TabIndex = 7;
             this.mPitchMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37798,7 +37799,7 @@
             0});
             this.mSlideMax2.Name = "mSlideMax2";
             this.mSlideMax2.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMax2.TabIndex = 160;
+            this.mSlideMax2.TabIndex = 5;
             this.mSlideMax2.Value = new decimal(new int[] {
             800,
             0,
@@ -37822,7 +37823,7 @@
             0});
             this.mSlideMin2.Name = "mSlideMin2";
             this.mSlideMin2.Size = new System.Drawing.Size(55, 20);
-            this.mSlideMin2.TabIndex = 159;
+            this.mSlideMin2.TabIndex = 4;
             this.mSlideMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37846,7 +37847,7 @@
             0});
             this.mBankMax2.Name = "mBankMax2";
             this.mBankMax2.Size = new System.Drawing.Size(55, 20);
-            this.mBankMax2.TabIndex = 158;
+            this.mBankMax2.TabIndex = 2;
             this.mBankMax2.Value = new decimal(new int[] {
             800,
             0,
@@ -37870,7 +37871,7 @@
             0});
             this.mBankMin2.Name = "mBankMin2";
             this.mBankMin2.Size = new System.Drawing.Size(55, 20);
-            this.mBankMin2.TabIndex = 157;
+            this.mBankMin2.TabIndex = 1;
             this.mBankMin2.Value = new decimal(new int[] {
             10,
             0,
@@ -37961,7 +37962,7 @@
             this.yawRateCheck2.Location = new System.Drawing.Point(8, 127);
             this.yawRateCheck2.Name = "yawRateCheck2";
             this.yawRateCheck2.Size = new System.Drawing.Size(15, 14);
-            this.yawRateCheck2.TabIndex = 149;
+            this.yawRateCheck2.TabIndex = 12;
             this.yawRateCheck2.UseVisualStyleBackColor = true;
             this.yawRateCheck2.CheckedChanged += new System.EventHandler(this.yawRateCheck2_CheckedChanged);
             // 
@@ -37973,7 +37974,7 @@
             this.pitchRateCheck2.Location = new System.Drawing.Point(8, 101);
             this.pitchRateCheck2.Name = "pitchRateCheck2";
             this.pitchRateCheck2.Size = new System.Drawing.Size(15, 14);
-            this.pitchRateCheck2.TabIndex = 148;
+            this.pitchRateCheck2.TabIndex = 9;
             this.pitchRateCheck2.UseVisualStyleBackColor = true;
             this.pitchRateCheck2.CheckedChanged += new System.EventHandler(this.pitchRateCheck2_CheckedChanged);
             // 
@@ -37985,7 +37986,7 @@
             this.mPitchCheck2.Location = new System.Drawing.Point(8, 75);
             this.mPitchCheck2.Name = "mPitchCheck2";
             this.mPitchCheck2.Size = new System.Drawing.Size(15, 14);
-            this.mPitchCheck2.TabIndex = 147;
+            this.mPitchCheck2.TabIndex = 6;
             this.mPitchCheck2.UseVisualStyleBackColor = true;
             this.mPitchCheck2.CheckedChanged += new System.EventHandler(this.mPitchCheck2_CheckedChanged);
             // 
@@ -37997,7 +37998,7 @@
             this.mSlideCheck2.Location = new System.Drawing.Point(8, 49);
             this.mSlideCheck2.Name = "mSlideCheck2";
             this.mSlideCheck2.Size = new System.Drawing.Size(15, 14);
-            this.mSlideCheck2.TabIndex = 146;
+            this.mSlideCheck2.TabIndex = 3;
             this.mSlideCheck2.UseVisualStyleBackColor = true;
             this.mSlideCheck2.CheckedChanged += new System.EventHandler(this.mSlideCheck2_CheckedChanged);
             // 
@@ -38009,7 +38010,7 @@
             this.mBankCheck2.Location = new System.Drawing.Point(8, 24);
             this.mBankCheck2.Name = "mBankCheck2";
             this.mBankCheck2.Size = new System.Drawing.Size(15, 14);
-            this.mBankCheck2.TabIndex = 145;
+            this.mBankCheck2.TabIndex = 0;
             this.mBankCheck2.UseVisualStyleBackColor = true;
             this.mBankCheck2.CheckedChanged += new System.EventHandler(this.mBankCheck2_CheckedChanged);
             // 
@@ -38055,7 +38056,7 @@
             0});
             this.landMax4.Name = "landMax4";
             this.landMax4.Size = new System.Drawing.Size(55, 20);
-            this.landMax4.TabIndex = 188;
+            this.landMax4.TabIndex = 14;
             this.landMax4.Value = new decimal(new int[] {
             40,
             0,
@@ -38074,7 +38075,7 @@
             0});
             this.landMin4.Name = "landMin4";
             this.landMin4.Size = new System.Drawing.Size(55, 20);
-            this.landMin4.TabIndex = 187;
+            this.landMin4.TabIndex = 13;
             this.landMin4.ValueChanged += new System.EventHandler(this.landMin4_ValueChanged);
             // 
             // landMax3
@@ -38088,7 +38089,7 @@
             0});
             this.landMax3.Name = "landMax3";
             this.landMax3.Size = new System.Drawing.Size(55, 20);
-            this.landMax3.TabIndex = 186;
+            this.landMax3.TabIndex = 11;
             this.landMax3.Value = new decimal(new int[] {
             200,
             0,
@@ -38107,7 +38108,7 @@
             0});
             this.landMin3.Name = "landMin3";
             this.landMin3.Size = new System.Drawing.Size(55, 20);
-            this.landMin3.TabIndex = 185;
+            this.landMin3.TabIndex = 10;
             this.landMin3.ValueChanged += new System.EventHandler(this.landMin3_ValueChanged);
             // 
             // landMax2
@@ -38121,7 +38122,7 @@
             0});
             this.landMax2.Name = "landMax2";
             this.landMax2.Size = new System.Drawing.Size(55, 20);
-            this.landMax2.TabIndex = 184;
+            this.landMax2.TabIndex = 8;
             this.landMax2.Value = new decimal(new int[] {
             200,
             0,
@@ -38140,7 +38141,7 @@
             0});
             this.landMin2.Name = "landMin2";
             this.landMin2.Size = new System.Drawing.Size(55, 20);
-            this.landMin2.TabIndex = 183;
+            this.landMin2.TabIndex = 7;
             this.landMin2.ValueChanged += new System.EventHandler(this.landMin2_ValueChanged);
             // 
             // landMax1
@@ -38159,7 +38160,7 @@
             0});
             this.landMax1.Name = "landMax1";
             this.landMax1.Size = new System.Drawing.Size(55, 20);
-            this.landMax1.TabIndex = 182;
+            this.landMax1.TabIndex = 5;
             this.landMax1.Value = new decimal(new int[] {
             800,
             0,
@@ -38183,7 +38184,7 @@
             0});
             this.landMin1.Name = "landMin1";
             this.landMin1.Size = new System.Drawing.Size(55, 20);
-            this.landMin1.TabIndex = 181;
+            this.landMin1.TabIndex = 4;
             this.landMin1.Value = new decimal(new int[] {
             10,
             0,
@@ -38207,7 +38208,7 @@
             0});
             this.landMax0.Name = "landMax0";
             this.landMax0.Size = new System.Drawing.Size(55, 20);
-            this.landMax0.TabIndex = 180;
+            this.landMax0.TabIndex = 2;
             this.landMax0.Value = new decimal(new int[] {
             800,
             0,
@@ -38231,7 +38232,7 @@
             0});
             this.landMin0.Name = "landMin0";
             this.landMin0.Size = new System.Drawing.Size(55, 20);
-            this.landMin0.TabIndex = 179;
+            this.landMin0.TabIndex = 1;
             this.landMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -38268,7 +38269,7 @@
             this.label624.Size = new System.Drawing.Size(95, 13);
             this.label624.TabIndex = 176;
             this.label624.Text = "Max Descent";
-            this.toolTip.SetToolTip(this.label624, "Speeed at which you move downwards.");
+            this.toolTip.SetToolTip(this.label624, "Speed at which you move downwards.");
             // 
             // label625
             // 
@@ -38279,7 +38280,7 @@
             this.label625.Size = new System.Drawing.Size(119, 13);
             this.label625.TabIndex = 175;
             this.label625.Text = "Descent Speeed";
-            this.toolTip.SetToolTip(this.label625, "Max doward speed at which you can land.");
+            this.toolTip.SetToolTip(this.label625, "Max downward speed at which you can land.");
             // 
             // label626
             // 
@@ -38322,7 +38323,7 @@
             this.landCheck4.Location = new System.Drawing.Point(8, 127);
             this.landCheck4.Name = "landCheck4";
             this.landCheck4.Size = new System.Drawing.Size(15, 14);
-            this.landCheck4.TabIndex = 171;
+            this.landCheck4.TabIndex = 12;
             this.landCheck4.UseVisualStyleBackColor = true;
             this.landCheck4.CheckedChanged += new System.EventHandler(this.landCheck4_CheckedChanged);
             // 
@@ -38334,7 +38335,7 @@
             this.landCheck3.Location = new System.Drawing.Point(8, 101);
             this.landCheck3.Name = "landCheck3";
             this.landCheck3.Size = new System.Drawing.Size(15, 14);
-            this.landCheck3.TabIndex = 170;
+            this.landCheck3.TabIndex = 9;
             this.landCheck3.UseVisualStyleBackColor = true;
             this.landCheck3.CheckedChanged += new System.EventHandler(this.landCheck3_CheckedChanged);
             // 
@@ -38346,7 +38347,7 @@
             this.landCheck2.Location = new System.Drawing.Point(8, 75);
             this.landCheck2.Name = "landCheck2";
             this.landCheck2.Size = new System.Drawing.Size(15, 14);
-            this.landCheck2.TabIndex = 169;
+            this.landCheck2.TabIndex = 6;
             this.landCheck2.UseVisualStyleBackColor = true;
             this.landCheck2.CheckedChanged += new System.EventHandler(this.landCheck2_CheckedChanged);
             // 
@@ -38358,7 +38359,7 @@
             this.landCheck1.Location = new System.Drawing.Point(8, 49);
             this.landCheck1.Name = "landCheck1";
             this.landCheck1.Size = new System.Drawing.Size(15, 14);
-            this.landCheck1.TabIndex = 168;
+            this.landCheck1.TabIndex = 3;
             this.landCheck1.UseVisualStyleBackColor = true;
             this.landCheck1.CheckedChanged += new System.EventHandler(this.landCheck1_CheckedChanged);
             // 
@@ -38370,7 +38371,7 @@
             this.landCheck0.Location = new System.Drawing.Point(8, 24);
             this.landCheck0.Name = "landCheck0";
             this.landCheck0.Size = new System.Drawing.Size(15, 14);
-            this.landCheck0.TabIndex = 167;
+            this.landCheck0.TabIndex = 0;
             this.landCheck0.UseVisualStyleBackColor = true;
             this.landCheck0.CheckedChanged += new System.EventHandler(this.landCheck0_CheckedChanged);
             // 
@@ -38425,7 +38426,7 @@
             0});
             this.ropeMax5.Name = "ropeMax5";
             this.ropeMax5.Size = new System.Drawing.Size(55, 20);
-            this.ropeMax5.TabIndex = 196;
+            this.ropeMax5.TabIndex = 17;
             this.ropeMax5.Value = new decimal(new int[] {
             500,
             0,
@@ -38449,7 +38450,7 @@
             0});
             this.ropeMin5.Name = "ropeMin5";
             this.ropeMin5.Size = new System.Drawing.Size(55, 20);
-            this.ropeMin5.TabIndex = 195;
+            this.ropeMin5.TabIndex = 16;
             this.ropeMin5.Value = new decimal(new int[] {
             10,
             0,
@@ -38476,7 +38477,7 @@
             this.ropeCheck5.Location = new System.Drawing.Point(8, 153);
             this.ropeCheck5.Name = "ropeCheck5";
             this.ropeCheck5.Size = new System.Drawing.Size(15, 14);
-            this.ropeCheck5.TabIndex = 193;
+            this.ropeCheck5.TabIndex = 15;
             this.ropeCheck5.UseVisualStyleBackColor = true;
             this.ropeCheck5.CheckedChanged += new System.EventHandler(this.ropeCheck5_CheckedChanged);
             // 
@@ -38495,7 +38496,7 @@
             0});
             this.ropeMax4.Name = "ropeMax4";
             this.ropeMax4.Size = new System.Drawing.Size(55, 20);
-            this.ropeMax4.TabIndex = 192;
+            this.ropeMax4.TabIndex = 14;
             this.ropeMax4.Value = new decimal(new int[] {
             64,
             0,
@@ -38518,7 +38519,7 @@
             0});
             this.ropeMin4.Name = "ropeMin4";
             this.ropeMin4.Size = new System.Drawing.Size(55, 20);
-            this.ropeMin4.TabIndex = 191;
+            this.ropeMin4.TabIndex = 13;
             this.ropeMin4.Value = new decimal(new int[] {
             1,
             0,
@@ -38537,7 +38538,7 @@
             0});
             this.ropeMax3.Name = "ropeMax3";
             this.ropeMax3.Size = new System.Drawing.Size(55, 20);
-            this.ropeMax3.TabIndex = 190;
+            this.ropeMax3.TabIndex = 11;
             this.ropeMax3.Value = new decimal(new int[] {
             1,
             0,
@@ -38556,7 +38557,7 @@
             0});
             this.ropeMin3.Name = "ropeMin3";
             this.ropeMin3.Size = new System.Drawing.Size(55, 20);
-            this.ropeMin3.TabIndex = 189;
+            this.ropeMin3.TabIndex = 10;
             this.ropeMin3.ValueChanged += new System.EventHandler(this.ropeMin3_ValueChanged);
             // 
             // ropeMax2
@@ -38574,7 +38575,7 @@
             0});
             this.ropeMax2.Name = "ropeMax2";
             this.ropeMax2.Size = new System.Drawing.Size(55, 20);
-            this.ropeMax2.TabIndex = 188;
+            this.ropeMax2.TabIndex = 8;
             this.ropeMax2.Value = new decimal(new int[] {
             1000,
             0,
@@ -38597,7 +38598,7 @@
             0});
             this.ropeMin2.Name = "ropeMin2";
             this.ropeMin2.Size = new System.Drawing.Size(55, 20);
-            this.ropeMin2.TabIndex = 187;
+            this.ropeMin2.TabIndex = 7;
             this.ropeMin2.Value = new decimal(new int[] {
             8,
             0,
@@ -38615,7 +38616,7 @@
             0});
             this.ropeMax1.Name = "ropeMax1";
             this.ropeMax1.Size = new System.Drawing.Size(55, 20);
-            this.ropeMax1.TabIndex = 186;
+            this.ropeMax1.TabIndex = 5;
             this.ropeMax1.Value = new decimal(new int[] {
             2000,
             0,
@@ -38633,7 +38634,7 @@
             0});
             this.ropeMin1.Name = "ropeMin1";
             this.ropeMin1.Size = new System.Drawing.Size(55, 20);
-            this.ropeMin1.TabIndex = 185;
+            this.ropeMin1.TabIndex = 4;
             this.ropeMin1.ValueChanged += new System.EventHandler(this.ropeMin1_ValueChanged);
             // 
             // ropeMax0
@@ -38646,7 +38647,7 @@
             0});
             this.ropeMax0.Name = "ropeMax0";
             this.ropeMax0.Size = new System.Drawing.Size(55, 20);
-            this.ropeMax0.TabIndex = 184;
+            this.ropeMax0.TabIndex = 2;
             this.ropeMax0.Value = new decimal(new int[] {
             2000,
             0,
@@ -38664,7 +38665,7 @@
             0});
             this.ropeMin0.Name = "ropeMin0";
             this.ropeMin0.Size = new System.Drawing.Size(55, 20);
-            this.ropeMin0.TabIndex = 183;
+            this.ropeMin0.TabIndex = 1;
             this.ropeMin0.ValueChanged += new System.EventHandler(this.ropeMin0_ValueChanged);
             // 
             // label630
@@ -38694,7 +38695,7 @@
             this.label632.Location = new System.Drawing.Point(29, 128);
             this.label632.Name = "label632";
             this.label632.Size = new System.Drawing.Size(95, 13);
-            this.label632.TabIndex = 180;
+            this.label632.TabIndex = 12;
             this.label632.Text = "Water Throw";
             this.toolTip.SetToolTip(this.label632, "Unknown.");
             // 
@@ -38750,7 +38751,7 @@
             this.ropeCheck4.Location = new System.Drawing.Point(8, 127);
             this.ropeCheck4.Name = "ropeCheck4";
             this.ropeCheck4.Size = new System.Drawing.Size(15, 14);
-            this.ropeCheck4.TabIndex = 175;
+            this.ropeCheck4.TabIndex = 12;
             this.ropeCheck4.UseVisualStyleBackColor = true;
             this.ropeCheck4.CheckedChanged += new System.EventHandler(this.ropeCheck4_CheckedChanged);
             // 
@@ -38762,7 +38763,7 @@
             this.ropeCheck3.Location = new System.Drawing.Point(8, 101);
             this.ropeCheck3.Name = "ropeCheck3";
             this.ropeCheck3.Size = new System.Drawing.Size(15, 14);
-            this.ropeCheck3.TabIndex = 174;
+            this.ropeCheck3.TabIndex = 9;
             this.ropeCheck3.UseVisualStyleBackColor = true;
             this.ropeCheck3.CheckedChanged += new System.EventHandler(this.ropeCheck3_CheckedChanged);
             // 
@@ -38774,7 +38775,7 @@
             this.ropeCheck2.Location = new System.Drawing.Point(8, 75);
             this.ropeCheck2.Name = "ropeCheck2";
             this.ropeCheck2.Size = new System.Drawing.Size(15, 14);
-            this.ropeCheck2.TabIndex = 173;
+            this.ropeCheck2.TabIndex = 6;
             this.ropeCheck2.UseVisualStyleBackColor = true;
             this.ropeCheck2.CheckedChanged += new System.EventHandler(this.ropeCheck2_CheckedChanged);
             // 
@@ -38786,7 +38787,7 @@
             this.ropeCheck1.Location = new System.Drawing.Point(8, 49);
             this.ropeCheck1.Name = "ropeCheck1";
             this.ropeCheck1.Size = new System.Drawing.Size(15, 14);
-            this.ropeCheck1.TabIndex = 172;
+            this.ropeCheck1.TabIndex = 3;
             this.ropeCheck1.UseVisualStyleBackColor = true;
             this.ropeCheck1.CheckedChanged += new System.EventHandler(this.ropeCheck1_CheckedChanged);
             // 
@@ -38798,7 +38799,7 @@
             this.ropeCheck0.Location = new System.Drawing.Point(8, 24);
             this.ropeCheck0.Name = "ropeCheck0";
             this.ropeCheck0.Size = new System.Drawing.Size(15, 14);
-            this.ropeCheck0.TabIndex = 171;
+            this.ropeCheck0.TabIndex = 0;
             this.ropeCheck0.UseVisualStyleBackColor = true;
             this.ropeCheck0.CheckedChanged += new System.EventHandler(this.ropeCheck0_CheckedChanged);
             // 
@@ -38843,7 +38844,7 @@
             this.dMax5.Location = new System.Drawing.Point(233, 152);
             this.dMax5.Name = "dMax5";
             this.dMax5.Size = new System.Drawing.Size(55, 20);
-            this.dMax5.TabIndex = 222;
+            this.dMax5.TabIndex = 17;
             this.dMax5.Value = new decimal(new int[] {
             100,
             0,
@@ -38857,7 +38858,7 @@
             this.dMin5.Location = new System.Drawing.Point(158, 152);
             this.dMin5.Name = "dMin5";
             this.dMin5.Size = new System.Drawing.Size(55, 20);
-            this.dMin5.TabIndex = 221;
+            this.dMin5.TabIndex = 16;
             this.dMin5.ValueChanged += new System.EventHandler(this.dMin5_ValueChanged);
             // 
             // label637
@@ -38879,7 +38880,7 @@
             this.dCheck5.Location = new System.Drawing.Point(8, 153);
             this.dCheck5.Name = "dCheck5";
             this.dCheck5.Size = new System.Drawing.Size(15, 14);
-            this.dCheck5.TabIndex = 219;
+            this.dCheck5.TabIndex = 15;
             this.dCheck5.UseVisualStyleBackColor = true;
             this.dCheck5.CheckedChanged += new System.EventHandler(this.dCheck5_CheckedChanged);
             // 
@@ -38889,7 +38890,7 @@
             this.dMax4.Location = new System.Drawing.Point(233, 126);
             this.dMax4.Name = "dMax4";
             this.dMax4.Size = new System.Drawing.Size(55, 20);
-            this.dMax4.TabIndex = 218;
+            this.dMax4.TabIndex = 14;
             this.dMax4.Value = new decimal(new int[] {
             100,
             0,
@@ -38903,7 +38904,7 @@
             this.dMin4.Location = new System.Drawing.Point(158, 126);
             this.dMin4.Name = "dMin4";
             this.dMin4.Size = new System.Drawing.Size(55, 20);
-            this.dMin4.TabIndex = 217;
+            this.dMin4.TabIndex = 13;
             this.dMin4.ValueChanged += new System.EventHandler(this.dMin4_ValueChanged);
             // 
             // dMax3
@@ -38916,7 +38917,7 @@
             0});
             this.dMax3.Name = "dMax3";
             this.dMax3.Size = new System.Drawing.Size(55, 20);
-            this.dMax3.TabIndex = 216;
+            this.dMax3.TabIndex = 11;
             this.dMax3.Value = new decimal(new int[] {
             500,
             0,
@@ -38934,7 +38935,7 @@
             0});
             this.dMin3.Name = "dMin3";
             this.dMin3.Size = new System.Drawing.Size(55, 20);
-            this.dMin3.TabIndex = 215;
+            this.dMin3.TabIndex = 10;
             this.dMin3.ValueChanged += new System.EventHandler(this.dMin3_ValueChanged);
             // 
             // dMax2
@@ -38948,7 +38949,7 @@
             0});
             this.dMax2.Name = "dMax2";
             this.dMax2.Size = new System.Drawing.Size(55, 20);
-            this.dMax2.TabIndex = 214;
+            this.dMax2.TabIndex = 8;
             this.dMax2.Value = new decimal(new int[] {
             5,
             0,
@@ -38967,7 +38968,7 @@
             0});
             this.dMin2.Name = "dMin2";
             this.dMin2.Size = new System.Drawing.Size(55, 20);
-            this.dMin2.TabIndex = 213;
+            this.dMin2.TabIndex = 7;
             this.dMin2.ValueChanged += new System.EventHandler(this.dMin2_ValueChanged);
             // 
             // dMax1
@@ -38981,7 +38982,7 @@
             0});
             this.dMax1.Name = "dMax1";
             this.dMax1.Size = new System.Drawing.Size(55, 20);
-            this.dMax1.TabIndex = 212;
+            this.dMax1.TabIndex = 5;
             this.dMax1.Value = new decimal(new int[] {
             200,
             0,
@@ -39000,7 +39001,7 @@
             0});
             this.dMin1.Name = "dMin1";
             this.dMin1.Size = new System.Drawing.Size(55, 20);
-            this.dMin1.TabIndex = 211;
+            this.dMin1.TabIndex = 4;
             this.dMin1.ValueChanged += new System.EventHandler(this.dMin1_ValueChanged);
             // 
             // dMax0
@@ -39014,7 +39015,7 @@
             -2147483648});
             this.dMax0.Name = "dMax0";
             this.dMax0.Size = new System.Drawing.Size(55, 20);
-            this.dMax0.TabIndex = 210;
+            this.dMax0.TabIndex = 2;
             this.dMax0.Value = new decimal(new int[] {
             100,
             0,
@@ -39033,7 +39034,7 @@
             -2147483648});
             this.dMin0.Name = "dMin0";
             this.dMin0.Size = new System.Drawing.Size(55, 20);
-            this.dMin0.TabIndex = 209;
+            this.dMin0.TabIndex = 1;
             this.dMin0.Value = new decimal(new int[] {
             100,
             0,
@@ -39124,7 +39125,7 @@
             this.dCheck4.Location = new System.Drawing.Point(8, 127);
             this.dCheck4.Name = "dCheck4";
             this.dCheck4.Size = new System.Drawing.Size(15, 14);
-            this.dCheck4.TabIndex = 201;
+            this.dCheck4.TabIndex = 12;
             this.dCheck4.UseVisualStyleBackColor = true;
             this.dCheck4.CheckedChanged += new System.EventHandler(this.dCheck4_CheckedChanged);
             // 
@@ -39136,7 +39137,7 @@
             this.dCheck3.Location = new System.Drawing.Point(8, 101);
             this.dCheck3.Name = "dCheck3";
             this.dCheck3.Size = new System.Drawing.Size(15, 14);
-            this.dCheck3.TabIndex = 200;
+            this.dCheck3.TabIndex = 9;
             this.dCheck3.UseVisualStyleBackColor = true;
             this.dCheck3.CheckedChanged += new System.EventHandler(this.dCheck3_CheckedChanged);
             // 
@@ -39148,7 +39149,7 @@
             this.dCheck2.Location = new System.Drawing.Point(8, 75);
             this.dCheck2.Name = "dCheck2";
             this.dCheck2.Size = new System.Drawing.Size(15, 14);
-            this.dCheck2.TabIndex = 199;
+            this.dCheck2.TabIndex = 6;
             this.dCheck2.UseVisualStyleBackColor = true;
             this.dCheck2.CheckedChanged += new System.EventHandler(this.dCheck2_CheckedChanged);
             // 
@@ -39160,7 +39161,7 @@
             this.dCheck1.Location = new System.Drawing.Point(8, 49);
             this.dCheck1.Name = "dCheck1";
             this.dCheck1.Size = new System.Drawing.Size(15, 14);
-            this.dCheck1.TabIndex = 198;
+            this.dCheck1.TabIndex = 3;
             this.dCheck1.UseVisualStyleBackColor = true;
             this.dCheck1.CheckedChanged += new System.EventHandler(this.dCheck1_CheckedChanged);
             // 
@@ -39172,7 +39173,7 @@
             this.dCheck0.Location = new System.Drawing.Point(8, 24);
             this.dCheck0.Name = "dCheck0";
             this.dCheck0.Size = new System.Drawing.Size(15, 14);
-            this.dCheck0.TabIndex = 197;
+            this.dCheck0.TabIndex = 0;
             this.dCheck0.UseVisualStyleBackColor = true;
             this.dCheck0.CheckedChanged += new System.EventHandler(this.dCheck0_CheckedChanged);
             // 
@@ -39222,6 +39223,30 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(340, 434);
             this.panel2.TabIndex = 1;
+            // 
+            // fCheckOnButt
+            // 
+            this.fCheckOnButt.Enabled = false;
+            this.fCheckOnButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fCheckOnButt.Location = new System.Drawing.Point(145, 377);
+            this.fCheckOnButt.Name = "fCheckOnButt";
+            this.fCheckOnButt.Size = new System.Drawing.Size(75, 23);
+            this.fCheckOnButt.TabIndex = 14;
+            this.fCheckOnButt.Text = "All On";
+            this.fCheckOnButt.UseVisualStyleBackColor = true;
+            this.fCheckOnButt.Click += new System.EventHandler(this.fCheckOnButt_Click);
+            // 
+            // fCheckOffButt
+            // 
+            this.fCheckOffButt.Enabled = false;
+            this.fCheckOffButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fCheckOffButt.Location = new System.Drawing.Point(64, 377);
+            this.fCheckOffButt.Name = "fCheckOffButt";
+            this.fCheckOffButt.Size = new System.Drawing.Size(75, 23);
+            this.fCheckOffButt.TabIndex = 13;
+            this.fCheckOffButt.Text = "All Off";
+            this.fCheckOffButt.UseVisualStyleBackColor = true;
+            this.fCheckOffButt.Click += new System.EventHandler(this.fCheckOffButt_Click);
             // 
             // fGroup
             // 
@@ -39275,7 +39300,7 @@
             0});
             this.fMax5.Name = "fMax5";
             this.fMax5.Size = new System.Drawing.Size(55, 20);
-            this.fMax5.TabIndex = 130;
+            this.fMax5.TabIndex = 17;
             this.fMax5.Value = new decimal(new int[] {
             256,
             0,
@@ -39299,7 +39324,7 @@
             0});
             this.fMin5.Name = "fMin5";
             this.fMin5.Size = new System.Drawing.Size(55, 20);
-            this.fMin5.TabIndex = 129;
+            this.fMin5.TabIndex = 16;
             this.fMin5.Value = new decimal(new int[] {
             30,
             0,
@@ -39326,7 +39351,7 @@
             this.fCheck5.Location = new System.Drawing.Point(11, 172);
             this.fCheck5.Name = "fCheck5";
             this.fCheck5.Size = new System.Drawing.Size(15, 14);
-            this.fCheck5.TabIndex = 127;
+            this.fCheck5.TabIndex = 15;
             this.fCheck5.UseVisualStyleBackColor = true;
             this.fCheck5.CheckedChanged += new System.EventHandler(this.fCheck5_CheckedChanged);
             // 
@@ -39345,7 +39370,7 @@
             0});
             this.fMax4.Name = "fMax4";
             this.fMax4.Size = new System.Drawing.Size(55, 20);
-            this.fMax4.TabIndex = 126;
+            this.fMax4.TabIndex = 14;
             this.fMax4.Value = new decimal(new int[] {
             1024,
             0,
@@ -39368,7 +39393,7 @@
             0});
             this.fMin4.Name = "fMin4";
             this.fMin4.Size = new System.Drawing.Size(55, 20);
-            this.fMin4.TabIndex = 125;
+            this.fMin4.TabIndex = 13;
             this.fMin4.Value = new decimal(new int[] {
             40,
             0,
@@ -39387,7 +39412,7 @@
             0});
             this.fMax3.Name = "fMax3";
             this.fMax3.Size = new System.Drawing.Size(55, 20);
-            this.fMax3.TabIndex = 124;
+            this.fMax3.TabIndex = 11;
             this.fMax3.Value = new decimal(new int[] {
             100,
             0,
@@ -39406,7 +39431,7 @@
             0});
             this.fMin3.Name = "fMin3";
             this.fMin3.Size = new System.Drawing.Size(55, 20);
-            this.fMin3.TabIndex = 123;
+            this.fMin3.TabIndex = 10;
             this.fMin3.Value = new decimal(new int[] {
             18,
             0,
@@ -39430,7 +39455,7 @@
             0});
             this.fMax2.Name = "fMax2";
             this.fMax2.Size = new System.Drawing.Size(55, 20);
-            this.fMax2.TabIndex = 122;
+            this.fMax2.TabIndex = 8;
             this.fMax2.Value = new decimal(new int[] {
             1000,
             0,
@@ -39454,7 +39479,7 @@
             0});
             this.fMin2.Name = "fMin2";
             this.fMin2.Size = new System.Drawing.Size(55, 20);
-            this.fMin2.TabIndex = 121;
+            this.fMin2.TabIndex = 7;
             this.fMin2.Value = new decimal(new int[] {
             80,
             0,
@@ -39472,7 +39497,7 @@
             0});
             this.fMax1.Name = "fMax1";
             this.fMax1.Size = new System.Drawing.Size(55, 20);
-            this.fMax1.TabIndex = 120;
+            this.fMax1.TabIndex = 5;
             this.fMax1.Value = new decimal(new int[] {
             100,
             0,
@@ -39490,7 +39515,7 @@
             0});
             this.fMin1.Name = "fMin1";
             this.fMin1.Size = new System.Drawing.Size(55, 20);
-            this.fMin1.TabIndex = 119;
+            this.fMin1.TabIndex = 4;
             this.fMin1.Value = new decimal(new int[] {
             1,
             0,
@@ -39514,7 +39539,7 @@
             0});
             this.fMax0.Name = "fMax0";
             this.fMax0.Size = new System.Drawing.Size(55, 20);
-            this.fMax0.TabIndex = 118;
+            this.fMax0.TabIndex = 2;
             this.fMax0.Value = new decimal(new int[] {
             128,
             0,
@@ -39538,7 +39563,7 @@
             0});
             this.fMin0.Name = "fMin0";
             this.fMin0.Size = new System.Drawing.Size(55, 20);
-            this.fMin0.TabIndex = 117;
+            this.fMin0.TabIndex = 1;
             this.fMin0.Value = new decimal(new int[] {
             10,
             0,
@@ -39629,7 +39654,7 @@
             this.fCheck4.Location = new System.Drawing.Point(11, 146);
             this.fCheck4.Name = "fCheck4";
             this.fCheck4.Size = new System.Drawing.Size(15, 14);
-            this.fCheck4.TabIndex = 109;
+            this.fCheck4.TabIndex = 12;
             this.fCheck4.UseVisualStyleBackColor = true;
             this.fCheck4.CheckedChanged += new System.EventHandler(this.fCheck4_CheckedChanged);
             // 
@@ -39641,7 +39666,7 @@
             this.fCheck3.Location = new System.Drawing.Point(11, 120);
             this.fCheck3.Name = "fCheck3";
             this.fCheck3.Size = new System.Drawing.Size(15, 14);
-            this.fCheck3.TabIndex = 108;
+            this.fCheck3.TabIndex = 9;
             this.fCheck3.UseVisualStyleBackColor = true;
             this.fCheck3.CheckedChanged += new System.EventHandler(this.fCheck3_CheckedChanged);
             // 
@@ -39653,7 +39678,7 @@
             this.fCheck2.Location = new System.Drawing.Point(11, 94);
             this.fCheck2.Name = "fCheck2";
             this.fCheck2.Size = new System.Drawing.Size(15, 14);
-            this.fCheck2.TabIndex = 107;
+            this.fCheck2.TabIndex = 6;
             this.fCheck2.UseVisualStyleBackColor = true;
             this.fCheck2.CheckedChanged += new System.EventHandler(this.fCheck2_CheckedChanged);
             // 
@@ -39665,7 +39690,7 @@
             this.fCheck1.Location = new System.Drawing.Point(11, 68);
             this.fCheck1.Name = "fCheck1";
             this.fCheck1.Size = new System.Drawing.Size(15, 14);
-            this.fCheck1.TabIndex = 106;
+            this.fCheck1.TabIndex = 3;
             this.fCheck1.UseVisualStyleBackColor = true;
             this.fCheck1.CheckedChanged += new System.EventHandler(this.fCheck1_CheckedChanged);
             // 
@@ -39677,7 +39702,7 @@
             this.fCheck0.Location = new System.Drawing.Point(11, 43);
             this.fCheck0.Name = "fCheck0";
             this.fCheck0.Size = new System.Drawing.Size(15, 14);
-            this.fCheck0.TabIndex = 105;
+            this.fCheck0.TabIndex = 0;
             this.fCheck0.UseVisualStyleBackColor = true;
             this.fCheck0.CheckedChanged += new System.EventHandler(this.fCheck0_CheckedChanged);
             // 
@@ -39740,6 +39765,30 @@
             this.panel3.Size = new System.Drawing.Size(340, 435);
             this.panel3.TabIndex = 5;
             // 
+            // amssnCheckOnButt
+            // 
+            this.amssnCheckOnButt.Enabled = false;
+            this.amssnCheckOnButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amssnCheckOnButt.Location = new System.Drawing.Point(145, 377);
+            this.amssnCheckOnButt.Name = "amssnCheckOnButt";
+            this.amssnCheckOnButt.Size = new System.Drawing.Size(75, 23);
+            this.amssnCheckOnButt.TabIndex = 16;
+            this.amssnCheckOnButt.Text = "All On";
+            this.amssnCheckOnButt.UseVisualStyleBackColor = true;
+            this.amssnCheckOnButt.Click += new System.EventHandler(this.amssnCheckOnButt_Click);
+            // 
+            // amssnCheckOffButt
+            // 
+            this.amssnCheckOffButt.Enabled = false;
+            this.amssnCheckOffButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amssnCheckOffButt.Location = new System.Drawing.Point(64, 377);
+            this.amssnCheckOffButt.Name = "amssnCheckOffButt";
+            this.amssnCheckOffButt.Size = new System.Drawing.Size(75, 23);
+            this.amssnCheckOffButt.TabIndex = 15;
+            this.amssnCheckOffButt.Text = "All Off";
+            this.amssnCheckOffButt.UseVisualStyleBackColor = true;
+            this.amssnCheckOffButt.Click += new System.EventHandler(this.amssnCheckOffButt_Click);
+            // 
             // amssnGroup
             // 
             this.amssnGroup.BackColor = System.Drawing.SystemColors.Window;
@@ -39775,7 +39824,7 @@
             0});
             this.amssnMax1.Name = "amssnMax1";
             this.amssnMax1.Size = new System.Drawing.Size(55, 20);
-            this.amssnMax1.TabIndex = 130;
+            this.amssnMax1.TabIndex = 5;
             this.amssnMax1.Value = new decimal(new int[] {
             10,
             0,
@@ -39798,7 +39847,7 @@
             0});
             this.amssnMin1.Name = "amssnMin1";
             this.amssnMin1.Size = new System.Drawing.Size(55, 20);
-            this.amssnMin1.TabIndex = 129;
+            this.amssnMin1.TabIndex = 4;
             this.amssnMin1.Value = new decimal(new int[] {
             3,
             0,
@@ -39821,7 +39870,7 @@
             0});
             this.amssnMax0.Name = "amssnMax0";
             this.amssnMax0.Size = new System.Drawing.Size(55, 20);
-            this.amssnMax0.TabIndex = 128;
+            this.amssnMax0.TabIndex = 2;
             this.amssnMax0.Value = new decimal(new int[] {
             10,
             0,
@@ -39844,7 +39893,7 @@
             0});
             this.amssnMin0.Name = "amssnMin0";
             this.amssnMin0.Size = new System.Drawing.Size(55, 20);
-            this.amssnMin0.TabIndex = 127;
+            this.amssnMin0.TabIndex = 1;
             this.amssnMin0.Value = new decimal(new int[] {
             3,
             0,
@@ -39902,7 +39951,7 @@
             this.amssnCheck1.Location = new System.Drawing.Point(12, 71);
             this.amssnCheck1.Name = "amssnCheck1";
             this.amssnCheck1.Size = new System.Drawing.Size(15, 14);
-            this.amssnCheck1.TabIndex = 122;
+            this.amssnCheck1.TabIndex = 3;
             this.amssnCheck1.UseVisualStyleBackColor = true;
             this.amssnCheck1.CheckedChanged += new System.EventHandler(this.amssnCheck1_CheckedChanged);
             // 
@@ -39914,7 +39963,7 @@
             this.amssnCheck0.Location = new System.Drawing.Point(12, 46);
             this.amssnCheck0.Name = "amssnCheck0";
             this.amssnCheck0.Size = new System.Drawing.Size(15, 14);
-            this.amssnCheck0.TabIndex = 121;
+            this.amssnCheck0.TabIndex = 0;
             this.amssnCheck0.UseVisualStyleBackColor = true;
             this.amssnCheck0.CheckedChanged += new System.EventHandler(this.amssnCheck0_CheckedChanged);
             // 
@@ -39972,7 +40021,7 @@
             this.seedBox.Location = new System.Drawing.Point(137, 42);
             this.seedBox.Name = "seedBox";
             this.seedBox.Size = new System.Drawing.Size(192, 20);
-            this.seedBox.TabIndex = 127;
+            this.seedBox.TabIndex = 0;
             // 
             // label657
             // 
@@ -39990,7 +40039,7 @@
             this.randButt.Location = new System.Drawing.Point(0, 116);
             this.randButt.Name = "randButt";
             this.randButt.Size = new System.Drawing.Size(340, 96);
-            this.randButt.TabIndex = 4;
+            this.randButt.TabIndex = 1;
             this.randButt.Text = "Randomize with Current Settings";
             this.randButt.UseVisualStyleBackColor = true;
             this.randButt.Click += new System.EventHandler(this.randButt_Click);
@@ -40001,7 +40050,7 @@
             this.resetButt.Location = new System.Drawing.Point(0, 304);
             this.resetButt.Name = "resetButt";
             this.resetButt.Size = new System.Drawing.Size(340, 69);
-            this.resetButt.TabIndex = 3;
+            this.resetButt.TabIndex = 2;
             this.resetButt.Text = "Reset Files";
             this.resetButt.UseVisualStyleBackColor = true;
             this.resetButt.Click += new System.EventHandler(this.resetButt_Click);
@@ -40013,7 +40062,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(353, 24);
-            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // toolStripMenuItem1
@@ -40023,59 +40072,11 @@
             this.toolStripMenuItem1.Text = "Help";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
-            // fCheckOnButt
-            // 
-            this.fCheckOnButt.Enabled = false;
-            this.fCheckOnButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fCheckOnButt.Location = new System.Drawing.Point(145, 377);
-            this.fCheckOnButt.Name = "fCheckOnButt";
-            this.fCheckOnButt.Size = new System.Drawing.Size(75, 23);
-            this.fCheckOnButt.TabIndex = 14;
-            this.fCheckOnButt.Text = "All On";
-            this.fCheckOnButt.UseVisualStyleBackColor = true;
-            this.fCheckOnButt.Click += new System.EventHandler(this.fCheckOnButt_Click);
-            // 
-            // fCheckOffButt
-            // 
-            this.fCheckOffButt.Enabled = false;
-            this.fCheckOffButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fCheckOffButt.Location = new System.Drawing.Point(64, 377);
-            this.fCheckOffButt.Name = "fCheckOffButt";
-            this.fCheckOffButt.Size = new System.Drawing.Size(75, 23);
-            this.fCheckOffButt.TabIndex = 13;
-            this.fCheckOffButt.Text = "All Off";
-            this.fCheckOffButt.UseVisualStyleBackColor = true;
-            this.fCheckOffButt.Click += new System.EventHandler(this.fCheckOffButt_Click);
-            // 
-            // amssnCheckOnButt
-            // 
-            this.amssnCheckOnButt.Enabled = false;
-            this.amssnCheckOnButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amssnCheckOnButt.Location = new System.Drawing.Point(145, 377);
-            this.amssnCheckOnButt.Name = "amssnCheckOnButt";
-            this.amssnCheckOnButt.Size = new System.Drawing.Size(75, 23);
-            this.amssnCheckOnButt.TabIndex = 16;
-            this.amssnCheckOnButt.Text = "All On";
-            this.amssnCheckOnButt.UseVisualStyleBackColor = true;
-            this.amssnCheckOnButt.Click += new System.EventHandler(this.amssnCheckOnButt_Click);
-            // 
-            // amssnCheckOffButt
-            // 
-            this.amssnCheckOffButt.Enabled = false;
-            this.amssnCheckOffButt.Font = new System.Drawing.Font("NSimSun", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amssnCheckOffButt.Location = new System.Drawing.Point(64, 377);
-            this.amssnCheckOffButt.Name = "amssnCheckOffButt";
-            this.amssnCheckOffButt.Size = new System.Drawing.Size(75, 23);
-            this.amssnCheckOffButt.TabIndex = 15;
-            this.amssnCheckOffButt.Text = "All Off";
-            this.amssnCheckOffButt.UseVisualStyleBackColor = true;
-            this.amssnCheckOffButt.Click += new System.EventHandler(this.amssnCheckOffButt_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 497);
+            this.ClientSize = new System.Drawing.Size(353, 502);
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
