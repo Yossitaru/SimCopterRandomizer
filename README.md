@@ -21,6 +21,8 @@ The optional seed value can be any string. If you want a random seed, leave the 
 
 New tab to shuffle the order of Career Cities. Also makes the corresponding flyover Smacker videos follow. The Seed box can be used for the shuffler as well.
 
+The names on the city selection menu during the career will not change to reflect the different cities.
+
 Resetting the cities requires internet access to download a copy of the files as they were originally named. 
 
 If you wish to replace the files manually, first navigate to SIMCOPTER\smk and delete the files with thee names "cityX_b.smk" and "cityX_s.smk" then navigate to SIMCOPTER\cities\career and delete all of the cities. Then go to https://drive.google.com/file/d/1sSJccqbgkz5blTaodZcsxTQDJxKctq3P/view?usp=sharing and download then unzip the contents. .smk files go in SIMCOPTER\smk and .sc2 files go to SIMCOPTER\cities\careers
