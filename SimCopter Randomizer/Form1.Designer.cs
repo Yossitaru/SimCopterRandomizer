@@ -2421,6 +2421,10 @@
             this.label657 = new System.Windows.Forms.Label();
             this.randButt = new System.Windows.Forms.Button();
             this.resetButt = new System.Windows.Forms.Button();
+            this.CMaps = new System.Windows.Forms.TabPage();
+            this.resMaps = new System.Windows.Forms.Button();
+            this.rMaps = new System.Windows.Forms.Button();
+            this.label658 = new System.Windows.Forms.Label();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -3586,6 +3590,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.amssnMax0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amssnMin0)).BeginInit();
             this.Final.SuspendLayout();
+            this.CMaps.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -27823,6 +27828,7 @@
             this.Tabs.Controls.Add(this.Fire);
             this.Tabs.Controls.Add(this.AutoMissions);
             this.Tabs.Controls.Add(this.Final);
+            this.Tabs.Controls.Add(this.CMaps);
             this.Tabs.HotTrack = true;
             this.Tabs.Location = new System.Drawing.Point(0, 27);
             this.Tabs.Name = "Tabs";
@@ -40013,7 +40019,7 @@
             this.Final.Name = "Final";
             this.Final.Size = new System.Drawing.Size(343, 445);
             this.Final.TabIndex = 5;
-            this.Final.Text = "Final Options";
+            this.Final.Text = "Tweaker Final";
             this.Final.UseVisualStyleBackColor = true;
             // 
             // seedBox
@@ -40022,6 +40028,7 @@
             this.seedBox.Name = "seedBox";
             this.seedBox.Size = new System.Drawing.Size(192, 20);
             this.seedBox.TabIndex = 0;
+            this.toolTip.SetToolTip(this.seedBox, "Works with Tweaker and Map randomization.");
             // 
             // label657
             // 
@@ -40035,25 +40042,69 @@
             // 
             // randButt
             // 
-            this.randButt.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.randButt.Font = new System.Drawing.Font("NSimSun", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.randButt.Location = new System.Drawing.Point(0, 116);
             this.randButt.Name = "randButt";
             this.randButt.Size = new System.Drawing.Size(340, 96);
             this.randButt.TabIndex = 1;
-            this.randButt.Text = "Randomize with Current Settings";
+            this.randButt.Text = "Randomize Tweaker Files with Current Settings";
             this.randButt.UseVisualStyleBackColor = true;
             this.randButt.Click += new System.EventHandler(this.randButt_Click);
             // 
             // resetButt
             // 
-            this.resetButt.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButt.Font = new System.Drawing.Font("NSimSun", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetButt.Location = new System.Drawing.Point(0, 304);
             this.resetButt.Name = "resetButt";
             this.resetButt.Size = new System.Drawing.Size(340, 69);
             this.resetButt.TabIndex = 2;
-            this.resetButt.Text = "Reset Files";
+            this.resetButt.Text = "Reset Tweaker Files";
             this.resetButt.UseVisualStyleBackColor = true;
             this.resetButt.Click += new System.EventHandler(this.resetButt_Click);
+            // 
+            // CMaps
+            // 
+            this.CMaps.Controls.Add(this.resMaps);
+            this.CMaps.Controls.Add(this.rMaps);
+            this.CMaps.Controls.Add(this.label658);
+            this.CMaps.Location = new System.Drawing.Point(4, 25);
+            this.CMaps.Name = "CMaps";
+            this.CMaps.Size = new System.Drawing.Size(343, 445);
+            this.CMaps.TabIndex = 6;
+            this.CMaps.Text = "Career Maps";
+            this.CMaps.UseVisualStyleBackColor = true;
+            // 
+            // resMaps
+            // 
+            this.resMaps.Font = new System.Drawing.Font("NSimSun", 20F, System.Drawing.FontStyle.Bold);
+            this.resMaps.Location = new System.Drawing.Point(0, 304);
+            this.resMaps.Name = "resMaps";
+            this.resMaps.Size = new System.Drawing.Size(340, 96);
+            this.resMaps.TabIndex = 3;
+            this.resMaps.Text = "Reset Career Maps";
+            this.resMaps.UseVisualStyleBackColor = true;
+            this.resMaps.Click += new System.EventHandler(this.resMaps_Click);
+            // 
+            // rMaps
+            // 
+            this.rMaps.Font = new System.Drawing.Font("NSimSun", 20F, System.Drawing.FontStyle.Bold);
+            this.rMaps.Location = new System.Drawing.Point(0, 116);
+            this.rMaps.Name = "rMaps";
+            this.rMaps.Size = new System.Drawing.Size(340, 96);
+            this.rMaps.TabIndex = 2;
+            this.rMaps.Text = "Shuffle Career Maps";
+            this.rMaps.UseVisualStyleBackColor = true;
+            this.rMaps.Click += new System.EventHandler(this.rMaps_Click);
+            // 
+            // label658
+            // 
+            this.label658.Font = new System.Drawing.Font("NSimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label658.Location = new System.Drawing.Point(8, 13);
+            this.label658.Name = "label658";
+            this.label658.Size = new System.Drawing.Size(327, 27);
+            this.label658.TabIndex = 1;
+            this.label658.Text = "Career Map Randomizer";
+            this.label658.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip1
             // 
@@ -41306,6 +41357,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.amssnMin0)).EndInit();
             this.Final.ResumeLayout(false);
             this.Final.PerformLayout();
+            this.CMaps.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -43709,6 +43761,10 @@
         private System.Windows.Forms.Button fCheckOffButt;
         private System.Windows.Forms.Button amssnCheckOnButt;
         private System.Windows.Forms.Button amssnCheckOffButt;
+        private System.Windows.Forms.TabPage CMaps;
+        private System.Windows.Forms.Button resMaps;
+        private System.Windows.Forms.Button rMaps;
+        private System.Windows.Forms.Label label658;
     }
 }
 

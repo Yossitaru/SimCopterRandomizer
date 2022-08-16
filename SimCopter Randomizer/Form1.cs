@@ -21,6 +21,9 @@ namespace SimCopter_Randomizer
         public static class Globals
         {
             public static string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+            public static string mapFolder = System.IO.Path.Combine(exeFolder, "..", "cities", "career");
+            public static string smkFolder = System.IO.Path.Combine(exeFolder, "..", "smk");
+            public static bool dlComplete = false;
             public static Random randMod = new Random();
         }
 
@@ -5534,7 +5537,7 @@ namespace SimCopter_Randomizer
             {
                 fNums = fChaosNums();
             }
-            if(fCustom.Checked)
+            if (fCustom.Checked)
             {
                 fNums = fCustomizedums();
             }
@@ -5685,7 +5688,7 @@ namespace SimCopter_Randomizer
             {
                 aNums = chaosAMssnNums();
             }
-            if(amssnCustom.Checked)
+            if (amssnCustom.Checked)
             {
                 aNums = customizedAMssnNums();
             }
@@ -16093,7 +16096,7 @@ namespace SimCopter_Randomizer
             fuelRateMin8.Enabled = fuelRateCheck8.Checked;
             fuelRateMax8.Enabled = fuelRateCheck8.Checked;
         }
-        
+
         #endregion
 
         #region cost
@@ -16151,7 +16154,7 @@ namespace SimCopter_Randomizer
             costMin8.Enabled = costCheck8.Checked;
             costMax8.Enabled = costCheck8.Checked;
         }
-        
+
         #endregion
 
         #region damage
@@ -16209,7 +16212,7 @@ namespace SimCopter_Randomizer
             damageMin8.Enabled = damageCheck8.Checked;
             damageMax8.Enabled = damageCheck8.Checked;
         }
-        
+
         #endregion
 
         #region fuel
@@ -16325,7 +16328,7 @@ namespace SimCopter_Randomizer
             repairMin8.Enabled = repairCheck8.Checked;
             repairMax8.Enabled = repairCheck8.Checked;
         }
-        
+
         #endregion
 
         #region fuelcost
@@ -21064,6 +21067,88 @@ namespace SimCopter_Randomizer
         {
             amssnCheck0.Checked = true;
             amssnCheck1.Checked = true;
+        }
+
+        //Map Buttons
+        private void resMaps_Click(object sender, EventArgs e)
+        {
+            Tabs.Enabled = false;
+            rMaps.Enabled = false;
+            resMaps.Enabled = false;
+            if (File.Exists(Globals.mapFolder + "\\city0.sc2") && File.Exists(Globals.smkFolder + "\\city0_b.smk"))
+            {
+                bool cont = true;
+                ProgressPop pop = new ProgressPop(0);
+                pop.Location = this.Location;
+                pop.Text = "Resetting Career Cities";
+                pop.path1 = Globals.exeFolder;
+                pop.path2 = Globals.mapFolder;
+                pop.path3 = Globals.smkFolder;
+                Shell32.Shell objShell = new Shell32.Shell();
+                pop.ShowDialog();
+                using (FileStream st = File.OpenRead(Globals.exeFolder + "\\CF.zip"))
+                {
+                    System.Security.Cryptography.SHA256 hash = System.Security.Cryptography.SHA256.Create();
+                    if (!bTS(hash.ComputeHash(st)).Contains("2d48db91726eee77205f5e59de1d17f4751e4b2a8d053cc67aece6655ef8d83f"))
+                        cont = false;
+                    hash.Dispose();
+                    st.Close();
+                }
+                if (cont)
+                {
+                    pop = new ProgressPop(1);
+                    pop.Location = this.Location;
+                    pop.Text = "Resetting Career Cities";
+                    pop.path1 = Globals.exeFolder;
+                    pop.path2 = Globals.mapFolder;
+                    pop.path3 = Globals.smkFolder;
+                    pop.destinationFolder = objShell.NameSpace(Globals.exeFolder);
+                    pop.sourceFile = objShell.NameSpace(Globals.exeFolder + "\\CF.zip");
+                    pop.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("City file corrupted or failed to download.");
+                    pop.Dispose();
+                }
+            }
+            else
+                System.Windows.Forms.MessageBox.Show("This must run in SimCopter's tweak folder.");
+            Tabs.Enabled = true;
+            rMaps.Enabled = true;
+            resMaps.Enabled = true;
+        }
+
+        private void rMaps_Click(object sender, EventArgs e)
+        {
+            int[] maps = new int[] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+            int x = 0;
+            //Choose which maps go where.
+            while (x < 30)
+            {
+                int temp = Globals.randMod.Next(0, 30);
+                Console.WriteLine(temp.ToString());
+                if (!(Array.Exists(maps, element => element == temp)))
+                {
+                    maps[x] = temp;
+                    x++;
+                }
+            }
+            //Assign the maps to their new spots +30, to avoid overwriting.
+            for (int y = 0; y < 30; y++)
+            {
+                File.Move(Globals.mapFolder + "\\city" + maps[y].ToString() + ".sc2", Globals.mapFolder + "\\city" + (y + 30).ToString() + ".sc2");
+                File.Move(Globals.smkFolder + "\\city" + maps[y].ToString() + "_b.smk", Globals.smkFolder + "\\city" + (y + 30).ToString() + "_b.smk");
+                File.Move(Globals.smkFolder + "\\city" + maps[y].ToString() + "_s.smk", Globals.smkFolder + "\\city" + (y + 30).ToString() + "_s.smk");
+            }
+            //Move the maps to their real spots.
+            for (int y = 30; y < 60; y++)
+            {
+                File.Move(Globals.mapFolder + "\\city" + y.ToString() + ".sc2", Globals.mapFolder + "\\city" + (y - 30).ToString() + ".sc2");
+                File.Move(Globals.smkFolder + "\\city" + y.ToString() + "_b.smk", Globals.smkFolder + "\\city" + (y - 30).ToString() + "_b.smk");
+                File.Move(Globals.smkFolder + "\\city" + y.ToString() + "_s.smk", Globals.smkFolder + "\\city" + (y - 30).ToString() + "_s.smk");
+            }
+            MessageBox.Show("Maps Shuffled.");
         }
     }
 }
