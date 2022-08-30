@@ -33,6 +33,7 @@ Then navigate to SIMCOPTER\cities\career and delete all of the cities, the origi
 Please delete the Backup folders after restoring your files.
 
 =======================Sound Shuffling=============================
+
 Similarly to the career city shuffling, the sound effects within the game can now be shuffled at random.
 
 This includes sounds that are unused by default. Sounds may be used at triggers not appropriate to their length. Your enjoyment may vary.
