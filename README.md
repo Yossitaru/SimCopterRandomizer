@@ -1,4 +1,5 @@
-============================================IMPORTANT=======================================
+======================================IMPORTANT=================================
+
 If you used version 3.0 to shuffle your cities, please use that version to restore your default cities, or do so manually before using any newer versions. If you do not, more recent versions will not be able to automatically restore your city files to default.
 
 # SimCopterRandomizer
