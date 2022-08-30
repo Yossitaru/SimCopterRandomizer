@@ -2428,6 +2428,13 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Sound = new System.Windows.Forms.TabPage();
+            this.label659 = new System.Windows.Forms.Label();
+            this.rSoundsButt = new System.Windows.Forms.Button();
+            this.copterSoundBox = new System.Windows.Forms.CheckBox();
+            this.engSoundsBox = new System.Windows.Forms.CheckBox();
+            this.peopleSoundBox = new System.Windows.Forms.CheckBox();
+            this.resSoundsButt = new System.Windows.Forms.Button();
             this.cPanel.SuspendLayout();
             this.cityTabs.SuspendLayout();
             this.C0.SuspendLayout();
@@ -3592,6 +3599,7 @@
             this.Final.SuspendLayout();
             this.CMaps.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.Sound.SuspendLayout();
             this.SuspendLayout();
             // 
             // cPanel
@@ -27829,6 +27837,7 @@
             this.Tabs.Controls.Add(this.AutoMissions);
             this.Tabs.Controls.Add(this.Final);
             this.Tabs.Controls.Add(this.CMaps);
+            this.Tabs.Controls.Add(this.Sound);
             this.Tabs.HotTrack = true;
             this.Tabs.Location = new System.Drawing.Point(0, 27);
             this.Tabs.Name = "Tabs";
@@ -40123,6 +40132,95 @@
             this.toolStripMenuItem1.Text = "Help";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // Sound
+            // 
+            this.Sound.Controls.Add(this.resSoundsButt);
+            this.Sound.Controls.Add(this.peopleSoundBox);
+            this.Sound.Controls.Add(this.engSoundsBox);
+            this.Sound.Controls.Add(this.copterSoundBox);
+            this.Sound.Controls.Add(this.rSoundsButt);
+            this.Sound.Controls.Add(this.label659);
+            this.Sound.Location = new System.Drawing.Point(4, 25);
+            this.Sound.Name = "Sound";
+            this.Sound.Size = new System.Drawing.Size(343, 445);
+            this.Sound.TabIndex = 7;
+            this.Sound.Text = "Sound";
+            this.Sound.UseVisualStyleBackColor = true;
+            // 
+            // label659
+            // 
+            this.label659.Font = new System.Drawing.Font("NSimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label659.Location = new System.Drawing.Point(8, 13);
+            this.label659.Name = "label659";
+            this.label659.Size = new System.Drawing.Size(327, 27);
+            this.label659.TabIndex = 2;
+            this.label659.Text = "Sounds Randomizer";
+            this.label659.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rSoundsButt
+            // 
+            this.rSoundsButt.Font = new System.Drawing.Font("NSimSun", 20F, System.Drawing.FontStyle.Bold);
+            this.rSoundsButt.Location = new System.Drawing.Point(0, 116);
+            this.rSoundsButt.Name = "rSoundsButt";
+            this.rSoundsButt.Size = new System.Drawing.Size(340, 96);
+            this.rSoundsButt.TabIndex = 3;
+            this.rSoundsButt.Text = "Shuffle Sounds";
+            this.rSoundsButt.UseVisualStyleBackColor = true;
+            this.rSoundsButt.Click += new System.EventHandler(this.rSoundsButt_Click);
+            // 
+            // copterSoundBox
+            // 
+            this.copterSoundBox.AutoSize = true;
+            this.copterSoundBox.Checked = true;
+            this.copterSoundBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.copterSoundBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copterSoundBox.Location = new System.Drawing.Point(0, 219);
+            this.copterSoundBox.Name = "copterSoundBox";
+            this.copterSoundBox.Size = new System.Drawing.Size(102, 16);
+            this.copterSoundBox.TabIndex = 4;
+            this.copterSoundBox.Text = "Vehicle Sounds";
+            this.toolTip.SetToolTip(this.copterSoundBox, "Sounds relating to the copter and otheer vehicles.");
+            this.copterSoundBox.UseVisualStyleBackColor = true;
+            // 
+            // engSoundsBox
+            // 
+            this.engSoundsBox.AutoSize = true;
+            this.engSoundsBox.Checked = true;
+            this.engSoundsBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.engSoundsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.engSoundsBox.Location = new System.Drawing.Point(234, 218);
+            this.engSoundsBox.Name = "engSoundsBox";
+            this.engSoundsBox.Size = new System.Drawing.Size(101, 16);
+            this.engSoundsBox.TabIndex = 5;
+            this.engSoundsBox.Text = "English Sounds";
+            this.toolTip.SetToolTip(this.engSoundsBox, "English sounds, including dispatch, megaphone and services.");
+            this.engSoundsBox.UseVisualStyleBackColor = true;
+            // 
+            // peopleSoundBox
+            // 
+            this.peopleSoundBox.AutoSize = true;
+            this.peopleSoundBox.Checked = true;
+            this.peopleSoundBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.peopleSoundBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.peopleSoundBox.Location = new System.Drawing.Point(117, 218);
+            this.peopleSoundBox.Name = "peopleSoundBox";
+            this.peopleSoundBox.Size = new System.Drawing.Size(98, 16);
+            this.peopleSoundBox.TabIndex = 6;
+            this.peopleSoundBox.Text = "People Sounds";
+            this.toolTip.SetToolTip(this.peopleSoundBox, "Sounds relating to people on thee ground, including yourself.");
+            this.peopleSoundBox.UseVisualStyleBackColor = true;
+            // 
+            // resSoundsButt
+            // 
+            this.resSoundsButt.Font = new System.Drawing.Font("NSimSun", 20F, System.Drawing.FontStyle.Bold);
+            this.resSoundsButt.Location = new System.Drawing.Point(0, 304);
+            this.resSoundsButt.Name = "resSoundsButt";
+            this.resSoundsButt.Size = new System.Drawing.Size(340, 96);
+            this.resSoundsButt.TabIndex = 7;
+            this.resSoundsButt.Text = "Reset Sounds";
+            this.resSoundsButt.UseVisualStyleBackColor = true;
+            this.resSoundsButt.Click += new System.EventHandler(this.resSoundsButt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -41360,6 +41458,8 @@
             this.CMaps.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.Sound.ResumeLayout(false);
+            this.Sound.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -43765,6 +43865,13 @@
         private System.Windows.Forms.Button resMaps;
         private System.Windows.Forms.Button rMaps;
         private System.Windows.Forms.Label label658;
+        private System.Windows.Forms.TabPage Sound;
+        private System.Windows.Forms.Button resSoundsButt;
+        private System.Windows.Forms.CheckBox peopleSoundBox;
+        private System.Windows.Forms.CheckBox engSoundsBox;
+        private System.Windows.Forms.CheckBox copterSoundBox;
+        private System.Windows.Forms.Button rSoundsButt;
+        private System.Windows.Forms.Label label659;
     }
 }
 

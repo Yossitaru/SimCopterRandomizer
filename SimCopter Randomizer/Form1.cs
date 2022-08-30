@@ -23,6 +23,9 @@ namespace SimCopter_Randomizer
             public static string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
             public static string mapFolder = System.IO.Path.Combine(exeFolder, "..", "cities", "career");
             public static string smkFolder = System.IO.Path.Combine(exeFolder, "..", "smk");
+            public static string topSoundFolder = System.IO.Path.Combine(exeFolder, "..", "sound");
+            public static string peopleSoundFolder = System.IO.Path.Combine(topSoundFolder, "people");
+            public static string englishSoundFolder = System.IO.Path.Combine(topSoundFolder, "english");
             public static bool dlComplete = false;
             public static Random randMod = new Random();
         }
@@ -21072,9 +21075,391 @@ namespace SimCopter_Randomizer
         //Map Buttons
         private void resMaps_Click(object sender, EventArgs e)
         {
+            string backPath = "";
+            string backPath2 = "";
+
             Tabs.Enabled = false;
             rMaps.Enabled = false;
             resMaps.Enabled = false;
+
+            //Do backups exist?
+            if (Directory.Exists(Globals.mapFolder + "\\Backup"))
+            {
+                backPath = Globals.mapFolder + "\\Backup";
+                backPath2 = Globals.smkFolder + "\\Backup";
+            }
+            else
+            {
+
+                //If not, the files are original.
+                MessageBox.Show("Map Files are original.");
+                Tabs.Enabled = true;
+                rMaps.Enabled = true;
+                resMaps.Enabled = true;
+                return;
+            }
+
+            //Delete active files and retrieve original backups.
+            for (int x = 0; x < 30; x++)
+            {
+                File.Delete(Globals.mapFolder + "\\city" + x.ToString() + ".sc2");
+                File.Delete(Globals.smkFolder + "\\city" + x.ToString() + "_b.smk");
+                File.Delete(Globals.smkFolder + "\\city" + x.ToString() + "_s.smk");
+                File.Move(backPath + "\\city" + x.ToString() + ".sc2", Globals.mapFolder + "\\city" + x.ToString() + ".sc2");
+                File.Move(backPath2 + "\\city" + x.ToString() + "_b.smk", Globals.smkFolder + "\\city" + x.ToString() + "_b.smk");
+                File.Move(backPath2 + "\\city" + x.ToString() + "_s.smk", Globals.smkFolder + "\\city" + x.ToString() + "_s.smk");
+            }
+
+            //Reemove Folders.
+            Directory.Delete(backPath);
+            Directory.Delete(backPath2);
+
+            MessageBox.Show("Map Files restored.");
+
+            Tabs.Enabled = true;
+            rMaps.Enabled = true;
+            resMaps.Enabled = true;
+        }
+
+        private void rMaps_Click(object sender, EventArgs e)
+        {
+            int[] maps = new int[] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+            int x = 0;
+            string backPath = "";
+            string backPath2 = "";
+
+            Tabs.Enabled = false;
+            rMaps.Enabled = false;
+            resMaps.Enabled = false;
+
+            //Are the files already backed up?
+            if (Directory.Exists(Globals.mapFolder + "\\Backup"))
+            {
+                backPath = Globals.mapFolder + "\\Backup";
+                backPath2 = Globals.smkFolder + "\\Backup";
+            }
+            else
+            {
+                //If not, make and hide the folders.
+                Directory.CreateDirectory(Globals.mapFolder + "\\Backup");
+                backPath = Globals.mapFolder + "\\Backup";
+                DirectoryInfo ch = new DirectoryInfo(backPath);
+                ch.Attributes = FileAttributes.Hidden;
+                Directory.CreateDirectory(Globals.smkFolder + "\\Backup");
+                backPath2 = Globals.smkFolder + "\\Backup";
+                ch = new DirectoryInfo(backPath2);
+                ch.Attributes = FileAttributes.Hidden;
+            }
+
+                //Backup Maps and Smacker files.
+                for (x = 0; x < 30; x++)
+                {
+                    File.Copy(Globals.mapFolder + "\\city" + x.ToString() + ".sc2", backPath + "\\city" + x.ToString() + ".sc2");
+                    File.Copy(Globals.smkFolder + "\\city" + x.ToString() + "_b.smk", backPath2 + "\\city" + x.ToString() + "_b.smk");
+                    File.Copy(Globals.smkFolder + "\\city" + x.ToString() + "_s.smk", backPath2 + "\\city" + x.ToString() + "_s.smk");
+                }
+            x = 0;
+            //Choose which maps go where.
+            while (x < 30)
+            {
+                int temp = Globals.randMod.Next(0, 30);
+                //Generate 30 numbers between 0 and 29 without repeats.
+                if (!(Array.Exists(maps, element => element == temp)))
+                {
+                    maps[x] = temp;
+                    x++;
+                }
+            }
+            //Assign the maps to their new spots +30, to avoid overwriting.
+            for (int y = 0; y < 30; y++)
+            {
+                File.Move(Globals.mapFolder + "\\city" + maps[y].ToString() + ".sc2", Globals.mapFolder + "\\city" + (y + 30).ToString() + ".sc2");
+                File.Move(Globals.smkFolder + "\\city" + maps[y].ToString() + "_b.smk", Globals.smkFolder + "\\city" + (y + 30).ToString() + "_b.smk");
+                File.Move(Globals.smkFolder + "\\city" + maps[y].ToString() + "_s.smk", Globals.smkFolder + "\\city" + (y + 30).ToString() + "_s.smk");
+            }
+            //Move the maps to their real spots.
+            for (int y = 30; y < 60; y++)
+            {
+                File.Move(Globals.mapFolder + "\\city" + y.ToString() + ".sc2", Globals.mapFolder + "\\city" + (y - 30).ToString() + ".sc2");
+                File.Move(Globals.smkFolder + "\\city" + y.ToString() + "_b.smk", Globals.smkFolder + "\\city" + (y - 30).ToString() + "_b.smk");
+                File.Move(Globals.smkFolder + "\\city" + y.ToString() + "_s.smk", Globals.smkFolder + "\\city" + (y - 30).ToString() + "_s.smk");
+            }
+            MessageBox.Show("Maps Shuffled.");
+            Tabs.Enabled = true;
+            rMaps.Enabled = true;
+            resMaps.Enabled = true;
+        }
+
+        private void rSoundsButt_Click(object sender, EventArgs e)
+        {
+            string[] vehSounds = new string[] { "accel2", "adrclose", "adropen", "al01", "al02", "al03", "al04", "al05", "al06", "al07", "al08", "al09", "al10", "al11", "al12", "al13", "al14", "al15", "al16", "al17", "al18", "al19", "al20", "ambsiren", "ambsrn11", "blast", "blast1", "bldexpl", "blip1", "boo", "boom1", "button", "ca_ching", "career", "carsel", "cesslp1", "cesslp2", "cheer", "chopstar", "chopstop", "coploop", "coploop2", "coploop3", "coploop4", "coploop5", "coploop6", "crsh2", "dive1", "dive2", "dive3", "dorcls", "doropn", "douse", "explode", "explode1", "firealrt", "fireburn", "firedmg", "FireLg", "firelp11", "FireMd", "firemis2", "firesire", "FireSm", "firestar", "firhoslp", "gasout", "gradnot", "hangar", "horn1", "horn2", "horn3", "kapow4", "laser", "machgun1", "machgun2", "mboxcht", "mboxcht1", "menu", "menuback", "mevac", "missile", "motorold", "mpolic", "noequip", "policesi", "punch3", "rocket1", "siren", "sirenhi", "softbmp2", "splish", "tgpop", "tgshwh", "train1", "tscreech", "ufo", "valk", "watercan", "winchlp" };
+            string[] engSounds = new string[] { "d1000", "d1001", "d1002", "d1003", "d1004", "d1005", "d1006", "d1007", "d1008", "d1009", "d1010", "d1011", "d1012", "d1013", "d1014", "d1015", "d1016", "d1017", "d1018", "d1019", "d1020", "d2001", "d2002", "d2003", "d2004", "d2005", "d2006", "d2007", "d2008", "d2009", "d2010", "d2011", "d2012", "d2013", "d2014", "d2015", "d2016", "d2017", "d2018", "d2019", "d2020", "dis003", "dis021", "dis023", "dis025", "dis027", "dis029", "dis030", "dis031", "dis032", "dis053", "dis054", "dis055", "dis056", "dis057", "dis058", "dis059", "dis060", "dis061", "dis062", "dis063", "dis064", "dis065", "dis066", "dis067", "dis068", "dis094", "dis095", "dis096", "dis097", "dis098", "dis099", "dis100", "dis101", "dis102", "dis103", "dis104", "dis105", "help1", "l001", "l002", "l003", "l004", "l005", "l006", "l007", "l008", "l009", "mdvc1", "mdvc2", "mdvc3", "mdvc4", "mg_00_00", "mg_00_01", "mg_00_02", "mg_00_03", "mg_00_04", "mg_00_05", "mg_00_06", "mg_00_07", "mg_00_08", "mg_00_09", "mg_01_00", "mg_01_01", "mg_01_02", "mg_01_03", "mg_01_04", "mg_01_05", "mg_01_06", "mg_01_07", "mg_02_00", "mg_02_01", "mg_02_02", "mg_02_03", "mg_02_04", "mg_02_05", "mg_02_06", "mg_02_07", "mg_02_08", "mg_03_00", "mg_03_01", "mg_03_02", "mg_03_03", "mg_03_04", "mg_03_05", "mg_03_06", "mg_03_07", "mg_03_08", "mg_04_00", "mg_04_01", "mg_04_02", "mg_04_03", "mg_04_04", "mg_04_05", "mg_04_06", "mg_04_07", "mg_04_08", "mg_04_09", "pol1", "pol2", "pol3", "pol4", "pol5", "pol6" };
+            string[] pplSounds = new string[] { "achdie1", "achdie2", "achdie3", "ah1", "ah2", "arrest1", "arrest2", "assert1", "assert2", "assert3", "assert4", "atomchg", "bnggng", "bnghyt", "bngthrm", "bodyhit2", "bowang", "btchmp", "chewgum1", "decphum", "doorah", "doropn", "duno1", "duno2", "duno3", "duno4", "ekg", "fallwhsl", "flyscr", "forcefld", "ftrchkbr", "gimme1", "gimme2", "gogirl1", "gogirl2", "gogirl3", "gogirl4", "gogirl5", "gogirl6", "grnthit1", "grnthit2", "grntsplt", "grunt1", "grunt2", "grunt3", "grunt4", "grunt5", "grunt6", "hey1", "hey2", "hey3", "hgun1", "hgun2", "hgun3", "hicute1", "hicute2", "hicute3", "hicute4", "hithead", "hithere1", "hithere2", "hithere3", "hohum1", "hohum2", "hohum3", "hohum4", "hohum5", "hum", "kissa", "kissb", "kissg", "march", "morituri", "pasfstb", "passlwb", "popon", "query1", "query2", "repair", "sad1", "sad2", "sad3", "sinistr1", "sinistr2", "sinistr3", "sinistr4", "slide", "spacevox", "spacidle", "spray", "titer1", "titer2", "titer3", "titer4", "titer5", "titer6", "trbna", "trbnc#", "trbng", "trnsfrm", "trptb", "trpte", "trptf#", "tubab", "tubae", "tubaf#", "ufoup", "woh1", "woh2", "woh3", "woh4", "xftboots", "xftheels", "xftshoes" };
+            int[] reorg = new int[] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+            int x = 0;
+            string backPath = "";
+
+            Tabs.Enabled = false;
+            rSoundsButt.Enabled = false;
+            resSoundsButt.Enabled = false;
+            copterSoundBox.Enabled = false;
+            peopleSoundBox.Enabled = false;
+            engSoundsBox.Enabled = false;
+
+            //Are the files already backed up?
+            if (Directory.Exists(Globals.topSoundFolder + "\\Backup"))
+            {
+                backPath = Globals.topSoundFolder + "\\Backup";
+            }
+            else
+            {
+                //if not, make and hide folders.
+                Directory.CreateDirectory(Globals.topSoundFolder + "\\Backup");
+                backPath = Globals.topSoundFolder + "\\Backup";
+                DirectoryInfo ch = new DirectoryInfo(backPath);
+                ch.Attributes = FileAttributes.Hidden;
+                Directory.CreateDirectory(backPath + "\\english");
+                Directory.CreateDirectory(backPath + "\\people");
+
+                //Backup Top sounds.
+                foreach (string elem in vehSounds)
+                {
+                    File.Copy(Globals.topSoundFolder + "\\" + elem + ".wav", backPath + "\\" + elem + ".wav");
+                }
+                //Backup People sounds.
+                foreach (string elem in pplSounds)
+                {
+                    File.Copy(Globals.peopleSoundFolder + "\\" + elem + ".wav", backPath + "\\people\\" + elem + ".wav");
+                }
+                //Backup English sounds.
+                foreach (string elem in engSounds)
+                {
+                    File.Copy(Globals.englishSoundFolder + "\\" + elem + ".wav", backPath + "\\english\\" + elem + ".wav");
+                }
+            }
+
+            while (x < 358)
+            {
+                int temp = -1;
+                //Skip over unchecked sections.
+                if (!copterSoundBox.Checked && x < 100)
+                {
+                    x = 100;
+                    continue;
+                }
+                if (!peopleSoundBox.Checked && (x > 99 && x < 214))
+                {
+                    x = 214;
+                    continue;
+                }
+                if (!engSoundsBox.Checked && x > 213)
+                {
+                    x = 358;
+                    continue;
+                }
+                //All three aree on.
+                if (copterSoundBox.Checked && peopleSoundBox.Checked && engSoundsBox.Checked)
+                    temp = Globals.randMod.Next(0, 358);
+                //Vehicle sounds is off.
+                else if (!copterSoundBox.Checked && peopleSoundBox.Checked && engSoundsBox.Checked)
+                    temp = Globals.randMod.Next(100, 358);
+                //Vehicle and People sounds are off.
+                else if (!copterSoundBox.Checked && !peopleSoundBox.Checked && engSoundsBox.Checked)
+                    temp = Globals.randMod.Next(214, 358);
+                //All three are off.
+                else if (!copterSoundBox.Enabled && !peopleSoundBox.Checked && !engSoundsBox.Checked)
+                    break;
+                //People and English sounds are off.
+                else if (copterSoundBox.Checked && !peopleSoundBox.Checked && !engSoundsBox.Checked)
+                    temp = Globals.randMod.Next(0, 100);
+                //English sounds is off.
+                else if (copterSoundBox.Checked && peopleSoundBox.Checked && !engSoundsBox.Checked)
+                    temp = Globals.randMod.Next(0, 214);
+                //Pople sounds is off.
+                else if (copterSoundBox.Checked && !peopleSoundBox.Checked && engSoundsBox.Checked)
+                {
+                    int flip = Globals.randMod.Next(0, 2);
+                    if (flip == 0)
+                        temp = Globals.randMod.Next(0, 100);
+                    else
+                        temp = Globals.randMod.Next(214, 358);
+                }
+                //Generate 358 numbers between 0 and 357 without repeats.
+                if (!(Array.Exists(reorg, element => element == temp)))
+                {
+                    reorg[x] = temp;
+                    x++;
+                }
+            }
+
+            x = 0;
+            //Assign files their new names
+            foreach (int element in reorg)
+            {
+                if (element == -1)
+                {
+                    x++;
+                    continue;
+                }
+                //Top level sounds is 100 files.
+                else if (element < 100)
+                {
+                    File.Move(Globals.topSoundFolder + "\\" + vehSounds[element] + ".wav", Globals.topSoundFolder + "\\" + x.ToString() + ".wav");
+                }
+                //People sounds is 114 files.
+                else if (element < 214)
+                {
+                    File.Move(Globals.peopleSoundFolder + "\\" + pplSounds[element - 100] + ".wav", Globals.topSoundFolder + "\\" + x.ToString() + ".wav");
+                }
+                //English (and possibly other languages) is 144 files.
+                else
+                {
+                    File.Move(Globals.englishSoundFolder + "\\" + engSounds[element - 214] + ".wav", Globals.topSoundFolder + "\\" + x.ToString() + ".wav");
+                }
+                x++;
+            }
+            x = 0;
+            //Move Files to their new homes.
+            if (copterSoundBox.Checked)
+            {
+                foreach (string elem in vehSounds)
+                {
+                    File.Move(Globals.topSoundFolder + "\\" + x.ToString() + ".wav", Globals.topSoundFolder + "\\" + elem + ".wav");
+                    x++;
+                }
+            }
+            x = 100;
+            if (peopleSoundBox.Checked)
+            {
+                foreach (string elem in pplSounds)
+                {
+                    File.Move(Globals.topSoundFolder + "\\" + x.ToString() + ".wav", Globals.peopleSoundFolder + "\\" + elem + ".wav");
+                    x++;
+                }
+            }
+            x = 214;
+            if (engSoundsBox.Checked)
+            {
+                foreach (string elem in engSounds)
+                {
+                    File.Move(Globals.topSoundFolder + "\\" + x.ToString() + ".wav", Globals.englishSoundFolder + "\\" + elem + ".wav");
+                    x++;
+                }
+            }
+
+            Tabs.Enabled = true;
+            rSoundsButt.Enabled = true;
+            resSoundsButt.Enabled = true;
+            copterSoundBox.Enabled = true;
+            peopleSoundBox.Enabled = true;
+            engSoundsBox.Enabled = true;
+
+            string varMess = "No ";
+            if (copterSoundBox.Checked)
+            {
+                if (varMess.Equals("No "))
+                {
+                    varMess = "Vehicle ";
+                }
+            }
+            if (peopleSoundBox.Checked)
+            {
+                if (varMess.Equals("No "))
+                {
+                    varMess = "People ";
+                }
+                else
+                {
+                    varMess = varMess + "and People ";
+                }
+            }
+            if (engSoundsBox.Checked)
+            {
+                if (varMess.Equals("No "))
+                {
+                    varMess = "English ";
+                }
+                else
+                {
+                    varMess = varMess + "and English ";
+                }
+            }
+
+            MessageBox.Show(varMess + "Sounds Shuffled.");
+        }
+
+        private void resSoundsButt_Click(object sender, EventArgs e)
+        {
+            string[] vehSounds = new string[] { "accel2", "adrclose", "adropen", "al01", "al02", "al03", "al04", "al05", "al06", "al07", "al08", "al09", "al10", "al11", "al12", "al13", "al14", "al15", "al16", "al17", "al18", "al19", "al20", "ambsiren", "ambsrn11", "blast", "blast1", "bldexpl", "blip1", "boo", "boom1", "button", "ca_ching", "career", "carsel", "cesslp1", "cesslp2", "cheer", "chopstar", "chopstop", "coploop", "coploop2", "coploop3", "coploop4", "coploop5", "coploop6", "crsh2", "dive1", "dive2", "dive3", "dorcls", "doropn", "douse", "explode", "explode1", "firealrt", "fireburn", "firedmg", "FireLg", "firelp11", "FireMd", "firemis2", "firesire", "FireSm", "firestar", "firhoslp", "gasout", "gradnot", "hangar", "horn1", "horn2", "horn3", "kapow4", "laser", "machgun1", "machgun2", "mboxcht", "mboxcht1", "menu", "menuback", "mevac", "missile", "motorold", "mpolic", "noequip", "policesi", "punch3", "rocket1", "siren", "sirenhi", "softbmp2", "splish", "tgpop", "tgshwh", "train1", "tscreech", "ufo", "valk", "watercan", "winchlp" };
+            string[] engSounds = new string[] { "d1000", "d1001", "d1002", "d1003", "d1004", "d1005", "d1006", "d1007", "d1008", "d1009", "d1010", "d1011", "d1012", "d1013", "d1014", "d1015", "d1016", "d1017", "d1018", "d1019", "d1020", "d2001", "d2002", "d2003", "d2004", "d2005", "d2006", "d2007", "d2008", "d2009", "d2010", "d2011", "d2012", "d2013", "d2014", "d2015", "d2016", "d2017", "d2018", "d2019", "d2020", "dis003", "dis021", "dis023", "dis025", "dis027", "dis029", "dis030", "dis031", "dis032", "dis053", "dis054", "dis055", "dis056", "dis057", "dis058", "dis059", "dis060", "dis061", "dis062", "dis063", "dis064", "dis065", "dis066", "dis067", "dis068", "dis094", "dis095", "dis096", "dis097", "dis098", "dis099", "dis100", "dis101", "dis102", "dis103", "dis104", "dis105", "help1", "l001", "l002", "l003", "l004", "l005", "l006", "l007", "l008", "l009", "mdvc1", "mdvc2", "mdvc3", "mdvc4", "mg_00_00", "mg_00_01", "mg_00_02", "mg_00_03", "mg_00_04", "mg_00_05", "mg_00_06", "mg_00_07", "mg_00_08", "mg_00_09", "mg_01_00", "mg_01_01", "mg_01_02", "mg_01_03", "mg_01_04", "mg_01_05", "mg_01_06", "mg_01_07", "mg_02_00", "mg_02_01", "mg_02_02", "mg_02_03", "mg_02_04", "mg_02_05", "mg_02_06", "mg_02_07", "mg_02_08", "mg_03_00", "mg_03_01", "mg_03_02", "mg_03_03", "mg_03_04", "mg_03_05", "mg_03_06", "mg_03_07", "mg_03_08", "mg_04_00", "mg_04_01", "mg_04_02", "mg_04_03", "mg_04_04", "mg_04_05", "mg_04_06", "mg_04_07", "mg_04_08", "mg_04_09", "pol1", "pol2", "pol3", "pol4", "pol5", "pol6" };
+            string[] pplSounds = new string[] { "achdie1", "achdie2", "achdie3", "ah1", "ah2", "arrest1", "arrest2", "assert1", "assert2", "assert3", "assert4", "atomchg", "bnggng", "bnghyt", "bngthrm", "bodyhit2", "bowang", "btchmp", "chewgum1", "decphum", "doorah", "doropn", "duno1", "duno2", "duno3", "duno4", "ekg", "fallwhsl", "flyscr", "forcefld", "ftrchkbr", "gimme1", "gimme2", "gogirl1", "gogirl2", "gogirl3", "gogirl4", "gogirl5", "gogirl6", "grnthit1", "grnthit2", "grntsplt", "grunt1", "grunt2", "grunt3", "grunt4", "grunt5", "grunt6", "hey1", "hey2", "hey3", "hgun1", "hgun2", "hgun3", "hicute1", "hicute2", "hicute3", "hicute4", "hithead", "hithere1", "hithere2", "hithere3", "hohum1", "hohum2", "hohum3", "hohum4", "hohum5", "hum", "kissa", "kissb", "kissg", "march", "morituri", "pasfstb", "passlwb", "popon", "query1", "query2", "repair", "sad1", "sad2", "sad3", "sinistr1", "sinistr2", "sinistr3", "sinistr4", "slide", "spacevox", "spacidle", "spray", "titer1", "titer2", "titer3", "titer4", "titer5", "titer6", "trbna", "trbnc#", "trbng", "trnsfrm", "trptb", "trpte", "trptf#", "tubab", "tubae", "tubaf#", "ufoup", "woh1", "woh2", "woh3", "woh4", "xftboots", "xftheels", "xftshoes" };
+            string backPath = "";
+
+            Tabs.Enabled = false;
+            rSoundsButt.Enabled = false;
+            resSoundsButt.Enabled = false;
+            copterSoundBox.Enabled = false;
+            peopleSoundBox.Enabled = false;
+            engSoundsBox.Enabled = false;
+
+            //Do backups exist?
+            if (Directory.Exists(Globals.topSoundFolder + "\\Backup"))
+            {
+                backPath = Globals.topSoundFolder + "\\Backup";
+            }
+            else
+            {
+                //If not, the files are original.
+                MessageBox.Show("Sound Files are original.");
+                Tabs.Enabled = true;
+                rSoundsButt.Enabled = true;
+                resSoundsButt.Enabled = true;
+                copterSoundBox.Enabled = true;
+                peopleSoundBox.Enabled = true;
+                engSoundsBox.Enabled = true;
+                return;
+            }
+
+            //Delete current and retrieve original Vehicle sounds.
+            foreach (string element in vehSounds)
+            {
+                File.Delete(Globals.topSoundFolder + "\\" + element + ".wav");
+                File.Move(backPath + "\\" + element + ".wav", Globals.topSoundFolder + "\\" + element + ".wav");
+            }
+
+            //Delete current and retrieve original People sounds.
+            foreach (string element in pplSounds)
+            {
+                File.Delete(Globals.peopleSoundFolder + "\\" + element + ".wav");
+                File.Move(backPath + "\\people\\" + element + ".wav", Globals.peopleSoundFolder + "\\" + element + ".wav");
+            }
+
+            //Delete current and retrieve original English sounds.
+            foreach (string element in engSounds)
+            {
+                File.Delete(Globals.englishSoundFolder + "\\" + element + ".wav");
+                File.Move(backPath + "\\english\\" + element + ".wav", Globals.englishSoundFolder + "\\" + element + ".wav");
+            }
+
+            //Reemove folders.
+            Directory.Delete(backPath + "\\people");
+            Directory.Delete(backPath + "\\english");
+            Directory.Delete(backPath);
+
+            MessageBox.Show("Sound Files restored.");
+
+            Tabs.Enabled = true;
+            rSoundsButt.Enabled = true;
+            resSoundsButt.Enabled = true;
+            copterSoundBox.Enabled = true;
+            peopleSoundBox.Enabled = true;
+            engSoundsBox.Enabled = true;
+        }
+    }
+}
+
+//Depreciated Code
+/*
             if (File.Exists(Globals.mapFolder + "\\city0.sc2") && File.Exists(Globals.smkFolder + "\\city0_b.smk"))
             {
                 bool cont = true;
@@ -21114,42 +21499,4 @@ namespace SimCopter_Randomizer
             }
             else
                 System.Windows.Forms.MessageBox.Show("This must run in SimCopter's tweak folder.");
-            Tabs.Enabled = true;
-            rMaps.Enabled = true;
-            resMaps.Enabled = true;
-        }
-
-        private void rMaps_Click(object sender, EventArgs e)
-        {
-            int[] maps = new int[] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
-            int x = 0;
-            //Choose which maps go where.
-            while (x < 30)
-            {
-                int temp = Globals.randMod.Next(0, 30);
-                Console.WriteLine(temp.ToString());
-                if (!(Array.Exists(maps, element => element == temp)))
-                {
-                    maps[x] = temp;
-                    x++;
-                }
-            }
-            //Assign the maps to their new spots +30, to avoid overwriting.
-            for (int y = 0; y < 30; y++)
-            {
-                File.Move(Globals.mapFolder + "\\city" + maps[y].ToString() + ".sc2", Globals.mapFolder + "\\city" + (y + 30).ToString() + ".sc2");
-                File.Move(Globals.smkFolder + "\\city" + maps[y].ToString() + "_b.smk", Globals.smkFolder + "\\city" + (y + 30).ToString() + "_b.smk");
-                File.Move(Globals.smkFolder + "\\city" + maps[y].ToString() + "_s.smk", Globals.smkFolder + "\\city" + (y + 30).ToString() + "_s.smk");
-            }
-            //Move the maps to their real spots.
-            for (int y = 30; y < 60; y++)
-            {
-                File.Move(Globals.mapFolder + "\\city" + y.ToString() + ".sc2", Globals.mapFolder + "\\city" + (y - 30).ToString() + ".sc2");
-                File.Move(Globals.smkFolder + "\\city" + y.ToString() + "_b.smk", Globals.smkFolder + "\\city" + (y - 30).ToString() + "_b.smk");
-                File.Move(Globals.smkFolder + "\\city" + y.ToString() + "_s.smk", Globals.smkFolder + "\\city" + (y - 30).ToString() + "_s.smk");
-            }
-            MessageBox.Show("Maps Shuffled.");
-        }
-    }
-}
-
+                */
